@@ -1,1 +1,8 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+data|stem|538860726a9d00f1|237276f659722970|7f349f668310a727|33550471||t20007.5662011873s|e26fb4004596eb2e|7870|rds|local|vector|||0.297||
+data_file|stem|59b19d3ce23cafe9|cf06a36a4dd9338d|2c530c1562a7fbd1|-679625259|data/pilot/pilot_data_clean.csv|t20007.5438983963s|daff9ef6e1082981|75950|file|local|vector|||5.782|package brms was built under R version 4.2.3. package Rcpp was built under R version 4.2.3. package tidyverse was built under R version 4.2.3. package ggplot2 was built under R version 4.2.3. package tibble was built under R version 4.2.3. package tidyr was built under R version 4.2.3. package readr was built under R version 4.2.3. package purrr was built under R version 4.2.3. package dplyr was built under R version 4.2.3. package stringr was built under R version 4.2.3. package forcats was built under R version 4.2.3. package lubridate was built under R version 4.2.3|
+fit|stem|b4742945599e8b36|122b7dd8ec340fb3|a5bca2b4edbb8fc4|150100524||t20007.5746663122s||434|rds|local|vector|||1.219||The following priors do not correspond to any model parameter L_dilemma  lkj3Function default_prior might be helpful to you.
+fit_model|function|f8505beccff8234d|||||||||||||||
+load_data|function|b80e8c3ac4737cb7|||||||||||||||
+fit_model|function|fc2d114cffe2ef9b
+load_data|function|b80e8c3ac4737cb7
