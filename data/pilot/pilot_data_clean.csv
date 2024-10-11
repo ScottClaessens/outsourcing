@@ -1,0 +1,1201 @@
+id,attention,age,gender,order,task,social,social_skills,impact_others,consequences,intrinsic_effort,extrinsic_effort
+1,TikTok,32,Non-binary / third gender,1,Writing a marriage proposal,2,3,5,5,5,5
+1,TikTok,32,Non-binary / third gender,2,Planning a city tour for a friend,6,5,6,5,5,5
+1,TikTok,32,Non-binary / third gender,3,Writing a short story,1,1,1,1,1,1
+1,TikTok,32,Non-binary / third gender,4,Creating visual art,1,1,1,1,1,1
+1,TikTok,32,Non-binary / third gender,5,Planning a surprise birthday party for a friend,6,6,6,5,5,5
+1,TikTok,32,Non-binary / third gender,6,Writing a poem,1,1,1,1,1,1
+2,TikTok,24,Female,1,Writing an apology letter to a friend,3,6,7,6,7,7
+2,TikTok,24,Female,2,Creating a daily schedule,1,1,5,6,6,3
+2,TikTok,24,Female,3,Writing computer code,1,1,4,5,5,1
+2,TikTok,24,Female,4,Solving a mathematical equation,1,1,1,1,1,1
+2,TikTok,24,Female,5,Writing wedding vows,5,7,7,7,7,7
+2,TikTok,24,Female,6,Planning a surprise birthday party for a friend,6,7,7,5,6,6
+3,TikTok,34,Male,1,Writing wedding vows,1,3,3,4,5,4
+3,TikTok,34,Male,2,Writing a poem,1,1,4,2,6,1
+3,TikTok,34,Male,3,Writing a dinner recipe,2,1,3,5,5,3
+3,TikTok,34,Male,4,Writing computer code,1,1,6,6,6,1
+3,TikTok,34,Male,5,Finding a gift for a family member,7,4,6,6,6,7
+3,TikTok,34,Male,6,Planning a city tour for a friend,7,7,7,6,7,7
+4,TikTok,24,Female,1,Generating a shopping list,3,3,4,4,4,2
+4,TikTok,24,Female,2,Writing a poem,2,2,3,2,5,3
+4,TikTok,24,Female,3,Writing a bereavement card to a family member,7,6,7,7,7,7
+4,TikTok,24,Female,4,Writing an apology letter to a friend,7,7,7,7,7,7
+4,TikTok,24,Female,5,Creating visual art,3,2,3,2,5,3
+4,TikTok,24,Female,6,Deciding how to discipline a child,6,6,7,7,7,6
+5,TikTok,24,Female,1,Finding a gift for a family member,5,6,7,5,7,4
+5,TikTok,24,Female,2,Writing a cover letter for a job application,5,7,3,7,7,6
+5,TikTok,24,Female,3,Creating a daily schedule,2,2,4,5,5,1
+5,TikTok,24,Female,4,Writing a love letter,7,7,5,3,4,5
+5,TikTok,24,Female,5,Writing computer code,1,1,5,4,5,2
+5,TikTok,24,Female,6,Writing an apology letter to a friend,7,7,5,5,6,6
+6,TikTok,36,Female,1,Writing a marriage proposal,1,2,7,6,5,2
+6,TikTok,36,Female,2,Writing a short story,1,1,2,2,5,5
+6,TikTok,36,Female,3,Planning a city tour for a friend,7,7,7,4,6,6
+6,TikTok,36,Female,4,Writing a cover letter for a job application,1,2,5,6,6,5
+6,TikTok,36,Female,5,Writing an apology letter to a friend,1,1,6,6,6,6
+6,TikTok,36,Female,6,Creating a daily schedule,1,1,2,6,4,3
+7,TikTok,23,Female,1,Planning a city tour for a friend,4,2,7,4,5,5
+7,TikTok,23,Female,2,Deciding how to discipline a child,2,3,7,5,3,4
+7,TikTok,23,Female,3,Generating a shopping list,2,2,4,4,4,3
+7,TikTok,23,Female,4,Planning a syllabus,2,2,5,5,5,6
+7,TikTok,23,Female,5,Creating a daily schedule,2,1,3,4,4,3
+7,TikTok,23,Female,6,Finding a gift for a family member,3,4,6,5,5,6
+8,TikTok,27,Male,1,Planning a syllabus,3,2,5,5,4,3
+8,TikTok,27,Male,2,Planning a surprise birthday party for a friend,6,7,7,6,6,6
+8,TikTok,27,Male,3,Finding a gift for a family member,5,4,5,5,6,4
+8,TikTok,27,Male,4,Deciding how to discipline a child,6,7,6,6,6,3
+8,TikTok,27,Male,5,Creating a daily schedule,2,3,3,4,3,2
+8,TikTok,27,Male,6,Writing a cover letter for a job application,4,3,3,5,5,6
+9,Facebook,48,Female,1,Creating visual art,6,6,2,5,7,7
+9,Facebook,48,Female,2,Solving a mathematical equation,5,4,5,6,6,6
+9,Facebook,48,Female,3,Choosing an engagement ring,3,3,6,6,6,7
+9,Facebook,48,Female,4,Writing a cover letter for a job application,3,4,5,7,7,7
+9,Facebook,48,Female,5,Writing a marriage proposal,3,3,6,7,7,7
+9,Facebook,48,Female,6,Writing a bereavement card to a family member,4,4,5,6,7,7
+10,TikTok,42,Female,1,Generating a shopping list,1,1,7,5,6,1
+10,TikTok,42,Female,2,Writing a short story,1,1,1,1,7,7
+10,TikTok,42,Female,3,Planning a city tour for a friend,7,7,7,7,7,7
+10,TikTok,42,Female,4,Writing wedding vows,7,7,7,7,7,7
+10,TikTok,42,Female,5,Planning a syllabus,1,1,7,7,7,7
+10,TikTok,42,Female,6,Writing a love letter,1,1,7,7,7,7
+11,TikTok,44,Female,1,Finding a gift for a family member,5,5,5,4,6,5
+11,TikTok,44,Female,2,Writing a dinner recipe,3,3,4,3,4,2
+11,TikTok,44,Female,3,Planning a city tour for a friend,7,7,7,4,6,7
+11,TikTok,44,Female,4,Writing a poem,2,3,2,2,3,2
+11,TikTok,44,Female,5,Writing a short story,2,3,2,2,3,2
+11,TikTok,44,Female,6,Writing an apology letter to a friend,7,7,7,6,6,7
+12,Newspapers,55,Female,1,Writing a cover letter for a job application,1,1,1,7,7,7
+12,Newspapers,55,Female,2,Creating visual art,1,1,7,7,7,7
+12,Newspapers,55,Female,3,Writing a bereavement card to a family member,1,1,7,7,7,4
+12,Newspapers,55,Female,4,Writing a love letter,1,1,7,7,7,7
+12,Newspapers,55,Female,5,Finding a gift for a family member,1,1,1,7,7,7
+12,Newspapers,55,Female,6,Writing a dinner recipe,3,1,7,7,7,7
+13,TikTok,34,Male,1,Deciding how to discipline a child,7,7,5,7,6,1
+13,TikTok,34,Male,2,Finding a gift for a family member,6,6,5,3,5,1
+13,TikTok,34,Male,3,Creating visual art,1,1,6,4,4,6
+13,TikTok,34,Male,4,Writing wedding vows,7,7,7,7,7,6
+13,TikTok,34,Male,5,Solving a mathematical equation,1,1,1,1,6,4
+13,TikTok,34,Male,6,Writing computer code,1,1,6,5,5,5
+14,TikTok,23,Male,1,Writing a love letter,1,5,6,6,7,7
+14,TikTok,23,Male,2,Writing a dinner recipe,1,6,7,7,7,5
+14,TikTok,23,Male,3,Finding a gift for a family member,6,6,7,3,5,6
+14,TikTok,23,Male,4,Choosing an engagement ring,1,5,7,7,7,7
+14,TikTok,23,Male,5,Creating visual art,1,3,1,1,3,5
+14,TikTok,23,Male,6,Solving a mathematical equation,1,1,1,1,2,1
+15,YouTube,47,Male,1,Writing computer code,2,2,6,6,7,3
+15,YouTube,47,Male,2,Planning a surprise birthday party for a friend,7,6,6,2,6,4
+15,YouTube,47,Male,3,Solving a mathematical equation,1,1,6,6,7,2
+15,YouTube,47,Male,4,Writing a poem,3,5,5,4,5,6
+15,YouTube,47,Male,5,Writing a love letter,7,7,6,5,6,7
+15,YouTube,47,Male,6,Choosing an engagement ring,5,3,6,6,6,4
+16,TikTok,21,Female,1,Writing wedding vows,1,1,5,2,5,5
+16,TikTok,21,Female,2,Generating a shopping list,1,1,1,1,1,1
+16,TikTok,21,Female,3,Choosing an engagement ring,2,2,5,3,5,5
+16,TikTok,21,Female,4,Writing a dinner recipe,1,1,5,4,1,6
+16,TikTok,21,Female,5,Creating a daily schedule,2,2,1,2,2,3
+16,TikTok,21,Female,6,Writing a bereavement card to a family member,3,2,6,4,7,7
+17,Facebook,55,Female,1,Planning a city tour for a friend,7,7,7,7,7,7
+17,Facebook,55,Female,2,Writing a poem,7,7,3,3,3,3
+17,Facebook,55,Female,3,Planning a syllabus,7,7,7,7,7,7
+17,Facebook,55,Female,4,Writing a bereavement card to a family member,7,7,5,4,6,4
+17,Facebook,55,Female,5,Finding a gift for a family member,5,5,5,3,4,4
+17,Facebook,55,Female,6,Creating a daily schedule,5,4,4,3,4,4
+18,TikTok,50,Female,1,Writing a bereavement card to a family member,5,7,7,7,7,6
+18,TikTok,50,Female,2,Planning a syllabus,4,5,6,7,7,7
+18,TikTok,50,Female,3,Writing a marriage proposal,3,5,7,7,7,6
+18,TikTok,50,Female,4,Creating visual art,4,4,5,5,6,6
+18,TikTok,50,Female,5,Creating a daily schedule,3,3,4,6,5,4
+18,TikTok,50,Female,6,Choosing an engagement ring,4,3,7,7,7,7
+19,TikTok,24,Female,1,Creating visual art,1,1,5,2,6,5
+19,TikTok,24,Female,2,Planning a city tour for a friend,5,4,4,5,6,2
+19,TikTok,24,Female,3,Writing a love letter,2,5,6,4,6,6
+19,TikTok,24,Female,4,Writing a dinner recipe,2,2,3,2,4,2
+19,TikTok,24,Female,5,Writing a cover letter for a job application,1,4,2,5,7,6
+19,TikTok,24,Female,6,Planning a surprise birthday party for a friend,5,5,6,4,5,4
+20,TikTok,34,Female,1,Writing a love letter,3,6,7,7,7,1
+20,TikTok,34,Female,2,Writing a short story,2,2,2,1,6,6
+20,TikTok,34,Female,3,Finding a gift for a family member,4,3,7,7,7,1
+20,TikTok,34,Female,4,Creating visual art,3,2,1,1,6,6
+20,TikTok,34,Female,5,Planning a surprise birthday party for a friend,7,7,7,7,7,6
+20,TikTok,34,Female,6,Planning a syllabus,4,6,7,7,7,7
+21,Newspapers,28,Female,1,Writing a short story,4,5,3,4,6,5
+21,Newspapers,28,Female,2,Finding a gift for a family member,7,7,7,4,6,4
+21,Newspapers,28,Female,3,Planning a syllabus,3,3,7,7,7,4
+21,Newspapers,28,Female,4,Writing a dinner recipe,6,3,7,7,7,7
+21,Newspapers,28,Female,5,Planning a city tour for a friend,7,5,6,2,4,7
+21,Newspapers,28,Female,6,Writing a bereavement card to a family member,3,3,4,6,4,4
+22,TikTok,27,Female,1,Creating visual art,3,2,2,2,5,4
+22,TikTok,27,Female,2,Solving a mathematical equation,1,1,3,3,5,2
+22,TikTok,27,Female,3,Writing a cover letter for a job application,2,1,5,7,6,6
+22,TikTok,27,Female,4,Writing wedding vows,2,6,7,7,6,5
+22,TikTok,27,Female,5,Writing an apology letter to a friend,7,7,7,7,7,7
+22,TikTok,27,Female,6,Planning a surprise birthday party for a friend,7,7,7,4,5,7
+23,TikTok,27,Male,1,Solving a mathematical equation,1,1,1,1,2,1
+23,TikTok,27,Male,2,Writing a marriage proposal,7,7,7,7,7,7
+23,TikTok,27,Male,3,Writing a cover letter for a job application,6,7,2,7,7,7
+23,TikTok,27,Male,4,Writing a bereavement card to a family member,7,7,7,7,7,7
+23,TikTok,27,Male,5,Writing wedding vows,7,7,7,7,7,7
+23,TikTok,27,Male,6,Writing a short story,1,1,1,2,2,6
+24,TikTok,48,Male,1,Writing wedding vows,2,2,7,6,7,3
+24,TikTok,48,Male,2,Writing a short story,2,2,5,6,7,3
+24,TikTok,48,Male,3,Writing a love letter,2,2,7,7,7,6
+24,TikTok,48,Male,4,Creating visual art,3,2,4,4,5,4
+24,TikTok,48,Male,5,Planning a surprise birthday party for a friend,6,6,7,7,7,7
+24,TikTok,48,Male,6,Writing a cover letter for a job application,2,4,5,7,7,7
+25,TikTok,32,Male,1,Writing a cover letter for a job application,2,4,4,4,5,2
+25,TikTok,32,Male,2,Writing a short story,2,3,3,3,5,2
+25,TikTok,32,Male,3,Choosing an engagement ring,3,3,5,6,6,4
+25,TikTok,32,Male,4,Writing a love letter,3,5,6,5,5,4
+25,TikTok,32,Male,5,Writing a bereavement card to a family member,2,5,4,5,4,3
+25,TikTok,32,Male,6,Writing a dinner recipe,2,2,4,4,4,3
+26,TikTok,32,Female,1,Planning a syllabus,3,4,6,6,5,4
+26,TikTok,32,Female,2,Planning a city tour for a friend,6,6,4,4,5,5
+26,TikTok,32,Female,3,Writing a love letter,4,6,4,3,4,4
+26,TikTok,32,Female,4,Creating a daily schedule,4,3,4,5,4,3
+26,TikTok,32,Female,5,Writing wedding vows,5,6,4,5,5,6
+26,TikTok,32,Female,6,Generating a shopping list,2,3,3,3,4,3
+27,TikTok,45,Female,1,Creating visual art,5,5,2,3,5,6
+27,TikTok,45,Female,2,Writing wedding vows,1,2,7,7,7,5
+27,TikTok,45,Female,3,Writing a bereavement card to a family member,1,2,2,5,6,6
+27,TikTok,45,Female,4,Writing computer code,1,1,7,6,5,6
+27,TikTok,45,Female,5,Planning a surprise birthday party for a friend,7,5,7,7,6,6
+27,TikTok,45,Female,6,Writing a cover letter for a job application,2,3,3,4,5,5
+28,TikTok,37,Female,1,Writing a cover letter for a job application,2,3,4,5,6,5
+28,TikTok,37,Female,2,Choosing an engagement ring,2,3,7,5,7,3
+28,TikTok,37,Female,3,Writing computer code,1,1,5,5,3,2
+28,TikTok,37,Female,4,Planning a syllabus,4,6,7,6,7,3
+28,TikTok,37,Female,5,Planning a surprise birthday party for a friend,6,7,7,5,6,2
+28,TikTok,37,Female,6,Writing a marriage proposal,1,3,7,5,6,2
+29,TikTok,36,Female,1,Writing a bereavement card to a family member,1,3,7,7,7,7
+29,TikTok,36,Female,2,Choosing an engagement ring,2,6,7,6,7,7
+29,TikTok,36,Female,3,Solving a mathematical equation,1,1,1,2,5,2
+29,TikTok,36,Female,4,Writing a marriage proposal,1,6,7,7,7,7
+29,TikTok,36,Female,5,Writing computer code,1,1,5,4,5,5
+29,TikTok,36,Female,6,Writing a poem,1,5,2,2,6,6
+30,TikTok,31,Male,1,Solving a mathematical equation,2,2,2,2,2,2
+30,TikTok,31,Male,2,Writing a cover letter for a job application,3,4,4,4,4,4
+30,TikTok,31,Male,3,Generating a shopping list,4,5,4,4,4,4
+30,TikTok,31,Male,4,Writing a bereavement card to a family member,5,5,6,4,4,4
+30,TikTok,31,Male,5,Writing an apology letter to a friend,6,6,6,5,5,5
+30,TikTok,31,Male,6,Planning a city tour for a friend,7,7,6,6,6,6
+31,TikTok,29,Male,1,Writing a marriage proposal,3,4,7,7,7,7
+31,TikTok,29,Male,2,Writing a bereavement card to a family member,5,6,6,6,7,6
+31,TikTok,29,Male,3,Finding a gift for a family member,6,5,6,6,5,6
+31,TikTok,29,Male,4,Writing a cover letter for a job application,7,7,7,7,7,7
+31,TikTok,29,Male,5,Creating a daily schedule,4,5,2,5,4,4
+31,TikTok,29,Male,6,Writing a short story,3,4,3,4,4,4
+32,TikTok,33,Male,1,Writing an apology letter to a friend,5,6,7,6,7,4
+32,TikTok,33,Male,2,Writing a poem,3,3,4,1,5,4
+32,TikTok,33,Male,3,Deciding how to discipline a child,4,4,7,7,4,4
+32,TikTok,33,Male,4,Planning a syllabus,1,1,3,1,4,1
+32,TikTok,33,Male,5,Writing computer code,1,1,4,3,5,1
+32,TikTok,33,Male,6,Writing a marriage proposal,7,7,7,4,7,4
+33,TikTok,53,Female,1,Writing a dinner recipe,1,1,7,4,4,4
+33,TikTok,53,Female,2,Writing wedding vows,7,7,7,7,7,4
+33,TikTok,53,Female,3,Writing a love letter,7,7,7,7,7,4
+33,TikTok,53,Female,4,Writing a short story,1,1,4,4,4,4
+33,TikTok,53,Female,5,Writing a cover letter for a job application,4,4,7,7,7,7
+33,TikTok,53,Female,6,Writing an apology letter to a friend,7,7,7,7,7,7
+34,TikTok,34,Female,1,Planning a syllabus,1,1,7,5,6,5
+34,TikTok,34,Female,2,Writing a marriage proposal,6,7,7,7,7,7
+34,TikTok,34,Female,3,Deciding how to discipline a child,7,7,7,7,7,5
+34,TikTok,34,Female,4,Writing a cover letter for a job application,1,4,4,7,7,7
+34,TikTok,34,Female,5,Creating visual art,4,4,4,4,4,5
+34,TikTok,34,Female,6,Writing wedding vows,6,7,7,7,7,7
+35,TikTok,57,Male,1,Writing computer code,2,2,5,6,6,6
+35,TikTok,57,Male,2,Choosing an engagement ring,6,6,7,7,7,7
+35,TikTok,57,Male,3,Deciding how to discipline a child,2,3,4,4,4,4
+35,TikTok,57,Male,4,Writing wedding vows,4,4,4,4,4,4
+35,TikTok,57,Male,5,Creating a daily schedule,4,5,4,5,6,6
+35,TikTok,57,Male,6,Writing a dinner recipe,4,5,6,6,6,7
+36,TikTok,49,Female,1,Writing a love letter,2,6,7,5,6,6
+36,TikTok,49,Female,2,Planning a syllabus,4,5,7,5,6,6
+36,TikTok,49,Female,3,Writing a short story,2,4,7,3,6,5
+36,TikTok,49,Female,4,Writing wedding vows,1,5,7,6,7,7
+36,TikTok,49,Female,5,Planning a surprise birthday party for a friend,7,6,7,5,6,6
+36,TikTok,49,Female,6,Solving a mathematical equation,1,1,4,4,5,4
+37,TikTok,64,Female,1,Writing a marriage proposal,7,7,7,7,7,7
+37,TikTok,64,Female,2,Writing computer code,3,2,6,7,7,4
+37,TikTok,64,Female,3,Writing wedding vows,7,7,7,7,7,7
+37,TikTok,64,Female,4,Choosing an engagement ring,7,4,7,6,6,6
+37,TikTok,64,Female,5,Creating visual art,3,2,3,4,5,2
+37,TikTok,64,Female,6,Writing a dinner recipe,4,2,5,5,5,4
+38,TikTok,46,Female,1,Planning a city tour for a friend,2,3,4,5,6,3
+38,TikTok,46,Female,2,Deciding how to discipline a child,1,5,4,7,7,4
+38,TikTok,46,Female,3,Creating a daily schedule,2,2,4,4,4,2
+38,TikTok,46,Female,4,Choosing an engagement ring,2,4,6,7,7,5
+38,TikTok,46,Female,5,Writing a dinner recipe,1,1,3,5,5,4
+38,TikTok,46,Female,6,Writing a short story,1,1,3,4,4,3
+39,TikTok,40,Female,1,Creating visual art,3,2,2,3,4,6
+39,TikTok,40,Female,2,Writing a short story,1,2,1,2,1,2
+39,TikTok,40,Female,3,Writing wedding vows,3,4,7,7,7,6
+39,TikTok,40,Female,4,Choosing an engagement ring,2,3,7,6,7,6
+39,TikTok,40,Female,5,Generating a shopping list,1,1,2,4,5,1
+39,TikTok,40,Female,6,Writing a marriage proposal,2,4,7,7,5,6
+40,TikTok,33,Female,1,Writing computer code,1,2,5,7,7,2
+40,TikTok,33,Female,2,Finding a gift for a family member,4,4,6,7,5,5
+40,TikTok,33,Female,3,Choosing an engagement ring,7,7,7,7,7,5
+40,TikTok,33,Female,4,Planning a city tour for a friend,5,6,7,5,6,3
+40,TikTok,33,Female,5,Writing a short story,1,1,2,3,5,2
+40,TikTok,33,Female,6,Solving a mathematical equation,1,1,1,1,5,1
+41,TikTok,63,Male,1,Writing a short story,1,1,1,2,7,3
+41,TikTok,63,Male,2,Deciding how to discipline a child,6,6,7,6,5,6
+41,TikTok,63,Male,3,Writing a bereavement card to a family member,7,7,7,4,5,1
+41,TikTok,63,Male,4,Writing computer code,1,1,4,5,7,1
+41,TikTok,63,Male,5,Writing a dinner recipe,2,2,5,4,7,1
+41,TikTok,63,Male,6,Planning a city tour for a friend,3,2,7,4,5,3
+42,TikTok,37,Female,1,Solving a mathematical equation,1,1,4,4,6,4
+42,TikTok,37,Female,2,Planning a city tour for a friend,6,7,7,3,5,5
+42,TikTok,37,Female,3,Writing wedding vows,6,7,7,5,7,7
+42,TikTok,37,Female,4,Finding a gift for a family member,6,7,7,4,6,6
+42,TikTok,37,Female,5,Creating a daily schedule,4,5,5,5,3,2
+42,TikTok,37,Female,6,Planning a syllabus,6,6,7,6,6,6
+43,TikTok,63,Female,1,Writing a love letter,2,5,6,7,7,7
+43,TikTok,63,Female,2,Writing computer code,2,3,6,6,7,3
+43,TikTok,63,Female,3,Writing a cover letter for a job application,6,6,6,7,7,7
+43,TikTok,63,Female,4,Writing wedding vows,4,5,7,7,7,7
+43,TikTok,63,Female,5,Choosing an engagement ring,3,2,5,6,7,7
+43,TikTok,63,Female,6,Creating visual art,5,2,4,5,6,5
+44,TikTok,26,Female,1,Writing a short story,2,2,5,4,5,5
+44,TikTok,26,Female,2,Writing a poem,2,2,3,3,6,6
+44,TikTok,26,Female,3,Solving a mathematical equation,2,2,5,6,6,5
+44,TikTok,26,Female,4,Writing wedding vows,4,4,3,5,5,5
+44,TikTok,26,Female,5,Writing a love letter,4,4,5,3,6,6
+44,TikTok,26,Female,6,Planning a surprise birthday party for a friend,5,5,5,6,6,6
+45,Newspapers,36,Female,1,Finding a gift for a family member,6,5,2,6,6,6
+45,Newspapers,36,Female,2,Choosing an engagement ring,6,6,6,6,7,7
+45,Newspapers,36,Female,3,Writing a poem,2,2,4,3,5,5
+45,Newspapers,36,Female,4,Creating visual art,2,2,2,3,6,5
+45,Newspapers,36,Female,5,Writing a cover letter for a job application,5,5,3,6,6,7
+45,Newspapers,36,Female,6,Writing a love letter,4,4,6,5,7,7
+46,TikTok,26,Female,1,Creating a daily schedule,1,1,3,7,7,1
+46,TikTok,26,Female,2,Generating a shopping list,1,1,5,7,7,1
+46,TikTok,26,Female,3,Writing a short story,1,1,4,1,7,1
+46,TikTok,26,Female,4,Writing a bereavement card to a family member,1,1,6,7,5,5
+46,TikTok,26,Female,5,Choosing an engagement ring,1,1,7,7,7,7
+46,TikTok,26,Female,6,Finding a gift for a family member,1,1,7,7,7,7
+47,TikTok,31,Female,1,Writing a poem,4,3,4,2,4,5
+47,TikTok,31,Female,2,Writing wedding vows,6,6,7,7,7,6
+47,TikTok,31,Female,3,Planning a syllabus,6,5,7,7,7,6
+47,TikTok,31,Female,4,Planning a surprise birthday party for a friend,7,7,7,6,7,7
+47,TikTok,31,Female,5,Creating a daily schedule,4,4,6,7,7,2
+47,TikTok,31,Female,6,Finding a gift for a family member,5,6,7,6,7,7
+48,TikTok,47,Male,1,Solving a mathematical equation,2,2,4,4,4,5
+48,TikTok,47,Male,2,Planning a surprise birthday party for a friend,5,5,6,6,6,4
+48,TikTok,47,Male,3,Writing an apology letter to a friend,5,5,7,7,6,6
+48,TikTok,47,Male,4,Choosing an engagement ring,5,4,6,6,6,5
+48,TikTok,47,Male,5,Creating visual art,2,2,3,3,4,4
+48,TikTok,47,Male,6,Writing computer code,2,2,5,5,2,2
+49,TikTok,32,Male,1,Writing a love letter,6,7,6,7,7,7
+49,TikTok,32,Male,2,Deciding how to discipline a child,6,7,7,7,7,2
+49,TikTok,32,Male,3,Writing a dinner recipe,2,2,4,2,5,2
+49,TikTok,32,Male,4,Creating visual art,2,2,3,2,2,2
+49,TikTok,32,Male,5,Planning a surprise birthday party for a friend,5,6,6,3,6,7
+49,TikTok,32,Male,6,Writing computer code,1,1,4,4,6,2
+50,TikTok,28,Male,1,Choosing an engagement ring,6,6,7,7,7,6
+50,TikTok,28,Male,2,Planning a city tour for a friend,6,6,7,6,6,6
+50,TikTok,28,Male,3,Writing a dinner recipe,3,3,4,4,5,6
+50,TikTok,28,Male,4,Planning a syllabus,2,3,4,3,3,3
+50,TikTok,28,Male,5,Creating visual art,2,2,4,2,6,5
+50,TikTok,28,Male,6,Writing a marriage proposal,5,6,6,6,6,6
+51,TikTok,35,Male,1,Generating a shopping list,3,2,6,5,5,4
+51,TikTok,35,Male,2,Writing wedding vows,1,5,7,7,6,5
+51,TikTok,35,Male,3,Writing a cover letter for a job application,2,4,3,6,6,7
+51,TikTok,35,Male,4,Writing a marriage proposal,3,5,6,6,5,5
+51,TikTok,35,Male,5,Writing a bereavement card to a family member,2,5,7,5,6,3
+51,TikTok,35,Male,6,Writing a short story,2,3,4,3,3,5
+52,TikTok,30,Female,1,Choosing an engagement ring,4,5,6,7,7,6
+52,TikTok,30,Female,2,Creating visual art,1,1,5,5,6,5
+52,TikTok,30,Female,3,Writing a dinner recipe,1,3,6,5,5,4
+52,TikTok,30,Female,4,Planning a syllabus,1,2,7,7,7,6
+52,TikTok,30,Female,5,Writing a bereavement card to a family member,7,7,7,7,7,5
+52,TikTok,30,Female,6,Finding a gift for a family member,2,3,6,5,5,6
+53,TikTok,34,Female,1,Writing a poem,1,1,1,1,4,2
+53,TikTok,34,Female,2,Generating a shopping list,1,1,5,5,5,1
+53,TikTok,34,Female,3,Writing a marriage proposal,6,6,7,7,7,7
+53,TikTok,34,Female,4,Choosing an engagement ring,4,4,6,4,7,4
+53,TikTok,34,Female,5,Writing a short story,1,1,1,1,1,1
+53,TikTok,34,Female,6,Planning a city tour for a friend,7,7,7,7,5,3
+54,TikTok,44,Female,1,Planning a city tour for a friend,6,5,3,4,6,2
+54,TikTok,44,Female,2,Finding a gift for a family member,5,4,6,6,6,4
+54,TikTok,44,Female,3,Generating a shopping list,2,2,4,5,5,3
+54,TikTok,44,Female,4,Writing an apology letter to a friend,6,6,7,7,7,6
+54,TikTok,44,Female,5,Creating visual art,6,4,4,4,3,4
+54,TikTok,44,Female,6,Creating a daily schedule,2,2,3,5,4,4
+55,TikTok,39,Female,1,Finding a gift for a family member,7,7,7,4,5,1
+55,TikTok,39,Female,2,Planning a surprise birthday party for a friend,7,7,7,5,5,2
+55,TikTok,39,Female,3,Creating visual art,1,1,1,1,1,1
+55,TikTok,39,Female,4,Writing computer code,1,1,5,4,1,1
+55,TikTok,39,Female,5,Solving a mathematical equation,1,1,1,1,1,1
+55,TikTok,39,Female,6,Deciding how to discipline a child,7,7,7,7,5,5
+56,TikTok,28,Female,1,Planning a syllabus,2,3,4,6,6,3
+56,TikTok,28,Female,2,Writing a dinner recipe,3,2,4,4,5,6
+56,TikTok,28,Female,3,Finding a gift for a family member,4,4,7,5,5,7
+56,TikTok,28,Female,4,Writing a short story,3,4,4,5,4,5
+56,TikTok,28,Female,5,Writing wedding vows,6,6,7,7,7,7
+56,TikTok,28,Female,6,Deciding how to discipline a child,4,5,5,7,7,4
+57,TikTok,47,Male,1,Writing an apology letter to a friend,7,7,7,7,7,7
+57,TikTok,47,Male,2,Writing computer code,1,1,4,4,4,4
+57,TikTok,47,Male,3,Writing a poem,4,1,7,4,4,4
+57,TikTok,47,Male,4,Writing a cover letter for a job application,1,1,4,4,4,4
+57,TikTok,47,Male,5,Writing wedding vows,7,7,7,7,7,7
+57,TikTok,47,Male,6,Writing a love letter,7,4,4,4,4,4
+58,TikTok,50,Female,1,Planning a syllabus,1,3,4,6,6,6
+58,TikTok,50,Female,2,Writing a marriage proposal,2,4,6,6,7,6
+58,TikTok,50,Female,3,Creating visual art,4,3,3,3,5,4
+58,TikTok,50,Female,4,Choosing an engagement ring,3,2,6,6,6,6
+58,TikTok,50,Female,5,Creating a daily schedule,3,3,5,6,6,4
+58,TikTok,50,Female,6,Writing a bereavement card to a family member,2,4,7,7,7,7
+59,TikTok,60,Male,1,Choosing an engagement ring,2,6,7,7,7,7
+59,TikTok,60,Male,2,Writing an apology letter to a friend,1,2,7,7,7,6
+59,TikTok,60,Male,3,Creating a daily schedule,3,3,6,6,6,3
+59,TikTok,60,Male,4,Planning a city tour for a friend,5,5,6,7,7,5
+59,TikTok,60,Male,5,Planning a syllabus,2,2,4,7,7,4
+59,TikTok,60,Male,6,Writing a dinner recipe,2,3,6,6,6,6
+60,TikTok,35,Female,1,Creating visual art,5,4,5,4,4,4
+60,TikTok,35,Female,2,Finding a gift for a family member,7,5,7,7,7,7
+60,TikTok,35,Female,3,Writing computer code,1,3,7,6,6,5
+60,TikTok,35,Female,4,Planning a city tour for a friend,7,5,7,7,7,7
+60,TikTok,35,Female,5,Writing a dinner recipe,5,4,4,4,4,7
+60,TikTok,35,Female,6,Writing a love letter,7,7,7,7,7,7
+61,TikTok,35,Male,1,Writing a dinner recipe,1,2,4,4,5,2
+61,TikTok,35,Male,2,Writing wedding vows,3,4,7,6,7,4
+61,TikTok,35,Male,3,Choosing an engagement ring,4,5,7,7,7,6
+61,TikTok,35,Male,4,Planning a city tour for a friend,4,4,7,4,6,5
+61,TikTok,35,Male,5,Creating a daily schedule,1,4,4,4,3,1
+61,TikTok,35,Male,6,Writing a short story,1,1,4,3,4,3
+62,TikTok,26,Female,1,Writing a marriage proposal,6,6,7,7,7,7
+62,TikTok,26,Female,2,Planning a city tour for a friend,6,6,6,6,6,5
+62,TikTok,26,Female,3,Writing a short story,5,3,3,3,5,4
+62,TikTok,26,Female,4,Writing an apology letter to a friend,6,6,6,6,7,7
+62,TikTok,26,Female,5,Creating visual art,5,5,4,3,5,5
+62,TikTok,26,Female,6,Solving a mathematical equation,1,1,2,2,3,2
+63,TikTok,25,Male,1,Writing a short story,1,5,6,5,6,6
+63,TikTok,25,Male,2,Writing a cover letter for a job application,2,6,6,7,7,7
+63,TikTok,25,Male,3,Writing wedding vows,5,6,7,7,7,7
+63,TikTok,25,Male,4,Writing computer code,1,1,6,7,6,5
+63,TikTok,25,Male,5,Writing a love letter,6,7,7,6,7,7
+63,TikTok,25,Male,6,Deciding how to discipline a child,7,7,7,7,6,5
+64,TikTok,37,Male,1,Planning a surprise birthday party for a friend,7,7,7,7,7,7
+64,TikTok,37,Male,2,Writing a dinner recipe,1,1,3,5,5,1
+64,TikTok,37,Male,3,Writing a bereavement card to a family member,5,6,7,7,7,7
+64,TikTok,37,Male,4,Planning a syllabus,1,1,7,7,7,2
+64,TikTok,37,Male,5,Choosing an engagement ring,3,3,7,7,7,7
+64,TikTok,37,Male,6,Writing a cover letter for a job application,3,4,5,7,7,7
+65,TikTok,40,Male,1,Writing a dinner recipe,4,2,5,4,5,4
+65,TikTok,40,Male,2,Writing a poem,5,2,5,4,6,6
+65,TikTok,40,Male,3,Writing wedding vows,6,6,7,6,7,7
+65,TikTok,40,Male,4,Writing a marriage proposal,5,5,6,7,6,6
+65,TikTok,40,Male,5,Deciding how to discipline a child,5,6,7,7,7,6
+65,TikTok,40,Male,6,Writing a short story,3,3,4,3,5,5
+66,TikTok,24,Female,1,Creating a daily schedule,2,1,2,3,3,1
+66,TikTok,24,Female,2,Writing a short story,1,1,1,1,3,2
+66,TikTok,24,Female,3,Creating visual art,4,2,3,2,5,5
+66,TikTok,24,Female,4,Planning a surprise birthday party for a friend,6,7,7,5,7,7
+66,TikTok,24,Female,5,Writing a love letter,1,1,3,2,2,6
+66,TikTok,24,Female,6,Writing a bereavement card to a family member,1,2,6,5,6,7
+67,TikTok,45,Male,1,Choosing an engagement ring,2,3,7,7,7,5
+67,TikTok,45,Male,2,Writing a marriage proposal,1,4,7,7,7,5
+67,TikTok,45,Male,3,Creating visual art,3,4,3,3,5,6
+67,TikTok,45,Male,4,Generating a shopping list,1,1,2,5,4,2
+67,TikTok,45,Male,5,Writing computer code,1,1,5,7,7,3
+67,TikTok,45,Male,6,Writing wedding vows,2,4,7,7,6,5
+68,TikTok,25,Male,1,Deciding how to discipline a child,2,2,6,6,6,3
+68,TikTok,25,Male,2,Creating visual art,4,2,2,2,2,3
+68,TikTok,25,Male,3,Writing a love letter,2,5,6,5,6,6
+68,TikTok,25,Male,4,Writing a poem,2,3,2,3,4,5
+68,TikTok,25,Male,5,Generating a shopping list,2,2,2,2,3,2
+68,TikTok,25,Male,6,Planning a city tour for a friend,6,5,6,3,4,3
+69,TikTok,20,Female,1,Choosing an engagement ring,5,6,7,7,7,7
+69,TikTok,20,Female,2,Creating visual art,3,3,7,6,7,7
+69,TikTok,20,Female,3,Writing a marriage proposal,4,7,7,7,7,7
+69,TikTok,20,Female,4,Writing a poem,3,4,7,5,6,6
+69,TikTok,20,Female,5,Solving a mathematical equation,1,1,3,3,4,4
+69,TikTok,20,Female,6,Deciding how to discipline a child,5,5,5,7,7,7
+70,TikTok,43,Male,1,Creating visual art,5,1,2,1,6,1
+70,TikTok,43,Male,2,Writing a poem,1,1,1,1,5,1
+70,TikTok,43,Male,3,Planning a city tour for a friend,6,5,6,6,6,5
+70,TikTok,43,Male,4,Finding a gift for a family member,5,3,5,2,4,5
+70,TikTok,43,Male,5,Solving a mathematical equation,1,1,1,2,6,1
+70,TikTok,43,Male,6,Choosing an engagement ring,3,3,6,5,7,5
+71,TikTok,25,Female,1,Planning a surprise birthday party for a friend,7,7,7,3,7,6
+71,TikTok,25,Female,2,Solving a mathematical equation,1,2,3,1,5,4
+71,TikTok,25,Female,3,Writing a poem,2,4,4,1,5,4
+71,TikTok,25,Female,4,Writing a marriage proposal,5,6,7,5,7,7
+71,TikTok,25,Female,5,Writing a love letter,6,7,7,5,5,7
+71,TikTok,25,Female,6,Writing a short story,1,2,4,3,4,5
+72,TikTok,35,Male,1,Writing a bereavement card to a family member,3,6,6,7,7,6
+72,TikTok,35,Male,2,Writing a poem,5,4,6,4,7,5
+72,TikTok,35,Male,3,Writing a cover letter for a job application,2,4,4,6,6,7
+72,TikTok,35,Male,4,Finding a gift for a family member,7,7,7,5,7,7
+72,TikTok,35,Male,5,Planning a city tour for a friend,7,7,7,7,7,7
+72,TikTok,35,Male,6,Writing computer code,1,1,6,7,7,3
+73,Reddit,24,Male,1,Deciding how to discipline a child,1,7,7,7,7,2
+73,Reddit,24,Male,2,Planning a surprise birthday party for a friend,7,7,7,6,7,4
+73,Reddit,24,Male,3,Writing a cover letter for a job application,1,3,1,7,6,6
+73,Reddit,24,Male,4,Creating visual art,1,2,5,3,6,5
+73,Reddit,24,Male,5,Writing wedding vows,1,3,7,7,7,5
+73,Reddit,24,Male,6,Creating a daily schedule,1,1,4,6,6,4
+74,TikTok,27,Female,1,Generating a shopping list,2,1,5,5,3,2
+74,TikTok,27,Female,2,Writing a cover letter for a job application,7,7,7,7,7,7
+74,TikTok,27,Female,3,Choosing an engagement ring,5,2,5,5,6,7
+74,TikTok,27,Female,4,Writing a bereavement card to a family member,7,7,5,5,7,7
+74,TikTok,27,Female,5,Planning a syllabus,5,5,7,7,7,7
+74,TikTok,27,Female,6,Writing a marriage proposal,7,7,6,7,6,5
+75,TikTok,19,Female,1,Solving a mathematical equation,3,3,5,4,4,7
+75,TikTok,19,Female,2,Generating a shopping list,2,3,5,7,5,3
+75,TikTok,19,Female,3,Deciding how to discipline a child,7,7,7,7,7,4
+75,TikTok,19,Female,4,Writing computer code,2,2,7,7,7,7
+75,TikTok,19,Female,5,Planning a city tour for a friend,4,4,7,5,7,7
+75,TikTok,19,Female,6,Writing an apology letter to a friend,7,7,7,7,7,7
+76,TikTok,38,Female,1,Planning a city tour for a friend,7,7,7,4,6,5
+76,TikTok,38,Female,2,Writing a bereavement card to a family member,7,7,7,7,7,3
+76,TikTok,38,Female,3,Writing a cover letter for a job application,3,5,6,7,7,7
+76,TikTok,38,Female,4,Writing a marriage proposal,5,5,5,6,6,6
+76,TikTok,38,Female,5,Writing a short story,2,4,4,4,5,5
+76,TikTok,38,Female,6,Creating a daily schedule,5,4,5,6,6,6
+77,TikTok,39,Female,1,Planning a surprise birthday party for a friend,7,5,7,6,7,7
+77,TikTok,39,Female,2,Writing a poem,1,2,2,2,5,5
+77,TikTok,39,Female,3,Deciding how to discipline a child,5,6,5,5,6,4
+77,TikTok,39,Female,4,Solving a mathematical equation,1,2,2,2,5,5
+77,TikTok,39,Female,5,Writing a marriage proposal,2,2,6,6,6,2
+77,TikTok,39,Female,6,Writing a dinner recipe,1,1,1,2,3,4
+78,TV,37,Male,1,Writing an apology letter to a friend,3,5,5,6,7,6
+78,TV,37,Male,2,Writing a bereavement card to a family member,3,5,6,4,7,7
+78,TV,37,Male,3,Solving a mathematical equation,1,1,1,3,4,4
+78,TV,37,Male,4,Creating visual art,3,1,4,3,4,4
+78,TV,37,Male,5,Writing a love letter,3,3,3,2,2,4
+78,TV,37,Male,6,Writing a poem,3,1,5,2,5,5
+79,TikTok,67,Male,1,Generating a shopping list,2,3,2,3,4,2
+79,TikTok,67,Male,2,Writing wedding vows,4,4,6,6,5,2
+79,TikTok,67,Male,3,Writing a short story,2,2,2,3,5,2
+79,TikTok,67,Male,4,Planning a surprise birthday party for a friend,5,5,5,4,5,4
+79,TikTok,67,Male,5,Writing a bereavement card to a family member,2,2,2,3,3,2
+79,TikTok,67,Male,6,Creating visual art,2,2,3,2,3,2
+80,TikTok,28,Male,1,Generating a shopping list,3,1,4,4,4,4
+80,TikTok,28,Male,2,Planning a syllabus,4,4,4,4,4,4
+80,TikTok,28,Male,3,Writing a poem,2,3,3,2,5,5
+80,TikTok,28,Male,4,Finding a gift for a family member,4,5,7,5,6,6
+80,TikTok,28,Male,5,Writing a love letter,3,4,7,6,7,7
+80,TikTok,28,Male,6,Planning a city tour for a friend,6,6,6,6,7,7
+81,TikTok,28,Male,1,Writing an apology letter to a friend,3,3,4,3,5,6
+81,TikTok,28,Male,2,Writing wedding vows,3,3,6,5,6,6
+81,TikTok,28,Male,3,Writing a poem,1,1,1,1,1,1
+81,TikTok,28,Male,4,Writing a bereavement card to a family member,3,3,7,7,7,7
+81,TikTok,28,Male,5,Writing a cover letter for a job application,2,2,1,3,4,4
+81,TikTok,28,Male,6,Solving a mathematical equation,1,1,1,1,1,1
+82,TikTok,29,Female,1,Planning a syllabus,1,1,7,3,7,7
+82,TikTok,29,Female,2,Creating visual art,7,7,7,6,7,7
+82,TikTok,29,Female,3,Writing an apology letter to a friend,1,1,7,7,7,7
+82,TikTok,29,Female,4,Writing a poem,7,7,7,7,7,7
+82,TikTok,29,Female,5,Planning a city tour for a friend,7,7,7,7,7,7
+82,TikTok,29,Female,6,Writing a love letter,1,1,7,7,7,7
+83,TikTok,26,Female,1,Creating a daily schedule,3,5,1,1,3,1
+83,TikTok,26,Female,2,Writing wedding vows,4,4,7,7,7,5
+83,TikTok,26,Female,3,Deciding how to discipline a child,3,3,7,7,7,7
+83,TikTok,26,Female,4,Writing a marriage proposal,3,3,4,3,5,2
+83,TikTok,26,Female,5,Planning a syllabus,3,3,6,6,4,5
+83,TikTok,26,Female,6,Writing computer code,5,4,4,3,3,5
+84,TikTok,25,Male,1,Writing a bereavement card to a family member,3,5,7,5,6,2
+84,TikTok,25,Male,2,Planning a surprise birthday party for a friend,7,7,7,5,4,5
+84,TikTok,25,Male,3,Planning a syllabus,2,3,7,7,7,6
+84,TikTok,25,Male,4,Choosing an engagement ring,3,2,5,4,6,7
+84,TikTok,25,Male,5,Writing computer code,6,5,6,7,4,5
+84,TikTok,25,Male,6,Writing a poem,1,1,2,1,3,2
+85,YouTube,53,Male,1,Writing a poem,1,1,4,1,2,5
+85,YouTube,53,Male,2,Creating visual art,1,1,7,6,4,4
+85,YouTube,53,Male,3,Writing a love letter,1,1,5,5,4,5
+85,YouTube,53,Male,4,Generating a shopping list,1,1,1,1,1,1
+85,YouTube,53,Male,5,Writing an apology letter to a friend,1,1,7,7,5,7
+85,YouTube,53,Male,6,Writing wedding vows,1,1,7,7,7,7
+86,TikTok,53,Female,1,Writing a dinner recipe,4,3,5,3,5,5
+86,TikTok,53,Female,2,Writing a short story,5,5,5,3,4,4
+86,TikTok,53,Female,3,Writing wedding vows,6,6,7,6,7,6
+86,TikTok,53,Female,4,Finding a gift for a family member,6,5,7,4,5,5
+86,TikTok,53,Female,5,Creating a daily schedule,2,2,3,4,2,2
+86,TikTok,53,Female,6,Deciding how to discipline a child,5,5,7,7,6,4
+87,Facebook,42,Female,1,Writing a short story,1,1,1,2,7,5
+87,Facebook,42,Female,2,Creating a daily schedule,3,3,3,4,6,5
+87,Facebook,42,Female,3,Choosing an engagement ring,5,5,7,7,7,6
+87,Facebook,42,Female,4,Deciding how to discipline a child,1,1,7,7,7,7
+87,Facebook,42,Female,5,Creating visual art,1,1,3,2,4,2
+87,Facebook,42,Female,6,Writing an apology letter to a friend,3,4,7,7,7,7
+88,TikTok,33,Female,1,Planning a city tour for a friend,1,1,7,3,5,4
+88,TikTok,33,Female,2,Writing a dinner recipe,1,1,4,3,4,3
+88,TikTok,33,Female,3,Solving a mathematical equation,1,1,1,1,4,1
+88,TikTok,33,Female,4,Writing a marriage proposal,1,5,7,7,7,7
+88,TikTok,33,Female,5,Creating a daily schedule,1,1,1,2,1,1
+88,TikTok,33,Female,6,Writing a bereavement card to a family member,1,6,6,4,3,3
+89,TikTok,40,Male,1,Creating a daily schedule,5,5,5,3,6,2
+89,TikTok,40,Male,2,Finding a gift for a family member,3,3,7,6,6,5
+89,TikTok,40,Male,3,Writing an apology letter to a friend,7,7,7,7,7,7
+89,TikTok,40,Male,4,Writing computer code,1,1,5,6,7,1
+89,TikTok,40,Male,5,Writing wedding vows,7,7,7,7,7,5
+89,TikTok,40,Male,6,Writing a dinner recipe,1,1,4,5,5,1
+90,TikTok,43,Male,1,Writing a cover letter for a job application,1,4,4,5,6,5
+90,TikTok,43,Male,2,Planning a syllabus,1,3,3,2,6,5
+90,TikTok,43,Male,3,Choosing an engagement ring,6,5,5,4,5,5
+90,TikTok,43,Male,4,Writing a bereavement card to a family member,4,4,5,4,6,5
+90,TikTok,43,Male,5,Finding a gift for a family member,4,4,4,4,4,4
+90,TikTok,43,Male,6,Solving a mathematical equation,2,2,1,1,5,4
+91,TikTok,37,Female,1,Writing a cover letter for a job application,1,2,5,7,7,6
+91,TikTok,37,Female,2,Writing an apology letter to a friend,7,7,7,7,6,4
+91,TikTok,37,Female,3,Creating a daily schedule,3,1,2,6,5,5
+91,TikTok,37,Female,4,Writing a poem,3,3,6,4,5,5
+91,TikTok,37,Female,5,Planning a city tour for a friend,7,5,7,6,6,6
+91,TikTok,37,Female,6,Planning a surprise birthday party for a friend,7,6,7,7,7,6
+92,TikTok,43,Female,1,Writing an apology letter to a friend,3,7,7,7,7,7
+92,TikTok,43,Female,2,Writing wedding vows,1,5,7,6,7,7
+92,TikTok,43,Female,3,Writing a cover letter for a job application,1,4,5,7,7,7
+92,TikTok,43,Female,4,Planning a surprise birthday party for a friend,7,7,7,5,7,7
+92,TikTok,43,Female,5,Generating a shopping list,1,1,4,4,1,1
+92,TikTok,43,Female,6,Writing a dinner recipe,2,1,4,6,4,4
+93,TikTok,42,Female,1,Writing a love letter,7,5,4,7,7,5
+93,TikTok,42,Female,2,Planning a syllabus,1,1,7,7,7,7
+93,TikTok,42,Female,3,Writing an apology letter to a friend,7,7,7,7,7,7
+93,TikTok,42,Female,4,Writing a short story,1,1,1,1,4,1
+93,TikTok,42,Female,5,Writing a poem,1,1,1,1,4,1
+93,TikTok,42,Female,6,Planning a city tour for a friend,7,7,7,5,7,7
+94,TikTok,51,Male,1,Writing a bereavement card to a family member,4,6,6,6,6,2
+94,TikTok,51,Male,2,Creating a daily schedule,2,1,3,4,4,1
+94,TikTok,51,Male,3,Writing a poem,2,2,2,2,2,3
+94,TikTok,51,Male,4,Choosing an engagement ring,5,4,6,6,7,7
+94,TikTok,51,Male,5,Writing computer code,1,1,5,5,4,1
+94,TikTok,51,Male,6,Finding a gift for a family member,4,2,6,5,7,5
+95,TikTok,50,Female,1,Finding a gift for a family member,3,4,2,3,5,6
+95,TikTok,50,Female,2,Writing a dinner recipe,2,2,2,3,2,2
+95,TikTok,50,Female,3,Writing wedding vows,2,4,7,7,7,7
+95,TikTok,50,Female,4,Planning a surprise birthday party for a friend,7,7,7,6,6,6
+95,TikTok,50,Female,5,Writing computer code,2,2,5,5,6,3
+95,TikTok,50,Female,6,Creating a daily schedule,4,5,6,6,5,3
+96,TikTok,51,Female,1,Creating a daily schedule,4,5,6,7,7,2
+96,TikTok,51,Female,2,Writing an apology letter to a friend,7,7,7,7,7,4
+96,TikTok,51,Female,3,Writing a bereavement card to a family member,7,7,7,7,7,1
+96,TikTok,51,Female,4,Writing computer code,3,3,7,7,7,1
+96,TikTok,51,Female,5,Choosing an engagement ring,7,7,7,7,7,5
+96,TikTok,51,Female,6,Writing a cover letter for a job application,7,7,7,7,7,7
+97,TikTok,51,Female,1,Writing a poem,2,2,4,4,3,2
+97,TikTok,51,Female,2,Solving a mathematical equation,1,1,4,4,5,2
+97,TikTok,51,Female,3,Writing a short story,2,4,4,2,6,4
+97,TikTok,51,Female,4,Writing a love letter,3,4,7,5,4,4
+97,TikTok,51,Female,5,Writing an apology letter to a friend,5,5,7,6,6,6
+97,TikTok,51,Female,6,Deciding how to discipline a child,4,6,7,7,7,4
+98,TikTok,32,Female,1,Planning a city tour for a friend,6,6,6,4,5,5
+98,TikTok,32,Female,2,Writing a cover letter for a job application,2,2,4,6,7,5
+98,TikTok,32,Female,3,Solving a mathematical equation,1,1,2,3,4,4
+98,TikTok,32,Female,4,Writing wedding vows,2,2,5,6,7,7
+98,TikTok,32,Female,5,Writing an apology letter to a friend,2,3,5,5,7,7
+98,TikTok,32,Female,6,Planning a syllabus,3,3,7,7,7,7
+99,TikTok,48,Male,1,Writing a cover letter for a job application,3,7,4,7,7,7
+99,TikTok,48,Male,2,Choosing an engagement ring,3,3,5,5,5,5
+99,TikTok,48,Male,3,Writing an apology letter to a friend,5,7,7,7,7,7
+99,TikTok,48,Male,4,Creating visual art,4,3,4,4,4,4
+99,TikTok,48,Male,5,Solving a mathematical equation,1,1,1,1,1,1
+99,TikTok,48,Male,6,Writing a bereavement card to a family member,5,7,7,7,7,7
+100,TikTok,26,Male,1,Deciding how to discipline a child,5,7,6,7,6,1
+100,TikTok,26,Male,2,Writing a poem,3,3,2,1,7,4
+100,TikTok,26,Male,3,Creating visual art,3,2,2,1,5,6
+100,TikTok,26,Male,4,Generating a shopping list,4,4,5,2,5,1
+100,TikTok,26,Male,5,Writing wedding vows,5,5,7,7,7,7
+100,TikTok,26,Male,6,Writing a love letter,4,5,6,5,7,7
+101,TikTok,27,Male,1,Writing a dinner recipe,2,2,5,3,5,4
+101,TikTok,27,Male,2,Creating a daily schedule,4,3,6,4,5,4
+101,TikTok,27,Male,3,Choosing an engagement ring,5,4,3,3,5,5
+101,TikTok,27,Male,4,Writing a bereavement card to a family member,4,4,3,3,4,3
+101,TikTok,27,Male,5,Writing an apology letter to a friend,5,5,3,3,4,5
+101,TikTok,27,Male,6,Writing a short story,2,3,2,1,6,6
+102,TikTok,30,Female,1,Writing a marriage proposal,7,7,7,7,7,7
+102,TikTok,30,Female,2,Solving a mathematical equation,1,1,3,3,7,1
+102,TikTok,30,Female,3,Writing a dinner recipe,1,1,6,7,6,4
+102,TikTok,30,Female,4,Creating visual art,4,2,5,6,7,6
+102,TikTok,30,Female,5,Deciding how to discipline a child,7,7,7,7,7,2
+102,TikTok,30,Female,6,Planning a surprise birthday party for a friend,7,7,7,7,7,7
+103,TikTok,32,Female,1,Writing a cover letter for a job application,2,5,7,7,7,7
+103,TikTok,32,Female,2,Finding a gift for a family member,6,6,7,6,6,6
+103,TikTok,32,Female,3,Writing a bereavement card to a family member,5,6,5,5,5,5
+103,TikTok,32,Female,4,Writing an apology letter to a friend,6,7,7,7,7,7
+103,TikTok,32,Female,5,Writing a poem,1,1,4,3,5,5
+103,TikTok,32,Female,6,Writing computer code,1,1,3,3,4,2
+104,TikTok,18,Female,1,Planning a surprise birthday party for a friend,6,5,7,4,6,6
+104,TikTok,18,Female,2,Writing a cover letter for a job application,2,6,4,6,7,6
+104,TikTok,18,Female,3,Creating a daily schedule,2,4,5,5,6,3
+104,TikTok,18,Female,4,Writing wedding vows,4,7,7,7,7,7
+104,TikTok,18,Female,5,Planning a city tour for a friend,5,6,6,3,5,4
+104,TikTok,18,Female,6,Creating visual art,3,3,5,3,6,6
+105,TikTok,61,Female,1,Planning a syllabus,2,2,2,4,5,5
+105,TikTok,61,Female,2,Deciding how to discipline a child,6,5,5,7,7,7
+105,TikTok,61,Female,3,Creating a daily schedule,2,2,3,4,5,3
+105,TikTok,61,Female,4,Writing a marriage proposal,5,5,5,6,6,6
+105,TikTok,61,Female,5,Writing a short story,2,2,2,2,4,4
+105,TikTok,61,Female,6,Writing wedding vows,5,5,6,7,7,6
+106,TikTok,35,Male,1,Creating visual art,1,2,4,5,5,5
+106,TikTok,35,Male,2,Writing an apology letter to a friend,5,5,5,6,6,6
+106,TikTok,35,Male,3,Writing wedding vows,5,5,5,7,7,7
+106,TikTok,35,Male,4,Finding a gift for a family member,5,4,6,6,6,4
+106,TikTok,35,Male,5,Planning a syllabus,2,2,7,7,5,3
+106,TikTok,35,Male,6,Writing a dinner recipe,2,2,3,2,3,2
+107,TikTok,47,Female,1,Creating visual art,3,2,4,4,6,5
+107,TikTok,47,Female,2,Planning a city tour for a friend,5,5,7,7,6,6
+107,TikTok,47,Female,3,Creating a daily schedule,2,2,5,5,4,2
+107,TikTok,47,Female,4,Writing an apology letter to a friend,6,6,6,7,7,7
+107,TikTok,47,Female,5,Deciding how to discipline a child,2,4,7,7,7,4
+107,TikTok,47,Female,6,Writing computer code,1,1,5,5,6,4
+108,TikTok,51,Female,1,Choosing an engagement ring,4,4,2,5,6,6
+108,TikTok,51,Female,2,Planning a syllabus,2,2,5,5,5,4
+108,TikTok,51,Female,3,Generating a shopping list,1,1,2,3,2,1
+108,TikTok,51,Female,4,Writing an apology letter to a friend,4,5,6,6,7,5
+108,TikTok,51,Female,5,Writing a short story,2,2,4,4,5,5
+108,TikTok,51,Female,6,Finding a gift for a family member,4,4,6,7,7,7
+109,TikTok,56,Male,1,Generating a shopping list,1,2,3,2,4,2
+109,TikTok,56,Male,2,Writing a dinner recipe,4,4,5,4,3,5
+109,TikTok,56,Male,3,Planning a syllabus,2,1,7,6,7,4
+109,TikTok,56,Male,4,Finding a gift for a family member,5,4,7,5,6,7
+109,TikTok,56,Male,5,Writing a love letter,1,2,6,5,6,6
+109,TikTok,56,Male,6,Deciding how to discipline a child,1,3,6,5,6,4
+110,TikTok,31,Female,1,Creating a daily schedule,1,1,7,7,7,7
+110,TikTok,31,Female,2,Planning a city tour for a friend,7,3,7,7,7,7
+110,TikTok,31,Female,3,Writing a cover letter for a job application,1,1,4,7,7,7
+110,TikTok,31,Female,4,Writing computer code,1,1,4,5,7,7
+110,TikTok,31,Female,5,Finding a gift for a family member,1,1,7,7,7,7
+110,TikTok,31,Female,6,Writing an apology letter to a friend,5,7,7,7,7,7
+111,TikTok,32,Female,1,Finding a gift for a family member,7,7,7,7,7,6
+111,TikTok,32,Female,2,Writing computer code,1,1,7,5,5,2
+111,TikTok,32,Female,3,Writing wedding vows,7,7,7,7,7,7
+111,TikTok,32,Female,4,Planning a syllabus,3,4,7,7,7,6
+111,TikTok,32,Female,5,Planning a city tour for a friend,7,7,7,7,6,6
+111,TikTok,32,Female,6,Generating a shopping list,3,2,5,4,3,3
+112,TV,44,Male,1,Deciding how to discipline a child,2,4,6,6,6,2
+112,TV,44,Male,2,Generating a shopping list,4,2,3,5,6,2
+112,TV,44,Male,3,Creating a daily schedule,2,2,2,5,6,2
+112,TV,44,Male,4,Writing a love letter,3,5,6,6,6,6
+112,TV,44,Male,5,Writing a poem,2,2,5,4,6,6
+112,TV,44,Male,6,Finding a gift for a family member,5,4,5,5,5,5
+113,Reddit,27,Male,1,Planning a syllabus,4,5,7,7,6,5
+113,Reddit,27,Male,2,Writing an apology letter to a friend,7,7,6,6,6,7
+113,Reddit,27,Male,3,Deciding how to discipline a child,6,7,7,6,6,2
+113,Reddit,27,Male,4,Planning a city tour for a friend,7,7,5,3,4,4
+113,Reddit,27,Male,5,Solving a mathematical equation,1,1,1,2,4,1
+113,Reddit,27,Male,6,Creating visual art,1,1,1,1,1,1
+114,TikTok,53,Female,1,Writing a dinner recipe,6,3,6,6,7,7
+114,TikTok,53,Female,2,Writing a short story,2,3,5,3,6,4
+114,TikTok,53,Female,3,Planning a surprise birthday party for a friend,7,7,7,6,7,7
+114,TikTok,53,Female,4,Creating visual art,2,2,4,3,6,4
+114,TikTok,53,Female,5,Writing a love letter,5,5,6,5,6,6
+114,TikTok,53,Female,6,Writing wedding vows,5,5,7,7,7,7
+115,TikTok,45,Female,1,Writing a poem,2,2,4,6,6,3
+115,TikTok,45,Female,2,Writing a cover letter for a job application,2,5,6,7,7,7
+115,TikTok,45,Female,3,Writing a marriage proposal,6,7,7,7,7,7
+115,TikTok,45,Female,4,Choosing an engagement ring,5,6,7,7,7,7
+115,TikTok,45,Female,5,Writing a bereavement card to a family member,5,7,7,5,6,5
+115,TikTok,45,Female,6,Solving a mathematical equation,1,1,6,7,3,3
+116,TikTok,49,Female,1,Writing a poem,1,1,1,5,5,2
+116,TikTok,49,Female,2,Writing computer code,1,1,1,4,5,2
+116,TikTok,49,Female,3,Writing a marriage proposal,1,1,1,5,5,2
+116,TikTok,49,Female,4,Planning a syllabus,1,1,1,6,7,4
+116,TikTok,49,Female,5,Deciding how to discipline a child,1,6,6,7,7,1
+116,TikTok,49,Female,6,Writing a love letter,1,1,5,5,5,4
+117,TikTok,40,Female,1,Writing a short story,2,2,4,4,5,5
+117,TikTok,40,Female,2,Writing an apology letter to a friend,5,6,6,7,6,7
+117,TikTok,40,Female,3,Writing computer code,1,1,4,6,7,6
+117,TikTok,40,Female,4,Creating visual art,2,2,5,4,6,7
+117,TikTok,40,Female,5,Writing a marriage proposal,5,6,7,6,6,6
+117,TikTok,40,Female,6,Writing a bereavement card to a family member,6,6,5,5,5,5
+118,Newspapers,28,Male,1,Generating a shopping list,1,1,1,3,4,1
+118,Newspapers,28,Male,2,Writing a marriage proposal,4,2,6,6,7,2
+118,Newspapers,28,Male,3,Planning a surprise birthday party for a friend,6,4,5,5,7,3
+118,Newspapers,28,Male,4,Planning a syllabus,1,1,7,7,7,5
+118,Newspapers,28,Male,5,Writing a cover letter for a job application,4,4,3,7,7,7
+118,Newspapers,28,Male,6,Writing a bereavement card to a family member,5,5,7,5,7,7
+119,TikTok,58,Female,1,Writing a cover letter for a job application,1,5,1,7,7,7
+119,TikTok,58,Female,2,Writing an apology letter to a friend,1,6,7,7,7,7
+119,TikTok,58,Female,3,Writing a bereavement card to a family member,1,6,7,7,7,7
+119,TikTok,58,Female,4,Choosing an engagement ring,5,1,7,5,5,3
+119,TikTok,58,Female,5,Writing a short story,1,1,2,2,7,5
+119,TikTok,58,Female,6,Planning a syllabus,4,6,7,7,7,7
+120,TikTok,49,Female,1,Choosing an engagement ring,2,2,7,4,7,5
+120,TikTok,49,Female,2,Writing wedding vows,1,7,4,5,7,4
+120,TikTok,49,Female,3,Solving a mathematical equation,1,1,1,4,6,4
+120,TikTok,49,Female,4,Creating a daily schedule,2,2,4,4,4,4
+120,TikTok,49,Female,5,Writing a bereavement card to a family member,2,7,7,6,7,5
+120,TikTok,49,Female,6,Planning a syllabus,2,5,6,6,6,5
+121,TikTok,67,Female,1,Writing a dinner recipe,7,2,7,6,6,6
+121,TikTok,67,Female,2,Generating a shopping list,1,1,4,6,4,1
+121,TikTok,67,Female,3,Creating a daily schedule,1,1,4,5,5,4
+121,TikTok,67,Female,4,Writing a marriage proposal,7,7,7,7,7,7
+121,TikTok,67,Female,5,Writing an apology letter to a friend,7,7,7,7,7,7
+121,TikTok,67,Female,6,Choosing an engagement ring,4,4,7,7,7,7
+122,TikTok,27,Male,1,Creating a daily schedule,2,1,3,3,2,1
+122,TikTok,27,Male,2,Writing an apology letter to a friend,1,7,7,5,6,7
+122,TikTok,27,Male,3,Deciding how to discipline a child,1,4,7,5,5,7
+122,TikTok,27,Male,4,Writing wedding vows,1,7,7,7,7,7
+122,TikTok,27,Male,5,Creating visual art,1,1,2,1,3,5
+122,TikTok,27,Male,6,Planning a syllabus,1,4,6,5,6,6
+123,TikTok,37,Female,1,Planning a syllabus,1,5,7,7,7,7
+123,TikTok,37,Female,2,Writing a dinner recipe,3,6,7,7,7,7
+123,TikTok,37,Female,3,Deciding how to discipline a child,1,1,7,7,7,2
+123,TikTok,37,Female,4,Creating a daily schedule,2,2,1,4,4,2
+123,TikTok,37,Female,5,Writing wedding vows,1,6,7,7,7,7
+123,TikTok,37,Female,6,Writing a marriage proposal,1,1,7,7,7,7
+124,TikTok,25,Female,1,Writing a short story,1,1,1,1,6,5
+124,TikTok,25,Female,2,Choosing an engagement ring,6,4,6,6,6,6
+124,TikTok,25,Female,3,Deciding how to discipline a child,1,6,6,6,6,6
+124,TikTok,25,Female,4,Writing a poem,1,1,1,1,1,1
+124,TikTok,25,Female,5,Writing a bereavement card to a family member,1,3,5,3,5,5
+124,TikTok,25,Female,6,Planning a syllabus,1,1,6,6,6,6
+125,TikTok,40,Male,1,Writing a cover letter for a job application,1,5,3,5,5,5
+125,TikTok,40,Male,2,Planning a city tour for a friend,5,4,6,4,4,4
+125,TikTok,40,Male,3,Deciding how to discipline a child,7,7,7,7,7,4
+125,TikTok,40,Male,4,Writing a poem,1,2,2,1,4,1
+125,TikTok,40,Male,5,Finding a gift for a family member,4,5,7,3,4,4
+125,TikTok,40,Male,6,Generating a shopping list,1,1,2,3,2,1
+126,TikTok,53,Male,1,Writing wedding vows,5,5,7,6,6,6
+126,TikTok,53,Male,2,Writing a dinner recipe,2,2,4,4,3,1
+126,TikTok,53,Male,3,Creating visual art,2,2,4,3,6,6
+126,TikTok,53,Male,4,Deciding how to discipline a child,5,5,7,7,6,2
+126,TikTok,53,Male,5,Generating a shopping list,2,2,3,3,3,1
+126,TikTok,53,Male,6,Writing a marriage proposal,6,6,7,6,4,4
+127,TikTok,35,Male,1,Planning a surprise birthday party for a friend,7,7,7,2,4,5
+127,TikTok,35,Male,2,Finding a gift for a family member,2,2,5,4,5,5
+127,TikTok,35,Male,3,Creating visual art,1,1,3,4,4,5
+127,TikTok,35,Male,4,Solving a mathematical equation,1,1,1,3,1,1
+127,TikTok,35,Male,5,Writing computer code,1,1,4,5,4,2
+127,TikTok,35,Male,6,Writing an apology letter to a friend,5,5,6,6,5,5
+128,TikTok,51,Female,1,Writing a cover letter for a job application,2,5,4,6,7,7
+128,TikTok,51,Female,2,Planning a syllabus,4,5,7,6,7,7
+128,TikTok,51,Female,3,Writing wedding vows,5,5,5,5,6,6
+128,TikTok,51,Female,4,Writing an apology letter to a friend,4,4,6,6,6,6
+128,TikTok,51,Female,5,Creating a daily schedule,4,3,3,4,4,3
+128,TikTok,51,Female,6,Choosing an engagement ring,2,2,6,6,6,6
+129,TikTok,51,Female,1,Creating visual art,2,2,2,5,6,6
+129,TikTok,51,Female,2,Writing an apology letter to a friend,1,5,5,6,7,7
+129,TikTok,51,Female,3,Planning a syllabus,5,4,6,5,6,5
+129,TikTok,51,Female,4,Writing a dinner recipe,2,2,4,4,6,6
+129,TikTok,51,Female,5,Writing wedding vows,2,5,6,7,7,6
+129,TikTok,51,Female,6,Choosing an engagement ring,2,2,6,7,7,7
+130,TikTok,33,Male,1,Writing a cover letter for a job application,1,5,6,7,7,7
+130,TikTok,33,Male,2,Writing an apology letter to a friend,5,6,7,7,7,7
+130,TikTok,33,Male,3,Writing a bereavement card to a family member,6,7,7,7,7,7
+130,TikTok,33,Male,4,Writing a short story,4,6,3,2,7,7
+130,TikTok,33,Male,5,Planning a syllabus,2,3,7,7,7,7
+130,TikTok,33,Male,6,Writing a love letter,7,7,7,7,7,7
+131,TikTok,56,Male,1,Writing a marriage proposal,1,2,7,7,7,6
+131,TikTok,56,Male,2,Writing a poem,1,2,3,2,6,4
+131,TikTok,56,Male,3,Generating a shopping list,1,1,4,5,3,1
+131,TikTok,56,Male,4,Writing a bereavement card to a family member,2,6,7,6,7,4
+131,TikTok,56,Male,5,Solving a mathematical equation,1,1,1,4,5,4
+131,TikTok,56,Male,6,Writing wedding vows,2,5,7,6,7,4
+132,TikTok,29,Male,1,Writing wedding vows,6,7,6,6,7,6
+132,TikTok,29,Male,2,Writing a cover letter for a job application,4,5,3,6,7,4
+132,TikTok,29,Male,3,Writing a dinner recipe,4,4,5,4,4,4
+132,TikTok,29,Male,4,Choosing an engagement ring,4,3,6,6,7,6
+132,TikTok,29,Male,5,Planning a syllabus,4,4,4,3,4,4
+132,TikTok,29,Male,6,Deciding how to discipline a child,5,6,6,7,7,7
+133,TikTok,34,Female,1,Writing computer code,1,1,7,7,7,7
+133,TikTok,34,Female,2,Writing an apology letter to a friend,7,7,7,7,7,7
+133,TikTok,34,Female,3,Writing a bereavement card to a family member,7,7,7,7,7,7
+133,TikTok,34,Female,4,Finding a gift for a family member,7,4,7,3,7,7
+133,TikTok,34,Female,5,Planning a syllabus,5,7,7,7,7,7
+133,TikTok,34,Female,6,Writing a poem,1,1,7,7,7,1
+134,TikTok,48,Male,1,Writing a bereavement card to a family member,7,7,7,7,7,6
+134,TikTok,48,Male,2,Generating a shopping list,1,1,5,3,4,1
+134,TikTok,48,Male,3,Writing a short story,2,4,3,3,7,3
+134,TikTok,48,Male,4,Writing wedding vows,7,7,7,7,7,6
+134,TikTok,48,Male,5,Writing an apology letter to a friend,7,7,7,7,7,7
+134,TikTok,48,Male,6,Writing a cover letter for a job application,5,5,5,7,7,7
+135,TikTok,35,Female,1,Writing a dinner recipe,2,1,6,4,5,3
+135,TikTok,35,Female,2,Choosing an engagement ring,6,7,7,7,7,7
+135,TikTok,35,Female,3,Writing a short story,4,6,5,1,4,3
+135,TikTok,35,Female,4,Writing a bereavement card to a family member,7,7,7,7,7,7
+135,TikTok,35,Female,5,Writing an apology letter to a friend,7,7,7,7,7,7
+135,TikTok,35,Female,6,Writing a poem,4,5,2,2,3,3
+136,TikTok,40,Female,1,Writing computer code,1,1,2,4,6,4
+136,TikTok,40,Female,2,Deciding how to discipline a child,4,6,6,7,7,5
+136,TikTok,40,Female,3,Planning a surprise birthday party for a friend,6,6,6,4,6,6
+136,TikTok,40,Female,4,Solving a mathematical equation,1,1,1,4,6,4
+136,TikTok,40,Female,5,Writing a cover letter for a job application,2,4,2,6,6,6
+136,TikTok,40,Female,6,Writing a love letter,4,6,4,4,6,6
+137,TikTok,41,Female,1,Solving a mathematical equation,3,2,5,5,4,2
+137,TikTok,41,Female,2,Writing a poem,2,2,1,2,2,2
+137,TikTok,41,Female,3,Writing computer code,2,2,6,6,6,5
+137,TikTok,41,Female,4,Writing a bereavement card to a family member,6,6,6,6,6,6
+137,TikTok,41,Female,5,Writing an apology letter to a friend,7,6,7,6,7,7
+137,TikTok,41,Female,6,Deciding how to discipline a child,6,6,7,7,7,6
+138,TikTok,40,Female,1,Generating a shopping list,1,1,2,2,2,1
+138,TikTok,40,Female,2,Writing a poem,2,1,1,4,5,1
+138,TikTok,40,Female,3,Writing a love letter,1,1,2,2,2,1
+138,TikTok,40,Female,4,Writing a marriage proposal,1,1,2,3,3,4
+138,TikTok,40,Female,5,Writing computer code,2,1,4,4,5,2
+138,TikTok,40,Female,6,Finding a gift for a family member,1,1,3,3,3,3
+139,TikTok,60,Male,1,Writing a bereavement card to a family member,5,7,5,3,6,5
+139,TikTok,60,Male,2,Creating a daily schedule,5,5,6,4,5,4
+139,TikTok,60,Male,3,Solving a mathematical equation,1,1,1,2,7,4
+139,TikTok,60,Male,4,Generating a shopping list,2,1,2,4,6,2
+139,TikTok,60,Male,5,Choosing an engagement ring,7,6,7,7,7,7
+139,TikTok,60,Male,6,Writing an apology letter to a friend,7,7,7,7,7,7
+140,TikTok,59,Male,1,Writing a marriage proposal,5,5,7,5,6,6
+140,TikTok,59,Male,2,Writing wedding vows,4,5,5,4,5,5
+140,TikTok,59,Male,3,Planning a syllabus,4,5,7,6,7,6
+140,TikTok,59,Male,4,Creating a daily schedule,3,3,3,2,4,2
+140,TikTok,59,Male,5,Planning a surprise birthday party for a friend,6,5,6,3,5,5
+140,TikTok,59,Male,6,Solving a mathematical equation,2,2,1,2,5,3
+141,TikTok,42,Male,1,Planning a city tour for a friend,6,5,7,5,5,2
+141,TikTok,42,Male,2,Planning a surprise birthday party for a friend,7,7,7,6,7,6
+141,TikTok,42,Male,3,Planning a syllabus,2,2,7,7,6,2
+141,TikTok,42,Male,4,Writing a poem,1,1,1,1,6,3
+141,TikTok,42,Male,5,Writing a love letter,2,5,7,6,5,5
+141,TikTok,42,Male,6,Creating visual art,1,1,3,1,5,3
+142,TikTok,33,Male,1,Writing a love letter,7,7,4,4,6,7
+142,TikTok,33,Male,2,Writing a dinner recipe,7,7,7,5,5,5
+142,TikTok,33,Male,3,Deciding how to discipline a child,7,7,7,7,7,1
+142,TikTok,33,Male,4,Writing a bereavement card to a family member,7,4,5,4,4,4
+142,TikTok,33,Male,5,Writing a poem,5,5,5,1,5,4
+142,TikTok,33,Male,6,Writing a short story,7,5,5,1,4,4
+143,TikTok,25,Male,1,Choosing an engagement ring,4,1,7,7,7,6
+143,TikTok,25,Male,2,Writing computer code,1,1,4,7,5,5
+143,TikTok,25,Male,3,Finding a gift for a family member,4,3,6,6,5,5
+143,TikTok,25,Male,4,Writing a marriage proposal,7,7,7,7,7,7
+143,TikTok,25,Male,5,Writing a short story,1,1,6,4,7,5
+143,TikTok,25,Male,6,Creating a daily schedule,2,4,4,3,3,4
+144,TikTok,44,Female,1,Writing a marriage proposal,2,5,7,5,7,4
+144,TikTok,44,Female,2,Writing a bereavement card to a family member,3,5,7,3,6,1
+144,TikTok,44,Female,3,Writing a cover letter for a job application,3,5,1,4,6,4
+144,TikTok,44,Female,4,Planning a surprise birthday party for a friend,7,7,5,5,5,3
+144,TikTok,44,Female,5,Generating a shopping list,1,1,1,1,2,1
+144,TikTok,44,Female,6,Planning a syllabus,2,2,5,7,7,4
+145,TikTok,49,Female,1,Writing an apology letter to a friend,6,6,6,7,5,2
+145,TikTok,49,Female,2,Planning a syllabus,2,3,6,7,7,5
+145,TikTok,49,Female,3,Planning a surprise birthday party for a friend,7,6,6,5,5,5
+145,TikTok,49,Female,4,Writing computer code,1,1,5,4,5,2
+145,TikTok,49,Female,5,Creating a daily schedule,1,2,3,4,4,1
+145,TikTok,49,Female,6,Choosing an engagement ring,2,2,5,5,6,5
+146,TikTok,60,Female,1,Writing a love letter,2,4,1,1,2,1
+146,TikTok,60,Female,2,Generating a shopping list,3,3,4,4,4,1
+146,TikTok,60,Female,3,Writing a bereavement card to a family member,5,5,7,6,7,6
+146,TikTok,60,Female,4,Writing a dinner recipe,2,2,2,2,2,2
+146,TikTok,60,Female,5,Creating visual art,3,5,4,3,3,3
+146,TikTok,60,Female,6,Planning a city tour for a friend,6,5,5,5,6,5
+147,TikTok,45,Male,1,Solving a mathematical equation,2,2,4,4,4,4
+147,TikTok,45,Male,2,Deciding how to discipline a child,6,6,7,6,6,4
+147,TikTok,45,Male,3,Writing wedding vows,6,6,7,6,5,4
+147,TikTok,45,Male,4,Writing a poem,2,4,4,2,3,3
+147,TikTok,45,Male,5,Writing a love letter,5,5,5,5,4,4
+147,TikTok,45,Male,6,Creating visual art,4,4,4,4,4,4
+148,Facebook,52,Female,1,Writing a poem,4,1,1,1,5,1
+148,Facebook,52,Female,2,Writing a dinner recipe,1,4,5,5,5,1
+148,Facebook,52,Female,3,Writing a marriage proposal,4,4,7,7,7,7
+148,Facebook,52,Female,4,Choosing an engagement ring,4,4,7,7,7,7
+148,Facebook,52,Female,5,Finding a gift for a family member,4,4,7,7,7,7
+148,Facebook,52,Female,6,Solving a mathematical equation,1,1,1,1,4,1
+149,TikTok,54,Female,1,Planning a city tour for a friend,3,4,5,6,6,4
+149,TikTok,54,Female,2,Writing an apology letter to a friend,3,5,5,5,5,3
+149,TikTok,54,Female,3,Choosing an engagement ring,2,2,5,5,6,5
+149,TikTok,54,Female,4,Writing a cover letter for a job application,3,5,3,6,6,3
+149,TikTok,54,Female,5,Writing a poem,2,1,2,2,2,1
+149,TikTok,54,Female,6,Writing a short story,2,2,2,2,3,2
+150,TikTok,42,Male,1,Generating a shopping list,1,1,3,3,3,1
+150,TikTok,42,Male,2,Creating visual art,1,1,2,1,3,3
+150,TikTok,42,Male,3,Finding a gift for a family member,2,2,5,2,3,4
+150,TikTok,42,Male,4,Writing a love letter,2,5,5,2,2,5
+150,TikTok,42,Male,5,Creating a daily schedule,1,1,3,2,1,1
+150,TikTok,42,Male,6,Writing a bereavement card to a family member,1,6,5,5,3,5
+151,TikTok,37,Male,1,Planning a surprise birthday party for a friend,7,5,6,3,5,5
+151,TikTok,37,Male,2,Writing a bereavement card to a family member,5,4,6,5,5,4
+151,TikTok,37,Male,3,Writing computer code,1,1,3,5,5,4
+151,TikTok,37,Male,4,Writing a poem,3,1,3,1,2,1
+151,TikTok,37,Male,5,Writing a cover letter for a job application,2,3,2,3,6,6
+151,TikTok,37,Male,6,Deciding how to discipline a child,4,4,6,5,5,2
+152,TikTok,43,Female,1,Planning a syllabus,2,3,7,6,6,4
+152,TikTok,43,Female,2,Writing a dinner recipe,4,5,7,3,5,4
+152,TikTok,43,Female,3,Finding a gift for a family member,7,7,7,5,6,6
+152,TikTok,43,Female,4,Deciding how to discipline a child,7,7,7,7,7,3
+152,TikTok,43,Female,5,Writing a short story,3,3,4,4,6,4
+152,TikTok,43,Female,6,Planning a city tour for a friend,7,7,7,5,6,6
+153,TikTok,56,Female,1,Deciding how to discipline a child,2,4,5,5,5,3
+153,TikTok,56,Female,2,Choosing an engagement ring,4,5,7,6,5,5
+153,TikTok,56,Female,3,Writing a marriage proposal,3,4,7,7,6,5
+153,TikTok,56,Female,4,Writing a dinner recipe,4,4,5,5,6,5
+153,TikTok,56,Female,5,Writing a cover letter for a job application,5,6,5,6,7,6
+153,TikTok,56,Female,6,Writing a poem,3,3,4,4,5,4
+154,TikTok,20,Female,1,Writing a dinner recipe,2,6,2,2,4,5
+154,TikTok,20,Female,2,Finding a gift for a family member,6,6,6,4,6,6
+154,TikTok,20,Female,3,Writing a short story,2,2,2,2,4,4
+154,TikTok,20,Female,4,Writing a love letter,2,2,3,3,4,4
+154,TikTok,20,Female,5,Planning a surprise birthday party for a friend,5,5,6,4,5,5
+154,TikTok,20,Female,6,Generating a shopping list,2,2,2,2,2,3
+155,TikTok,33,Female,1,Writing computer code,2,3,6,6,6,3
+155,TikTok,33,Female,2,Choosing an engagement ring,6,6,6,6,7,6
+155,TikTok,33,Female,3,Deciding how to discipline a child,6,6,5,7,5,5
+155,TikTok,33,Female,4,Planning a surprise birthday party for a friend,7,7,6,6,7,7
+155,TikTok,33,Female,5,Writing a cover letter for a job application,4,5,4,7,7,7
+155,TikTok,33,Female,6,Writing a short story,4,7,7,4,7,7
+156,TikTok,23,Female,1,Writing wedding vows,5,3,7,5,7,7
+156,TikTok,23,Female,2,Writing an apology letter to a friend,3,5,7,7,7,7
+156,TikTok,23,Female,3,Planning a city tour for a friend,5,5,7,7,7,7
+156,TikTok,23,Female,4,Writing a poem,1,1,5,5,5,5
+156,TikTok,23,Female,5,Generating a shopping list,4,3,3,3,7,3
+156,TikTok,23,Female,6,Writing a short story,1,1,1,1,7,3
+157,TikTok,36,Female,1,Writing a short story,1,1,6,4,7,7
+157,TikTok,36,Female,2,Writing an apology letter to a friend,5,6,7,7,7,7
+157,TikTok,36,Female,3,Writing a dinner recipe,3,1,5,7,7,7
+157,TikTok,36,Female,4,Creating visual art,5,3,6,5,6,7
+157,TikTok,36,Female,5,Planning a city tour for a friend,7,7,7,7,7,7
+157,TikTok,36,Female,6,Writing a marriage proposal,7,7,7,7,7,7
+158,TikTok,63,Male,1,Generating a shopping list,5,4,4,6,6,1
+158,TikTok,63,Male,2,Writing a marriage proposal,6,6,6,7,7,5
+158,TikTok,63,Male,3,Creating visual art,3,3,6,6,6,7
+158,TikTok,63,Male,4,Writing wedding vows,5,5,6,7,7,6
+158,TikTok,63,Male,5,Writing a love letter,6,6,2,7,7,1
+158,TikTok,63,Male,6,Solving a mathematical equation,2,1,2,5,7,2
+159,TikTok,20,Female,1,Planning a city tour for a friend,6,7,7,6,7,5
+159,TikTok,20,Female,2,Deciding how to discipline a child,3,5,6,7,5,4
+159,TikTok,20,Female,3,Finding a gift for a family member,5,6,6,3,5,4
+159,TikTok,20,Female,4,Planning a syllabus,2,2,6,7,6,5
+159,TikTok,20,Female,5,Writing a dinner recipe,1,4,5,5,6,4
+159,TikTok,20,Female,6,Solving a mathematical equation,1,1,1,3,6,7
+160,TikTok,68,Female,1,Planning a syllabus,4,5,6,5,6,6
+160,TikTok,68,Female,2,Choosing an engagement ring,6,6,6,6,7,7
+160,TikTok,68,Female,3,Writing a poem,5,5,5,5,6,6
+160,TikTok,68,Female,4,Writing wedding vows,7,7,7,7,7,7
+160,TikTok,68,Female,5,Writing a short story,5,5,5,5,5,5
+160,TikTok,68,Female,6,Finding a gift for a family member,6,6,6,6,6,6
+161,TikTok,33,Female,1,Generating a shopping list,7,7,7,7,7,7
+161,TikTok,33,Female,2,Choosing an engagement ring,1,1,7,7,7,7
+161,TikTok,33,Female,3,Finding a gift for a family member,2,1,7,5,7,7
+161,TikTok,33,Female,4,Writing a dinner recipe,1,1,7,5,7,7
+161,TikTok,33,Female,5,Writing a marriage proposal,1,5,7,7,7,7
+161,TikTok,33,Female,6,Writing a short story,1,1,1,1,7,1
+162,TikTok,36,Female,1,Writing an apology letter to a friend,4,4,2,4,4,4
+162,TikTok,36,Female,2,Writing wedding vows,1,2,4,5,6,5
+162,TikTok,36,Female,3,Writing computer code,4,4,5,6,5,5
+162,TikTok,36,Female,4,Finding a gift for a family member,4,4,6,4,6,6
+162,TikTok,36,Female,5,Solving a mathematical equation,2,2,2,2,2,2
+162,TikTok,36,Female,6,Writing a poem,2,1,2,2,2,2
+163,TikTok,31,Female,1,Deciding how to discipline a child,5,7,7,7,7,5
+163,TikTok,31,Female,2,Writing a short story,2,5,4,3,3,2
+163,TikTok,31,Female,3,Writing computer code,2,1,6,5,7,1
+163,TikTok,31,Female,4,Finding a gift for a family member,4,5,7,6,7,5
+163,TikTok,31,Female,5,Planning a surprise birthday party for a friend,7,7,7,7,7,7
+163,TikTok,31,Female,6,Creating visual art,3,1,3,3,3,1
+164,TikTok,34,Female,1,Writing a marriage proposal,3,5,2,7,7,4
+164,TikTok,34,Female,2,Writing computer code,4,7,7,7,7,7
+164,TikTok,34,Female,3,Generating a shopping list,1,3,2,4,7,2
+164,TikTok,34,Female,4,Planning a city tour for a friend,6,7,7,7,7,7
+164,TikTok,34,Female,5,Writing a bereavement card to a family member,7,7,7,7,7,7
+164,TikTok,34,Female,6,Creating visual art,4,6,5,6,6,6
+165,TikTok,28,Female,1,Writing a short story,7,7,7,7,7,5
+165,TikTok,28,Female,2,Writing a dinner recipe,7,6,7,7,7,5
+165,TikTok,28,Female,3,Choosing an engagement ring,1,2,5,5,2,2
+165,TikTok,28,Female,4,Planning a surprise birthday party for a friend,7,7,7,6,7,7
+165,TikTok,28,Female,5,Writing a cover letter for a job application,1,7,3,7,7,3
+165,TikTok,28,Female,6,Writing a love letter,1,7,7,7,5,1
+166,TikTok,74,Female,1,Writing a poem,6,5,7,6,7,6
+166,TikTok,74,Female,2,Creating a daily schedule,4,3,2,4,5,2
+166,TikTok,74,Female,3,Planning a syllabus,2,2,6,6,7,5
+166,TikTok,74,Female,4,Finding a gift for a family member,4,5,5,6,7,6
+166,TikTok,74,Female,5,Writing a marriage proposal,6,6,7,7,7,7
+166,TikTok,74,Female,6,Planning a city tour for a friend,6,6,7,7,7,6
+167,TikTok,22,Female,1,Creating visual art,3,2,1,3,4,1
+167,TikTok,22,Female,2,Deciding how to discipline a child,4,7,5,6,7,2
+167,TikTok,22,Female,3,Writing a love letter,4,4,5,4,5,6
+167,TikTok,22,Female,4,Writing an apology letter to a friend,6,6,7,6,7,6
+167,TikTok,22,Female,5,Writing a cover letter for a job application,4,5,4,7,7,7
+167,TikTok,22,Female,6,Solving a mathematical equation,2,2,1,2,3,1
+168,TikTok,74,Female,1,Writing a dinner recipe,3,5,6,7,7,6
+168,TikTok,74,Female,2,Writing a bereavement card to a family member,5,5,7,7,7,6
+168,TikTok,74,Female,3,Finding a gift for a family member,3,2,5,5,6,6
+168,TikTok,74,Female,4,Planning a syllabus,7,7,7,7,7,7
+168,TikTok,74,Female,5,Generating a shopping list,1,1,4,5,5,4
+168,TikTok,74,Female,6,Writing a marriage proposal,4,5,7,7,7,7
+169,TikTok,62,Male,1,Writing a poem,1,1,3,2,6,1
+169,TikTok,62,Male,2,Planning a surprise birthday party for a friend,5,5,7,6,6,3
+169,TikTok,62,Male,3,Writing a cover letter for a job application,1,6,4,7,7,5
+169,TikTok,62,Male,4,Finding a gift for a family member,3,4,6,6,6,3
+169,TikTok,62,Male,5,Creating a daily schedule,2,4,4,4,4,3
+169,TikTok,62,Male,6,Writing an apology letter to a friend,5,5,6,6,6,3
+170,TikTok,31,Female,1,Solving a mathematical equation,2,1,4,4,6,5
+170,TikTok,31,Female,2,Choosing an engagement ring,4,6,6,6,7,6
+170,TikTok,31,Female,3,Planning a surprise birthday party for a friend,7,7,7,6,6,5
+170,TikTok,31,Female,4,Planning a city tour for a friend,5,4,6,6,7,6
+170,TikTok,31,Female,5,Writing computer code,2,2,6,6,6,5
+170,TikTok,31,Female,6,Writing a cover letter for a job application,5,5,4,7,7,6
+171,TikTok,44,Female,1,Finding a gift for a family member,4,5,2,2,6,6
+171,TikTok,44,Female,2,Writing a dinner recipe,1,1,1,3,5,5
+171,TikTok,44,Female,3,Creating visual art,2,3,4,4,6,7
+171,TikTok,44,Female,4,Writing a marriage proposal,7,3,7,7,7,3
+171,TikTok,44,Female,5,Writing a poem,1,1,4,3,5,2
+171,TikTok,44,Female,6,Planning a surprise birthday party for a friend,7,7,7,7,7,7
+172,TikTok,53,Male,1,Writing a marriage proposal,3,4,4,7,7,4
+172,TikTok,53,Male,2,Generating a shopping list,4,4,5,5,5,4
+172,TikTok,53,Male,3,Finding a gift for a family member,5,6,6,6,6,5
+172,TikTok,53,Male,4,Writing wedding vows,3,3,7,7,6,4
+172,TikTok,53,Male,5,Writing a cover letter for a job application,3,3,2,7,7,5
+172,TikTok,53,Male,6,Writing a poem,2,2,3,3,6,3
+173,TikTok,70,Male,1,Creating a daily schedule,3,3,3,3,3,2
+173,TikTok,70,Male,2,Writing a short story,1,1,1,1,1,1
+173,TikTok,70,Male,3,Writing an apology letter to a friend,7,7,7,7,7,7
+173,TikTok,70,Male,4,Planning a city tour for a friend,7,7,7,6,6,5
+173,TikTok,70,Male,5,Creating visual art,1,2,4,1,5,5
+173,TikTok,70,Male,6,Finding a gift for a family member,4,3,7,6,6,2
+174,TikTok,43,Female,1,Planning a surprise birthday party for a friend,6,6,5,4,6,5
+174,TikTok,43,Female,2,Finding a gift for a family member,3,4,3,4,5,6
+174,TikTok,43,Female,3,Writing a poem,2,3,2,1,2,2
+174,TikTok,43,Female,4,Solving a mathematical equation,1,1,1,1,4,1
+174,TikTok,43,Female,5,Writing a cover letter for a job application,2,5,3,6,6,6
+174,TikTok,43,Female,6,Writing an apology letter to a friend,6,7,4,5,7,7
+175,TikTok,40,Female,1,Generating a shopping list,2,1,2,7,6,1
+175,TikTok,40,Female,2,Writing a marriage proposal,4,6,7,7,7,7
+175,TikTok,40,Female,3,Writing an apology letter to a friend,5,6,7,7,7,7
+175,TikTok,40,Female,4,Writing a poem,2,3,3,1,5,6
+175,TikTok,40,Female,5,Writing a love letter,5,6,7,5,6,6
+175,TikTok,40,Female,6,Planning a syllabus,5,6,7,7,7,6
+176,TikTok,30,Male,1,Creating a daily schedule,1,1,3,2,4,3
+176,TikTok,30,Male,2,Writing a poem,1,2,3,2,7,7
+176,TikTok,30,Male,3,Writing a bereavement card to a family member,1,6,7,7,7,7
+176,TikTok,30,Male,4,Writing a love letter,2,7,7,7,7,7
+176,TikTok,30,Male,5,Writing a short story,7,7,2,2,6,6
+176,TikTok,30,Male,6,Finding a gift for a family member,1,2,7,4,6,6
+177,TikTok,18,Female,1,Writing a short story,2,3,3,2,4,5
+177,TikTok,18,Female,2,Writing a marriage proposal,7,6,6,7,6,7
+177,TikTok,18,Female,3,Creating visual art,4,4,4,3,6,6
+177,TikTok,18,Female,4,Planning a surprise birthday party for a friend,7,6,6,6,6,6
+177,TikTok,18,Female,5,Creating a daily schedule,2,3,3,5,5,4
+177,TikTok,18,Female,6,Planning a city tour for a friend,6,6,6,6,6,6
+178,TikTok,52,Female,1,Writing a dinner recipe,6,3,6,7,7,7
+178,TikTok,52,Female,2,Planning a city tour for a friend,7,7,7,5,6,6
+178,TikTok,52,Female,3,Creating visual art,1,1,2,4,6,7
+178,TikTok,52,Female,4,Planning a surprise birthday party for a friend,6,6,7,6,7,7
+178,TikTok,52,Female,5,Writing a cover letter for a job application,3,6,6,7,7,7
+178,TikTok,52,Female,6,Writing a marriage proposal,5,7,7,7,7,7
+179,TikTok,20,Female,1,Solving a mathematical equation,1,1,1,1,5,4
+179,TikTok,20,Female,2,Finding a gift for a family member,4,5,7,5,5,5
+179,TikTok,20,Female,3,Writing wedding vows,4,7,7,6,7,7
+179,TikTok,20,Female,4,Writing a marriage proposal,5,6,7,7,7,7
+179,TikTok,20,Female,5,Writing a poem,4,5,3,3,6,4
+179,TikTok,20,Female,6,Writing a cover letter for a job application,3,5,3,6,6,7
+180,TikTok,31,Female,1,Generating a shopping list,1,1,2,3,6,5
+180,TikTok,31,Female,2,Writing a marriage proposal,5,6,7,7,6,3
+180,TikTok,31,Female,3,Writing computer code,2,1,7,6,6,2
+180,TikTok,31,Female,4,Choosing an engagement ring,4,5,6,7,6,6
+180,TikTok,31,Female,5,Writing a cover letter for a job application,4,4,5,6,6,4
+180,TikTok,31,Female,6,Finding a gift for a family member,6,7,7,6,6,6
+181,TikTok,56,Male,1,Writing a love letter,3,5,5,4,7,7
+181,TikTok,56,Male,2,Writing a poem,1,2,2,2,4,3
+181,TikTok,56,Male,3,Creating a daily schedule,7,7,5,6,7,5
+181,TikTok,56,Male,4,Writing wedding vows,4,4,6,6,6,7
+181,TikTok,56,Male,5,Deciding how to discipline a child,5,6,7,7,7,7
+181,TikTok,56,Male,6,Writing a short story,2,2,1,1,2,1
+182,TikTok,39,Female,1,Writing a marriage proposal,4,7,7,4,7,1
+182,TikTok,39,Female,2,Generating a shopping list,1,1,5,4,5,3
+182,TikTok,39,Female,3,Writing computer code,1,1,5,5,7,5
+182,TikTok,39,Female,4,Planning a surprise birthday party for a friend,7,7,7,5,7,7
+182,TikTok,39,Female,5,Writing a short story,1,4,4,4,4,5
+182,TikTok,39,Female,6,Writing an apology letter to a friend,7,7,7,5,7,5
+183,TikTok,37,Female,1,Generating a shopping list,1,3,4,6,7,3
+183,TikTok,37,Female,2,Writing a short story,1,1,1,5,7,6
+183,TikTok,37,Female,3,Choosing an engagement ring,5,6,7,7,7,7
+183,TikTok,37,Female,4,Writing wedding vows,4,5,6,7,7,7
+183,TikTok,37,Female,5,Writing a bereavement card to a family member,3,7,7,5,7,7
+183,TikTok,37,Female,6,Writing a dinner recipe,1,1,1,4,6,4
+184,TikTok,28,Male,1,Writing a poem,3,4,4,3,6,6
+184,TikTok,28,Male,2,Writing computer code,3,4,5,5,6,6
+184,TikTok,28,Male,3,Finding a gift for a family member,5,4,6,6,6,6
+184,TikTok,28,Male,4,Planning a city tour for a friend,7,6,6,6,6,6
+184,TikTok,28,Male,5,Choosing an engagement ring,4,5,7,7,7,7
+184,TikTok,28,Male,6,Solving a mathematical equation,2,2,2,2,5,4
+185,TikTok,44,Male,1,Writing an apology letter to a friend,1,7,7,6,6,2
+185,TikTok,44,Male,2,Planning a syllabus,1,1,7,7,7,1
+185,TikTok,44,Male,3,Creating visual art,1,1,2,2,5,6
+185,TikTok,44,Male,4,Planning a surprise birthday party for a friend,7,7,7,4,6,5
+185,TikTok,44,Male,5,Writing a poem,1,1,1,1,5,4
+185,TikTok,44,Male,6,Finding a gift for a family member,1,3,3,4,4,6
+186,TikTok,35,Female,1,Writing a poem,1,3,6,4,4,2
+186,TikTok,35,Female,2,Writing an apology letter to a friend,7,7,7,7,7,6
+186,TikTok,35,Female,3,Writing computer code,1,2,5,6,7,6
+186,TikTok,35,Female,4,Writing a marriage proposal,7,7,7,7,7,7
+186,TikTok,35,Female,5,Writing a short story,3,4,4,3,3,3
+186,TikTok,35,Female,6,Writing a bereavement card to a family member,7,7,7,7,7,7
+187,TikTok,37,Female,1,Writing computer code,1,7,7,5,7,7
+187,TikTok,37,Female,2,Solving a mathematical equation,1,7,6,7,7,7
+187,TikTok,37,Female,3,Writing a cover letter for a job application,7,7,7,7,7,7
+187,TikTok,37,Female,4,Planning a surprise birthday party for a friend,7,7,7,7,7,7
+187,TikTok,37,Female,5,Writing a marriage proposal,7,7,7,7,7,7
+187,TikTok,37,Female,6,Writing a love letter,7,7,7,7,7,7
+188,TikTok,39,Female,1,Planning a surprise birthday party for a friend,5,6,6,6,6,6
+188,TikTok,39,Female,2,Writing a bereavement card to a family member,3,4,4,3,4,5
+188,TikTok,39,Female,3,Creating a daily schedule,5,5,5,5,4,4
+188,TikTok,39,Female,4,Writing a marriage proposal,5,6,7,7,7,7
+188,TikTok,39,Female,5,Creating visual art,5,5,6,4,4,4
+188,TikTok,39,Female,6,Generating a shopping list,3,3,5,4,3,3
+189,TikTok,23,Female,1,Planning a surprise birthday party for a friend,5,6,4,5,6,3
+189,TikTok,23,Female,2,Writing a love letter,3,4,6,6,5,6
+189,TikTok,23,Female,3,Creating visual art,2,2,2,2,6,5
+189,TikTok,23,Female,4,Writing a cover letter for a job application,2,5,6,6,7,7
+189,TikTok,23,Female,5,Writing a bereavement card to a family member,3,3,6,4,6,6
+189,TikTok,23,Female,6,Writing a dinner recipe,2,2,5,5,6,5
+190,TikTok,52,Female,1,Choosing an engagement ring,2,4,6,7,7,7
+190,TikTok,52,Female,2,Finding a gift for a family member,2,3,6,6,7,5
+190,TikTok,52,Female,3,Writing a short story,1,3,3,4,6,6
+190,TikTok,52,Female,4,Creating visual art,1,1,3,4,7,7
+190,TikTok,52,Female,5,Creating a daily schedule,1,1,2,4,5,5
+190,TikTok,52,Female,6,Writing an apology letter to a friend,1,4,6,6,7,7
+191,TikTok,36,Male,1,Writing an apology letter to a friend,3,6,7,6,6,3
+191,TikTok,36,Male,2,Solving a mathematical equation,1,1,4,4,5,2
+191,TikTok,36,Male,3,Generating a shopping list,1,1,5,4,4,2
+191,TikTok,36,Male,4,Writing a bereavement card to a family member,3,4,7,7,7,7
+191,TikTok,36,Male,5,Planning a city tour for a friend,6,5,5,5,5,3
+191,TikTok,36,Male,6,Writing a short story,2,2,2,2,4,2
+192,TikTok,45,Female,1,Finding a gift for a family member,3,3,5,5,6,3
+192,TikTok,45,Female,2,Writing computer code,1,1,6,6,4,4
+192,TikTok,45,Female,3,Writing a poem,2,2,6,5,5,6
+192,TikTok,45,Female,4,Solving a mathematical equation,4,4,5,6,6,4
+192,TikTok,45,Female,5,Writing a love letter,4,5,7,7,5,3
+192,TikTok,45,Female,6,Writing an apology letter to a friend,5,4,6,7,5,5
+193,TikTok,26,Female,1,Writing an apology letter to a friend,1,5,6,6,6,7
+193,TikTok,26,Female,2,Writing a cover letter for a job application,1,5,2,7,7,7
+193,TikTok,26,Female,3,Generating a shopping list,6,1,6,6,6,6
+193,TikTok,26,Female,4,Finding a gift for a family member,7,7,7,7,7,7
+193,TikTok,26,Female,5,Writing a marriage proposal,7,7,7,7,7,7
+193,TikTok,26,Female,6,Writing a short story,5,7,7,7,7,7
+194,TikTok,29,Female,1,Deciding how to discipline a child,1,1,5,7,7,4
+194,TikTok,29,Female,2,Writing computer code,1,1,6,6,7,7
+194,TikTok,29,Female,3,Planning a surprise birthday party for a friend,7,5,6,4,6,4
+194,TikTok,29,Female,4,Planning a city tour for a friend,7,4,6,5,6,6
+194,TikTok,29,Female,5,Writing a poem,3,2,6,5,6,7
+194,TikTok,29,Female,6,Solving a mathematical equation,1,1,4,2,3,4
+195,TikTok,25,Male,1,Writing a love letter,2,4,2,3,6,3
+195,TikTok,25,Male,2,Writing an apology letter to a friend,6,6,6,5,6,6
+195,TikTok,25,Male,3,Writing a marriage proposal,5,6,6,5,7,7
+195,TikTok,25,Male,4,Writing a cover letter for a job application,5,6,4,5,7,7
+195,TikTok,25,Male,5,Writing a poem,2,2,2,4,6,6
+195,TikTok,25,Male,6,Creating a daily schedule,2,2,1,4,5,2
+196,TikTok,37,Male,1,Finding a gift for a family member,5,6,6,6,7,6
+196,TikTok,37,Male,2,Planning a city tour for a friend,6,6,7,6,7,6
+196,TikTok,37,Male,3,Writing a marriage proposal,6,6,7,7,7,6
+196,TikTok,37,Male,4,Solving a mathematical equation,3,3,2,3,6,2
+196,TikTok,37,Male,5,Writing a cover letter for a job application,5,6,5,7,7,6
+196,TikTok,37,Male,6,Writing a short story,6,6,6,7,7,6
+197,TikTok,56,Female,1,Writing an apology letter to a friend,7,7,7,7,7,7
+197,TikTok,56,Female,2,Writing a dinner recipe,7,7,7,7,7,7
+197,TikTok,56,Female,3,Writing a bereavement card to a family member,7,7,7,7,7,7
+197,TikTok,56,Female,4,Choosing an engagement ring,7,7,7,7,7,7
+197,TikTok,56,Female,5,Generating a shopping list,7,7,7,7,7,7
+197,TikTok,56,Female,6,Writing computer code,7,7,7,7,7,7
+198,TikTok,34,Male,1,Generating a shopping list,3,1,7,6,4,1
+198,TikTok,34,Male,2,Planning a syllabus,5,5,7,7,7,2
+198,TikTok,34,Male,3,Writing a dinner recipe,3,1,7,7,7,1
+198,TikTok,34,Male,4,Writing a marriage proposal,2,1,7,7,7,1
+198,TikTok,34,Male,5,Choosing an engagement ring,1,1,7,7,7,1
+198,TikTok,34,Male,6,Writing a love letter,1,1,7,5,7,5
+199,TikTok,36,Male,1,Writing wedding vows,2,4,5,5,5,6
+199,TikTok,36,Male,2,Writing a marriage proposal,2,4,4,5,6,6
+199,TikTok,36,Male,3,Planning a syllabus,2,3,5,6,6,5
+199,TikTok,36,Male,4,Writing a short story,2,3,4,4,4,5
+199,TikTok,36,Male,5,Writing a cover letter for a job application,2,5,3,5,5,6
+199,TikTok,36,Male,6,Planning a surprise birthday party for a friend,5,6,6,5,6,5
+200,TikTok,35,Female,1,Generating a shopping list,1,1,3,3,5,1
+200,TikTok,35,Female,2,Creating a daily schedule,2,2,3,5,5,1
+200,TikTok,35,Female,3,Planning a city tour for a friend,3,3,7,5,7,5
+200,TikTok,35,Female,4,Choosing an engagement ring,2,3,7,7,7,7
+200,TikTok,35,Female,5,Writing a poem,1,1,3,4,5,1
+200,TikTok,35,Female,6,Writing a marriage proposal,2,5,7,7,7,7
