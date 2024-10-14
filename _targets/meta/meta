@@ -1,8 +1,25 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 data|stem|538860726a9d00f1|237276f659722970|7f349f668310a727|33550471||t20007.5662011873s|e26fb4004596eb2e|7870|rds|local|vector|||0.297||
 data_file|stem|59b19d3ce23cafe9|cf06a36a4dd9338d|2c530c1562a7fbd1|-679625259|data/pilot/pilot_data_clean.csv|t20007.5438983963s|daff9ef6e1082981|75950|file|local|vector|||5.782|package brms was built under R version 4.2.3. package Rcpp was built under R version 4.2.3. package tidyverse was built under R version 4.2.3. package ggplot2 was built under R version 4.2.3. package tibble was built under R version 4.2.3. package tidyr was built under R version 4.2.3. package readr was built under R version 4.2.3. package purrr was built under R version 4.2.3. package dplyr was built under R version 4.2.3. package stringr was built under R version 4.2.3. package forcats was built under R version 4.2.3. package lubridate was built under R version 4.2.3|
+extract_means|function|f3f5799e6a4f0084|||||||||||||||
 fit|stem|7f874fa419ee7fb1|122b7dd8ec340fb3|0ace19fa73c3d4c5|150100524||t20007.7939462917s|fd4949c2466f6dc4|83941526|rds|local|vector|||2038.563||
 fit_model|function|1e5bd23130c219fd|||||||||||||||
 load_data|function|b80e8c3ac4737cb7|||||||||||||||
+means|stem|0c68194af3d7bdc1|732672e8e201efcf|d51f014b530c3f6f|-292177593||t20010.5145232413s|9f60bc09563f8749|1408|rds|local|vector|||4.625||
+means_consequences|stem|f6d1587cb4ae5fec|2dd3c1aab0e205d5|d51f014b530c3f6f|1629337883||t20010.520273575s|688724c23b2c752d|1402|rds|local|vector|||4.39||
+means_extrinsiceffort|stem|f67ce74415f6a73d|cfdeb5e9a7e246a2|d51f014b530c3f6f|-8090185||t20010.5204123513s|7fcd9fd149e24489|1406|rds|local|vector|||7.156||
+means_impactothers|stem|2e7dbc1762eaa6f1|06e658866268e643|d51f014b530c3f6f|2005594380||t20010.5204747335s|5da8b9411e92a8e8|1404|rds|local|vector|||5.359||
+means_intrinsiceffort|stem|b40782f0f0e5caef|d977bba2137b00e6|d51f014b530c3f6f|254963677||t20010.5203291032s|0bc436852ae51388|1396|rds|local|vector|||4.781||
+means_skills|stem||e1761c1b28d9034c|d51f014b530c3f6f|2051855353||t20010.5195309775s||0|rds|local|vector|||0.484||Invalid argument resp. Valid response variables are social, socialskills, impactothers, consequences, intrinsiceffort, extrinsiceffort
+means_social|stem|50a3b2912d7808c1|d3e3034307892da3|d51f014b530c3f6f|-749224111||t20010.5201739636s|726a9b2c6b70e967|1407|rds|local|vector|||4.422||
+means_socialskills|stem|0c68194af3d7bdc1|a18460a953feff8d|d51f014b530c3f6f|-708758604||t20010.5202224478s|9f60bc09563f8749|1408|rds|local|vector|||4.172||
 plot_correlations|function|ec90156f8a28ff90|||||||||||||||
 plot_cors|stem|e97b97ea7bce0ed0|6080378adf6a8f52|8a91c0981052b53c|-727877256||t20010.4811961333s|a97edb6b4b45e6f7|84106534|rds|local|vector|||2.156||
+plot_rank|stem|2fa3012ea94ff780|01f579afe19f4cba|b8dd7980755eb901|2128180116||t20010.5178091758s|6ec2ffb0ab1d3b85|208279|rds|local|vector|||0.281||
+plot_rank_consequences|stem|50c1cc4dd17748ee|a01b1120d2ac2de3|66f5be0eaace1162|-1423103897||t20010.5204909181s|067cf3ca1cbe955f|208261|rds|local|vector|||0.188||
+plot_rank_extrinsiceffort|stem|68f12420fa6dd103|b0bc09cf4bc210f5|e12c92d298d04167|12925865||t20010.5204972718s|bed36bd70775f887|208294|rds|local|vector|||0.203||
+plot_rank_impactothers|stem|8249df30d282e8e2|1893a31bd99e4069|35dd13b6ea3531d7|-74441487||t20010.5205030782s|207f2b70d8d394ae|208271|rds|local|vector|||0.344||
+plot_rank_intrinsiceffort|stem|5b7d0a372b113190|438529cecd677dbb|a4586b8f48e503b2|1012024403||t20010.5204939151s|223dca9e202ab67f|208272|rds|local|vector|||0.156||
+plot_rank_social|stem|c73df32201efd0bf|942b8d2380a40daa|de6e08ebcdeaaee0|-138457208||t20010.5204827142s|cb1c30510109ea2a|208233|rds|local|vector|||0.531||
+plot_rank_socialskills|stem|31ebf756b5d44a33|c9653f6ad0d03283|7ecef5aeb16097a8|626382774||t20010.5204873132s|878683881119ec49|208284|rds|local|vector|||0.25||
+plot_ranking|function|9f366858764a5507|||||||||||||||
