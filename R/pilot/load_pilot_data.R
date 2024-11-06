@@ -1,8 +1,8 @@
-# function to load and clean data
-load_data <- function(data_file) {
+# function to load and clean pilot data
+load_pilot_data <- function(pilot_data_file) {
   # read csv file
   read_csv(
-    file = data_file,
+    file = pilot_data_file,
     show_col_types = FALSE
     ) %>%
     # remove participants who did not correctly answer the attention check

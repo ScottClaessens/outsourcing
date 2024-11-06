@@ -1,10 +1,10 @@
 # function to extract task means for a specific response variable
-extract_means <- function(data, fit, resp = "social") {
+extract_task_means <- function(pilot_data, pilot_fit, resp = "social") {
   # new data
-  d <- tibble(task = levels(data$task))
+  d <- tibble(task = levels(pilot_data$task))
   # get fitted values
   f <- fitted(
-    object = fit,
+    object = pilot_fit,
     newdata = d,
     resp = resp,
     re_formula = ~ 1 + (1 | task),

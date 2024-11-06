@@ -1,5 +1,5 @@
 # function to plot ranking for a specific response variable
-plot_ranking <- function(data, means, resp = "social") {
+plot_task_ranking <- function(pilot_data, task_means, resp = "social") {
   # y-axis titles for plot
   yaxes <- c(
     "social" = "\nIs this a social task?",
@@ -27,9 +27,9 @@ plot_ranking <- function(data, means, resp = "social") {
   p <-
     ggplot() +
     geom_jitter(
-      data = data,
+      data = pilot_data,
       mapping = aes(
-        x = fct_relevel(task, rev(unique(means$Task))),
+        x = fct_relevel(task, rev(unique(task_means$Task))),
         y = !!sym(col)
       ),
       width = 0.15,
@@ -37,7 +37,7 @@ plot_ranking <- function(data, means, resp = "social") {
       colour = "lightgrey"
     ) +
     geom_pointrange(
-      data = means,
+      data = task_means,
       aes(
         x = Task,
         y = Estimate,

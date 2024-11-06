@@ -1,0 +1,19 @@
+# function to load and clean study 1 data
+load_study1_data <- function(study1_data_file) {
+  # read csv file
+  read_csv(
+    file = study1_data_file,
+    show_col_types = FALSE
+    ) %>%
+    # remove participants who did not correctly answer the attention check
+    filter(attention == "TikTok") %>%
+    dplyr::select(!attention) %>%
+    # remove missing data (only one task for one participant)
+    drop_na() %>%
+    # treatment as factor
+    mutate(
+      treatment = factor(
+        treatment, levels = c("Control", "AI outsourcing", "Human outsourcing")
+        )
+      )
+}

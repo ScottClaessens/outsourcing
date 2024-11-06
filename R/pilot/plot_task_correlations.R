@@ -1,5 +1,5 @@
 # function to plot task-specific correlations 
-plot_correlations <- function(fit) {
+plot_task_correlations <- function(pilot_fit) {
   # labels for plot
   labels <- c(
     "social" = "Social",
@@ -11,7 +11,7 @@ plot_correlations <- function(fit) {
   )
   # extract task-specific correlations from fitted model
   p <-
-    summary(fit)$random$task %>%
+    summary(pilot_fit)$random$task %>%
     # tidy resulting data frame
     rownames_to_column("parameter") %>%
     filter(str_starts(parameter, "cor")) %>%

@@ -1,5 +1,5 @@
-# function to fit model to data
-fit_model <- function(data) {
+# function to fit model to pilot data
+fit_pilot_model <- function(pilot_data) {
   # generate formulas for brms
   f <- " ~ 1 + (1 |i| id) + (1 |j| task)"
   bf1 <- bf(as.formula(paste0("social", f)), family = cumulative)
@@ -11,7 +11,7 @@ fit_model <- function(data) {
   # fit model
   brm(
     formula = bf1 + bf2 + bf3 + bf4 + bf5 + bf6 + set_rescor(FALSE),
-    data = data,
+    data = pilot_data,
     prior = c(
       prior(normal(0, 2), class = Intercept, resp = social),
       prior(normal(0, 2), class = Intercept, resp = socialskills),
