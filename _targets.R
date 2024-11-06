@@ -45,6 +45,8 @@ list(
   # extract treatment means
   tar_target(treatment_means, extract_treatment_means_study1(study1_fit1)),
   # plot treatments overall
-  tar_target(plot_treatments, plot_treatments_overall(study1_data, treatment_means))
+  tar_target(plot_treatments, plot_treatments_overall(study1_data, treatment_means)),
+  # plot treatment effects by task
+  tar_target(plot_treatments_tasks, plot_treatments_by_task(study1_data, study1_fit1))
   
 )

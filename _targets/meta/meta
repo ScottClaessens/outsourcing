@@ -11,7 +11,9 @@ plot_chatgpt_responses|function|d3dac104f0496121|||||||||||||||
 plot_task_correlations|function|5d5b479b2821b317|||||||||||||||
 plot_task_ranking|function|8ff6f0c0cec3360f|||||||||||||||
 plot_treatments|stem|4b6f5a9b4987a546|71b64f2de307ef35|18727d0a7097059f|1222299681||t20033.2838992396s|5eef27ed56a3d5e2|663502|rds|local|vector|||1.296||
+plot_treatments_by_task|function|07d12a58e2c5194d|||||||||||||||
 plot_treatments_overall|function|acfafbb95531f4f4|||||||||||||||
+plot_treatments_tasks|stem|add770c51ccc8e8e|59a48f44f864f53a|a56e33645317c079|1415241722||t20033.5807802032s|a26170e83b899307|174689607|rds|local|vector|||24.094||
 study1_data|stem|ef6d0c669f2a561c|d12e985251ba76e3|bade4cb2d91eca82|210452844||t20032.7122904637s|0ec26b275f69b61f|19590|rds|local|vector|||0.453||
 study1_data_file|stem|ca5bb5b286540ded|324175eab99ca905|2c530c1562a7fbd1|-1398507996|data/study1/study1_data_clean.csv|t20032.4130965417s|23e2aad33730ef1f|254703|file|local|vector|||5.204|package brms was built under R version 4.2.3. package Rcpp was built under R version 4.2.3|
 study1_fit1|stem|2ca90acdc3339f47|d016aeb36e624e0a|e9524bef1bdad170|1987250330||t20033.0497079152s|d657fb26962ef52c|174517842|rds|local|vector|||13566.719||
