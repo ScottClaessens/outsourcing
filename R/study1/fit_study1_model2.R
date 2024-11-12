@@ -1,8 +1,10 @@
 # function to fit model 2 to study 1 data
 fit_study1_model2 <- function(study1_data, var = "social") {
   # generate formulas for brms
+  # use me() to include meaasurement error
   f <- paste0(
-    " ~ 1 + treatment*", var, " + (1 |i| id) + (1 + treatment |j| task)"
+    " ~ 1 + treatment*me(", var, ", ", var, "_SE, gr = task)",
+    " + (1 |i| id) + (1 + treatment |j| task)"
     )
   bf1 <- bf(as.formula(paste0("competent",   f)), family = cumulative)
   bf2 <- bf(as.formula(paste0("warm",        f)), family = cumulative)
@@ -31,7 +33,9 @@ fit_study1_model2 <- function(study1_data, var = "social") {
       prior(exponential(4), class = sd, resp = lazy),
       prior(exponential(4), class = sd, resp = trustworthy),
       prior(lkj(5), class = cor, group = id),
-      prior(lkj(5), class = cor, group = task)
+      prior(lkj(5), class = cor, group = task),
+      prior(normal(0, 0.5), class = meanme),
+      prior(exponential(4), class = sdme)
     ),
     chains = 4,
     cores = 4,

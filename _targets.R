@@ -43,7 +43,7 @@ list(
   #### Study 1 ####
   
   # calculate power
-  #tar_target(study1_power, calculate_power_study1(n = 300, effect_size = -0.4)),
+  tar_target(study1_power, calculate_power_study1(n = 300, effect_size = -0.4)),
   # study 1 data file
   tar_target(study1_data_file, "data/study1/study1_data_clean.csv", 
              format = "file"),
@@ -63,6 +63,11 @@ list(
   tar_target(plot_treatments_tasks, plot_treatments_by_task(study1_data, 
                                                             study1_fit1)),
   # fit model 2 to study 1 data
-  tar_target(study1_fit2, fit_study1_model2(study1_data, var = "social"))
-  
+  tar_map(
+    values = tibble(
+      var = c("social", "socialskills", "impactothers", "consequences", 
+              "intrinsiceffort", "extrinsiceffort")
+      ),
+    tar_target(study1_fit2, fit_study1_model2(study1_data, var))
+  )
 )
