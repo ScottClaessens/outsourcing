@@ -62,12 +62,34 @@ list(
   # plot treatment effects by task
   tar_target(plot_treatments_tasks, plot_treatments_by_task(study1_data, 
                                                             study1_fit1)),
-  # fit model 2 to study 1 data
   tar_map(
     values = tibble(
       var = c("social", "socialskills", "impactothers", "consequences", 
               "intrinsiceffort", "extrinsiceffort")
       ),
-    tar_target(study1_fit2, fit_study1_model2(study1_data, var))
-  )
+    # fit model 2 to study 1 data
+    tar_target(study1_fit2, fit_study1_model2(study1_data, var)),
+    # extract interaction effects for each model
+    tar_target(
+      interaction_effects,
+      extract_interaction_effects_study1(study1_fit2, var)
+      )
+  ),
+  # combined interaction effects
+  tar_target(
+    combined_interaction_effects,
+    bind_rows(
+      interaction_effects_social,
+      interaction_effects_socialskills,
+      interaction_effects_impactothers,
+      interaction_effects_consequences,
+      interaction_effects_intrinsiceffort,
+      interaction_effects_extrinsiceffort
+      )
+    ),
+  # plot interaction effects
+  tar_target(
+    plot_interactions,
+    plot_interaction_effects(combined_interaction_effects)
+    )
 )

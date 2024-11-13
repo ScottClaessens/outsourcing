@@ -56,7 +56,11 @@ plot_treatments_by_task <- function(study1_data, study1_fit1) {
       extract_diffs("moral"),
       extract_diffs("lazy"),
       extract_diffs("trustworthy")
-    )
+    ) %>%
+    mutate(
+      Response = factor(Response, level = c("Competent", "Warm", "Moral", 
+                                            "Lazy", "Trustworthy"))
+      )
   # plot treatment effects split by task
   p <-
     ggplot(
