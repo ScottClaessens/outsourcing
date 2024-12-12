@@ -51,17 +51,22 @@ list(
   tar_target(study1_data, load_study1_data(study1_data_file, 
                                            combined_task_means)),
   # plot chatgpt responses
-  tar_target(plot_chatgpt, plot_chatgpt_responses(study1_data)),
+  tar_target(plot_chatgpt_study1, plot_chatgpt_responses_study1(study1_data)),
   # fit model 1 to study 1 data
   tar_target(study1_fit1, fit_study1_model1(study1_data)),
   # extract treatment means
-  tar_target(treatment_means, extract_treatment_means_study1(study1_fit1)),
+  tar_target(
+    treatment_means_study1,
+    extract_treatment_means_study1(study1_fit1)
+    ),
   # plot treatments overall
-  tar_target(plot_treatments, plot_treatments_overall(study1_data, 
-                                                      treatment_means)),
+  tar_target(
+    plot_treatments_study1,
+    plot_treatments_overall_study1(study1_data, treatment_means_study1)),
   # plot treatment effects by task
-  tar_target(plot_treatments_tasks, plot_treatments_by_task(study1_data, 
-                                                            study1_fit1)),
+  tar_target(
+    plot_treatments_tasks_study1,
+    plot_treatments_by_task_study1(study1_data, study1_fit1)),
   tar_map(
     values = tibble(
       var = c("social", "socialskills", "impactothers", "consequences", 
@@ -71,25 +76,53 @@ list(
     tar_target(study1_fit2, fit_study1_model2(study1_data, var)),
     # extract interaction effects for each model
     tar_target(
-      interaction_effects,
+      interaction_effects_study1,
       extract_interaction_effects_study1(study1_fit2, var)
       )
   ),
   # combined interaction effects
   tar_target(
-    combined_interaction_effects,
+    combined_interaction_effects_study1,
     bind_rows(
-      interaction_effects_social,
-      interaction_effects_socialskills,
-      interaction_effects_impactothers,
-      interaction_effects_consequences,
-      interaction_effects_intrinsiceffort,
-      interaction_effects_extrinsiceffort
+      interaction_effects_study1_social,
+      interaction_effects_study1_socialskills,
+      interaction_effects_study1_impactothers,
+      interaction_effects_study1_consequences,
+      interaction_effects_study1_intrinsiceffort,
+      interaction_effects_study1_extrinsiceffort
       )
     ),
   # plot interaction effects
   tar_target(
-    plot_interactions,
-    plot_interaction_effects(combined_interaction_effects)
+    plot_interactions_study1,
+    plot_interaction_effects_study1(combined_interaction_effects_study1)
+    ),
+  # plot interaction parameters
+  tar_target(
+    plot_interaction_parameters_study1,
+    plot_interaction_pars_study1(
+      study1_fit2_social,
+      study1_fit2_socialskills,
+      study1_fit2_impactothers,
+      study1_fit2_consequences,
+      study1_fit2_intrinsiceffort,
+      study1_fit2_extrinsiceffort
+    )
+  ),
+  
+  #### Study 2 ####
+  
+  # study 2 data file
+  tar_target(study2_data_file, "data/study2/study2_data_clean.csv", 
+             format = "file"),
+  # load study 2 data
+  tar_target(study2_data, load_study2_data(study2_data_file, 
+                                           combined_task_means)),
+  # fit model 1 to study 2 data
+  tar_target(study2_fit1, fit_study2_model1(study2_data)),
+  # extract treatment means
+  tar_target(
+    treatment_means_study2,
+    extract_treatment_means_study2(study2_fit1)
     )
 )

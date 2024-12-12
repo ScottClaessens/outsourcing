@@ -1,5 +1,5 @@
-# function to plot interaction effects
-plot_interaction_effects <- function(combined_interaction_effects) {
+# function to plot interaction effects for study 1
+plot_interaction_effects_study1 <- function(combined_interaction_effects_study1) {
   # prepare data for plotting
   responses <- c(
     "competent"   = "Competent",
@@ -18,7 +18,7 @@ plot_interaction_effects <- function(combined_interaction_effects) {
   )
   # plot
   out <-
-    combined_interaction_effects %>%
+    combined_interaction_effects_study1 %>%
     mutate(
       resp = factor(responses[resp], levels = responses),
       var = factor(predictors[var], levels = predictors)

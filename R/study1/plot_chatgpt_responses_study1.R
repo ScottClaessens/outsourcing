@@ -1,5 +1,5 @@
 # function to plot the raw data for chatgpt questions
-plot_chatgpt_responses <- function(study1_data) {
+plot_chatgpt_responses_study1 <- function(study1_data) {
   # wrangle data for plotting
   study1_data <-
     study1_data %>%
@@ -72,7 +72,7 @@ plot_chatgpt_responses <- function(study1_data) {
   out <- (top / bot) + plot_annotation(tag_levels = "a")
   # save
   ggsave(
-    filename = "plots/chatgpt_responses.pdf",
+    filename = "plots/study1_chatgpt_responses.pdf",
     plot = out,
     width = 6,
     height = 5

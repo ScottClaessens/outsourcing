@@ -1,5 +1,6 @@
-# function to plot overall treatment effects
-plot_treatments_overall <- function(study1_data, treatment_means) {
+# function to plot overall treatment effects in study 1
+plot_treatments_overall_study1 <- function(study1_data,
+                                           treatment_means_study1) {
   # treatment variable for plotting
   study1_data <-
     study1_data %>%
@@ -10,7 +11,7 @@ plot_treatments_overall <- function(study1_data, treatment_means) {
       treatment = factor(treatment, levels = c("Control", "AI", "Human"))
     )
   treatment_means <-
-    treatment_means %>%
+    treatment_means_study1 %>%
     mutate(
       Treatment = ifelse(Treatment == "Human outsourcing", "Human", Treatment),
       Treatment = ifelse(Treatment == "AI outsourcing", "AI", Treatment),

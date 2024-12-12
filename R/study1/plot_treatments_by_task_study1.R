@@ -1,5 +1,5 @@
-# function to plot treatment effects by task
-plot_treatments_by_task <- function(study1_data, study1_fit1) {
+# function to plot treatment effects by task in study 1
+plot_treatments_by_task_study1 <- function(study1_data, study1_fit1) {
   # function to extract differences
   extract_diffs <- function(resp) {
     # new data

@@ -1,10 +1,10 @@
 # function to extract and plot interaction parameters
-plot_interaction_pars <- function(study1_fit2_social,
-                                  study1_fit2_socialskills,
-                                  study1_fit2_impactothers,
-                                  study1_fit2_consequences,
-                                  study1_fit2_intrinsiceffort,
-                                  study1_fit2_extrinsiceffort) {
+plot_interaction_pars_study1 <- function(study1_fit2_social,
+                                         study1_fit2_socialskills,
+                                         study1_fit2_impactothers,
+                                         study1_fit2_consequences,
+                                         study1_fit2_intrinsiceffort,
+                                         study1_fit2_extrinsiceffort) {
   # function to extract interaction parameters
   extract_fun <- function(study1_fit2) {
     # get model summary
@@ -42,15 +42,14 @@ plot_interaction_pars <- function(study1_fit2_social,
   )
   # plot
   out <-
-    #bind_rows(
-    #  extract_fun(study1_fit2_social),
-    #  extract_fun(study1_fit2_socialskills),
-    #  extract_fun(study1_fit2_impactothers),
-    #  extract_fun(study1_fit2_consequences),
-    #  extract_fun(study1_fit2_intrinsiceffort),
-    #  extract_fun(study1_fit2_extrinsiceffort)
-    #  ) %>%
-    d %>%
+    bind_rows(
+      extract_fun(study1_fit2_social),
+      extract_fun(study1_fit2_socialskills),
+      extract_fun(study1_fit2_impactothers),
+      extract_fun(study1_fit2_consequences),
+      extract_fun(study1_fit2_intrinsiceffort),
+      extract_fun(study1_fit2_extrinsiceffort)
+      ) %>%
     mutate(
       Response = factor(responses[Response], levels = responses),
       Predictor = factor(predictors[Predictor], levels = predictors)
