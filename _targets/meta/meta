@@ -24,7 +24,9 @@ pilot_data|stem|b5a926eb986ac71d|57a99c010003c801|69dd0fc8d034bfdd|-1264416805||
 pilot_data_file|stem|59b19d3ce23cafe9|cf06a36a4dd9338d|2c530c1562a7fbd1|2024602467|data/pilot/pilot_data_clean.csv|t20007.543912037s|daff9ef6e1082981|75950|file|local|vector|||0||
 pilot_fit|stem|4ee7c73f5920888d|770631d74fd2e54f|c7b2be9931c6e4dc|-109127004||t20038.7525549992s|325eb29057eec075|84150143|rds|local|vector|||1711.75||
 plot_chatgpt_responses_study1|function|c6bc4926d442e921|||||||||||||||
+plot_chatgpt_responses_study2|function|73af6db692cca166|||||||||||||||
 plot_chatgpt_study1|stem|079c5deeae21512c|88a6d2a5575697fa|27182d9861371af5|-1779576822||t20069.5822697953s|45df0fd8b028c515|296104|rds|local|vector|||0.313||
+plot_chatgpt_study2|stem|0a963f61bde5f99f|a0984b7005c329c6|5cffb08aebfcd5fc|-583214072||t20069.5962761682s|e7c4210d4c766163|351622|rds|local|vector|||0.844||
 plot_interaction_effects_study1|function|66233ca59d9b043b|||||||||||||||
 plot_interaction_parameters_study1|stem|9b680b8238f640c2|b4823463779af471|aa3601f610d3c761|1077059595||t20069.581049581s|fbde600737578823|1051725904|rds|local|vector|||12.688||
 plot_interaction_pars_study1|function|36ece1ef83373eac|||||||||||||||

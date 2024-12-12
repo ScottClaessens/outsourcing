@@ -118,6 +118,8 @@ list(
   # load study 2 data
   tar_target(study2_data, load_study2_data(study2_data_file, 
                                            combined_task_means)),
+  # plot chatgpt responses
+  tar_target(plot_chatgpt_study2, plot_chatgpt_responses_study2(study2_data)),
   # fit model 1 to study 2 data
   tar_target(study2_fit1, fit_study2_model1(study2_data)),
   # extract treatment means
