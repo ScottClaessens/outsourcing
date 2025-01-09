@@ -62,11 +62,13 @@ list(
   # plot treatments overall
   tar_target(
     plot_treatments_study1,
-    plot_treatments_overall_study1(study1_data, treatment_means_study1)),
+    plot_treatments_overall_study1(study1_data, treatment_means_study1)
+    ),
   # plot treatment effects by task
   tar_target(
     plot_treatments_tasks_study1,
-    plot_treatments_by_task_study1(study1_data, study1_fit1)),
+    plot_treatments_by_task_study1(study1_data, study1_fit1)
+    ),
   tar_map(
     values = tibble(
       var = c("social", "socialskills", "impactothers", "consequences", 
@@ -126,5 +128,57 @@ list(
   tar_target(
     treatment_means_study2,
     extract_treatment_means_study2(study2_fit1)
+    ),
+  # plot treatments overall
+  tar_target(
+    plot_treatments_study2,
+    plot_treatments_overall_study2(study2_data, treatment_means_study2)
+    ),
+  # plot treatments by task
+  tar_target(
+    plot_treatments_tasks_study2,
+    plot_treatments_by_task_study2(study2_data, study2_fit1)
+  ),
+  tar_map(
+    values = tibble(
+      var = c("social", "socialskills", "impactothers", "consequences", 
+              "intrinsiceffort", "extrinsiceffort")
+    ),
+    # fit model 2 to study 2 data
+    tar_target(study2_fit2, fit_study2_model2(study2_data, var)),
+    # extract interaction effects for each model
+    tar_target(
+      interaction_effects_study2,
+      extract_interaction_effects_study2(study2_fit2, var)
+      )
+    ),
+  # combined interaction effects
+  tar_target(
+    combined_interaction_effects_study2,
+    bind_rows(
+      interaction_effects_study2_social,
+      interaction_effects_study2_socialskills,
+      interaction_effects_study2_impactothers,
+      interaction_effects_study2_consequences,
+      interaction_effects_study2_intrinsiceffort,
+      interaction_effects_study2_extrinsiceffort
     )
+  ),
+  # plot interaction effects
+  tar_target(
+    plot_interactions_study2,
+    plot_interaction_effects_study2(combined_interaction_effects_study2)
+  ),
+  # plot interaction parameters
+  tar_target(
+    plot_interaction_parameters_study2,
+    plot_interaction_pars_study2(
+      study2_fit2_social,
+      study2_fit2_socialskills,
+      study2_fit2_impactothers,
+      study2_fit2_consequences,
+      study2_fit2_intrinsiceffort,
+      study2_fit2_extrinsiceffort
+    )
+  )
 )

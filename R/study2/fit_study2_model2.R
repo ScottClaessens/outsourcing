@@ -1,7 +1,11 @@
-# function to fit model 1 to study 2 data
-fit_study2_model1 <- function(study2_data) {
+# function to fit model 2 to study 2 data
+fit_study2_model2 <- function(study2_data, var = "social") {
   # generate formulas for brms
-  f <- " ~ 1 + treatment + (1 |i| id) + (1 + treatment |j| task)"
+  # use me() to include meaasurement error
+  f <- paste0(
+    " ~ 1 + treatment*me(", var, ", ", var, "_SE, gr = task)",
+    " + (1 |i| id) + (1 + treatment |j| task)"
+    )
   bf1 <- bf(as.formula(paste0("competent",   f)), family = cumulative)
   bf2 <- bf(as.formula(paste0("warm",        f)), family = cumulative)
   bf3 <- bf(as.formula(paste0("moral",       f)), family = cumulative)
@@ -9,7 +13,8 @@ fit_study2_model1 <- function(study2_data) {
   bf5 <- bf(as.formula(paste0("trustworthy", f)), family = cumulative)
   # fit model
   brm(
-    formula = bf1 + bf2 + bf3 + bf4 + bf5 + set_rescor(FALSE),
+    formula = bf1 + bf2 + bf3 + bf4 + bf5 + 
+      set_rescor(FALSE) + set_mecor(FALSE),
     data = study2_data,
     prior = c(
       prior(normal(0, 1.5), class = Intercept, resp = competent),
@@ -28,7 +33,9 @@ fit_study2_model1 <- function(study2_data) {
       prior(exponential(4), class = sd, resp = lazy),
       prior(exponential(4), class = sd, resp = trustworthy),
       prior(lkj(5), class = cor, group = id),
-      prior(lkj(5), class = cor, group = task)
+      prior(lkj(5), class = cor, group = task),
+      prior(normal(0, 0.5), class = meanme),
+      prior(exponential(4), class = sdme)
     ),
     chains = 4,
     cores = 4,
