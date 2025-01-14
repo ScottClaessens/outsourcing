@@ -1,5 +1,6 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 calculate_power_study1|function|cde011720f7ac316|||||||||||||||
+calculate_power_study3|function|4036d86ef65edc8a|||||||||||||||
 combine_task_means|function|4fb3a67e0980e801|||||||||||||||
 combined_interaction_effects_study1|stem|77a77a5fc8046ebc|f08b737d949a705e|91e01251c422e2c2|-899004028||t20069.5810720874s|acad195787085884|142370|rds|local|vector|||0||
 combined_interaction_effects_study2|stem|10d7515ee7cd3f2b|8fb960e005630ece|34e60a8632daed69|-1772308673||t20097.6306606812s|1f132f248f97329d|284613|rds|local|vector|||0||
@@ -80,6 +81,7 @@ study2_fit2_impactothers|stem|654254ec4c37a4e5|2e4930fb0444a5c8|3901487e83b1ef32
 study2_fit2_intrinsiceffort|stem|e7ecafbbc1579abe|863c7a509d4a358a|3901487e83b1ef32|2113695782||t20097.4834782489s|352ee56befd032d2|284705417|rds|local|vector|||41364.781||
 study2_fit2_social|stem|433e36b12762cf52|78ebc0b4404dd209|3901487e83b1ef32|-102682348||t20097.6055635621s|0fadf8289095d777|285169759|rds|local|vector|||10537.703||
 study2_fit2_socialskills|stem|c5d68c834ba97bcd|6ffee888418d7ddd|3901487e83b1ef32|116690129||t20097.0046237123s|e9d058e936cf3c94|284811947|rds|local|vector|||10924.25||
+study3_power|stem|16089aad9823d8e1|e88a511581b2e303|a86b168d6482a310|5849605||t20102.6413376054s|92cdd6e621714d9f|1763|rds|local|vector|||429.046|The global prior student_t3, 0, 2.5 of class Intercept will not be used in the model as all related coefficients have individual priors already. If you did not set those priors yourself, then maybe brms has assigned default priors. See set_prior and default_prior for more details.. Variancecovariance matrix of the parameters is not defined. Variancecovariance matrix of the parameters is not defined. Variancecovariance matrix of the parameters is not defined. Variancecovariance matrix of the parameters is not defined|
 task_means_consequences|stem|eb48216430346331|af1665715466e04b|a5d1ae2495bf2fe5|456041042||t20038.7527309861s|688724c23b2c752d|1402|rds|local|vector|||3.02||
 task_means_extrinsiceffort|stem|01a99240b4d50b1f|27968d101cb1abf8|a5d1ae2495bf2fe5|-23093874||t20038.7525919952s|726a9b2c6b70e967|1407|rds|local|vector|||3.12||
 task_means_impactothers|stem|34fc0f112ad85e5d|0a2715555e42c8e1|a5d1ae2495bf2fe5|1690879994||t20038.7526293345s|5da8b9411e92a8e8|1404|rds|local|vector|||3.18||

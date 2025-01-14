@@ -180,5 +180,10 @@ list(
       study2_fit2_intrinsiceffort,
       study2_fit2_extrinsiceffort
     )
-  )
+  ),
+  
+  #### Study 3 ####
+  
+  # calculate power
+  tar_target(study3_power, calculate_power_study3(n = 250, effect_size = -0.7))
 )
