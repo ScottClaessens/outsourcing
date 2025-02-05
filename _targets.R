@@ -184,6 +184,21 @@ list(
   
   #### Study 3 ####
   
-  # calculate power
-  tar_target(study3_power, calculate_power_study3(n = 250, effect_size = -0.7))
+  # calculate power for study 3 
+  tar_target(study3_power, calculate_power_study3(n = 250, effect_size = -0.7)),
+  # study 3 data file
+  tar_target(study3_data_file, "data/study3/study3_data_clean.csv",
+             format = "file"),
+  # load study 3 data
+  tar_target(study3_data, load_study3_data(study3_data_file)),
+  # plot chatgpt responses
+  tar_target(plot_chatgpt_study3, plot_chatgpt_responses_study3(study3_data)),
+  # fit models to study 3 data
+  tar_target(study3_fit1, fit_study3_model1(study3_data)),
+  # extract means
+  tar_target(
+    treatment_means_study3,
+    extract_treatment_means_study3(study3_fit1)
+  )
+
 )
