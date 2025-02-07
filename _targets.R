@@ -199,6 +199,11 @@ list(
   tar_target(
     treatment_means_study3,
     extract_treatment_means_study3(study3_fit1)
+  ),
+  # plot results
+  tar_target(
+    plot_treatments_work_study3,
+    plot_treatments_study3_work(study3_data, treatment_means_study3)
   )
 
 )

@@ -5,13 +5,13 @@ extract_treatment_means_study3 <- function(study3_fit1) {
     # new data
     d <- expand_grid(
       treatment = c("Control", "Tool", "Full"),
-      task = c("NonSocial", "Social")
+      task = c("Social", "NonSocial")
       )
     # get fitted values
     f <- fitted(
       object = study3_fit1,
       newdata = d,
-      resp = resp,
+      resp = str_remove(resp, "_"),
       re_formula = NA,
       summary = FALSE
     )
@@ -29,7 +29,7 @@ extract_treatment_means_study3 <- function(study3_fit1) {
       ) %>%
       rowwise() %>%
       transmute(
-        Response = str_to_title(resp),
+        Response = resp,
         Treatment = treatment,
         Task = task,
         Estimate = mean(post),
@@ -40,7 +40,7 @@ extract_treatment_means_study3 <- function(study3_fit1) {
   }
   # bind rows
   bind_rows(
-    extract_fun("wellwritten"),
+    extract_fun("well_written"),
     extract_fun("meaningful"),
     extract_fun("authentic"),
     extract_fun("grade"),

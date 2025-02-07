@@ -12,7 +12,12 @@ load_study3_data <- function(study3_data_file) {
     filter(attention == "TikTok") %>%
     dplyr::select(!attention) %>%
     # variables as factors
-    mutate(across(treatment:answer, factor)) %>%
+    mutate(
+      treatment = factor(treatment, levels = c("Control", "Tool", "Full")),
+      task = factor(task, levels = c("Social", "NonSocial")),
+      answer = factor(answer, levels = c("Father", "Friend", "Sister",
+                                         "Buffy", "Hobbit", "Titanic"))
+    ) %>%
     # grade as ordered factor
     mutate(grade = ordered(grade, levels = LETTERS[5:1]))
 }

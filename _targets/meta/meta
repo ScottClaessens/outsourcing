@@ -10,7 +10,7 @@ extract_interaction_effects_study2|function|b6fababffbe3ad0e|||||||||||||||
 extract_task_means|function|2601f026c292692c|||||||||||||||
 extract_treatment_means_study1|function|2153090377e4cc98|||||||||||||||
 extract_treatment_means_study2|function|892bb03193740d35|||||||||||||||
-extract_treatment_means_study3|function|3d312829a9cf49a2|||||||||||||||
+extract_treatment_means_study3|function|d4864ce1d5fe3eb0|||||||||||||||
 fit_pilot_model|function|81a7d3d4fd331451|||||||||||||||
 fit_study1_model1|function|eca844d3181e0b6e|||||||||||||||
 fit_study1_model2|function|d02364040f85b65a|||||||||||||||
@@ -32,7 +32,7 @@ interaction_effects_study2_socialskills|stem|4504ea25fdd37a0c|8071b715c42751e6|2
 load_pilot_data|function|fcce8d71df12003c|||||||||||||||
 load_study1_data|function|531a5c01d48e375a|||||||||||||||
 load_study2_data|function|ed6e1e3e9ed4fd08|||||||||||||||
-load_study3_data|function|f88de2b017154c6f|||||||||||||||
+load_study3_data|function|7cd76fa58157223d|||||||||||||||
 pilot_data|stem|b5a926eb986ac71d|57a99c010003c801|69dd0fc8d034bfdd|-1264416805||t20038.7326992463s|e26fb4004596eb2e|7870|rds|local|vector|||0.91||
 pilot_data_file|stem|59b19d3ce23cafe9|cf06a36a4dd9338d|2c530c1562a7fbd1|2024602467|data/pilot/pilot_data_clean.csv|t20007.543912037s|daff9ef6e1082981|75950|file|local|vector|||0||
 pilot_fit|stem|4ee7c73f5920888d|770631d74fd2e54f|c7b2be9931c6e4dc|-109127004||t20038.7525549992s|325eb29057eec075|84150143|rds|local|vector|||1711.75||
@@ -41,7 +41,7 @@ plot_chatgpt_responses_study2|function|73af6db692cca166|||||||||||||||
 plot_chatgpt_responses_study3|function|5aadfbe9c9b3ef72|||||||||||||||
 plot_chatgpt_study1|stem|079c5deeae21512c|88a6d2a5575697fa|27182d9861371af5|-1779576822||t20069.5822697953s|45df0fd8b028c515|296104|rds|local|vector|||0.313||
 plot_chatgpt_study2|stem|0a963f61bde5f99f|a0984b7005c329c6|5cffb08aebfcd5fc|-583214072||t20069.5962761682s|e7c4210d4c766163|351622|rds|local|vector|||0.844||
-plot_chatgpt_study3|stem|4c5d76aab2c0c31e|db0bc20ec7364eda|b6a5f7096f542960|-285506428||t20124.6057225702s|7d5bb63966db4705|353529|rds|local|vector|||1.234||
+plot_chatgpt_study3|stem|4c5d76aab2c0c31e|db0bc20ec7364eda|1790c115f81dfe97|-285506428||t20126.6950260179s|7d5bb63966db4705|353529|rds|local|vector|||0.985||
 plot_interaction_effects_study1|function|66233ca59d9b043b|||||||||||||||
 plot_interaction_effects_study2|function|48b5156a725f2797|||||||||||||||
 plot_interaction_parameters_study1|stem|9b680b8238f640c2|b4823463779af471|aa3601f610d3c761|1077059595||t20069.581049581s|fbde600737578823|1051725904|rds|local|vector|||12.688||
@@ -65,8 +65,10 @@ plot_treatments_overall_study1|function|a8246ed939aa9fa7|||||||||||||||
 plot_treatments_overall_study2|function|0b29c73be8bd5ffb|||||||||||||||
 plot_treatments_study1|stem|0791254db2735752|235d5f709d49d924|baaa0492df0c273c|306922371||t20069.5810715473s|239c89cbb24a47f5|1477241|rds|local|vector|||0.953||
 plot_treatments_study2|stem|1ed97cc8f36753da|399c533871016305|d7999718fdae5019|1862253535||t20069.9111761775s|f0a9d6b9faf398b5|2038129|rds|local|vector|||1.297||
+plot_treatments_study3_work|function|8b96fdc5576e5620|||||||||||||||
 plot_treatments_tasks_study1|stem|3d2628c3317b1cb0|27ca91b3ef53594b|fd1509b14638ac85|-301943755||t20069.5789717914s|6784e8cdec8dfb0f|175025978|rds|local|vector|||15.484||
 plot_treatments_tasks_study2|stem|a0e51585851c489f|3286509dda60c83d|31494a0322e9373f|858217252||t20070.6189994084s|5f1ac7fc95031e53|284161411|rds|local|vector|||13.266||
+plot_treatments_work_study3|stem|b62b842621be1801|9bb55463797176a6|d6bf9c1d00c0274f|-1361730643||t20126.7162471884s|1ebc2252988074f4|416236|rds|local|vector|||0.406||
 study1_data|stem|27a40acbdfa4b8a4|aca38c2521a740dd|293887ada7582a94|210452844||t20038.886590999s|308264eb80406aa8|58376|rds|local|vector|||0.68||
 study1_data_file|stem|ca5bb5b286540ded|324175eab99ca905|2c530c1562a7fbd1|-1398507996|data/study1/study1_data_clean.csv|t20032.4131018519s|23e2aad33730ef1f|254703|file|local|vector|||3.67||
 study1_fit1|stem|9810d8573f629a71|d016aeb36e624e0a|a1f5f57d9f8a73d9|1987250330||t20039.3538193397s|aa685dfeb598e60d|174801912|rds|local|vector|||23915.11||
@@ -86,9 +88,9 @@ study2_fit2_impactothers|stem|654254ec4c37a4e5|2e4930fb0444a5c8|3901487e83b1ef32
 study2_fit2_intrinsiceffort|stem|e7ecafbbc1579abe|863c7a509d4a358a|3901487e83b1ef32|2113695782||t20097.4834782489s|352ee56befd032d2|284705417|rds|local|vector|||41364.781||
 study2_fit2_social|stem|433e36b12762cf52|78ebc0b4404dd209|3901487e83b1ef32|-102682348||t20097.6055635621s|0fadf8289095d777|285169759|rds|local|vector|||10537.703||
 study2_fit2_socialskills|stem|c5d68c834ba97bcd|6ffee888418d7ddd|3901487e83b1ef32|116690129||t20097.0046237123s|e9d058e936cf3c94|284811947|rds|local|vector|||10924.25||
-study3_data|stem|4f9ee7902a9f915d|68a4968e90d0789a|bb4d0d79825da92d|1958037105||t20124.5723494924s|f8dedb8db8c30703|15645|rds|local|vector|||0.813||
+study3_data|stem|1694e0208a56e491|68a4968e90d0789a|75311d6061e109a8|1958037105||t20126.6595781588s|f8dedb8db8c30703|15645|rds|local|vector|||0.625||
 study3_data_file|stem|81a4d5c26728c968|705b09924d52cfd3|2c530c1562a7fbd1|42815231|data/study3/study3_data_clean.csv|t20118.5505004829s|363cb47ff10b7997|126348|file|local|vector|||2.765||
-study3_fit1|stem|457e68886a130102|cce00371b9e72134|8675f2882cfbddff|749411295||t20124.635671014s|b28faabcc54ba83c|43975844|rds|local|vector|||1887.265|Rows containing NAs were excluded from the model.. There were 1 divergent transitions after warmup. Seehttpsmcstan.orgmiscwarnings.htmldivergenttransitionsafterwarmupto find out why this is a problem and how to eliminate them.. Examine the pairs plot to diagnose sampling problems|
+study3_fit1|stem|74021173ef3f133c|cce00371b9e72134|05ce7e2c7bf104b2|749411295||t20126.7161296s|d3589f424cde4ab9|43963198|rds|local|vector|||1821.828|Rows containing NAs were excluded from the model.|
 study3_power|stem|16089aad9823d8e1|e88a511581b2e303|a86b168d6482a310|5849605||t20102.6413376054s|92cdd6e621714d9f|1763|rds|local|vector|||429.046|The global prior student_t3, 0, 2.5 of class Intercept will not be used in the model as all related coefficients have individual priors already. If you did not set those priors yourself, then maybe brms has assigned default priors. See set_prior and default_prior for more details.. Variancecovariance matrix of the parameters is not defined. Variancecovariance matrix of the parameters is not defined. Variancecovariance matrix of the parameters is not defined. Variancecovariance matrix of the parameters is not defined|
 task_means_consequences|stem|eb48216430346331|af1665715466e04b|a5d1ae2495bf2fe5|456041042||t20038.7527309861s|688724c23b2c752d|1402|rds|local|vector|||3.02||
 task_means_extrinsiceffort|stem|01a99240b4d50b1f|27968d101cb1abf8|a5d1ae2495bf2fe5|-23093874||t20038.7525919952s|726a9b2c6b70e967|1407|rds|local|vector|||3.12||
@@ -98,4 +100,4 @@ task_means_social|stem|bd4c56785928f65f|cd0fb79d5e65a916|a5d1ae2495bf2fe5|212320
 task_means_socialskills|stem|f28a1d31bc6f86f3|e1def4c79d0ccc1b|a5d1ae2495bf2fe5|178037288||t20038.7528425934s|7dc4ae8d7c3438d3|1409|rds|local|vector|||3.25||
 treatment_means_study1|stem|530347485047e372|5c1f6b8a8f32237c|492dd3f67dbc672f|337650748||t20069.5787098575s|b4cdb46e25c2abb4|950|rds|local|vector|||6.844||
 treatment_means_study2|stem|f1370f2aa3ed749b|7dc2ee7031065b5b|4491cef26296c0b9|-1744123191||t20069.8937841108s|7e2538694ca46b04|1330|rds|local|vector|||6.406||
-treatment_means_study3|stem|a1f0f89bcac1db1c|8d28c2d814b3c366|d156cff0e2a26ed6|1351631764||t20124.7613450323s|62b263dbed94e081|2148|rds|local|vector|||19.718||
+treatment_means_study3|stem|8ae14b5ab237b26c|8d28c2d814b3c366|56a546d38c92475d|1351631764||t20126.7162406695s|62b263dbed94e081|2148|rds|local|vector|||9.547||
