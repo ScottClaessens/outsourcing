@@ -1,7 +1,7 @@
-# function to extract treatment means from model 1 in study 3
-extract_treatment_means_study3 <- function(study3_fit1) {
+# function to extract treatment means in study 3
+extract_treatment_means_study3 <- function(study3_fit1, study3_fit2) {
   # function to extract treatment means for specific response variable
-  extract_fun <- function(resp) {
+  extract_fun <- function(resp, model) {
     # new data
     d <- expand_grid(
       treatment = c("Control", "Tool", "Full"),
@@ -9,7 +9,7 @@ extract_treatment_means_study3 <- function(study3_fit1) {
       )
     # get fitted values
     f <- fitted(
-      object = study3_fit1,
+      object = model,
       newdata = d,
       resp = str_remove(resp, "_"),
       re_formula = NA,
@@ -19,8 +19,10 @@ extract_treatment_means_study3 <- function(study3_fit1) {
     post <- matrix(0, nrow = nrow(f), ncol = ncol(f))
     if (resp == "grade") {
       for (i in 1:5) post <- post + (f[, , i] * i)
-    } else {
+    } else if (resp != "reward") {
       for (i in 1:7) post <- post + (f[, , i] * i)
+    } else {
+      post <- f
     }
     # add posterior means to data
     d %>%
@@ -40,13 +42,14 @@ extract_treatment_means_study3 <- function(study3_fit1) {
   }
   # bind rows
   bind_rows(
-    extract_fun("well_written"),
-    extract_fun("meaningful"),
-    extract_fun("authentic"),
-    extract_fun("grade"),
-    extract_fun("warm"),
-    extract_fun("moral"),
-    extract_fun("lazy"),
-    extract_fun("trustworthy")
+    extract_fun("well_written", study3_fit1),
+    extract_fun("meaningful",   study3_fit1),
+    extract_fun("authentic",    study3_fit1),
+    extract_fun("grade",        study3_fit1),
+    extract_fun("reward",       study3_fit2),
+    extract_fun("warm",         study3_fit1),
+    extract_fun("moral",        study3_fit1),
+    extract_fun("lazy",         study3_fit1),
+    extract_fun("trustworthy",  study3_fit1)
   )
 }

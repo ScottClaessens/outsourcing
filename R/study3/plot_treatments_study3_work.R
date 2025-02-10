@@ -13,6 +13,8 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
       "Non-social",
       treatment_means_study3$Task
       )
+  # grades as numeric
+  study3_data$grade <- as.numeric(study3_data$grade)
   # plotting function
   fun <- function(resp) {
     ggplot() +
@@ -25,7 +27,7 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
         ),
         position = position_jitterdodge(
           dodge.width = 0.7,
-          jitter.height = 0.4,
+          jitter.height = ifelse(resp == "reward", 0.05, 0.4),
           jitter.width = 0.2
         ),
         alpha = 0.1,
@@ -45,8 +47,30 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
       ) +
       scale_y_continuous(
         name = str_to_sentence(str_replace(resp, "_", " ")),
-        breaks = 1:7,
-        limits = c(1, 7),
+        breaks = 
+          if (resp == "reward") {
+            seq(0, 1, by = 0.2)
+          } else if (resp == "grade") {
+            1:5
+          } else {
+            1:7
+          },
+        limits = 
+          if (resp == "reward") {
+            c(0, 1)
+          } else if (resp == "grade") {
+            c(1, 5)
+          } else {
+            c(1, 7)
+          },
+        labels = 
+          if (resp == "reward") {
+            scales::dollar_format(prefix = "£")
+          } else if (resp == "grade") {
+            LETTERS[5:1]
+          } else {
+            waiver()
+          },
         oob = scales::squish
       ) +
       xlab(NULL) +
@@ -57,9 +81,11 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
   pA <- fun("well_written")
   pB <- fun("meaningful")
   pC <- fun("authentic")
+  pD <- fun("grade")
+  pE <- fun("reward")
   # put together
   out <- 
-    ((pA + pB + pC) & theme(legend.position = 'bottom')) + 
+    (((pA + pB + pC) / (pD + pE)) & theme(legend.position = 'bottom')) + 
     plot_layout(guides = "collect") +
     plot_annotation(tag_levels = "a")
   # save
@@ -67,7 +93,7 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
     filename = "plots/study3_treatments_work.pdf",
     plot = out,
     width = 6,
-    height = 3
+    height = 5
   )
   return(out)
 }
