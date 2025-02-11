@@ -1,20 +1,18 @@
-# function to plot overall treatment effects for perceptions of work in study 3
-plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
+# function to plot overall treatment effects for person perceptions in study 3
+plot_treatments_study3_person <- function(study3_data, treatment_means_study3) {
   # task labelling
   study3_data$task <- 
     ifelse(
       study3_data$task == "NonSocial",
       "Non-social",
-      as.character(study3_data$task)
+      "Social"
     )
   treatment_means_study3$Task <- 
     ifelse(
       treatment_means_study3$Task == "NonSocial",
       "Non-social",
-      treatment_means_study3$Task
+      "Social"
       )
-  # grades as numeric
-  study3_data$grade <- as.numeric(study3_data$grade)
   # plotting function
   fun <- function(resp) {
     ggplot() +
@@ -27,7 +25,7 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
         ),
         position = position_jitterdodge(
           dodge.width = 0.7,
-          jitter.height = ifelse(resp == "reward", 0.05, 0.4),
+          jitter.height = 0.4,
           jitter.width = 0.2
         ),
         alpha = 0.1,
@@ -46,48 +44,21 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
         size = 0.4
       ) +
       scale_y_continuous(
-        name = str_to_sentence(str_replace(resp, "_", " ")),
-        breaks = 
-          if (resp == "reward") {
-            seq(0, 1, by = 0.2)
-          } else if (resp == "grade") {
-            1:5
-          } else {
-            1:7
-          },
-        limits = 
-          if (resp == "reward") {
-            c(0, 1)
-          } else if (resp == "grade") {
-            c(1, 5)
-          } else {
-            c(1, 7)
-          },
-        labels = 
-          if (resp == "reward") {
-            scales::dollar_format(prefix = "£")
-          } else if (resp == "grade") {
-            LETTERS[5:1]
-          } else {
-            waiver()
-          },
+        name = str_to_sentence(resp),
+        breaks = 1:7,
+        limits = c(1, 7),
         oob = scales::squish
       ) +
       xlab(NULL) +
       theme_minimal() +
-      theme(
-        legend.title = element_blank(),
-        axis.text.y = element_text(
-          size = ifelse(resp == "reward", 6, 9)
-          )
-        )
+      theme(legend.title = element_blank())
   }
   # get plots
-  pA <- fun("well_written")
-  pB <- fun("meaningful")
-  pC <- fun("authentic")
-  pD <- fun("grade")
-  pE <- fun("reward")
+  pA <- fun("competent")
+  pB <- fun("warm")
+  pC <- fun("moral")
+  pD <- fun("lazy")
+  pE <- fun("trustworthy")
   # put together
   design <- "
     123
@@ -99,7 +70,7 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
     plot_annotation(tag_levels = "a")
   # save
   ggsave(
-    filename = "plots/study3_treatments_work.pdf",
+    filename = "plots/study3_treatments_person.pdf",
     plot = out,
     width = 6,
     height = 4

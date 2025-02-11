@@ -205,6 +205,10 @@ list(
   tar_target(
     plot_treatments_work_study3,
     plot_treatments_study3_work(study3_data, treatment_means_study3)
+  ),
+  tar_target(
+    plot_treatments_person_study3,
+    plot_treatments_study3_person(study3_data, treatment_means_study3)
   )
 
 )

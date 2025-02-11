@@ -10,7 +10,7 @@ extract_interaction_effects_study2|function|b6fababffbe3ad0e|||||||||||||||
 extract_task_means|function|2601f026c292692c|||||||||||||||
 extract_treatment_means_study1|function|2153090377e4cc98|||||||||||||||
 extract_treatment_means_study2|function|892bb03193740d35|||||||||||||||
-extract_treatment_means_study3|function|956c1bfe70de8ab4|||||||||||||||
+extract_treatment_means_study3|function|acf9df77b9053298|||||||||||||||
 fit_pilot_model|function|81a7d3d4fd331451|||||||||||||||
 fit_study1_model1|function|eca844d3181e0b6e|||||||||||||||
 fit_study1_model2|function|d02364040f85b65a|||||||||||||||
@@ -64,12 +64,14 @@ plot_treatments_by_task_study1|function|ce5c9472692dbf72|||||||||||||||
 plot_treatments_by_task_study2|function|b10d08f50115ac59|||||||||||||||
 plot_treatments_overall_study1|function|a8246ed939aa9fa7|||||||||||||||
 plot_treatments_overall_study2|function|0b29c73be8bd5ffb|||||||||||||||
+plot_treatments_person_study3|stem|449c463f34d42a14|0b441c39060342bd|24cdf5dc61984f4d|-1625393793||t20130.4501893142s|7988b0eb4655eaf3|580400|rds|local|vector|||1.453||
 plot_treatments_study1|stem|0791254db2735752|235d5f709d49d924|baaa0492df0c273c|306922371||t20069.5810715473s|239c89cbb24a47f5|1477241|rds|local|vector|||0.953||
 plot_treatments_study2|stem|1ed97cc8f36753da|399c533871016305|d7999718fdae5019|1862253535||t20069.9111761775s|f0a9d6b9faf398b5|2038129|rds|local|vector|||1.297||
-plot_treatments_study3_work|function|445f8c4aeaabd6c1|||||||||||||||
+plot_treatments_study3_person|function|7b6fd97922778ca0|||||||||||||||
+plot_treatments_study3_work|function|7caa9119bd13193c|||||||||||||||
 plot_treatments_tasks_study1|stem|3d2628c3317b1cb0|27ca91b3ef53594b|fd1509b14638ac85|-301943755||t20069.5789717914s|6784e8cdec8dfb0f|175025978|rds|local|vector|||15.484||
 plot_treatments_tasks_study2|stem|a0e51585851c489f|3286509dda60c83d|31494a0322e9373f|858217252||t20070.6189994084s|5f1ac7fc95031e53|284161411|rds|local|vector|||13.266||
-plot_treatments_work_study3|stem|81f0fac9a79d5534|9bb55463797176a6|e2e5dadd96f9d38e|-1361730643||t20129.7046892957s|e96cc2bb1a63e400|589170|rds|local|vector|||0.984|Removed 1 row containing missing values or values outside the scale rangegeom_point.. Removed 1 row containing missing values or values outside the scale rangegeom_point.|
+plot_treatments_work_study3|stem|c5b58637c42e0c5f|9bb55463797176a6|b33f37c6fc154882|-1361730643||t20130.4573179251s|4aec99c4f7ccda69|590366|rds|local|vector|||1.422|Removed 1 row containing missing values or values outside the scale rangegeom_point.. Removed 1 row containing missing values or values outside the scale rangegeom_point.|
 study1_data|stem|27a40acbdfa4b8a4|aca38c2521a740dd|293887ada7582a94|210452844||t20038.886590999s|308264eb80406aa8|58376|rds|local|vector|||0.68||
 study1_data_file|stem|ca5bb5b286540ded|324175eab99ca905|2c530c1562a7fbd1|-1398507996|data/study1/study1_data_clean.csv|t20032.4131018519s|23e2aad33730ef1f|254703|file|local|vector|||3.67||
 study1_fit1|stem|9810d8573f629a71|d016aeb36e624e0a|a1f5f57d9f8a73d9|1987250330||t20039.3538193397s|aa685dfeb598e60d|174801912|rds|local|vector|||23915.11||
@@ -102,4 +104,4 @@ task_means_social|stem|bd4c56785928f65f|cd0fb79d5e65a916|a5d1ae2495bf2fe5|212320
 task_means_socialskills|stem|f28a1d31bc6f86f3|e1def4c79d0ccc1b|a5d1ae2495bf2fe5|178037288||t20038.7528425934s|7dc4ae8d7c3438d3|1409|rds|local|vector|||3.25||
 treatment_means_study1|stem|530347485047e372|5c1f6b8a8f32237c|492dd3f67dbc672f|337650748||t20069.5787098575s|b4cdb46e25c2abb4|950|rds|local|vector|||6.844||
 treatment_means_study2|stem|f1370f2aa3ed749b|7dc2ee7031065b5b|4491cef26296c0b9|-1744123191||t20069.8937841108s|7e2538694ca46b04|1330|rds|local|vector|||6.406||
-treatment_means_study3|stem|8ed10207bdc85f20|9c065b90ce64c8eb|f1b993308de042cf|1351631764||t20129.6854963801s|076eefd30877521d|2360|rds|local|vector|||11.157||
+treatment_means_study3|stem|7bbdb0f1e0b1345a|9c065b90ce64c8eb|692a734a91e329db|1351631764||t20130.4324355728s|47ed9ab126113c6d|2568|rds|local|vector|||23.109||

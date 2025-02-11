@@ -47,6 +47,7 @@ extract_treatment_means_study3 <- function(study3_fit1, study3_fit2) {
     extract_fun("authentic",    study3_fit1),
     extract_fun("grade",        study3_fit1),
     extract_fun("reward",       study3_fit2),
+    extract_fun("competent",    study3_fit1),
     extract_fun("warm",         study3_fit1),
     extract_fun("moral",        study3_fit1),
     extract_fun("lazy",         study3_fit1),
