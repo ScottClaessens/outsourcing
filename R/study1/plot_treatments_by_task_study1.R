@@ -31,11 +31,11 @@ plot_treatments_by_task_study1 <- function(study1_data, study1_fit1) {
       transmute(
         Response = str_to_title(resp),
         Task = task,
-        AI = list(`AI outsourcing` - Control),
-        Human = list(`Human outsourcing` - Control)
+        `AI outsourcing` = list(`AI outsourcing` - Control),
+        `Human outsourcing` = list(`Human outsourcing` - Control)
       ) %>%
       pivot_longer(
-        cols = c(AI, Human),
+        cols = c(`AI outsourcing`, `Human outsourcing`),
         names_to = "Effect",
         values_to = "post"
       ) %>%
@@ -48,6 +48,11 @@ plot_treatments_by_task_study1 <- function(study1_data, study1_fit1) {
       ) %>%
       dplyr::select(!post)
   }
+  # get task ratings
+  task_ratings <- 
+    study1_data %>%
+    group_by(task) %>%
+    summarise(social = unique(social))
   # put together all effects
   diffs <-
     bind_rows(
@@ -60,7 +65,9 @@ plot_treatments_by_task_study1 <- function(study1_data, study1_fit1) {
     mutate(
       Response = factor(Response, level = c("Competent", "Warm", "Moral", 
                                             "Lazy", "Trustworthy"))
-      )
+      ) %>%
+    # link data on task ratings
+    left_join(task_ratings, by = c("Task" = "task"))
   # plot treatment effects split by task
   p <-
     ggplot(
@@ -69,7 +76,7 @@ plot_treatments_by_task_study1 <- function(study1_data, study1_fit1) {
         x = Estimate,
         xmin = Q2.5,
         xmax = Q97.5,
-        y = fct_rev(Task),
+        y = fct_reorder(Task, social),
         colour = Effect
         )
       ) +

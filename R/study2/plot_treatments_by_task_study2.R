@@ -56,6 +56,11 @@ plot_treatments_by_task_study2 <- function(study2_data, study2_fit1) {
       ) %>%
       dplyr::select(!post)
   }
+  # get task ratings
+  task_ratings <- 
+    study2_data %>%
+    group_by(task) %>%
+    summarise(social = unique(social))
   # put together all effects
   diffs <-
     bind_rows(
@@ -73,7 +78,9 @@ plot_treatments_by_task_study2 <- function(study2_data, study2_fit1) {
                      "Fully outsourcing to AI"),
       Usage = factor(Usage, levels = c("Using AI as a tool",
                                        "Fully outsourcing to AI"))
-      )
+      ) %>%
+    # link data on task ratings
+    left_join(task_ratings, by = c("Task" = "task"))
   # plot treatment effects split by task
   p <-
     ggplot(
@@ -82,7 +89,7 @@ plot_treatments_by_task_study2 <- function(study2_data, study2_fit1) {
         x = Estimate,
         xmin = Q2.5,
         xmax = Q97.5,
-        y = fct_rev(Task),
+        y = fct_reorder(Task, social),
         colour = Honesty
         )
       ) +
