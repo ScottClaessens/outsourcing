@@ -111,6 +111,11 @@ list(
       study1_fit2_extrinsiceffort
     )
   ),
+  # create table of treatment differences
+  tar_target(
+    table_treatment_diffs_study1,
+    create_table_treatment_diffs_study1(treatment_means_study1)
+  ),
   
   #### Study 2 ####
   

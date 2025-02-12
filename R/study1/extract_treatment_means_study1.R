@@ -24,6 +24,7 @@ extract_treatment_means_study1 <- function(study1_fit1) {
       transmute(
         Response = str_to_title(resp),
         Treatment = treatment,
+        post = list(post),
         Estimate = mean(post),
         Est.Error = sd(post),
         Q2.5 = quantile(post, 0.025),
