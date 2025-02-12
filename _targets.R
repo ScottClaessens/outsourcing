@@ -186,6 +186,11 @@ list(
       study2_fit2_extrinsiceffort
     )
   ),
+  # create table of treatment differences and effects
+  tar_target(
+    table_treatment_diffs_effects_study2,
+    create_table_treatment_diffs_effects_study2(treatment_means_study2)
+  ),
   
   #### Study 3 ####
   
