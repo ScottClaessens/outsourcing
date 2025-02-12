@@ -29,5 +29,7 @@ create_table_treatment_diffs_study1 <- function(treatment_means_study1) {
         )
       )
     ) %>%
-    ungroup()
+    ungroup() %>%
+    pivot_longer(cols = !Response, names_to = "Difference") %>%
+    pivot_wider(names_from = Response, values_from = value)
 }
