@@ -6,25 +6,25 @@ plot_treatments_overall_study2 <- function(study2_data,
     study2_data %>%
     mutate(
       treatment = str_remove(
-        str_replace_all(as.character(treatment), "_", "\n"),
-        "AI\n"
+        str_replace_all(as.character(treatment), "_", " +\n"),
+        fixed("AI +\n")
       ),
-      treatment = factor(treatment, levels = c("Control", "Tool\nHonest",
-                                               "Tool\nDeception",
-                                               "Full\nHonest",
-                                               "Full\nDeception"))
+      treatment = factor(treatment, levels = c("Control", "Tool +\nHonest",
+                                               "Tool +\nDeception",
+                                               "Full +\nHonest",
+                                               "Full +\nDeception"))
     )
   treatment_means <-
     treatment_means_study2 %>%
     mutate(
       Treatment = str_remove(
-        str_replace_all(as.character(Treatment), "_", "\n"),
-        "AI\n"
+        str_replace_all(as.character(Treatment), "_", " +\n"),
+        fixed("AI +\n")
         ),
-      Treatment = factor(Treatment, levels = c("Control", "Tool\nHonest",
-                                               "Tool\nDeception",
-                                               "Full\nHonest",
-                                               "Full\nDeception"))
+      Treatment = factor(Treatment, levels = c("Control", "Tool +\nHonest",
+                                               "Tool +\nDeception",
+                                               "Full +\nHonest",
+                                               "Full +\nDeception"))
     )
   # generic plotting function
   plot_fun <- function(resp, colour) {

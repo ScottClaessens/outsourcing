@@ -66,10 +66,10 @@ plot_task_ranking|function|8ff6f0c0cec3360f|||||||||||||||
 plot_treatments_by_task_study1|function|29de8915730dd808|||||||||||||||
 plot_treatments_by_task_study2|function|2cdf44d2ad3d7ed5|||||||||||||||
 plot_treatments_overall_study1|function|a8246ed939aa9fa7|||||||||||||||
-plot_treatments_overall_study2|function|0b29c73be8bd5ffb|||||||||||||||
+plot_treatments_overall_study2|function|63260f4adffbba02|||||||||||||||
 plot_treatments_person_study3|stem|449c463f34d42a14|0b441c39060342bd|24cdf5dc61984f4d|-1625393793||t20130.4501893142s|7988b0eb4655eaf3|580400|rds|local|vector|||1.453||
 plot_treatments_study1|stem|a5e60b8aaf7a2600|235d5f709d49d924|ceb53e6695347280|306922371||t20131.3755445055s|cf1b2911c7fe0f25|4127405|rds|local|vector|||2.172||
-plot_treatments_study2|stem|7f09c266551d3095|399c533871016305|b452f15f895e8444|1862253535||t20131.423112724s|d0b2c76db92b4adf|6430226|rds|local|vector|||1.11||
+plot_treatments_study2|stem|d7ba9fb61af4d2c2|399c533871016305|ba896e5d2aac82f1|1862253535||t20136.6377806272s|edca3b3c1cb6afc9|6430485|rds|local|vector|||1.703||
 plot_treatments_study3_person|function|7b6fd97922778ca0|||||||||||||||
 plot_treatments_study3_work|function|7caa9119bd13193c|||||||||||||||
 plot_treatments_tasks_study1|stem|9343eed5c077b939|27ca91b3ef53594b|79fc084ce276462e|-301943755||t20131.4978409795s|75fd32b014e0b49a|175037176|rds|local|vector|||10.922||
