@@ -219,6 +219,11 @@ list(
   tar_target(
     plot_treatments_person_study3,
     plot_treatments_study3_person(study3_data, treatment_means_study3)
+  ),
+  # create table of essay comprehension
+  tar_target(
+    table_essay_comprehension_study3,
+    create_table_essay_comprehension_study3(study3_data)
   )
 
 )
