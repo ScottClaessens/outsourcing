@@ -15,15 +15,15 @@ create_table_treatment_diffs_effects_study2 <- function(treatment_means_study2) 
       `Control - Full Honest`     = list(AI_Full_Honest    - Control),
       `Control - Full Deception`  = list(AI_Full_Deception - Control),
       # honesty effects
-      `Tool Honest - Tool Deception` = list(AI_Tool_Honest - AI_Tool_Deception),
-      `Full Honest - Full Deception` = list(AI_Full_Honest - AI_Full_Deception),
+      `Tool Honest - Tool Deception` = list(AI_Tool_Deception - AI_Tool_Honest),
+      `Full Honest - Full Deception` = list(AI_Full_Deception - AI_Full_Honest),
       # outsourcing type effects
-      `Tool Honest - Full Honest` = list(AI_Tool_Honest - AI_Full_Honest),
+      `Tool Honest - Full Honest` = list(AI_Full_Honest - AI_Tool_Honest),
       `Tool Deception - Full Deception` = 
-        list(AI_Tool_Deception - AI_Full_Deception),
+        list(AI_Full_Deception - AI_Tool_Deception),
       # interaction
-      `Interaction effect` = list(`Tool Honest - Tool Deception` - 
-                                    `Full Honest - Full Deception`)
+      `Interaction effect` = list(`Full Honest - Full Deception` - 
+                                    `Tool Honest - Tool Deception`)
     ) %>%
     mutate(
       across(

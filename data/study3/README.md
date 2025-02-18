@@ -11,7 +11,7 @@ Outsourcing and AI"
 
 **File format:** CSV file
 
-**File dimensions:** 800 rows x 25 columns
+**File dimensions:** 800 rows x 26 columns
 
 **Data collected on:** 29th January 2025
 
@@ -29,6 +29,8 @@ situations, where do you get your information from?" On the previous page,
 participants are asked to respond to this question by saying "TikTok"
 - `age` - numeric, participant's reported age in years
 - `gender` - character, participant's self-reported gender identity
+- `essay_seconds` - numeric, amount of time (in seconds) the participant spent
+on the survey page with the essay answer (i.e., before submitting the page)
 - `comprehension` - character, response to the question "Who / which book, TV
 show or film did the participant focus on in their response?"
 - `well_written` - numeric, 1-7 Likert, response to the question "How
