@@ -3,7 +3,8 @@ library(tarchetypes)
 library(tidyverse)
 
 # set options for targets and source R functions
-tar_option_set(packages = c("brms", "ordinal", "patchwork", "tidyverse"))
+tar_option_set(packages = c("brms", "kableExtra", "ordinal", "patchwork",
+                            "tidyverse"))
 tar_source()
 
 # targets pipeline
@@ -224,6 +225,16 @@ list(
   tar_target(
     table_essay_comprehension_study3,
     create_table_essay_comprehension_study3(study3_data)
+  ),
+  # create manipulation check table
+  tar_target(
+    table_manipulation_check_study3,
+    create_table_manipulation_check_study3(study3_data)
+  ),
+  # create table of treatment differences and effects
+  tar_target(
+    table_treatment_diffs_effects_study3,
+    create_table_treatment_diffs_effects_study3(treatment_means_study3)
   )
 
 )

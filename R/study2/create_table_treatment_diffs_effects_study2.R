@@ -8,34 +8,34 @@ create_table_treatment_diffs_effects_study2 <- function(treatment_means_study2) 
     ) %>%
     rowwise() %>%
     transmute(
-      Response          = Response,
-      # comparisons to control
-      `Control - Tool Honest`     = list(AI_Tool_Honest    - Control),
-      `Control - Tool Deception`  = list(AI_Tool_Deception - Control),
-      `Control - Full Honest`     = list(AI_Full_Honest    - Control),
-      `Control - Full Deception`  = list(AI_Full_Deception - Control),
-      # honesty effects
-      `Tool Honest - Tool Deception` = list(AI_Tool_Deception - AI_Tool_Honest),
-      `Full Honest - Full Deception` = list(AI_Full_Deception - AI_Full_Honest),
-      # outsourcing type effects
-      `Tool Honest - Full Honest` = list(AI_Full_Honest - AI_Tool_Honest),
-      `Tool Deception - Full Deception` = 
+      Response = Response,
+      # comparison to control
+      `Tool Honest - Control`     = list(AI_Tool_Honest    - Control),
+      `Tool Deception - Control`  = list(AI_Tool_Deception - Control),
+      `Full Honest - Control`     = list(AI_Full_Honest    - Control),
+      `Full Deception - Control`  = list(AI_Full_Deception - Control),
+      # effect of full outsourcing
+      `Full Honest - Tool Honest` = list(AI_Full_Honest - AI_Tool_Honest),
+      `Full Deception - Tool Deception` = 
         list(AI_Full_Deception - AI_Tool_Deception),
+      # effect of deception
+      `Tool Deception - Tool Honest` = list(AI_Tool_Deception - AI_Tool_Honest),
+      `Full Deception - Full Honest` = list(AI_Full_Deception - AI_Full_Honest),
       # interaction
-      `Interaction effect` = list(`Full Honest - Full Deception` - 
-                                    `Tool Honest - Tool Deception`)
+      `Interaction effect` = list(`Full Deception - Full Honest` - 
+                                    `Tool Deception - Tool Honest`)
     ) %>%
     mutate(
       across(
         !Response,
         function(x) paste0(
-          ifelse(median(x) > 0, " ", ""),
+          ifelse(round(median(x), digits = 2) >= 0, " ", ""),
           format(round(median(x), digits = 2), nsmall = 2),
           " [",
-          ifelse(quantile(x, 0.025) > 0, " ", ""),
+          ifelse(round(quantile(x, 0.025), digits = 2) >= 0, " ", ""),
           format(round(quantile(x, 0.025), digits = 2), nsmall = 2),
           " ",
-          ifelse(quantile(x, 0.975) > 0, " ", ""),
+          ifelse(round(quantile(x, 0.975), digits = 2) >= 0, " ", ""),
           format(round(quantile(x, 0.975), digits = 2), nsmall = 2),
           "]"
         )

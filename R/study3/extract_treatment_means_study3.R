@@ -34,6 +34,7 @@ extract_treatment_means_study3 <- function(study3_fit1, study3_fit2) {
         Response = resp,
         Treatment = treatment,
         Task = task,
+        post = list(post),
         Estimate = mean(post),
         Est.Error = sd(post),
         Q2.5 = quantile(post, 0.025),
