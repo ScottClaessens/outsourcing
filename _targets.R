@@ -235,6 +235,81 @@ list(
   tar_target(
     table_treatment_diffs_effects_study3,
     create_table_treatment_diffs_effects_study3(treatment_means_study3)
+  ),
+  
+  #### Study 4 ####
+  
+  # study 4 data file
+  tar_target(study4_data_file, "data/study4/study4_data_clean.csv", 
+             format = "file"),
+  # load study 4 data
+  tar_target(study4_data, load_study4_data(study4_data_file, 
+                                           combined_task_means)),
+  # plot chatgpt responses
+  tar_target(plot_chatgpt_study4, plot_chatgpt_responses_study4(study4_data)),
+  # fit model 1 to study 4 data
+  tar_target(study4_fit1, fit_study4_model1(study4_data)),
+  # extract treatment means
+  tar_target(
+    treatment_means_study4,
+    extract_treatment_means_study4(study4_fit1)
+  ),
+  # plot treatments overall
+  tar_target(
+    plot_treatments_study4,
+    plot_treatments_overall_study4(study4_data, treatment_means_study4)
+  ),
+  # plot treatments by task
+  tar_target(
+    plot_treatments_tasks_study4,
+    plot_treatments_by_task_study4(study4_data, study4_fit1)
+  ),
+  #tar_map(
+  #  values = tibble(
+  #    var = c("social", "socialskills", "impactothers", "consequences", 
+  #            "intrinsiceffort", "extrinsiceffort")
+  #  ),
+  #  # fit model 2 to study 4 data
+  #  tar_target(study4_fit2, fit_study4_model2(study4_data, var)),
+  #  # extract interaction effects for each model
+  #  tar_target(
+  #    interaction_effects_study4,
+  #    extract_interaction_effects_study4(study4_fit2, var)
+  #  )
+  #),
+  ## combined interaction effects
+  #tar_target(
+  #  combined_interaction_effects_study4,
+  #  bind_rows(
+  #    interaction_effects_study4_social,
+  #    interaction_effects_study4_socialskills,
+  #    interaction_effects_study4_impactothers,
+  #    interaction_effects_study4_consequences,
+  #    interaction_effects_study4_intrinsiceffort,
+  #    interaction_effects_study4_extrinsiceffort
+  #  )
+  #),
+  ## plot interaction effects
+  #tar_target(
+  #  plot_interactions_study4,
+  #  plot_interaction_effects_study4(combined_interaction_effects_study4)
+  #),
+  ## plot interaction parameters
+  #tar_target(
+  #  plot_interaction_parameters_study4,
+  #  plot_interaction_pars_study4(
+  #    study4_fit2_social,
+  #    study4_fit2_socialskills,
+  #    study4_fit2_impactothers,
+  #    study4_fit2_consequences,
+  #    study4_fit2_intrinsiceffort,
+  #    study4_fit2_extrinsiceffort
+  #  )
+  #),
+  # create table of treatment differences and effects
+  tar_target(
+    table_treatment_diffs_effects_study4,
+    create_table_treatment_diffs_effects_study4(treatment_means_study4)
   )
 
 )

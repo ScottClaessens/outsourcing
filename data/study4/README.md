@@ -11,7 +11,7 @@ Outsourcing and AI"
 
 **File format:** CSV file
 
-**File dimensions:** 4812 rows x 16 columns
+**File dimensions:** 4812 rows x 18 columns
 
 **Data collected on:** 12th March 2025
 
@@ -26,6 +26,10 @@ situations, where do you get your information from?" On the previous page,
 participants are asked to respond to this question by saying "TikTok"
 - `age` - numeric, participant's reported age in years
 - `gender` - character, participant's self-reported gender identity
+- `effort` - character, response to the question "Which of these approaches is 
+more effortful?"
+- `authentic` - character, response to the question "Which of these approaches
+is more authentic?"
 - `chatgpt_familiarity` - numeric, 1-7 Likert, response to the question "How
 familiar are you with the AI tool ChatGPT?" ranging from Extremely Unfamiliar
 (1) to Extremely Familiar (7)
