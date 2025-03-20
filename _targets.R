@@ -264,31 +264,31 @@ list(
     plot_treatments_tasks_study4,
     plot_treatments_by_task_study4(study4_data, study4_fit1)
   ),
-  #tar_map(
-  #  values = tibble(
-  #    var = c("social", "socialskills", "impactothers", "consequences", 
-  #            "intrinsiceffort", "extrinsiceffort")
-  #  ),
-  #  # fit model 2 to study 4 data
-  #  tar_target(study4_fit2, fit_study4_model2(study4_data, var)),
-  #  # extract interaction effects for each model
-  #  tar_target(
-  #    interaction_effects_study4,
-  #    extract_interaction_effects_study4(study4_fit2, var)
-  #  )
-  #),
-  ## combined interaction effects
-  #tar_target(
-  #  combined_interaction_effects_study4,
-  #  bind_rows(
-  #    interaction_effects_study4_social,
-  #    interaction_effects_study4_socialskills,
-  #    interaction_effects_study4_impactothers,
-  #    interaction_effects_study4_consequences,
-  #    interaction_effects_study4_intrinsiceffort,
-  #    interaction_effects_study4_extrinsiceffort
-  #  )
-  #),
+  tar_map(
+    values = tibble(
+      var = c("social", "socialskills", "impactothers", "consequences", 
+              "intrinsiceffort", "extrinsiceffort")
+    ),
+    # fit model 2 to study 4 data
+    tar_target(study4_fit2, fit_study4_model2(study4_data, var)),
+    # extract interaction effects for each model
+    tar_target(
+      interaction_effects_study4,
+      extract_interaction_effects_study4(study4_fit2, var)
+    )
+  ),
+  # combined interaction effects
+  tar_target(
+    combined_interaction_effects_study4,
+    bind_rows(
+      interaction_effects_study4_social,
+      interaction_effects_study4_socialskills,
+      interaction_effects_study4_impactothers,
+      interaction_effects_study4_consequences,
+      interaction_effects_study4_intrinsiceffort,
+      interaction_effects_study4_extrinsiceffort
+    )
+  ),
   ## plot interaction effects
   #tar_target(
   #  plot_interactions_study4,
