@@ -310,6 +310,39 @@ list(
   tar_target(
     table_treatment_diffs_effects_study4,
     create_table_treatment_diffs_effects_study4(treatment_means_study4)
+  ),
+  
+  #### Study 5 ####
+  
+  # study 5 data file
+  tar_target(study5_data_file, "data/study5/study5_data_clean.csv", 
+             format = "file"),
+  # load study 5 data
+  tar_target(study5_data, load_study5_data(study5_data_file, 
+                                           combined_task_means)),
+  # plot chatgpt responses
+  tar_target(plot_chatgpt_study5, plot_chatgpt_responses_study5(study5_data)),
+  # fit model 1 to study 5 data
+  tar_target(study5_fit1, fit_study5_model1(study5_data)),
+  # extract treatment means
+  tar_target(
+    treatment_means_study5,
+    extract_treatment_means_study5(study5_fit1)
+  ),
+  # plot treatments overall
+  tar_target(
+    plot_treatments_study5,
+    plot_treatments_overall_study5(study5_data, treatment_means_study5)
+  ),
+  # plot treatments by task
+  tar_target(
+    plot_treatments_tasks_study5,
+    plot_treatments_by_task_study5(study5_data, study5_fit1)
+  ),
+  # create table of treatment differences and effects
+  tar_target(
+    table_treatment_diffs_effects_study5,
+    create_table_treatment_diffs_effects_study5(treatment_means_study5)
   )
 
 )
