@@ -289,23 +289,23 @@ list(
       interaction_effects_study4_extrinsiceffort
     )
   ),
-  ## plot interaction effects
-  #tar_target(
-  #  plot_interactions_study4,
-  #  plot_interaction_effects_study4(combined_interaction_effects_study4)
-  #),
-  ## plot interaction parameters
-  #tar_target(
-  #  plot_interaction_parameters_study4,
-  #  plot_interaction_pars_study4(
-  #    study4_fit2_social,
-  #    study4_fit2_socialskills,
-  #    study4_fit2_impactothers,
-  #    study4_fit2_consequences,
-  #    study4_fit2_intrinsiceffort,
-  #    study4_fit2_extrinsiceffort
-  #  )
-  #),
+  # plot interaction effects
+  tar_target(
+    plot_interactions_study4,
+    plot_interaction_effects_study4(combined_interaction_effects_study4)
+  ),
+  # plot interaction parameters
+  tar_target(
+    plot_interaction_parameters_study4,
+    plot_interaction_pars_study4(
+      study4_fit2_social,
+      study4_fit2_socialskills,
+      study4_fit2_impactothers,
+      study4_fit2_consequences,
+      study4_fit2_intrinsiceffort,
+      study4_fit2_extrinsiceffort
+    )
+  ),
   # create table of treatment differences and effects
   tar_target(
     table_treatment_diffs_effects_study4,
