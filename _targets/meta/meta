@@ -122,6 +122,7 @@ interaction_effects_study5_impactothers|stem|2543a862d69ffc63|04a49d07b4fb4d3a|2
 combined_interaction_effects_study5|stem|d7e95fee718ff90b|713266a32bc112a0|88811bc37ccb1d1e|-692301217||t20174.4972045064s|s283797b|283797|rds|local|vector|||0||
 plot_interactions_study5|stem|4c8c9a3eb7101319|6912a731557f2876|d725b9be163cbedf|572113062||t20174.4985663644s|s1916576b|1916576|rds|local|vector|||1.172||
 plot_interaction_parameters_study5|stem|5dc78596c2e0b341|d66bc03572552ee6|fd5fc504a6540751|-1656310360||t20174.5019719894s|s1627711375b|1627711375|rds|local|vector|||20.484||
+study6_power|stem|2e97251883d4ee85|18a36b059edc4439|11c2065485621671|-406345731||t20175.4372223494s|s1748b|1748|rds|local|vector|||414.125|package brms was built under R version 4.4.3. package patchwork was built under R version 4.4.3. The global prior student_t3, 0, 2.5 of class Intercept will not be used in the model as all related coefficients have individual priors already. If you did not set those priors yourself, then maybe brms has assigned default priors. See set_prior and default_prior for more details.|
 plot_chatgpt_responses_study4|function|0049c888c6062ceb
 plot_treatments_by_task_study4|function|1eb7d09ea42ca447
 plot_chatgpt_responses_study5|function|070e341c55edf892
@@ -145,6 +146,7 @@ extract_treatment_means_study3|function|42f2deec1a4960e4
 calculate_power_study3|function|4036d86ef65edc8a
 extract_treatment_means_study4|function|1715512fbbc3ec9f
 extract_treatment_means_study5|function|92aa4edcd66fad50
+calculate_power_study6|function|be80d4cd5b4c7c9a
 create_table_manipulation_check_study3|function|072dfb34da0886d6
 combine_task_means|function|4fb3a67e0980e801
 plot_interaction_pars_study1|function|36ece1ef83373eac

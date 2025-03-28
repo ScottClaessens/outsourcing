@@ -385,6 +385,11 @@ list(
   tar_target(
     table_treatment_diffs_effects_study5,
     create_table_treatment_diffs_effects_study5(treatment_means_study5)
-  )
+  ),
+  
+  #### Study 6 ####
+  
+  # calculate power for study 6
+  tar_target(study6_power, calculate_power_study6(n = 400, effect_size = -0.5))
 
 )
