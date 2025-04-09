@@ -390,6 +390,13 @@ list(
   #### Study 6 ####
   
   # calculate power for study 6
-  tar_target(study6_power, calculate_power_study6(n = 400, effect_size = -0.5))
+  tar_target(study6_power, calculate_power_study6(n = 400, effect_size = -0.5)),
+  # study 6 data file
+  tar_target(study6_data_file, "data/study6/study6_data_clean.csv", 
+             format = "file"),
+  # load study 6 data
+  tar_target(study6_data, load_study6_data(study6_data_file)),
+  # plot chatgpt responses
+  tar_target(plot_chatgpt_study6, plot_chatgpt_responses_study6(study6_data))
 
 )
