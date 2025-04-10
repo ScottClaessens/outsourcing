@@ -397,6 +397,27 @@ list(
   # load study 6 data
   tar_target(study6_data, load_study6_data(study6_data_file)),
   # plot chatgpt responses
-  tar_target(plot_chatgpt_study6, plot_chatgpt_responses_study6(study6_data))
+  tar_target(plot_chatgpt_study6, plot_chatgpt_responses_study6(study6_data)),
+  # fit model 1 to study 6 data
+  tar_target(study6_fit1, fit_study6_model1(study6_data)),
+  # extract treatment means
+  tar_target(
+    treatment_means_study6,
+    extract_treatment_means_study6(study6_fit1)
+  ),
+  # plot treatment means
+  tar_target(
+    plot_treatments_study6,
+    plot_treatments_overall_study6(study6_data, treatment_means_study6)
+  ),
+  # create table of treatment differences
+  tar_target(
+    table_treatment_diffs_study6,
+    create_table_treatment_diffs_study6(treatment_means_study6),
+  ),
+  # fit model 2 to study 6 data
+  tar_target(study6_fit2, fit_study6_model2(study6_data)),
+  # plot path model
+  tar_target(plot_path_model_study6, plot_path_study6(study6_fit2))
 
 )
