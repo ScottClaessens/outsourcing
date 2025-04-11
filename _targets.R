@@ -339,6 +339,11 @@ list(
     plot_treatments_tasks_study5,
     plot_treatments_by_task_study5(study5_data, study5_fit1)
   ),
+  # plot effect of reasons by task
+  tar_target(
+    plot_reasons_tasks_study5,
+    plot_reasons_by_task_study5(study5_data, study5_fit1)
+  ),
   tar_map(
     values = tibble(
       var = c("social", "socialskills", "impactothers", "consequences", 
