@@ -98,7 +98,6 @@ treatment_means_study2|stem|06eee86814b0f9ed|7dc2ee7031065b5b|c29f9f000e13ccab|-
 plot_treatments_tasks_study2|stem|1146b724564ad1ce|3286509dda60c83d|cbf72d6fac53d855|858217252||t20131.5001578508s|s284161594b|284161594|rds|local|vector|||12.078||
 combined_interaction_effects_study4|stem|f741390597b952ce|1f8008e31c91d7b6|16e22ca368a2bbf1|-2096036560||t20168.7396015774s|s284234b|284234|rds|local|vector|||0||
 combined_interaction_effects_study1|stem|77a77a5fc8046ebc|f08b737d949a705e|91e01251c422e2c2|-899004028||t20069.5810720874s|s142370b|142370|rds|local|vector|||0||
-table_treatment_diffs_study1|stem|67b4ca61baa522f3|69dd7e237647aa6f|43d8ea1eb70f0af5|1950475230||t20139.5897341741s|s362b|362|rds|local|vector|||0.157||
 plot_treatments_study1|stem|a5e60b8aaf7a2600|235d5f709d49d924|ceb53e6695347280|306922371||t20131.3755445055s|s4127405b|4127405|rds|local|vector|||2.172||
 combined_interaction_effects_study2|stem|10d7515ee7cd3f2b|8fb960e005630ece|34e60a8632daed69|-1772308673||t20097.6306606812s|s284613b|284613|rds|local|vector|||0||
 table_treatment_diffs_effects_study2|stem|7f1c11e61dbc7d6d|2cca741fdc8cbc85|644420ffc0b087bf|1493761641||t20139.5901092972s|s652b|652|rds|local|vector|||0.172||
@@ -132,7 +131,10 @@ table_treatment_diffs_study6|stem|ec9f36db75ae6311|03f84c8e1733c78b|bf4ed63b145d
 plot_treatments_study6|stem|d2e9cf57f2ae0bc4|2a0c3725b171e7b5|e4740f8a1b6c3edf|1718362077||t20187.5833740085s|s5929650b|5929650|rds|local|vector|||0.922||
 study6_fit2|stem|ce3073b5ff577a9b|92b613a776d115bd|c89066446b66b3ce|1036526706||t20188.4297411851s|s139589634b|139589634|rds|local|vector|||1603.687||
 plot_path_model_study6|stem|82494a9c246bb149|292063fe6def6fd5|23627393ae56c54d|304042315||t20188.5823089296s|s139731900b|139731900|rds|local|vector|||5.297||
+plot_reasons_tasks_study5|stem|d8d44e3d62f9f215|15e83de37f614b4c|59f1f0415528ed10|1892855800||t20189.5614852003s|s329093116b|329093116|rds|local|vector|||16.015||
+table_tasks|stem|5cfb54d368bc9b7d|ca584200010464b5|b3b683673ccbbc44|-1192191560||t20200.4736437919s|s555b|555|rds|local|vector|||0.812|package brms was built under R version 4.4.3. package patchwork was built under R version 4.4.3|
 plot_treatments_overall_study4|function|3e9e92c53eb5dd97
+create_table_tasks|function|87e32271f020c7ac
 load_study3_data|function|7cd76fa58157223d
 plot_treatments_overall_study5|function|17edecca5ac20fb5
 plot_treatments_overall_study6|function|0171ca096947ef1e
@@ -150,7 +152,8 @@ fit_pilot_model|function|81a7d3d4fd331451
 load_study2_data|function|ed6e1e3e9ed4fd08
 create_table_manipulation_check_study3|function|072dfb34da0886d6
 extract_task_means|function|2601f026c292692c
-create_table_treatment_diffs_study1|function|f838d9ea4389739a
+.Random.seed|object|71e5c59d81283a80
+create_table_treatment_diffs_study1|function|64f43a0ea77cbb84
 fit_study3_model1|function|37e67483401186d5
 fit_study3_model2|function|4d322ccae62ff5be
 plot_treatments_study3_work|function|7caa9119bd13193c
@@ -190,9 +193,9 @@ plot_chatgpt_responses_study1|function|c6bc4926d442e921
 fit_study5_model1|function|7a9e686b5cafba00
 create_table_treatment_diffs_effects_study3|function|d14ccbe802f2d1a9
 plot_task_ranking|function|8ff6f0c0cec3360f
+create_table_treatment_diffs_effects_study4|function|7cfb7eea3b599f72
 plot_chatgpt_responses_study2|function|73af6db692cca166
 fit_study5_model2|function|a3982b869c6214c5
-create_table_treatment_diffs_effects_study4|function|7cfb7eea3b599f72
 create_table_treatment_diffs_effects_study5|function|dbc9f9419485aab1
 plot_chatgpt_responses_study3|function|5aadfbe9c9b3ef72
 plot_chatgpt_responses_study4|function|0049c888c6062ceb
@@ -204,4 +207,5 @@ plot_chatgpt_responses_study6|function|337ad11063298cfc
 plot_treatments_overall_study1|function|a8246ed939aa9fa7
 load_study6_data|function|489399724d3e63c7
 plot_treatments_overall_study2|function|63260f4adffbba02
-plot_reasons_tasks_study5|stem|d8d44e3d62f9f215|15e83de37f614b4c|59f1f0415528ed10|1892855800||t20189.5614852003s|s329093116b|329093116|rds|local|vector|||16.015||
+table_treatment_diffs_study1|stem|93b2685eff202b22|69dd7e237647aa6f|043052a405e733ce|1950475230||t20200.6239005962s|s365b|365|rds|local|vector|||0.032||
+manuscript|stem|4ba56006ae7d9166|bd4d428c2df229f4|1a1c9e55900aaf0e|-1793997187|manuscript.pdf*manuscript_files*appendix.qmd*manuscript.qmd*_extensions/wjschne/apaquarto/_apa_title.qmd*_extensions/wjschne/apaquarto/_extension.yml*_extensions/wjschne/apaquarto/apa.csl*_extensions/wjschne/apaquarto/apa.css*_extensions/wjschne/apaquarto/apa.scss*_extensions/wjschne/apaquarto/apaafternote.lua*_extensions/wjschne/apaquarto/apaandcite.lua*_extensions/wjschne/apaquarto/apaappendixlatex.lua*_extensions/wjschne/apaquarto/apacaption.lua*_extensions/wjschne/apaquarto/apaextractfigure.lua*_extensions/wjschne/apaquarto/apafgtb.lua*_extensions/wjschne/apaquarto/apafigtab.lua*_extensions/wjschne/apaquarto/apafigtblappendix.lua*_extensions/wjschne/apaquarto/apafigurelatex.lua*_extensions/wjschne/apaquarto/apafigurewidthlatex.lua*_extensions/wjschne/apaquarto/apafloat.lua*_extensions/wjschne/apaquarto/apafloatlatex.lua*_extensions/wjschne/apaquarto/apafloatstoend.lua*_extensions/wjschne/apaquarto/apaheader.lua*_extensions/wjschne/apaquarto/apalanguage.lua*_extensions/wjschne/apaquarto/apamasked.lua*_extensions/wjschne/apaquarto/apanote.lua*_extensions/wjschne/apaquarto/apaomitrefsdiv.lua*_extensions/wjschne/apaquarto/apaoneauthoraffiliation.lua*_extensions/wjschne/apaquarto/apaquarto.docx*_extensions/wjschne/apaquarto/apaquarto.md*_extensions/wjschne/apaquarto/apaquote.lua*_extensions/wjschne/apaquarto/apastriptitle.lua*_extensions/wjschne/apaquarto/apatemplate.tex*_extensions/wjschne/apaquarto/apatwocolumnlatex.lua*_extensions/wjschne/apaquarto/before-body.tex*_extensions/wjschne/apaquarto/citeprocr.lua*_extensions/wjschne/apaquarto/crossrefprefix.lua*_extensions/wjschne/apaquarto/doc-class.tex*_extensions/wjschne/apaquarto/docxlinenumber.lua*_extensions/wjschne/apaquarto/docxstyler.lua*_extensions/wjschne/apaquarto/frontmatter.lua*_extensions/wjschne/apaquarto/header.tex*_extensions/wjschne/apaquarto/journalmode.lua*_extensions/wjschne/apaquarto/latexnoindent.lua*_extensions/wjschne/apaquarto/markdowntable.lua*_extensions/wjschne/apaquarto/ORCID-iD_icon-vector.svg*_extensions/wjschne/apaquarto/styles.css*_extensions/wjschne/apaquarto/title-block.html*_extensions/wjschne/apaquarto/title.tex*_extensions/wjschne/apaquarto/typst/formattypst.lua*_extensions/wjschne/apaquarto/typst/typst-show.typ*_extensions/wjschne/apaquarto/typst/typst-template.typ|t20200.624056868s|s2738843b|2738843|file|local|vector|||12.141||

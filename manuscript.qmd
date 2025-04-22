@@ -1,0 +1,107 @@
+---
+title: "Negative Perceptions of Outsourcing to Artificial Intelligence"
+shorttitle: "Outsourcing to AI"
+author:
+  - name: Scott Claessens
+    corresponding: false
+    orcid: 0000-0002-3562-6981
+    email: scott.claessens@gmail.com
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: UK
+        postal-code: CT2 7NP
+  - name: Pierce Veitch
+    corresponding: false
+    orcid: 0009-0005-3364-7470
+    email: pv201@kent.ac.uk
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: UK
+        postal-code: CT2 7NP
+  - name: Jim Everett
+    corresponding: true
+    orcid: 0000-0003-2801-5426
+    email: j.a.c.everett@kent.ac.uk
+    affiliations:
+      - name: University of Kent
+        department: School of Psychology
+        address: Keynes College
+        city: Canterbury
+        country: UK
+        postal-code: CT2 7NP
+author-note:
+  status-changes: 
+    affiliation-change: ~
+    deceased: ~
+  disclosures:
+    study-registration: ~
+    data-sharing: ~
+    related-report: ~
+    conflict-of-interest: ~
+    financial-support: ~
+    gratitude: ~
+    authorship-agreements: ~
+abstract: "xxxx"
+keywords: [keyword1, keyword2, keyword3]
+bibliography: bibliography.bib
+engine: knitr
+format:
+  apaquarto-pdf: default
+execute:
+  echo: false
+  warning: false
+  error: false
+crossref:
+  custom:
+    - kind: float
+      key: suppfig
+      latex-env: suppfig
+      reference-prefix: Supplementary Figure
+      space-before-numbering: true
+      latex-list-of-description: Supplementary Figure
+      caption-location: bottom
+    - kind: float
+      key: supptbl
+      latex-env: supptbl
+      reference-prefix: Supplementary Table
+      space-before-numbering: true
+      latex-list-of-description: Supplementary Table
+      caption-location: top
+---
+
+```{r}
+library(kableExtra)
+library(targets)
+library(tidyverse)
+```
+
+# Study 1
+
+# Study 2
+
+# Study 3
+
+# Study 4
+
+# Study 5
+
+# Study 6
+
+# General Discussion
+
+# References
+
+<!-- References will auto-populate in the refs div below -->
+
+::: {#refs}
+:::
+
+\newpage
+
+{{< include appendix.qmd >}}

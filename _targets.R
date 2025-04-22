@@ -40,6 +40,8 @@ list(
       task_means_extrinsiceffort
       )
     ),
+  # create table of tasks
+  tar_target(table_tasks, create_table_tasks()),
   
   #### Study 1 ####
   
@@ -423,6 +425,11 @@ list(
   # fit model 2 to study 6 data
   tar_target(study6_fit2, fit_study6_model2(study6_data)),
   # plot path model
-  tar_target(plot_path_model_study6, plot_path_study6(study6_fit2))
+  tar_target(plot_path_model_study6, plot_path_study6(study6_fit2)),
+  
+  #### Manuscript ####
+  
+  # write manuscript file
+  tar_quarto(manuscript, "manuscript.qmd")
 
 )
