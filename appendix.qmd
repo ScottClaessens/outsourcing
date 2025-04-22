@@ -1,6 +1,6 @@
 \vspace*{60mm}
 
-# **Supplementary Materials**
+# Supplementary Materials {.unnumbered .unlisted}
 
 \setcounter{page}{1}
 \begin{center}
@@ -8,6 +8,8 @@ Negative Perceptions of Outsourcing to Artificial Intelligence \\
 Scott Claessens, Pierce Veitch, and Jim Everett \\
 School of Psychology, University of Kent
 \end{center}
+\newpage
+\tableofcontents
 \newpage
 
 # Pilot Study 1
@@ -140,7 +142,7 @@ thought ChatGPT was (see @suppfig-chatgpt-pilotstudy2).
 ### Pre-registration
 
 We pre-registered the study on the Open Science Framework
-([https://osf.io/khr42](https://osf.io/khr42)).
+(<https://osf.io/khr42>).
 
 ### Statistical analysis
 
@@ -213,10 +215,10 @@ word list.
 Frequency lists were created with the *Frequency List* plugin (Version 1.0.11). 
 Settings included: unigram analysis (N = 1), omission of n-grams with frequency
 < 5, exclusion of n-grams appearing in fewer than 0.1% of documents, filtering 
-collocates by Normalized Pointwise Mutual Information, and removal of collocates 
-with metric values < 0.5. Outputs were saved using the *Save Output to CSV* 
-plugin (Version 1.0.5). This process was repeated separately for each condition 
-folder.
+collocates by Normalized Pointwise Mutual Information (NPMI), and removal of 
+collocates with metric values < 0.5. Outputs were saved using the 
+*Save Output to CSV* plugin (Version 1.0.5). This process was repeated 
+separately for each condition folder.
 
 For cross-condition comparison, we used the *Compare Frequencies* plugin 
 (Version 1.1.02), retaining most default settings. The only modification was 
@@ -489,10 +491,16 @@ credible intervals.
 
 # Supplementary References
 
+\setlength{\parindent}{-20pt}
+\setlength{\leftskip}{20pt}
+
 Boyd, R. L. (2019). BUTTER: Basic unit-transposable text experimentation 
-resource. Available from https://www.butter.tools/
+resource. Available from <https://www.butter.tools/>
 
-Gregson, R., Piazza, J., & Boyd, R. L. (2022). 'Against the cult of veganism': Unpacking the social psychology and ideology of anti-vegans. *Appetite*, *178*, 106143. doi:10.1016/j.appet.2022.106143
+Gregson, R., Piazza, J., & Boyd, R. L. (2022). 'Against the cult of veganism': 
+Unpacking the social psychology and ideology of anti-vegans. *Appetite*, *178*,
+106143. doi:[10.1016/j.appet.2022.106143](https://doi.org/10.1016/j.appet.2022.106143)
 
-Rayson, P., & Garside, R. (2000). Comparing corpora using frequency profiling. *Proceedings of the Workshop on Comparing Corpora - Volume 9*, 1–6. Presented in Hong Kong. doi:10.3115/1117729.1117730
-
+Rayson, P., & Garside, R. (2000). Comparing corpora using frequency profiling.
+*Proceedings of the Workshop on Comparing Corpora - Volume 9*, 1–6. Presented in
+Hong Kong. doi:[10.3115/1117729.1117730](https://doi.org/10.3115/1117729.1117730)

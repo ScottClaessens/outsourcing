@@ -81,21 +81,21 @@ library(targets)
 library(tidyverse)
 ```
 
-# Study 1
+# Study 1 {.unnumbered .unlisted}
 
-# Study 2
+# Study 2 {.unnumbered .unlisted}
 
-# Study 3
+# Study 3 {.unnumbered .unlisted}
 
-# Study 4
+# Study 4 {.unnumbered .unlisted}
 
-# Study 5
+# Study 5 {.unnumbered .unlisted}
 
-# Study 6
+# Study 6 {.unnumbered .unlisted}
 
-# General Discussion
+# General Discussion {.unnumbered .unlisted}
 
-# References
+# References {.unnumbered .unlisted}
 
 <!-- References will auto-populate in the refs div below -->
 
