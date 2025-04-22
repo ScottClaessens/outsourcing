@@ -29,13 +29,10 @@ create_table_treatment_diffs_effects_study2 <- function(treatment_means_study2) 
       across(
         !Response,
         function(x) paste0(
-          ifelse(round(median(x), digits = 2) >= 0, " ", ""),
           format(round(median(x), digits = 2), nsmall = 2),
           " [",
-          ifelse(round(quantile(x, 0.025), digits = 2) >= 0, " ", ""),
           format(round(quantile(x, 0.025), digits = 2), nsmall = 2),
           " ",
-          ifelse(round(quantile(x, 0.975), digits = 2) >= 0, " ", ""),
           format(round(quantile(x, 0.975), digits = 2), nsmall = 2),
           "]"
         )
