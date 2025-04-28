@@ -83,6 +83,8 @@ plot_treatments_overall_study5 <- function(study5_data,
   mid <- pC + pD
   bot <- pE + pF
   out <- (top / mid / bot) + plot_annotation(tag_levels = "a")
+  # add margin
+  out <- out & theme(plot.margin = unit(c(0, 0, 15, 0), "pt"))
   # save
   ggsave(
     filename = "plots/study5_treatments.pdf",

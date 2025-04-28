@@ -113,7 +113,8 @@ plot_reasons_by_task_study5 <- function(study5_data, study5_fit1) {
       axis.text.y = element_text(size = 8.5),
       axis.text.x = element_text(size = 7),
       legend.title = element_blank(),
-      legend.position = "top"
+      legend.position = "top",
+      plot.margin = unit(c(0, 0, 15, 0), "pt")
     )
   # save
   ggsave(

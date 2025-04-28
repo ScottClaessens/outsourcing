@@ -3,13 +3,13 @@ create_table_essay_comprehension_study3 <- function(study3_data) {
   # create initial table
   initial_table <-
     tibble(
-      `Answer type` = rep(c("Social", "Non-social"), each = 3),
+      Prompt = c("Social", "", "", "Non-social", "", ""),
       answer = c("Father", "Friend", "Sister", "Buffy", "Hobbit", "Titanic"),
       `Number of words` = as.integer(c(234, 211, 218, 251, 278, 239))
     ) %>%
-    # calculate expected reading time at 200 words per minute
+    # calculate expected reading time at 275 words per minute
     mutate(
-      `Expected reading time (seconds)` = (`Number of words` / 275) * 60
+      `Expected reading time (secs)` = round((`Number of words` / 275) * 60, 2)
       )
   # create vector for comprehension answers
   comp_answers <- c(
@@ -27,14 +27,14 @@ create_table_essay_comprehension_study3 <- function(study3_data) {
     ungroup() %>%
     group_by(answer) %>%
     summarise(
-      `Average reading time (seconds)` = median(essay_seconds),
-      `Comprehension (%)` = mean(comprehension, na.rm = TRUE) * 100
+      `Average reading time (secs)` = round(median(essay_seconds), 2),
+      `Comprehension (%)` = round(mean(comprehension, na.rm = TRUE) * 100, 2)
     ) %>%
     left_join(initial_table, by = "answer") %>%
     rename(Answer = answer) %>%
     dplyr::select(
-      `Answer type`, Answer, `Number of words`, 
-      `Expected reading time (seconds)`, `Average reading time (seconds)`, 
+      Prompt, Answer, `Number of words`, 
+      `Expected reading time (secs)`, `Average reading time (secs)`, 
       `Comprehension (%)`
       )
 }

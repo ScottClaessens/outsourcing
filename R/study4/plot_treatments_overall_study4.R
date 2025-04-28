@@ -84,6 +84,8 @@ plot_treatments_overall_study4 <- function(study4_data,
     plot_spacer() + pE + plot_spacer() + 
     plot_layout(widths = c(0.4, 1, 0.6))
   out <- (top / mid / bot) + plot_annotation(tag_levels = "a")
+  # add margin
+  out <- out & theme(plot.margin = unit(c(0, 0, 15, 0), "pt"))
   # save
   ggsave(
     filename = "plots/study4_treatments.pdf",

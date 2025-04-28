@@ -97,6 +97,8 @@ plot_treatments_study3_work <- function(study3_data, treatment_means_study3) {
     pA + pB + pC + pD + pE + guide_area() + 
     plot_layout(design = design, guides = "collect") +
     plot_annotation(tag_levels = "a")
+  # add margin
+  out <- out & theme(plot.margin = unit(c(0, 0, 15, 0), "pt"))
   # save
   ggsave(
     filename = "plots/study3_treatments_work.pdf",

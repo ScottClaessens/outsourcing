@@ -114,9 +114,11 @@ plot_treatments_by_task_study2 <- function(study2_data, study2_fit1) {
       panel.grid.minor.x = element_blank(),
       panel.grid.major = element_line(linewidth = 0.3),
       axis.text.y = element_text(size = 7),
-      axis.text.x = element_text(size = 6.5),
+      axis.text.x = element_text(size = 7),
+      axis.title.x = element_text(size = 9),
       legend.title = element_blank(),
-      legend.position = "top"
+      legend.position = "top",
+      plot.margin = unit(c(0, 0, 10, 0), "pt")
     )
   # save
   ggsave(

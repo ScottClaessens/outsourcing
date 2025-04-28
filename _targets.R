@@ -228,6 +228,11 @@ list(
     table_essay_comprehension_study3,
     create_table_essay_comprehension_study3(study3_data)
   ),
+  # create table of essay answers
+  tar_target(
+    table_essay_answers_study3,
+    create_table_essay_answers_study3()
+  ),
   # create manipulation check table
   tar_target(
     table_manipulation_check_study3,
@@ -426,6 +431,19 @@ list(
   tar_target(study6_fit2, fit_study6_model2(study6_data)),
   # plot path model
   tar_target(plot_path_model_study6, plot_path_study6(study6_fit2)),
+  # text analysis data file
+  tar_target(
+    butter_data_file,
+    "data/butter/BUTTER-Frequency_ComparisonAllComparisions.csv",
+    format = "file"
+    ),
+  # text analysis data
+  tar_target(butter_data, read_csv(butter_data_file)),
+  # text analysis results table
+  tar_target(
+    table_text_analysis_study6,
+    create_table_text_analysis_study6(butter_data)
+    ),
   
   #### Manuscript ####
   

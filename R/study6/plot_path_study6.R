@@ -75,7 +75,7 @@ plot_path_study6 <- function(study6_fit2) {
   p <-
     ggplot() +
     # labels
-    geom_text(data = coord, aes(x = x, y = y, label = label), size = 4.5) +
+    geom_text(data = coord, aes(x = x, y = y, label = label), size = 6.75) +
     # arrows
     place_arrow(x = 0.17, y =  0.09, xend = 0.86, yend =  0.92, ns = TRUE) +
     place_arrow(x = 0.15, y =  1.00, xend = 0.85, yend =  1.00) +
@@ -90,7 +90,7 @@ plot_path_study6 <- function(study6_fit2) {
     geom_text(
       data = pars,
       aes(x = x, y = y, angle = angle, label = Label, colour = colour), 
-      size = 1.8
+      size = 2.7
       ) +
     scale_colour_manual(values = c("black", "grey")) +
     # margins and theme
@@ -104,8 +104,8 @@ plot_path_study6 <- function(study6_fit2) {
   ggsave(
     plot = p,
     filename = "plots/study6_path.pdf",
-    height = 3,
-    width = 5
+    height = 4.5,
+    width = 7.5
   )
   return(p)
 }

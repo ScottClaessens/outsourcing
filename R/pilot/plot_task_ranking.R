@@ -53,11 +53,11 @@ plot_task_ranking <- function(pilot_data, task_means, resp = "social") {
     labs(y = yaxes[resp]) +
     theme_minimal() +
     theme(
-      axis.text.x = element_text(size = 5.5, angle = 45, hjust = 1),
+      axis.text.x = element_text(size = 6.5, angle = 45, hjust = 1),
       axis.title.x = element_blank(),
       axis.title.y = element_text(margin = margin(t = 0, r = 10, b = 0, l = 0)),
       panel.grid.minor = element_blank(),
-      plot.margin = margin(t = 5, r = 5, b = 5, l = 35)
+      plot.margin = margin(t = 5, r = 5, b = 5, l = 50)
     )
   # save
   ggsave(

@@ -19,9 +19,9 @@ create_table_manipulation_check_study3 <- function(study3_data) {
     group_by(treatment) %>%
     summarise(
       `Pass manipulation check (%)` = 
-        mean(manipulation_check, na.rm = TRUE) * 100,
+        round(mean(manipulation_check, na.rm = TRUE) * 100, 2),
       `Believe manipulation (%)` = 
-        mean(believe_check == "Yes", na.rm = TRUE) * 100
+        round(mean(believe_check == "Yes", na.rm = TRUE) * 100, 2)
     ) %>%
     rename(Condition = treatment) %>%
     mutate(

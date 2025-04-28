@@ -1,6 +1,6 @@
 \vspace*{60mm}
 
-# Supplementary Materials {.unnumbered .unlisted}
+# Supplementary Materials
 
 \setcounter{page}{1}
 \begin{center}
@@ -8,8 +8,6 @@ Negative Perceptions of Outsourcing to Artificial Intelligence \\
 Scott Claessens, Pierce Veitch, and Jim Everett \\
 School of Psychology, University of Kent
 \end{center}
-\newpage
-\tableofcontents
 \newpage
 
 # Pilot Study 1
@@ -52,7 +50,7 @@ participants the following questions on 7-point Likert scales:
 - How important is it that effort goes into this task?
 - How important is it that others see the effort that goes into this task?
 
-### Statistical analysis
+### Statistical Analysis
 
 We fitted a Bayesian multivariate multilevel cumulative-link ordinal model to 
 the data using the *brms* R package. We modelled each task evaluation as a 
@@ -116,11 +114,10 @@ determined how scenarios were presented to participants.
 
 ### Procedure
 
-We presented participants with six scenarios (see @suppfig-scenarios-pilotstudy2 
-for examples). Each scenario described a person completing a task, such as 
-writing computer code or writing a love letter. The six tasks were randomly 
-drawn from a larger set of 20 tasks (see @supptbl-tasks for the full list of 
-tasks). For each scenario, we told participants:
+We presented participants with six scenarios. Each scenario described a person 
+completing a task, such as writing computer code or writing a love letter. The 
+six tasks were randomly drawn from a larger set of 20 tasks (see @supptbl-tasks
+for the full list of tasks). For each scenario, we told participants:
 
 - *Control condition*: "In order to complete this task, [the person] works on it 
 by themselves from start to finish."
@@ -144,7 +141,7 @@ thought ChatGPT was (see @suppfig-chatgpt-pilotstudy2).
 We pre-registered the study on the Open Science Framework
 (<https://osf.io/khr42>).
 
-### Statistical analysis
+### Statistical Analysis
 
 We fitted Bayesian multivariate multilevel cumulative-link ordinal models to the
 data using the *brms* R package. We modelled each character evaluation -- 
@@ -183,6 +180,48 @@ features predicted stronger causal effects of outsourcing compared to control
 [-@suppfig-interaction-pars-pilotstudy2]). In other words, outsourcing to AI or 
 other humans is perceived more negatively for tasks that have these features, 
 compared to tasks without these features.
+
+\newpage
+
+# Vignette Wording in Study 5
+
+:::{.NoIndent}
+We presented participants in Study 5 with the following vignette text:
+:::
+
+> Adam has been dating his partner for almost a year, and Valentine's Day is 
+coming up. He knows that many people exchange a card on Valentine's Day 
+containing a love letter to their partner, and he decides to send a love letter
+to his partner too.
+>
+> This year, Adam has been closely following developments in technology and has
+read of people using AI tools like ChatGPT for things like this, either using it
+to help with writing or getting AI to do the task completely.
+
+:::{.NoIndent}
+This was followed by the manipulation text (see main text). Participants were 
+then presented with the love letter that Adam ostensibly wrote, which was held 
+constant across conditions:
+:::
+
+> Happy Valentine's Day, my love.
+>
+> I don't think I tell you enough just how much you mean to me. Being with you 
+feels like breathing a little easier, like the world is a bit softer just 
+because you're in it. You make the everyday feel special, and somehow you always
+know how to calm my nerves or make me laugh at just the right moment. I feel
+like myself with you -- maybe even a better version of myself -- and that's such
+a rare and beautiful thing.
+>
+> I'm so grateful for you -- for the way you listen, the way you love, the way
+you show up, even in the small ways. I hope you know that no matter what, I'm
+always in your corner. I can't wait to keep making memories together, whether
+we're off on some adventure or just curled up on the couch. I love you more than
+I can really put into words, but I promise I'll spend every day trying.
+>
+> Yours,
+>
+> Adam
 
 \newpage
 
@@ -239,77 +278,245 @@ following thresholds: LL ≥ 3.84 (*p* < .05), LL ≥ 6.63 (*p* < .01), LL ≥ 1
 
 \vspace*{15mm}
 
-::: {#suppfig-tasks-correlations}
+::: {#suppfig-chatgpt-study1 suppfig-pos="H"}
 
-```{r tasks-correlations, fig.height=4, fig.width=5}
-tar_read(plot_task_cors)
+```{r, fig.height=5, fig.width=6}
+tar_read(plot_chatgpt_study2)
 ```
 
-Model-estimated task-specific correlations between all six questions. Values are 
-posterior median correlations. A positive correlation indicates that tasks that 
-are rated highly on one question tend to be rated highly on another question.
+Responses to the questions about ChatGPT in Study 1.
 
 :::
 
 \newpage
 
-::: {#suppfig-tasks-social}
+::: {#suppfig-interactions-study1 suppfig-pos="H"}
 
-```{r tasks-social, fig.height=4, fig.width=6}
+```{r, fig.height=6, fig.width=7}
+tar_read(plot_interactions_study2)
+```
+
+The impact of task-specific features (e.g., being a social task) on the causal
+effects of outsourcing to AI compared to the control condition in Study 1. The 
+y-axis reflects the estimated differences between the experimental conditions 
+and the control condition (dashed line) on a 7-point Likert scale. Lines and 
+shaded areas represent posterior medians and 95% credible intervals, 
+respectively. The patterns indicate, for example, more negative effects of 
+outsourcing on character evaluations for tasks that are rated as more social.
+
+:::
+
+\newpage
+
+::: {#suppfig-interaction-pars-study1 suppfig-pos="H"}
+
+```{r, fig.height=6, fig.width=6}
+tar_read(plot_interaction_parameters_study2)
+```
+
+Interaction parameters from models including task-specific features as
+moderators of the causal effects of AI outsourcing compared to the control 
+condition in Study 1. Points and line ranges represent posterior medians and 95% 
+credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-chatgpt-study2 suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot_chatgpt_study3)
+```
+
+Responses to the questions about ChatGPT in Study 2.
+
+:::
+
+\newpage
+
+::: {#suppfig-treatments-person-study2 suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_treatments_person_study3)
+```
+
+Character evaluations in Study 2. Participants in the control condition, the 
+tool outsourcing condition, and the full outsourcing condition evaluated the 
+"other participant" on (a) competence, (b) warmth, (c) morality, (d) laziness, 
+and (e) trustworthiness. Jittered points represent participant responses to the
+questions, split by whether the writing task was a non-social task (red) or a 
+social task (blue). Point ranges are estimated marginal means from the fitted 
+model, pooling over essay answers. Points and line ranges represent posterior 
+medians and 95% credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-chatgpt-study3 suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot_chatgpt_study4)
+```
+
+Responses to the questions about ChatGPT in Study 3.
+
+:::
+
+\newpage
+
+::: {#suppfig-treatments-tasks-study3 suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=8.5}
+tar_read(plot_treatments_tasks_study4)
+```
+
+Variation in the effects of outsourcing across tasks in Study 3. Tasks are 
+ordered from most social (top) to least social (bottom) according to ratings 
+from a pilot study. Point ranges are differences in marginal means on a 7-point
+Likert scale for the low effort conditions (red) and high effort conditions 
+(blue) compared to the control condition. Upper panels refer to the standard LLM
+conditions, and lower panels refer to the personalised LLM conditions. Points 
+and ranges represent posterior medians and 95% credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-interactions-study3 suppfig-pos="H"}
+
+```{r, fig.height=6, fig.width=7}
+tar_read(plot_interactions_study4)
+```
+
+The impact of task-specific features (e.g., being a social task) on the causal
+effects of outsourcing to AI compared to the control condition in Study 3. The 
+y-axis reflects the estimated differences between the experimental conditions 
+and the control condition (dashed line) on a 7-point Likert scale. Lines and 
+shaded areas represent posterior medians and 95% credible intervals, 
+respectively. The patterns indicate, for example, more negative effects of 
+outsourcing on character evaluations for tasks that are rated as more social.
+
+:::
+
+\newpage
+
+::: {#suppfig-interaction-pars-study3 suppfig-pos="H"}
+
+```{r, fig.height=6, fig.width=6}
+tar_read(plot_interaction_parameters_study4)
+```
+
+Interaction parameters from models including task-specific features as
+moderators of the causal effects of AI outsourcing compared to the control 
+condition in Study 3. Points and line ranges represent posterior medians and 95% 
+credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-chatgpt-study4 suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot_chatgpt_study5)
+```
+
+Responses to the questions about ChatGPT in Study 4.
+
+:::
+
+\newpage
+
+::: {#suppfig-treatments-tasks-study4 suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=8.5}
+tar_read(plot_treatments_tasks_study5)
+```
+
+Variation in the effects of outsourcing across tasks in Study 4. Tasks are 
+ordered from most social (top) to least social (bottom) according to ratings 
+from a pilot study. Point ranges are differences in marginal means on a 7-point
+Likert scale for the bad reason conditions (red) and good reason conditions 
+(blue) compared to the control condition. Upper panels refer to the tool 
+outsourcing conditions, and lower panels refer to the full outsourcing 
+conditions. Points and ranges represent posterior medians and 95% credible 
+intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-interactions-study4 suppfig-pos="H"}
+
+```{r, fig.height=6, fig.width=7}
+tar_read(plot_interactions_study5)
+```
+
+The impact of task-specific features (e.g., being a social task) on the causal
+effects of outsourcing to AI compared to the control condition in Study 4. The 
+y-axis reflects the estimated differences between the experimental conditions 
+and the control condition (dashed line) on a 7-point Likert scale. Lines and 
+shaded areas represent posterior medians and 95% credible intervals, 
+respectively. The patterns indicate, for example, more negative effects of 
+outsourcing on character evaluations for tasks that are rated as more social.
+
+:::
+
+\newpage
+
+::: {#suppfig-interaction-pars-study4 suppfig-pos="H"}
+
+```{r, fig.height=6, fig.width=6}
+tar_read(plot_interaction_parameters_study5)
+```
+
+Interaction parameters from models including task-specific features as
+moderators of the causal effects of AI outsourcing compared to the control 
+condition in Study 4. Points and line ranges represent posterior medians and 95% 
+credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-chatgpt-study5 suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
+tar_read(plot_chatgpt_study6)
+```
+
+Responses to the questions about ChatGPT in Study 5.
+
+:::
+
+\newpage
+
+::: {#suppfig-tasks-correlations suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=5}
+tar_read(plot_task_cors)
+```
+
+Model-estimated task-specific correlations between all six questions in the 
+first pilot study. Values are posterior median correlations. A positive 
+correlation indicates that tasks that are rated highly on one question tend to 
+be rated highly on another question.
+
+:::
+
+\newpage
+
+::: {#suppfig-tasks-social suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=6}
 tar_read(plot_task_rank_social)
 ```
 
 Model-estimated means for the question "Is this a social task?" across all 20 
-tasks. Grey points represent participant responses to the question, jittered for 
-easier viewing. Black points are estimated means from the fitted model, pooling 
-over participants. Black points and line ranges represent posterior medians and 
-95% credible intervals, respectively.
-
-:::
-
-\newpage
-
-::: {#suppfig-tasks-socialskills}
-
-```{r tasks-socialskills, fig.height=4, fig.width=6}
-tar_read(plot_task_rank_socialskills)
-```
-
-Model-estimated means for the question "Does this task require social skills?" 
-across all 20 tasks. Grey points represent participant responses to the 
-question, jittered for easier viewing. Black points are estimated means from the 
-fitted model, pooling over participants. Black points and line ranges represent 
-posterior medians and 95% credible intervals, respectively.
-
-:::
-
-\newpage
-
-::: {#suppfig-tasks-impactothers}
-
-```{r tasks-impactothers, fig.height=4, fig.width=6}
-tar_read(plot_task_rank_impactothers)
-```
-
-Model-estimated means for the question "Does this task impact other people?" 
-across all 20 tasks. Grey points represent participant responses to the 
-question, jittered for easier viewing. Black points are estimated means from the 
-fitted model, pooling over participants. Black points and line ranges represent 
-posterior medians and 95% credible intervals, respectively.
-
-:::
-
-\newpage
-
-::: {#suppfig-tasks-consequences}
-
-```{r tasks-consequences, fig.height=4, fig.width=6}
-tar_read(plot_task_rank_consequences)
-```
-
-Model-estimated means for the question "How important are the consequences of 
-this task?" across all 20 tasks. Grey points represent participant responses to 
-the question, jittered for easier viewing. Black points are estimated means from 
+tasks in the first pilot study. Grey points represent participant responses to 
+the question, jittered for easier viewing. Black points are estimated means from
 the fitted model, pooling over participants. Black points and line ranges 
 represent posterior medians and 95% credible intervals, respectively.
 
@@ -317,14 +524,14 @@ represent posterior medians and 95% credible intervals, respectively.
 
 \newpage
 
-::: {#suppfig-tasks-intrinsiceffort}
+::: {#suppfig-tasks-socialskills suppfig-pos="H"}
 
-```{r tasks-intrinsiceffort, fig.height=4, fig.width=6}
-tar_read(plot_task_rank_intrinsiceffort)
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_task_rank_socialskills)
 ```
 
-Model-estimated means for the question "How important is it that effort goes 
-into this task?" across all 20 tasks. Grey points represent participant 
+Model-estimated means for the question "Does this task require social skills?" 
+across all 20 tasks in the first pilot study. Grey points represent participant 
 responses to the question, jittered for easier viewing. Black points are 
 estimated means from the fitted model, pooling over participants. Black points 
 and line ranges represent posterior medians and 95% credible intervals, 
@@ -334,16 +541,33 @@ respectively.
 
 \newpage
 
-::: {#suppfig-tasks-extrinsiceffort}
+::: {#suppfig-tasks-impactothers suppfig-pos="H"}
 
-```{r tasks-extrinsiceffort, fig.height=4, fig.width=6}
-tar_read(plot_task_rank_extrinsiceffort)
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_task_rank_impactothers)
 ```
 
-Model-estimated means for the question "How important is it that others see the 
-effort that goes into this task?" across all 20 tasks. Grey points represent 
-participant responses to the question, jittered for easier viewing. Black points 
-are estimated means from the fitted model, pooling over participants. Black 
+Model-estimated means for the question "Does this task impact other people?" 
+across all 20 tasks in the first pilot study. Grey points represent participant 
+responses to the question, jittered for easier viewing. Black points are 
+estimated means from the fitted model, pooling over participants. Black points 
+and line ranges represent posterior medians and 95% credible intervals,
+respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-tasks-consequences suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_task_rank_consequences)
+```
+
+Model-estimated means for the question "How important are the consequences of 
+this task?" across all 20 tasks in the first pilot study. Grey points represent 
+participant responses to the question, jittered for easier viewing. Black points
+are estimated means from the fitted model, pooling over participants. Black
 points and line ranges represent posterior medians and 95% credible intervals, 
 respectively.
 
@@ -351,9 +575,43 @@ respectively.
 
 \newpage
 
-::: {#suppfig-chatgpt-pilotstudy2}
+::: {#suppfig-tasks-intrinsiceffort suppfig-pos="H"}
 
-```{r chatgpt-pilotstudy2, fig.height=5, fig.width=6}
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_task_rank_intrinsiceffort)
+```
+
+Model-estimated means for the question "How important is it that effort goes 
+into this task?" across all 20 tasks in the first pilot study. Grey points 
+represent participant responses to the question, jittered for easier viewing.
+Black points are estimated means from the fitted model, pooling over
+participants. Black points and line ranges represent posterior medians and 95% 
+credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-tasks-extrinsiceffort suppfig-pos="H"}
+
+```{r, fig.height=4, fig.width=6}
+tar_read(plot_task_rank_extrinsiceffort)
+```
+
+Model-estimated means for the question "How important is it that others see the 
+effort that goes into this task?" across all 20 tasks in the first pilot study.
+Grey points represent participant responses to the question, jittered for easier 
+viewing. Black points are estimated means from the fitted model, pooling over 
+participants. Black points and line ranges represent posterior medians and 95% 
+credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {#suppfig-chatgpt-pilotstudy2 suppfig-pos="H"}
+
+```{r, fig.height=5, fig.width=6}
 tar_read(plot_chatgpt_study1)
 ```
 
@@ -363,19 +621,9 @@ Responses to the questions about ChatGPT in the second pilot study.
 
 \newpage
 
-::: {#suppfig-scenarios-pilotstudy2}
+::: {#suppfig-treatments-pilotstudy2 suppfig-pos="H"}
 
-![](images/scenarios_pilotstudy2.png)
-
-Examples of the scenarios presented to participants in the second pilot study.
-
-:::
-
-\newpage
-
-::: {#suppfig-treatments-pilotstudy2}
-
-```{r treatments-pilotstudy2, fig.height=4, fig.width=6}
+```{r, fig.height=4, fig.width=6}
 tar_read(plot_treatments_study1)
 ```
 
@@ -392,9 +640,9 @@ intervals, respectively.
 
 \newpage
 
-::: {#suppfig-treatments-by-task-pilotstudy2}
+::: {#suppfig-treatments-by-task-pilotstudy2 suppfig-pos="H"}
 
-```{r treatments-by-task-pilotstudy2, fig.height=5, fig.width=8.5}
+```{r, fig.height=5, fig.width=8.5}
 tar_read(plot_treatments_tasks_study1)
 ```
 
@@ -409,35 +657,36 @@ and ranges represent posterior medians and 95% credible intervals, respectively.
 
 \newpage
 
-::: {#suppfig-interactions-pilotstudy2}
+::: {#suppfig-interactions-pilotstudy2 suppfig-pos="H"}
 
-```{r interactions-pilotstudy2, fig.height=5, fig.width=6.6}
+```{r, fig.height=5, fig.width=6.6}
 tar_read(plot_interactions_study1)
 ```
 
 The impact of task-specific features (e.g., being a social task) on the causal
 effects of outsourcing to AI (red) and humans (blue) compared to the control
-condition. The y-axis reflects the estimated differences between the
-experimental conditions and the control condition (dashed line) on a 7-point 
-Likert scale. Lines and shaded areas represent posterior medians and 95%
-credible intervals, respectively. The patterns indicate, for example, more 
-negative effects of outsourcing on character evaluations for tasks that are 
-rated as more social.
+condition in the second pilot study. The y-axis reflects the estimated 
+differences between the experimental conditions and the control condition 
+(dashed line) on a 7-point Likert scale. Lines and shaded areas represent 
+posterior medians and 95% credible intervals, respectively. The patterns 
+indicate, for example, more negative effects of outsourcing on character 
+evaluations for tasks that are rated as more social.
 
 :::
 
 \newpage
 
-::: {#suppfig-interaction-pars-pilotstudy2}
+::: {#suppfig-interaction-pars-pilotstudy2 suppfig-pos="H"}
 
-```{r interaction-pars-pilotstudy2, fig.height=5.5, fig.width=5.5}
+```{r, fig.height=5.5, fig.width=5.5}
 tar_read(plot_interaction_parameters_study1)
 ```
 
 Interaction parameters from models including task-specific features as
 moderators of the causal effects of AI outsourcing (red) and human outsourcing 
-(blue) compared to the control condition. Points and line ranges represent 
-posterior medians and 95% credible intervals, respectively.
+(blue) compared to the control condition in the second pilot study. Points and 
+line ranges represent posterior medians and 95% credible intervals,
+respectively.
 
 :::
 
@@ -445,17 +694,15 @@ posterior medians and 95% credible intervals, respectively.
 
 # Supplementary Tables
 
-\vspace*{15mm}
+::: {#supptbl-tasks supptbl-pos="H" layout-ncol="1"}
 
-::: {#supptbl-tasks tbl-pos="H" layout-ncol="1"}
-
-```{r tasks}
+```{r}
 tar_read(table_tasks) %>%
   kable(
     format = "latex",
     escape = FALSE,
     booktabs = TRUE,
-    linesep = "", # to prevent space every five rows
+    linesep = "",
     align = "lccccc"
   ) %>%
   kable_styling(font_size = 10)
@@ -467,9 +714,169 @@ Tasks included in the studies.
 
 \newpage
 
-::: {#supptbl-treatment-diffs-pilotstudy2 tbl-pos="H" layout-ncol="1"}
+::: {#supptbl-essay-answers-social-study2 supptbl-pos="H" layout-ncol="1"}
 
-```{r treatment-diffs-pilotstudy2}
+```{r}
+table <- 
+  tar_read(table_essay_answers_study3) %>%
+  slice(1:3) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(font_size = 10) %>%
+  column_spec(1, width = "2cm") %>%
+  column_spec(2, width = "14cm")
+
+# table single spaced
+paste(
+  "\\begingroup",
+  "\\linespread{1}\\selectfont",
+  table,
+  "\\endgroup",
+  sep = "\n"
+  ) %>%
+  knitr::asis_output()
+```
+
+Pre-generated essay answers to the social prompt in Study 2.
+
+:::
+
+\newpage
+
+::: {#supptbl-essay-answers-nonsocial-study2 supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+table <- 
+  tar_read(table_essay_answers_study3) %>%
+  slice(4:6) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(font_size = 10) %>%
+  column_spec(1, width = "2cm") %>%
+  column_spec(2, width = "14cm")
+
+# table single spaced
+paste(
+  "\\begingroup",
+  "\\linespread{1}\\selectfont",
+  table,
+  "\\endgroup",
+  sep = "\n"
+  ) %>%
+  knitr::asis_output()
+```
+
+Pre-generated essay answers to the non-social prompt in Study 2.
+
+:::
+
+\newpage
+
+::: {#supptbl-essay-comprehension-study2 supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_essay_comprehension_study3) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(font_size = 9)
+```
+
+Reading times and comprehension rates for the essay answers in Study 2. Expected
+reading times were calculated based on an estimated reading speed of 275 words
+per minute. Comprehension rates are the percentage of participants who answered
+the comprehension question correctly.
+
+:::
+
+\newpage
+
+::: {#supptbl-manipulation-check-study2 supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_manipulation_check_study3) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(font_size = 11)
+```
+
+Percentage of participants in Study 2 who passed the manipulation check and 
+reported that they believed the manipulation, split by condition.
+
+:::
+
+\newpage
+
+::: {#supptbl-treatment-diffs-person-study2 supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_treatment_diffs_effects_study3) %>%
+  dplyr::select(c(1, 7:11)) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(font_size = 7.5) %>%
+  add_header_above(header = c(" " = 1, "Response" = 5)) %>%
+  pack_rows(
+    index = c(
+      "Effect of outsourcing type" = 6,
+      "Effect of task type" = 3,
+      "Interaction effect" = 3
+      )
+    ) %>%
+  pack_rows("\u00A0\u00A0Task type = Social", 1, 3, indent = FALSE) %>%
+  pack_rows("\u00A0\u00A0Task type = Non-social", 4, 6, indent = FALSE)
+```
+
+Pairwise contrasts for character evaluations in Study 2. Numbers reflect 
+differences in marginal means on a 7-point Likert scale. Estimates are pooled 
+over essay answers. The bottom rows represent the interactions between 
+outsourcing type and task type. Main numbers are posterior medians, numbers in 
+the square brackets are 95% credible intervals.
+
+:::
+
+\newpage
+
+::: {.landscape}
+
+::: {#supptbl-text-analysis-study5 supptbl-pos="H" layout-ncol="1"}
+
+```{r}
+tar_read(table_text_analysis_study6) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(font_size = 8)
+```
+
+Pairwise comparisons of word frequencies between conditions. LL = log 
+likelihood; %DIFF = 
+
+:::
+
+:::
+
+\newpage
+
+::: {#supptbl-treatment-diffs-pilotstudy2 supptbl-pos="H" layout-ncol="1"}
+
+```{r}
 tar_read(table_treatment_diffs_study1) %>%
   kable(
     format = "latex",
@@ -481,7 +888,7 @@ tar_read(table_treatment_diffs_study1) %>%
 ```
 
 Pairwise contrasts in the second pilot study. Numbers reflect differences in 
-marginal means on a 7-point Likert scale, pooling over participants and tasks.
+marginal means on a 7-point Likert scale, pooling over participants and tasks. 
 Main numbers are posterior medians, numbers in the square brackets are 95% 
 credible intervals.
 

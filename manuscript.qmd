@@ -13,6 +13,14 @@ author:
         city: Canterbury
         country: UK
         postal-code: CT2 7NP
+    role:
+      - data curation
+      - formal analysis
+      - investigation
+      - methodology
+      - visualization
+      - writing
+      - editing
   - name: Pierce Veitch
     corresponding: false
     orcid: 0009-0005-3364-7470
@@ -24,6 +32,9 @@ author:
         city: Canterbury
         country: UK
         postal-code: CT2 7NP
+    role:
+      - formal analysis
+      - methodology
   - name: Jim Everett
     corresponding: true
     orcid: 0000-0003-2801-5426
@@ -35,20 +46,43 @@ author:
         city: Canterbury
         country: UK
         postal-code: CT2 7NP
+    role:
+      - conceptualization
+      - funding acquisition
+      - methodology
+      - supervision
+      - editing
 author-note:
   status-changes: 
     affiliation-change: ~
     deceased: ~
   disclosures:
     study-registration: ~
-    data-sharing: ~
+    data-sharing: All data and original code can be found on GitHub at <https://github.com/ScottClaessens/outsourcing>.
     related-report: ~
-    conflict-of-interest: ~
-    financial-support: ~
+    conflict-of-interest: The authors have no conflicts of interest to disclose.
+    financial-support: This work was supported by ...
     gratitude: ~
     authorship-agreements: ~
-abstract: "xxxx"
-keywords: [keyword1, keyword2, keyword3]
+abstract: >
+  As artificial intelligence (AI) tools become increasingly integrated into 
+  daily life, people are beginning to outsource not only professional tasks but
+  also socio-relational ones. Large language models like ChatGPT can generate
+  wedding vows, speeches, and personal messages, raising questions about how
+  individuals who use AI for such tasks are perceived by others. In this paper,
+  we conduct five pre-registered studies with British participants (*n* = 3649)
+  to understand how people view those who outsource tasks to AI, and how this
+  depends on how socio-relational the task is, whether AI is used as a tool or
+  fully delegated to, and the acknowledgment of the AI use. We find negative
+  perceptions of outsourcing, particularly for socio-relational tasks, and
+  demonstrate that this does not only make us think more negatively about the
+  outsourcer, but the outsourced work itself. We then turn to examine potential
+  mechanisms underlying negative perceptions of outsourcing, investigating the
+  roles of effort, perceived authenticity, and the reasons for using AI. Our
+  research highlights the way that AI use shapes our perceptions of people,
+  raising key philosophical questions about praise, blame, and authenticity in a
+  world filled with AI-mediated interactions.
+keywords: [artificial intelligence, character evaluation, outsourcing, trust]
 bibliography: bibliography.bib
 engine: knitr
 format:
@@ -73,6 +107,7 @@ crossref:
       space-before-numbering: true
       latex-list-of-description: Supplementary Table
       caption-location: top
+floatsintext: true
 ---
 
 ```{r}
@@ -81,21 +116,1205 @@ library(targets)
 library(tidyverse)
 ```
 
-# Study 1 {.unnumbered .unlisted}
+In recent years, artificial intelligence (AI) technologies have emerged as 
+useful tools to save time and effort across a wide variety of tasks. Large 
+language models, such as ChatGPT, Copilot, and DeepSeek, have been shown to 
+increase efficiency for professional tasks like writing [@Noy2023], project 
+planning [@Barcaui2023], and programming [@Peng2023]. In a 2022 Pew survey of
+the American public, time-saving and efficiency were listed among the top
+reasons for excitement about the increased presence of AI in daily life
+[@Rainie2022].
 
-# Study 2 {.unnumbered .unlisted}
+As outsourcing routine tasks to AI becomes more commonplace, people may begin to
+use AI tools to efficiently complete more socio-relational tasks. Consider, for
+example, writing wedding vows. While wedding vows are widely understood to be an
+opportunity for couples to express their love in their own words, large language
+models like ChatGPT will dutifully produce wedding vows upon request, without
+necessarily requiring any information about the partner in question. In
+characteristic ChatGPT style, the resulting text will likely be generic enough
+to apply to anyone, yet well-written enough to read aloud at the altar. A recent
+Reddit post from a disgruntled newlywed suggests that AI-outsourcing of this
+kind is already happening [@miramar0].
 
-# Study 3 {.unnumbered .unlisted}
+Of course, there is nothing new about outsourcing socio-relational tasks.
+Ghostwriters have existed for years: in the 19th century, Victor Hugo, the
+writer of *Les Misérables*, used to write love letters for others to earn extra
+money [ref]. Today, the internet is abound with professional paid services for
+writing wedding vows and personal speeches. But it remains unclear how people
+who outsource tasks like these are perceived by others, particularly when the
+tasks are outsourced to impersonal AI tools like ChatGPT.
 
-# Study 4 {.unnumbered .unlisted}
+There are several reasons to expect that people will be perceived negatively for
+outsourcing tasks to AI. First, the effort put into a task is often used as a
+signal of one's moral character [@Celniker2023; @Tissot2025]. People who free
+ride on the efforts of others are perceived as less moral [@Cubitt2011], and
+people's outputs are perceived as more valuable the more effort was ostensibly
+put into them [@Kruger2004]. Second, people are given less credit when their
+work was generated jointly with or entirely by AI instead of by themselves
+[@Earp2024]. Third, from a virtue ethics perspective, people who outsource moral
+tasks to AI skip the opportunity to cultivate virtuous habits and develop their
+moral character [@Vallor2015]. These disparate lines of reasoning predict that
+people will be perceived more negatively if they outsource tasks to AI, though
+this has yet to be tested.
 
-# Study 5 {.unnumbered .unlisted}
+If people are perceived more negatively for outsourcing tasks to AI, there is 
+also the question of how these negative perceptions might vary across different
+types of tasks and different kinds of AI use. Will outsourcing wedding vows to
+AI be perceived just as negatively as outsourcing a cover letter or a few lines
+of computer code? Given that effort is thought to be a particularly important
+cue for cooperative partner choice in social situations [@Celniker2023], we 
+predict that outsourcing socio-relational tasks to AI will be perceived more 
+negatively than routine or professional tasks.
 
-# Study 6 {.unnumbered .unlisted}
+It is also possible for people to outsource to AI in different ways. One can 
+complete tasks by using AI as a collaborative tool, sculpting its answer over 
+successive prompts and editing the resulting output by hand. Alternatively, one
+can simply copy the AI's output verbatim. To the extent that the latter approach
+requires less effort, we predict that "fully" outsourcing to AI will be
+perceived more negatively. People can also differ in whether they are honest
+about their use of AI or, in the words of the disgruntled newlywed, deceptively
+"pass [the work] off as [their] own" [@miramar0]. Since people tend to dislike
+and distrust those who are deceptive [@Tyler2006], it follows that people will
+perceive deceptive AI-outsourcing more negatively.
 
-# General Discussion {.unnumbered .unlisted}
+Here, we test these predictions across five pre-registered experiments with 
+British participants. In our initial pilot studies, we found that people who 
+outsource a range of tasks to AI are perceived more negatively than people who
+complete the tasks by themselves (see Supplementary Materials). In Study 1, we
+expand on this by manipulating the type of outsourcing to AI (as a collaborative
+tool vs. fully outsourcing) and whether people are honest or deceptive in their
+usage of AI. In Study 2, we measure perceptions of both outsourcers and the
+outsourced work. In Studies 3-5, we test potential mechanisms underlying
+negative perceptions of outsourcing, including perceived effort, perceived
+authenticity, and the reasons for using AI.
 
-# References {.unnumbered .unlisted}
+# Study 1
+
+## Methods
+
+### Ethical Approval
+
+Ethical approval was granted for all studies in this paper by the University of
+Kent Psychology Research Ethics Panel. Participants in all studies provided
+informed consent and were debriefed after the study.
+
+### Participants
+
+We conducted a power simulation to determine our target sample size. The 
+simulation suggested that a sample size of 150 participants per condition
+(overall *n* = 750 for five conditions) would be required to detect a small 
+difference between conditions (Cohen's *d* ≈ 0.20) with above 80% power.
+
+```{r}
+study2_sample <-
+  tar_read(study2_data) %>%
+  group_by(id) %>%
+  summarise(
+    gender = unique(gender),
+    age = unique(age),
+    chatgpt_used = unique(chatgpt_used)
+    )
+```
+
+We recruited a convenience sample of 800 participants from the United Kingdom 
+through the online platform Prolific (<https://www.prolific.com/>). After 
+excluding participants who failed our pre-treatment attention check, we were 
+left with a final sample of `r nrow(study2_sample)` participants 
+(`r sum(study2_sample$gender == "Female")` female; 
+`r sum(study2_sample$gender == "Male")` male;
+`r sum(study2_sample$gender == "Non-binary / third gender")`
+non-binary / third gender;
+`r sum(str_starts(study2_sample$gender, "Prefer") | is.na(study2_sample$gender))`
+undisclosed gender; mean age = `r round(mean(study2_sample$age), 2)` years).
+`r round(mean(study2_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
+these participants reported having used ChatGPT before (see 
+@suppfig-chatgpt-study1).
+
+### Design
+
+We used a "control plus 2x2" between-subjects design. Participants were randomly 
+allocated to either the control condition, in which people in the scenarios 
+complete the tasks themselves, or one of four experimental conditions, in which 
+people in the scenarios use AI to complete the tasks. In the experimental 
+conditions, we manipulated whether people in the scenarios used AI as a 
+collaborative tool or "fully" outsourced to AI, and whether people were honest 
+or deceptive about their use of AI. This resulted in five conditions overall: 
+(*i*) the control condition, (*ii*) the tool-honest condition, (*iii*) the 
+tool-deception condition, (*iv*) the full-honest condition, and (*v*) the 
+full-deception condition.
+
+### Procedure
+
+We presented participants with six scenarios. Each scenario described a person 
+completing a task, such as writing computer code or writing a love letter. The 
+six tasks were randomly drawn from a larger set of 16 tasks (see @supptbl-tasks 
+for the full list of tasks). For each scenario, we first told participants:
+
+- *Control condition*: "In order to complete this task, [the person] works on it 
+by themselves from start to finish."
+- *Tool outsourcing conditions*: "In order to complete this task, [the person] 
+uses the AI tool ChatGPT. They ask ChatGPT to provide ideas, inspiration, and 
+feedback, but they edit and rewrite the suggestions and finish the task
+themselves."
+- *Full outsourcing conditions*: "In order to complete this task, [the person]
+uses the AI tool ChatGPT. They copy ChatGPT's output word-for-word, rather than
+doing it themselves."
+
+We then told participants in the experimental conditions:
+
+- *Honest conditions*: "After completing the task, [the person] is asked how
+they came up with their ideas. [The person] acknowledges that they used ChatGPT
+as a tool / got ChatGPT to do the task for them."
+- *Deception conditions*: "After completing the task, [the person] is asked how
+they came up with their ideas. [The person] does not acknowledge that they used 
+ChatGPT as a tool / got ChatGPT to do the task for them."
+
+We then asked participants how well each of the following words described the 
+person in the scenario: competent, warm, moral, lazy, and trustworthy. 
+Participants answered these questions on 7-point Likert scales, ranging from 
+"does not describe [the person] well" to "describes [the person] extremely 
+well".
+
+After the six scenarios, we asked participants several questions about the AI 
+tool ChatGPT, including their familiarity with ChatGPT, whether they had used 
+ChatGPT before, how frequently they used ChatGPT, and how trustworthy they 
+thought ChatGPT was (see @suppfig-chatgpt-study1).
+
+### Pre-registration
+
+We pre-registered the study on the Open Science Framework
+(<https://osf.io/knswr>).
+
+### Statistical Analysis
+
+We fitted Bayesian multivariate multilevel cumulative-link ordinal models to the
+data using the *brms* R package [@Burkner2017]. We modelled each character 
+evaluation -- competence, warmth, morality, laziness, and trustworthiness -- as 
+a separate response variable and included fixed effects for conditions, varying 
+intercepts for participants, and varying intercepts and slopes for tasks. We 
+used regularising priors for all parameters to impose conservatism on parameter 
+estimates (see Supplementary Materials for full model specifications). All 
+models converged normally ($\hat{R}$ ≤ 1.01).
+
+### Transparency and Openness
+
+For all studies in this paper, we report how we determined our sample size, all
+data exclusions, all manipulations, and all measures in the studies. All studies
+were pre-registered. Analyses for all studies were conducted in R v4.4.2 
+[@RCoreTeam]. Visualisations were produced using the *ggplot2* and *patchwork* 
+packages [@Wickham2016; @Pedersen2025]. The manuscript was reproducibly 
+generated using the *targets* package [@Landau2021] and *quarto* [@Allaire2024].
+All data and code to reproduce the analyses and figures in this paper can be 
+found here: <https://github.com/ScottClaessens/outsourcing>
+
+## Results
+
+Across all five character evaluations, we found that fully outsourcing to AI 
+(i.e., copying the AI output verbatim) was perceived more negatively than using
+AI as a collaborative tool (@fig-treatments-study1; 
+@tbl-treatment-diffs-study1). By contrast, we found that deception about AI
+usage had specific negative effects on perceptions of morality and
+trustworthiness: people who did not acknowledge their use of AI were perceived
+as less moral and less trustworthy. We did not find any interaction effects
+between full outsourcing and deception.
+
+```{r, fig.height=6, fig.width=6}
+#| label: fig-treatments-study1
+#| fig-cap: Character Evaluations in Study 1
+#| fig-align: center
+#| apa-note: Participants in the control condition and four AI outsourcing conditions evaluated people in the scenarios on (a) competence, (b) warmth, (c) morality, (d) laziness, and (e) trustworthiness. Coloured points represent participant responses to the questions, jittered for easier viewing. Black points are estimated marginal means from the fitted model, pooling over participants and tasks. Black points and line ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_treatments_study2)
+```
+
+```{r}
+#| label: tbl-treatment-diffs-study1
+#| tbl-cap: Pairwise Contrasts in Study 1 \vspace{20pt}
+#| apa-note: Numbers reflect differences in marginal means on a 7-point Likert scale, pooling over participants and tasks. The bottom row represents the interaction between full outsourcing and deception (i.e., the difference between the differences in the rows above). Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
+
+tar_read(table_treatment_diffs_effects_study2) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+    ) %>%
+  kable_styling(
+    font_size = 8,
+    position = "left"
+    ) %>%
+  add_header_above(header = c(" " = 1, "Response" = 5)) %>%
+  pack_rows(
+    index = c(
+      "Comparison to control" = 4,
+      "Effect of full outsourcing" = 2,
+      "Effect of deception" = 2,
+      "Interaction effect"
+      )
+    ) %>%
+  # fix overlapping apa note
+  paste0("\\vspace{20pt}") %>%
+  knitr::asis_output()
+```
+
+The effects of outsourcing to AI varied across the different tasks, especially 
+for perceptions of warmth and morality (@fig-treatments-tasks-study1). For 
+example, people who used AI for social tasks, such as writing an apology letter
+or a bereavement card, were perceived as less warm, less moral, and lazier 
+compared to people who completed the task themselves. This was true regardless
+of whether AI was used as a tool or fully delegated to and whether the person
+was honest or deceptive about their use of AI. By contrast, we observed weaker
+effects of outsourcing for non-social tasks like writing computer code or 
+planning a syllabus.
+
+::: {.landscape}
+
+```{r, fig.height=5, fig.width=8.5}
+#| label: fig-treatments-tasks-study1
+#| fig-cap: Variation in the Effects of Outsourcing across Tasks in Study 1 \vspace{-30pt}
+#| fig-align: center
+#| apa-note: Tasks are ordered from most social (top) to least social (bottom) according to ratings from a pilot study. Point ranges are differences in marginal means on a 7-point Likert scale for the honest conditions (red) and deception conditions (blue) compared to the control condition. Upper panels refer to the tool outsourcing conditions, and lower panels refer to the full outsourcing conditions. Points and ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_treatments_tasks_study2)
+```
+
+:::
+
+To determine the factors that predict variation across tasks, we incorporated 
+ratings of tasks from a pilot study (see Supplementary Materials for details).
+Participants were asked to rate the different tasks on several features: whether
+the task is social, requires social skills, impacts others, has important 
+consequences, and requires effort. All of these features predicted stronger 
+causal effects of outsourcing to AI compared to the control (Supplementary 
+Figures [-@suppfig-interactions-study1] and 
+[-@suppfig-interaction-pars-study1]). In other words, outsourcing to AI is 
+perceived more negatively for tasks that have these features, compared to tasks
+without these features.
+
+## Discussion
+
+In this study, we manipulated whether people used AI as a collaborative tool or 
+copied the AI's output verbatim. In line with our predictions, we found that 
+"fully" outsourcing to AI was perceived more negatively than using AI as a 
+collaborative tool, particularly for socio-relational tasks. These negative 
+perceptions of people who fully outsource their work to AI may be driven in part
+by a general suspicion in unsupervised AI output due to what has been termed 
+"algorithmic aversion" -- the tendency for people to distrust AI relative to 
+humans [@Dietvorst2015]. This aversion is particularly strong in the moral 
+domain [@Bigman2018]. Our results suggest that people may not only harbour 
+negative perceptions of AIs themselves, but also of humans who unthinkingly copy
+the output from these AIs, especially for socio-relational tasks.
+
+We also manipulated whether people were honest or deceptive in their use of AI.
+We found that people were seen as less moral and less trustworthy if they did
+not acknowledge their use of AI when asked how they came up with their ideas.
+This builds on previous work showing that people dislike and distrust those who
+lie [@Tyler2006]. However, passing off AI-generated work as one's own is a 
+specific kind of lie -- it involves taking undeserved credit for the work of a 
+machine and misrepresenting one's own emotional capabilities and writing skills.
+Interestingly, we found that failing to acknowledge use of AI had negative 
+effects on perceptions of morality and trustworthiness across all the tasks we 
+studied, suggesting that this phenomenon generalises across a range of 
+socio-relational and professional tasks.
+
+We have shown outsourcing to AI leads to negative character evaluations, 
+especially when the AI output is copied verbatim and the work is passed off as 
+one's own. However, it remains unclear whether these negative perceptions also
+extend to the work itself. It could be, for example, that someone is perceived
+badly for using ChatGPT to write their bereavement card, but the actual quality
+of the writing is perceived to be just as good, if not better, than if the
+person had written the card themselves. Indeed, evidence suggests that text
+generated by ChatGPT is rated as higher quality than human-written text
+[@Noy2023]. However, because this previous study used treatment-blind raters, it
+was unable to assess whether knowing that a piece of text was AI-generated
+affects how people perceive the text, while holding the quality of the text
+constant. We explored this possibility in Study 2.
+
+# Study 2
+
+## Methods
+
+### Participants
+
+We conducted a power simulation to determine our target sample size. The 
+simulation suggested that a sample size of 125 participants per condition 
+(overall *n* = 750 for six conditions) would be required to detect a 
+small-to-medium difference between conditions (Cohen's *d* ≈ 0.40) with above 
+80% power.
+
+```{r}
+study3_sample <-
+  tar_read(study3_data) %>%
+  group_by(id) %>%
+  summarise(
+    gender = unique(gender),
+    age = unique(age),
+    chatgpt_used = unique(chatgpt_used)
+    )
+```
+
+We recruited a convenience sample of 800 participants from the United Kingdom 
+through Prolific. After excluding participants who failed our pre-treatment 
+attention check, we were left with a final sample of `r nrow(study3_sample)` 
+participants (`r sum(study3_sample$gender == "Female")` female; 
+`r sum(study3_sample$gender == "Male")` male;
+`r sum(study3_sample$gender == "Non-binary / third gender")`
+non-binary / third gender;
+`r sum(str_starts(study3_sample$gender, "Prefer") | is.na(study3_sample$gender))`
+undisclosed gender; mean age = `r round(mean(study3_sample$age), 2)` years).
+`r round(mean(study3_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
+these participants reported having used ChatGPT before (see 
+@suppfig-chatgpt-study2).
+
+### Design
+
+We randomly allocated participants to one of six conditions in a 3x2 
+between-subjects design. We manipulated the type of outsourcing: (*i*) no 
+outsourcing control, (*ii*) using AI as a tool, and (*iii*) fully outsourcing to
+AI. We also manipulated whether the task prompt was social or non-social.
+
+### Procedure
+
+We told participants that they would read and evaluate a short piece of writing
+from "another participant" (in reality, we generated the writing using ChatGPT 
+version 4o and edited the text to appear more human-like). The prompt for the 
+piece of writing varied between conditions:
+
+- *Social conditions*: "Please write a description of a close family member or 
+friend, explaining why they are special to you."
+- *Non-social conditions*: "Please write a short description of a book, TV show,
+or film of your choice."
+
+We explained that the "other participant" was asked several questions about how
+they produced their answer, including whether or not they used an AI tool like
+ChatGPT. We explained that the participant was encouraged to be honest and told
+that they would be paid regardless. The response from the "other participant" 
+varied between conditions:
+
+- *Control conditions*: "The participant reported that they did not use any AI 
+tool like ChatGPT. Instead, they worked on the response themselves from start to
+finish."
+- *Tool outsourcing conditions*: "The participant reported using ChatGPT to 
+provide ideas, inspiration, and feedback. The participant told us that they 
+edited and rewrote ChatGPT's suggestions and finished writing the response 
+themselves."
+- *Full outsourcing conditions*: "The participant reported using ChatGPT to 
+complete the task. The participant told us that they copied ChatGPT's output
+word-for-word, rather than producing the response themselves."
+
+We then presented participants with a randomly-chosen pre-generated essay answer
+to the prompt (see Supplementary Tables [-@supptbl-essay-answers-social-study2] 
+and [-@supptbl-essay-answers-nonsocial-study2] for full essay answers). In the 
+social conditions, the answer either referred to the participant's father, their
+sister, or their best friend. In the non-social conditions, the answer either
+referred to the book The Hobbit, the TV show Buffy the Vampire Slayer, or the
+film Titanic. Reading times and responses to a follow-up comprehension question
+suggested that participants read the essay answers in sufficient detail (see 
+@supptbl-essay-comprehension-study2).
+
+We asked participants about their perceptions of the essay answer and the "other
+participant". We asked how well-written, meaningful, and authentic they thought
+the answer was (7-point Likert scales), what letter grade they would give the
+answer (A-E), and how much they would hypothetically reward the other
+participant for their work (from £0.00 to £1.00). We also asked how well each of
+the following words described the other participant: competent, warm, moral,
+lazy, and trustworthy (7-point Likert scales).
+
+At the end of the study, we gave participants a manipulation check and asked
+them whether they believed the manipulation. Responses to these questions
+suggested that the outsourcing manipulation was successful (see 
+@supptbl-manipulation-check-study2). We also asked participants several 
+questions about ChatGPT (see @suppfig-chatgpt-study2).
+
+### Pre-registration
+
+We pre-registered the study on the Open Science Framework[^1].
+
+[^1]: Due to a technical error with archiving this pre-registration on the Open
+Science Framework, the timestamp for the registration was lost. However, on our
+OSF project (<https://osf.io/xhmzk>), it is possible to view our 
+pre-registration document file and its timestamped upload date.
+
+### Statistical Analysis
+
+We fitted two Bayesian multilevel models to the data. The first model was a 
+multivariate cumulative-link ordinal model including all Likert scales as 
+separate response variables. The second model was a zero-one-inflated-beta model
+applied specifically to the reward question, which was a slider scale varying
+between 0 and 1. For both models, we included fixed effects for the interaction
+between outsourcing type and task type and varying intercepts and slopes for
+essay answers. We used regularising priors for all parameters to impose 
+conservatism on parameter estimates (see Supplementary Materials for full model 
+specifications). All models converged normally ($\hat{R}$ ≤ 1.01).
+
+## Results
+
+We found that essay responses that were ostensibly generated using AI were 
+perceived as less meaningful and less authentic, but just as well-written, 
+compared to essay responses ostensibly written by a human
+(@fig-treatments-work-study2; @tbl-treatment-diffs-work-study2). Participants 
+also marked AI-generated essays with a lower grade and rewarded AI-generated 
+essays with a lower hypothetical monetary bonus.
+
+```{r, fig.height=5, fig.width=7}
+#| label: fig-treatments-work-study2
+#| fig-cap: Perceptions of the Work in Study 2
+#| fig-align: center
+#| apa-note: Participants in the control condition, the tool outsourcing condition, and the full outsourcing condition evaluated the essay response to the writing task. Participants rated whether the essay response was (a) well-written, (b) meaningful, and (c) authentic. Participants also (d) graded the work and (e) rewarded the work with a hypothetical monetary bonus. Jittered points represent participant responses to the questions, split by whether the writing task was a non-social task (red) or a social task (blue). Point ranges are estimated marginal means from the fitted model, pooling over essay answers. Points and line ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_treatments_work_study3)
+```
+
+```{r}
+#| label: tbl-treatment-diffs-work-study2
+#| tbl-cap: Pairwise Contrasts for Perceptions of the Work in Study 2 \vspace{20pt}
+#| apa-note: Numbers reflect differences in marginal means on either a 7-point Likert scale (well-written, meaningful, authentic), a 5-point ordinal grade scale (grade), or a 0-1 sliding scale (reward). Estimates are pooled over essay answers. The bottom rows represent the interactions between outsourcing type and task type. Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
+
+tar_read(table_treatment_diffs_effects_study3) %>%
+  dplyr::select(1:6) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+  ) %>%
+  kable_styling(
+    font_size = 7.5,
+    position = "left"
+    ) %>%
+  add_header_above(header = c(" " = 1, "Response" = 5)) %>%
+  pack_rows(
+    index = c(
+      "Effect of outsourcing type" = 6,
+      "Effect of task type" = 3,
+      "Interaction effect" = 3
+      )
+    ) %>%
+  pack_rows("\u00A0\u00A0Task type = Social", 1, 3, indent = FALSE) %>%
+  pack_rows("\u00A0\u00A0Task type = Non-social", 4, 6, indent = FALSE) %>%
+  # fix overlapping apa note
+  paste0("\\vspace{20pt}") %>%
+  knitr::asis_output()
+```
+
+We did not find differences in perceptions of the work between the tool 
+outsourcing and full outsourcing conditions, except for the reward question,
+where fully outsourced essays (i.e., essays copied verbatim from ChatGPT) were
+rewarded £0.23 less than essays generated using AI as a collaborative tool. We
+did not find any differences between social and non-social tasks and did not
+find any interaction effects.
+
+Turning to character evaluations, we found that people were perceived more
+negatively across all character evaluations if they outsourced the writing task
+to AI, either by using ChatGPT as a collaborative tool or by copying the text
+from ChatGPT verbatim (@suppfig-treatments-person-study2; 
+@supptbl-treatment-diffs-person-study2). However, we did not find any 
+differences in character evaluations between the tool outsourcing and full 
+outsourcing conditions. We did not find differences in character evaluations 
+between social and non-social tasks and did not find any interaction effects.
+
+## Discussion
+
+Extending our previous results, we found that not only are people perceived 
+negatively for outsourcing their work to AI, but the work produced by AI is 
+itself also perceived negatively. In particular, text that has purportedly been
+generated using AI is perceived to be less meaningful, less authentic, worthy of
+a lower grade, and worthy of a lower monetary reward compared to human-generated
+text. This is despite the actual text itself being held constant, perhaps
+explaining why perceived writing quality did not consistently differ between
+conditions.
+
+Unlike in Study 1, we found no differences in the effect of AI-outsourcing
+between social and non-social tasks. This may be due to the particular tasks we
+chose. Writing *about* someone close to you is not quite the same as writing 
+something *for* someone close to you, as is the case with wedding vows, love 
+letters, and bereavement cards. We also found no differences between the tool
+and full outsourcing conditions, aside from the lower rewards given to
+participants in the latter condition. It is possible that differences between
+conditions were smaller under this design and we were not sufficiently powered
+to detect them.
+
+Thus far, we have presented evidence that outsourcing tasks to AI causes
+negative character evaluations and negative perceptions of the work. But the
+mechanisms underlying these effects remain unclear. We have already suggested
+that effort may play a role, since perceived effort (or lack thereof) is often
+used as a signal of one's moral character [@Cubitt2011] and cooperative intent
+[@Celniker2023]. Study 2 also suggested a role of authenticity: people who 
+outsource to AI may be perceived as producing work that is less authentically
+their own, leading to negative evaluations [see also @Kirk2025]. Indeed,
+previous studies have shown that people react negatively to individuals and 
+brands that behave inauthentically by strategically presenting themselves in
+ways that are misaligned with their true nature [@Sedikides2024; @Silver2021].
+
+To explore the potential mechanisms of effort and authenticity, we return to our
+previous design and experimentally manipulate (1) how much effort people put
+into the task and (2) whether people outsource the task to a standard large
+language model like ChatGPT or a personalised model that has been trained
+specifically on one's own prior writings. The latter authenticity manipulation
+is inspired by recent psychological work on the credit-blame asymmetry in AI use
+showing that people receive more personal credit for their work when they use an
+AI model trained on their own prior writings [@Earp2024]. If effort and 
+authenticity are important mechanisms underlying negative perceptions of 
+outsourcing to AI, then these manipulations should influence character 
+evaluations.
+
+# Study 3
+
+## Methods
+
+### Participants
+
+```{r}
+study4_sample <-
+  tar_read(study4_data) %>%
+  group_by(id) %>%
+  summarise(
+    gender = unique(gender),
+    age = unique(age),
+    chatgpt_used = unique(chatgpt_used),
+    effort = unique(effort),
+    authentic = unique(authentic)
+    )
+```
+
+We used the same power estimate from Study 1 to determine our target sample size
+of *n* = 750 (150 participants in each of five conditions). We recruited a 
+convenience sample of 802 participants from the United Kingdom through Prolific.
+After excluding participants who failed our pre-treatment attention check, we
+were left with a final sample of `r nrow(study4_sample)` 
+participants (`r sum(study4_sample$gender == "Female")` female; 
+`r sum(study4_sample$gender == "Male")` male;
+`r sum(study4_sample$gender == "Non-binary / third gender")`
+non-binary / third gender;
+`r sum(str_starts(study4_sample$gender, "Prefer") | is.na(study4_sample$gender))`
+undisclosed gender; mean age = `r round(mean(study4_sample$age), 2)` years).
+`r round(mean(study4_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
+these participants reported having used ChatGPT before (see 
+@suppfig-chatgpt-study3).
+
+### Design
+
+We used the same "control plus 2x2" between-subjects design as in Study 1. In 
+the experimental conditions, we manipulated whether people in the scenarios used
+a standard or personalised AI model, and whether people put more or less effort
+into the task. This resulted in five conditions overall: (*i*) the control 
+condition, (*ii*) the standard-low-effort condition, (*iii*) the 
+standard-high-effort condition, (*iv*) the personalised-low-effort condition, 
+and (*v*) the personalised-high-effort condition.
+
+### Procedure
+
+The procedure was mostly identical to Study 1, but we updated the study preamble
+and the presentation of the scenarios. For participants in the personalised AI
+conditions, we expanded the study preamble to explain that personalised AI
+models were trained on people's own prior writings and "tailored to each 
+specific person and their own thoughts, feelings, and values". Then in the 
+scenarios, we told participants in the experimental conditions:
+
+- *Standard AI conditions*: "In order to complete this task, [the person] uses 
+the AI tool ChatGPT."
+- *Personalised AI conditions*: "In order to complete this task, [the person]
+uses a personalised AI tool."
+
+We then told participants:
+
+- *Low effort conditions*: "[The person] quickly gives the AI a rushed prompt 
+and uses its first output."
+- *High effort conditions*: "[The person] carefully gives the AI several 
+detailed prompts and, after multiple rounds of changes, uses its resulting 
+output."
+
+At the end of the study, we asked participants to choose which of these was more
+authentic and effortful, respectively. 
+`r round(mean(str_detect(study4_sample$authentic, fixed("personalised")), na.rm = TRUE) * 100)`%
+of participants stated that the personalised AI was more authentic and 
+`r round(mean(str_detect(study4_sample$effort, fixed("Carefully"))) * 100)`% of 
+participants stated that giving the AI several detailed prompts was more 
+effortful.
+
+### Pre-registration
+
+We pre-registered the study on the Open Science Framework
+(<https://osf.io/vaq7u>).
+
+### Statistical Analysis
+
+We fitted the same Bayesian multivariate multilevel cumulative-link ordinal 
+models as in Studies 1 and 2. All models converged normally ($\hat{R}$ ≤ 1.01).
+
+## Results
+
+We found that people who outsourced to AI in a low effort way were perceived as
+less competent, less moral, lazier, and less trustworthy than people who put
+more effort into their use of AI (@fig-treatments-study3;
+@tbl-treatment-diffs-study3). By contrast, we found that character evaluations
+did not differ between people who used a standard AI model rather than a 
+personalised AI model. We also found no interaction effects between effort and 
+the type of AI used.
+
+```{r, fig.height=6, fig.width=7}
+#| label: fig-treatments-study3
+#| fig-cap: Character Evaluations in Study 3
+#| fig-align: center
+#| apa-note: Participants in the control condition and four AI outsourcing conditions evaluated people in the scenarios on (a) competence, (b) warmth, (c) morality, (d) laziness, and (e) trustworthiness. Coloured points represent participant responses to the questions, jittered for easier viewing. Black points are estimated marginal means from the fitted model, pooling over participants and tasks. Black points and line ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_treatments_study4)
+```
+
+```{r}
+#| label: tbl-treatment-diffs-study3
+#| tbl-cap: Pairwise Contrasts in Study 3 \vspace{20pt}
+#| apa-note: Numbers reflect differences in marginal means on a 7-point Likert scale, pooling over participants and tasks. The bottom row represents the interaction between AI type and effort (i.e., the difference between the differences in the rows above). Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
+
+tar_read(table_treatment_diffs_effects_study4) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+    ) %>%
+  kable_styling(
+    font_size = 7,
+    position = "left"
+    ) %>%
+  add_header_above(header = c(" " = 1, "Response" = 5)) %>%
+  pack_rows(
+    index = c(
+      "Comparison to control" = 4,
+      "Effect of AI type" = 2,
+      "Effect of effort" = 2,
+      "Interaction effect"
+      )
+    ) %>%
+  # fix overlapping apa note
+  paste0("\\vspace{20pt}") %>%
+  knitr::asis_output()
+```
+
+As in Study 1, the effects of outsourcing to AI varied across the different 
+tasks, especially for perceptions of warmth and morality 
+(@suppfig-treatments-tasks-study3). We again found that the negative causal 
+effects of outsourcing to AI were particularly strong for tasks that are social,
+require social skills, impact others, have important consequences, and require
+effort (Supplementary Figures [-@suppfig-interactions-study3] and 
+[-@suppfig-interaction-pars-study3]).
+
+## Discussion
+
+We found that effort is an important mechanism by which outsourcing to AI leads
+to negative character evaluations. People who engaged in effortless copying of
+the AI's first output were perceived more negatively, whereas people who put in 
+effort with multiple detailed prompts were perceived no differently from those 
+who completed the tasks themselves. This result is in line with previous work
+showing that effort is a signal of one's moral character [@Cubitt2011; 
+@Celniker2023].
+
+Interestingly, we found no effect of authenticity as proxied by the use of a 
+personalised AI that is trained on one's own prior writings compared to a 
+standard AI like ChatGPT. This perhaps indicates that authenticity is not an 
+important mechanism underlying the effect of outsourcing on negative character 
+evaluations. However, our specific manipulation may not have moved the needle on 
+authenticity enough to impact character evaluations. While previous work has 
+found an effect of personalised AI models on perceived credit [@Earp2024], and 
+the majority of participants in our study stated that the personalised AI was 
+more authentic than a standard model like ChatGPT, it is possible that 
+perceptions of authenticity in our study remained low even with the personalised
+AI model.
+
+Beyond effort and authenticity, another mechanism that may be driving negative 
+perceptions of outsourcing to AI is people's reasons for outsourcing. People may
+use AI for bad reasons, such as saving time or strategically presenting oneself 
+differently. But there are also good reasons for using AI. For example, someone
+might use AI because they really care about the task and want to make sure they
+get it right. If communicated to participants, will these reasons influence 
+perceptions of outsourcers? We answer this question in Study 4.
+
+# Study 4
+
+## Methods
+
+### Participants
+
+```{r}
+study5_sample <-
+  tar_read(study5_data) %>%
+  group_by(id) %>%
+  summarise(
+    gender = unique(gender),
+    age = unique(age),
+    chatgpt_used = unique(chatgpt_used)
+    )
+```
+
+We used the same power estimate from Study 1 to determine our target sample size
+of *n* = 750 (150 participants in each of five conditions). We recruited a 
+convenience sample of 800 participants from the United Kingdom through Prolific. 
+After excluding participants who failed our pre-treatment attention check, we 
+were left with a final sample of `r nrow(study5_sample)` 
+participants (`r sum(study5_sample$gender == "Female")` female; 
+`r sum(study5_sample$gender == "Male")` male;
+`r sum(study5_sample$gender == "Non-binary / third gender")`
+non-binary / third gender;
+`r sum(str_starts(study5_sample$gender, "Prefer") | is.na(study5_sample$gender))`
+undisclosed gender; mean age = `r round(mean(study5_sample$age), 2)` years).
+`r round(mean(study5_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
+these participants reported having used ChatGPT before (see 
+@suppfig-chatgpt-study4).
+
+### Design
+
+We used the same "control plus 2x2" between-subjects design as in Studies 1 and 
+3. In the experimental conditions, we manipulated whether people in the 
+scenarios used AI as a tool or "fully" outsourced to AI, and whether people had
+bad or good reasons for using AI. This resulted in five conditions overall:
+(*i*) the control condition, (*ii*) the tool-bad-reason condition, (*iii*) the 
+tool-good-reason condition, (*iv*) the full-bad-reason condition, and (*v*) the 
+full-good-reason condition.
+
+### Procedure
+
+The procedure was mostly identical to Study 3, with two changes. First, we 
+reduced the number of tasks, focusing on eight tasks (four "social" tasks and 
+four "non-social" tasks) that made sense in our updated design and showed the 
+largest effects in our previous studies. Second, we updated the presentation of 
+the scenarios. We told participants in the experimental conditions:
+
+- *Bad reason conditions*: "Because they are really short on time and want to 
+complete the task quickly, [the person] uses the AI tool ChatGPT."
+- *Good reason conditions*: "Because this task is really important to them and 
+they want to make sure they get it right, [the person] uses the AI tool
+ChatGPT."
+
+We then told participants:
+
+- *Tool outsourcing conditions*: "[The person] asks ChatGPT to provide ideas, 
+inspiration, and feedback, but they edit and rewrite the suggestions and finish
+the task themselves."
+- *Full outsourcing conditions*: "[The person] copies ChatGPT's output
+word-for-word, rather than doing it themselves."
+
+In addition to the five character evaluations, on each page we also asked 
+participants, on a 7-point Likert scale, how much they thought the person cared
+about the task.
+
+### Pre-registration
+
+We pre-registered the study on the Open Science Framework
+(<https://osf.io/vaq7u>).
+
+### Statistical Analysis
+
+We fitted the same Bayesian multivariate multilevel cumulative-link ordinal 
+models as in Studies 1 and 3. All models converged normally ($\hat{R}$ ≤ 1.01).
+
+## Results
+
+In line with our previous results, we found that people who fully outsourced to
+AI by copying the output verbatim were perceived as less competent, less moral,
+and less trustworthy than people who used AI as a collaborative tool
+(@fig-treatments-study4; @tbl-treatment-diffs-study4). By contrast, people's 
+reasons for outsourcing to AI did not appear to influence character evaluations
+when pooling across all the tasks. We also found no interaction effects between
+the type of outsourcing and the reasons for outsourcing.
+
+```{r, fig.height=6, fig.width=7}
+#| label: fig-treatments-study4
+#| fig-cap: Character Evaluations in Study 4
+#| fig-align: center
+#| apa-note: Participants in the control condition and four AI outsourcing conditions evaluated people in the scenarios on (a) competence, (b) warmth, (c) morality, (d) laziness, and (e) trustworthiness. Coloured points represent participant responses to the questions, jittered for easier viewing. Black points are estimated marginal means from the fitted model, pooling over participants and tasks. Black points and line ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_treatments_study5)
+```
+
+::: {.landscape}
+
+```{r}
+#| label: tbl-treatment-diffs-study4
+#| tbl-cap: Pairwise Contrasts in Study 4 \vspace{20pt}
+#| apa-note: Numbers reflect differences in marginal means on a 7-point Likert scale, pooling over participants and tasks. The bottom row represents the interaction between outsourcing type and the reasons for outsourcing (i.e., the difference between the differences in the rows above). Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
+
+tar_read(table_treatment_diffs_effects_study5) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+    ) %>%
+  kable_styling(
+    font_size = 8.5,
+    position = "left"
+    ) %>%
+  add_header_above(header = c(" " = 1, "Response" = 6)) %>%
+  pack_rows(
+    index = c(
+      "Comparison to control" = 4,
+      "Effect of outsourcing type" = 2,
+      "Effect of reasons for outsourcing" = 2,
+      "Interaction effect"
+      )
+    ) %>%
+  # fix overlapping apa note
+  paste0("\\vspace{40pt}") %>%
+  knitr::asis_output()
+```
+
+:::
+
+As in our previous studies, we found that the effects of outsourcing to AI 
+varied across the different tasks (@suppfig-treatments-tasks-study4) and were 
+particularly negative for tasks that are social, require social skills, impact 
+others, have important consequences, and require effort (Supplementary Figures 
+[-@suppfig-interactions-study4] and [-@suppfig-interaction-pars-study4]).
+Moreover, the task-specific estimates revealed that the reasons manipulation had
+an effect on character evaluations for social tasks, rather than non-social 
+tasks (@fig-reasons-tasks-study4). When writing a bereavement card, for example, 
+people were perceived as less warm, less moral, lazier, and less trustworthy 
+when they used AI to save time compared to when they used it because they cared
+about doing the task well. The same was not true for non-social tasks like
+writing computer code or solving a mathematical equation.
+
+::: {.landscape}
+
+```{r, fig.height=3.5, fig.width=8.5}
+#| label: fig-reasons-tasks-study4
+#| fig-cap: Variation in the Effect of Reasons Across Tasks in Study 4
+#| fig-align: center
+#| apa-note: Tasks are ordered from most social (top) to least social (bottom) according to ratings from a pilot study. Point ranges are differences in marginal means on a 7-point Likert scale between the "bad reason" and "good reason" conditions, split by outsourcing type. Points and ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_reasons_tasks_study5)
+```
+
+:::
+
+## Discussion
+
+In Study 4, we replicated our previous result that fully outsourcing to AI is 
+generally perceived more negatively than using AI as a collaborative tool. We 
+also found that people's reasons for using AI influenced character evaluations, 
+but only for social tasks. For example, when writing a bereavement card or an 
+apology letter, people were perceived more negatively if they used an AI tool to 
+produce a quick output in a rush, rather than to ensure they got it right. When 
+writing a cover letter or solving a mathematical equation, we found no effects 
+of the reasons manipulation.
+
+Why do the reasons for using AI matter specifically for socio-relational tasks? 
+One possibility is again to do with effort as a signal of relationship 
+commitment. For writing computer code, it does not matter if someone uses AI to 
+find a quicker, more efficient way of working. But for socio-relational tasks, 
+using AI to cut corners signals a lack of commitment to and care about the 
+relationship. In our design, we explicitly told participants about the person's 
+motivations for using AI, so participants no longer needed to infer lack of care 
+from the signal of reduced effort.
+
+To sum up so far, we have suggested and found varying evidence for three 
+different mechanisms that might underlie the negative perceptions of outsourcing 
+to AI: effort, authenticity, and caring about the task. However, it is likely 
+that these mechanisms are related. For example, outsourcing to AI might 
+indicate a lack of effort, which then might signal a lack of authenticity and 
+reduced care in the task, leading to negative character evaluations. Our 
+previous studies have been unable to test causal models like these as we 
+manipulated the mechanisms separately and independently.
+
+In our final study, we bring all three mechanisms together and test their 
+combined associations with character evaluations. Although we previously found 
+no effect of authenticity as proxied by the type of AI used, it is possible 
+that this manipulation was not a good proxy, and so we reevaluate authenticity 
+here. We also focus on a single socio-relational task -- writing a love letter 
+-- which we elaborate for participants with a more detailed vignette.
+
+# Study 5
+
+## Methods
+
+### Participants
+
+We conducted a power simulation to determine our target sample size. The 
+simulation suggested that a sample size of 200 participants per condition 
+(overall *n* = 600 for three conditions) would be required to detect a 
+small-to-medium difference between conditions (Cohen's *d* ≈ 0.30) with above 
+80% power.
+
+```{r}
+study6_sample <-
+  tar_read(study6_data) %>%
+  transmute(
+    gender = gender,
+    age = age,
+    chatgpt_used = chatgpt_used,
+    comp1 = comprehension1 == "A love letter",
+    comp2 = ifelse(treatment == "Control", comprehension2 == "No", 
+                   comprehension2 == "Yes")
+    )
+```
+
+We recruited a convenience sample of 651 participants from the United Kingdom 
+through Prolific. After excluding participants who failed our pre-treatment 
+attention check, we were left with a final sample of `r nrow(study6_sample)` 
+participants (`r sum(study6_sample$gender == "Female")` female; 
+`r sum(study6_sample$gender == "Male")` male;
+`r sum(study6_sample$gender == "Non-binary / third gender")`
+non-binary / third gender;
+`r sum(str_starts(study6_sample$gender, "Prefer") | is.na(study6_sample$gender))`
+undisclosed gender; mean age = `r round(mean(study6_sample$age), 2)` years).
+`r round(mean(study6_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
+these participants reported having used AI tools like ChatGPT before (see 
+@suppfig-chatgpt-study5).
+
+### Design
+
+We randomly allocated participants into one of three conditions in a 
+between-subjects design: (*i*) the control condition, (*ii*) the tool 
+outsourcing condition, or (*iii*) the full outsourcing condition. These 
+conditions determined how the scenario was presented to participants.
+
+### Procedure
+
+We presented participants with a vignette about a person, Adam, who is writing a
+love letter in a Valentine's Day card to his partner (see Supplementary 
+Materials for full vignette wording). We told participants in each of the 
+conditions:
+
+- *Control condition*: "Adam decides to write the love letter in the card by 
+himself."
+- *Tool outsourcing condition*: "Adam decides to use AI to help write the love
+letter in the card. He asks ChatGPT to provide ideas, inspiration, and feedback,
+but he edits and rewrites the suggestions and finishes writing the love letter
+himself."
+- *Full outsourcing condition*: "Adam decides to use AI to write the love letter
+in the card. He asks ChatGPT to write the love letter and copies the output
+word-for-word, rather than writing it himself."
+
+We then presented participants with the love letter that Adam wrote (in reality,
+this was written by ChatGPT version 4o; see Supplementary Materials for
+wording). On the following page, we asked participants what Adam wrote and 
+whether he used AI to help. 
+`r round(mean(study6_sample$comp1 & study6_sample$comp2, na.rm = TRUE) * 100)`%
+of participants answered both of these comprehension questions correctly.
+
+Using 7-point Likert scales, we then asked participants how much effort they 
+thought Adam put into the love letter, how authentic they thought the love 
+letter was, how much they thought Adam cared about the love letter, and the same
+five character evaluations as in our previous studies. In additional free
+response questions, we asked participants to explain how they felt towards Adam
+and how they would feel if they were Adam's partner. Finally, we asked
+participants several questions about AI tools like ChatGPT (see 
+@suppfig-chatgpt-study5).
+
+### Pre-registration
+
+We pre-registered the study on the Open Science Framework
+(<https://osf.io/k9v7z>).
+
+### Statistical Analysis
+
+We fitted two Bayesian regression models to the data. The first model was a 
+multivariate cumulative-link ordinal model including all Likert scales as 
+separate response variables. The second model was a path model capturing the 
+effect of outsourcing on character evaluations, both directly and indirectly 
+through perceptions of effort, authenticity, and care. In this second model, we
+included ordinal predictors as monotonic effects and modelled the five character
+evaluations as a single latent variable. We used regularising priors for all
+parameters to impose conservatism on parameter estimates (see Supplementary 
+Materials for full model specifications). All models converged normally 
+($\hat{R}$ ≤ 1.01).
+
+## Results
+
+Across all measures, we found that outsourcing the love letter to AI was 
+perceived more negatively compared to the control condition and that fully 
+outsourcing to AI was perceived more negatively than using AI as a collaborative
+tool (@fig-treatments-study5; @tbl-treatment-diffs-study5). Not only did 
+outsourcing the love letter lead to more negative character evaluations, but 
+outsourcing to AI was also seen as less effortful, less authentic, and 
+indicative of caring less about the task.
+
+```{r, fig.height=5, fig.width=7}
+#| label: fig-treatments-study5
+#| fig-cap: Perceptions of the Person and the Love Letter in Study 5
+#| fig-align: center
+#| apa-note: Participants in the control, tool outsourcing, and full outsourcing conditions rated (a) the amount of effort put into the love letter, (b) how authentic the love letter was, (c) how much the person cared about the love letter, and (d-h) five character evaluation measures. Coloured points represent participant responses to the questions, jittered for easier viewing. Black points are estimated marginal means from the fitted model. Black points and line ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_treatments_study6)
+```
+
+::: {.landscape}
+
+```{r}
+#| label: tbl-treatment-diffs-study5
+#| tbl-cap: Pairwise Contrasts in Study 5 \vspace{20pt}
+#| apa-note: Numbers reflect differences in marginal means on a 7-point Likert scale. Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
+
+tar_read(table_treatment_diffs_study6) %>%
+  kable(
+    format = "latex",
+    booktabs = TRUE,
+    linesep = ""
+    ) %>%
+  kable_styling(
+    font_size = 8,
+    position = "left"
+    ) %>%
+  add_header_above(header = c(" " = 1, "Response" = 8)) %>%
+  # fix overlapping apa note
+  paste0("\\vspace{40pt}") %>%
+  knitr::asis_output()
+```
+
+:::
+
+Exploratory text analysis of participants' free responses supported this 
+quantitative pattern (see Supplementary Materials for methodology and 
+@supptbl-text-analysis-study5 for results). When comparing word frequencies 
+between conditions, we found that Adam was more likely to be described as "lazy"
+and less likely to be described as "caring", "thoughtful", and "genuine" in both 
+outsourcing conditions compared to the control condition. Adam was also more 
+likely to be described as "romantic" and as someone who "loves" his partner when
+he used AI as a collaborative tool, compared to when he fully outsourced the
+love letter to AI.
+
+When we included all the variables in a single path model, we found that 
+outsourcing influenced character evaluations both directly and indirectly 
+through our proposed mechanisms (@fig-path-model-study5). The indirect effects 
+showed that people perceived outsourced work as less effortful, and less 
+effortful work was seen as less authentic and indicating less care about the 
+task. In turn, less authenticity and care were associated with more negative 
+evaluations of the person. Effort itself was not directly related to character 
+evaluations, suggesting that effort works solely through perceptions of 
+authenticity and care.
+
+```{r, fig.height=4.5, fig.width=7.5}
+#| label: fig-path-model-study5
+#| fig-cap: Path Model in Study 5
+#| fig-align: center
+#| apa-note: All predictors were modelled as monotonic effects, such that parameters can be interpreted as the expected average difference between two adjacent categories of the ordinal predictor on the logit scale. The “evaluations” outcome variable was modelled as a single latent variable with loadings from all five character evaluations (competence, warmth, morality, laziness, and trustworthiness).
+
+tar_read(plot_path_model_study6)
+```
+
+## Discussion
+
+In our final study, we replicated our previous findings that outsourcing to AI 
+results in negative character evaluations. Expanding on our previous studies, we
+also found that people spontaneously rate outsourcing to AI as less effortful,
+less authentic, and indicative of less care in the task. Our path model
+suggested that outsourcing to AI influences character evaluations in part
+through these mechanisms. According to our model, outsourcing to AI is seen as
+less effortful, which in turn signals a lack of authenticity and care in the
+task, resulting in negative character evaluations. The fact that perceived
+effort did not have a direct effect on character evaluations indicates that
+effort is important only insofar as it signals a lack of authenticity and care.
+
+# General Discussion
+
+Across five pre-registered experiments, we have demonstrated negative 
+perceptions of outsourcing to AI. People who outsourced tasks to AI were 
+perceived more negatively than people who completed the tasks by themselves. 
+These negative impressions were particularly strong for people who used AI to 
+complete socio-relational tasks, such as writing a love letter or writing 
+wedding vows, and for people who copied the model's first output verbatim 
+without acknowledging their reliance on AI. Outsourced work was also perceived 
+as less meaningful, less authentic, and less reward-worthy than ostensibly 
+human-generated writing. Our experiments suggested that these negative 
+evaluations are driven in part by a perceived lack of effort, a perceived lack 
+of care in the task, and a perceived reduction in authenticity of the outsourced
+work.
+
+The findings in this paper build on prior research in a number of ways. Our 
+results corroborate and advance research on the moralisation of effort. Studies
+have shown that people inherently value effort [@Inzlicht2018; @Kruger2004] and 
+perceive displays of effort as costly signals of one's moral character and 
+cooperative intent [@Celniker2023; @Cubitt2011; @Tissot2025]. However, prior 
+research has not explored the mechanisms by which perceptions of effort 
+influence character evaluations -- what exactly is effort signalling? We have 
+suggested that the reduced effort from outsourcing socio-relational tasks to AI
+signals that the work is less authentically their own and that the person cares
+less about the task (and therefore, perhaps, the relationship). The lack of a
+direct effect of perceived effort in our path model showed that it is inferences
+of authenticity and care, rather than perceived effort per se, that are
+associated with negative character evaluations. As a participant in our final
+study put it: "If he really cared, he would have just done it by himself from
+scratch" (female, 25 years old).
+
+Our results also contribute to the growing literature on algorithm aversion. 
+Research has shown that people tend to distrust AI models, even when they show
+identical or superior performance to humans [@Dietvorst2015]. This aversion is
+particularly strong in the moral domain [@Bigman2018]. Building on this work, we
+have shown that the aversion to algorithms can spill over into negative
+evaluations of people who unthinkingly copy the outputs of algorithms,
+especially for socio-relational tasks.
+
+Regarding deception in AI use, our findings are relevant for the discussion 
+about acknowledging the use of AI in jobs that require writing, such as 
+journalism [@Cools2024] and academia [@Marescotti2023]. Many scientific 
+journals, for example, now require that authors declare their use of generative
+AI. However, thus far, there appears to be an AI attribution gap: many authors
+anonymously admit using AI to write scientific papers, but only few actually
+declare it in their published work [@Gignac2025]. Our findings make the case for
+honestly declaring use of AI. Such honesty could increase trust in the authors,
+and perhaps in the work itself.
+
+Beyond the studies presented here, our results raise further questions about 
+outsourcing to AI that should be addressed in future research. First, the fact
+that we found a direct effect of outsourcing on character evaluations in our
+final study, even after accounting for the indirect effects of effort,
+authenticity, and care, suggests that there are alternative mechanisms
+underlying the negative perceptions of outsourcing to AI that remain unexplored.
+Such mechanisms might plausibly include the perceived lack of creativity and
+originality of AI-generated work, the generic nature of the writing and lack of
+specificity to the intended recipient, questions around personal authorship and
+sincerity, and a potential lack of critical thinking when using AI [@Lee2025]. 
+Future research should test these alternative mechanisms and build on the path 
+model in @fig-path-model-study5.
+
+Second, we did not focus on individual differences in this paper, but it is 
+reasonable to expect that people might vary in their reactions to
+AI-outsourcing. For example, research has shown that people high in openness to 
+experience are more accepting of emerging technologies [@Devaraj2008; 
+@Watjatrakul2016]. People high in openness might therefore perceive outsourcing
+less negatively. Conversely, people with higher AI literacy and who are more 
+resistant to AI on moral grounds tend to have more negative attitudes towards AI 
+[@deMello2025; @Tully2025] and so may perceive AI-outsourcing more negatively. 
+Future work should explore whether these individual differences moderate
+perceptions of outsourcers.
+
+Third, while we have demonstrated negative perceptions of outsourcing in this 
+paper, it remains unclear if and when people might deem outsourcing to AI as 
+acceptable or even preferable. Several of the participants in our final study 
+expressed in their free responses that they would have been okay with Adam using
+AI to write the love letter if he was not a confident writer or had a learning 
+difficulty that made writing challenging, such as dyslexia. In line with this, 
+research in biopsychology has found that people are more accepting of 
+cognitively-enhancing technologies and drugs when they are used to repair 
+cognitive functions, rather than to enhance cognitive functions beyond "normal" 
+levels [@Medaglia2019; @Rudski2014]. Future research should explore whether 
+negative perceptions of outsourcing persist when AI is used in a reparative way.
+
+The studies in this paper are not without their limitations. While we included a
+range of different socio-relational and professional tasks in an effort to
+improve the generalisability of our findings, we focused specifically on
+participants from the United Kingdom, a relative global outlier in its high
+levels of AI readiness and development [@OxfordInsights; @TortoiseMedia]. We 
+also collected data at a time when AI is still an emerging technology. It
+remains unclear whether our results will generalise to other countries with
+varying levels of AI infrastructure and whether negative perceptions of
+outsourcers will persist as AI use becomes more commonplace in the coming years.
+Another limitation is our reliance on hypothetical vignettes to assess people's
+perceptions of outsourcing to AI. It could be argued that these vignettes lack 
+the richness of information to make informed character evaluations and do not 
+realistically capture the way that AI is actually being used "in the wild". Our
+inclusion of a tool outsourcing condition somewhat mitigates these concerns, but
+it would be interesting to explore how people react to real-world examples of 
+outsourcing.
+
+In sum, we have demonstrated negative perceptions of outsourcing to AI. People 
+perceive individuals who outsource tasks to AI more negatively across a range of
+character dimensions and perceive outsourced work as less meaningful and
+authentic. These negative perceptions are particularly strong for
+socio-relational tasks, such as writing wedding vows, and are compounded when
+the outsourcer copies the AI’s output verbatim and does not honestly acknowledge
+their use of AI. Taken together, our findings suggest that, in a world of
+algorithm-mediated interactions, AI is no substitute for investing effort into
+our interpersonal relationships.
+
+\newpage
+
+# References
 
 <!-- References will auto-populate in the refs div below -->
 
