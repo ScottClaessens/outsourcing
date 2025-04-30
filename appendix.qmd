@@ -5,8 +5,8 @@
 \setcounter{page}{1}
 \begin{center}
 Negative Perceptions of Outsourcing to Artificial Intelligence \\
-Scott Claessens, Pierce Veitch, and Jim Everett \\
-School of Psychology, University of Kent
+AUTHORS REDACTED \\
+AFFILIATION REDACTED
 \end{center}
 \newpage
 
@@ -138,7 +138,7 @@ thought ChatGPT was.
 ### Pre-registration
 
 We pre-registered the study on the Open Science Framework
-(<https://osf.io/khr42>).
+(<https://osf.io/xhmzk/?view_only=a4da193574d7410ba4d2aa3945a28b05>).
 
 ### Statistical Analysis
 

@@ -60,7 +60,7 @@ author-note:
     deceased: ~
   disclosures:
     study-registration: This pre-print is currently not yet peer-reviewed, and may differ from the final version.
-    data-sharing: ~
+    data-sharing: Word count (excl. Methods and Results) = 4619 words.
     related-report: ~
     conflict-of-interest: ~
     financial-support: ~
@@ -262,8 +262,8 @@ focusing on perceived effort, authenticity, and care in the task.
 
 ### Ethical Approval
 
-Ethical approval was granted for all studies in this paper by the University of
-Kent's Psychology Research Ethics Panel. Participants in all studies provided
+Ethical approval was granted for all studies in this paper by the REDACTED 
+Psychology Research Ethics Panel. Participants in all studies provided
 informed consent and were debriefed after the study.
 
 ### Participants
@@ -350,7 +350,7 @@ thought ChatGPT was.
 ### Pre-registration
 
 We pre-registered the study on the Open Science Framework
-(<https://osf.io/knswr>).
+(<https://osf.io/xhmzk/?view_only=a4da193574d7410ba4d2aa3945a28b05>).
 
 ### Statistical Analysis
 
@@ -371,7 +371,7 @@ were pre-registered. Analyses for all studies were conducted in R v4.4.2
 packages [@Wickham2016; @Pedersen2025]. The manuscript was reproducibly 
 generated using the *targets* package [@Landau2021] and *quarto* [@Allaire2024].
 All data and code to reproduce the analyses and figures in this paper can be 
-found here: <https://github.com/ScottClaessens/outsourcing>
+found here: <https://osf.io/xhmzk/?view_only=a4da193574d7410ba4d2aa3945a28b05>
 
 ## Results
 
@@ -587,7 +587,7 @@ We pre-registered the study on the Open Science Framework[^1].
 
 [^1]: Due to a technical error with archiving this pre-registration on the Open
 Science Framework, the timestamp for the registration was lost. However, on our
-OSF project (<https://osf.io/xhmzk>), it is possible to view our 
+OSF project (<https://osf.io/xhmzk/?view_only=a4da193574d7410ba4d2aa3945a28b05>), it is possible to view our 
 pre-registration document file and its timestamped upload date.
 
 ### Statistical Analysis
@@ -791,7 +791,7 @@ than using a generic one.
 ### Pre-registration
 
 We pre-registered the study on the Open Science Framework
-(<https://osf.io/vaq7u>).
+(<https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>).
 
 ### Statistical Analysis
 
@@ -983,7 +983,7 @@ about the task.
 ### Pre-registration
 
 We pre-registered the study on the Open Science Framework
-(<https://osf.io/vaq7u>).
+(<https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>).
 
 ### Statistical Analysis
 
@@ -1186,7 +1186,7 @@ participants several questions about AI tools like ChatGPT.
 ### Pre-registration
 
 We pre-registered the study on the Open Science Framework
-(<https://osf.io/k9v7z>).
+(<https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>).
 
 ### Statistical Analysis
 
@@ -1432,14 +1432,12 @@ substitute for investing effort into our interpersonal relationships.
 
 # Acknowledgements
 
-This work was generously supported by funding from the Horizon Europe UK 
-Guarantee via the UKRI (EP/Y00440X/1) and a Philip Leverhulme Prize 
-(PLP-2021-095) awarded to JACE.
+This work was generously supported by funding from REDACTED.
 
 # Data and Code Availability
 
-All data and original code can be found on GitHub at
-<https://github.com/ScottClaessens/outsourcing>.
+All data and original code can be found here:
+<https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>.
 
 # Statement of Interests
 
