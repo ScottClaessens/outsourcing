@@ -68,7 +68,7 @@ plot_treatments_overall_study4 <- function(study4_data,
       theme_minimal() +
       theme(
         panel.grid.minor.y = element_blank(),
-        axis.text.x = element_text(size = 6.4)
+        axis.text.x = element_text(size = 6.5)
       )
   }
   # get plots

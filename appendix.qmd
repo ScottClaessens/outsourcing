@@ -366,24 +366,6 @@ Responses to the questions about ChatGPT in Study 3.
 
 \newpage
 
-::: {#suppfig-treatments-tasks-study3 suppfig-pos="H"}
-
-```{r, fig.height=5, fig.width=8.5}
-tar_read(plot_treatments_tasks_study4)
-```
-
-Variation in the effects of outsourcing across tasks in Study 3. Tasks are 
-ordered from most social (top) to least social (bottom) according to ratings 
-from a pilot study. Point ranges are differences in marginal means on a 7-point
-Likert scale for the low effort conditions (red) and high effort conditions 
-(blue) compared to the control condition. Upper panels refer to the standard LLM
-conditions, and lower panels refer to the personalised LLM conditions. Points 
-and ranges represent posterior medians and 95% credible intervals, respectively.
-
-:::
-
-\newpage
-
 ::: {#suppfig-interactions-study3 suppfig-pos="H"}
 
 ```{r, fig.height=6, fig.width=7}
@@ -429,25 +411,6 @@ Responses to the questions about ChatGPT in Study 4.
 
 \newpage
 
-::: {#suppfig-treatments-tasks-study4 suppfig-pos="H"}
-
-```{r, fig.height=4, fig.width=8.5}
-tar_read(plot_treatments_tasks_study5)
-```
-
-Variation in the effects of outsourcing across tasks in Study 4. Tasks are 
-ordered from most social (top) to least social (bottom) according to ratings 
-from a pilot study. Point ranges are differences in marginal means on a 7-point
-Likert scale for the bad reason conditions (red) and good reason conditions 
-(blue) compared to the control condition. Upper panels refer to the tool 
-outsourcing conditions, and lower panels refer to the full outsourcing 
-conditions. Points and ranges represent posterior medians and 95% credible 
-intervals, respectively.
-
-:::
-
-\newpage
-
 ::: {#suppfig-interactions-study4 suppfig-pos="H"}
 
 ```{r, fig.height=6, fig.width=7}
@@ -476,6 +439,27 @@ Interaction parameters from models including task-specific features as
 moderators of the causal effects of AI outsourcing compared to the control 
 condition in Study 4. Points and line ranges represent posterior medians and 95% 
 credible intervals, respectively.
+
+:::
+
+\newpage
+
+::: {.landscape}
+
+::: {#suppfig-reasons-tasks-study4 suppfig-pos="H"}
+
+```{r, fig.height=3.5, fig.width=8.5}
+tar_read(plot_reasons_tasks_study5)
+```
+
+Variation in the effect of reasons across tasks in Study 4. Tasks are ordered 
+from most social (top) to least social (bottom) according to ratings from a 
+pilot study. Point ranges are differences in marginal means on a 7-point Likert 
+scale between the "bad reason" and "good reason" conditions, split by 
+outsourcing type. Points and ranges represent posterior medians and 95% credible 
+intervals, respectively.
+
+:::
 
 :::
 
@@ -866,7 +850,7 @@ tar_read(table_text_analysis_study6) %>%
 ```
 
 Pairwise comparisons of word frequencies between conditions. LL = log 
-likelihood; %DIFF = 
+likelihood.
 
 :::
 

@@ -14,6 +14,7 @@ author:
         country: UK
         postal-code: CT2 7NP
     role:
+      - conceptualization
       - data curation
       - formal analysis
       - investigation
@@ -35,7 +36,8 @@ author:
     role:
       - formal analysis
       - methodology
-  - name: Jim Everett
+      - editing
+  - name: Jim A.C. Everett
     corresponding: true
     orcid: 0000-0003-2801-5426
     email: j.a.c.everett@kent.ac.uk
@@ -61,28 +63,29 @@ author-note:
     data-sharing: All data and original code can be found on GitHub at <https://github.com/ScottClaessens/outsourcing>.
     related-report: ~
     conflict-of-interest: The authors have no conflicts of interest to disclose.
-    financial-support: This work was supported by ...
+    financial-support: This work was generously supported by funding from the Horizon Europe UK Guarantee via the UKRI (EP/Y00440X/1) and a Philip Leverhulme Prize (PLP-2021-095) awarded to JACE.
     gratitude: ~
     authorship-agreements: ~
 abstract: >
   As artificial intelligence (AI) tools become increasingly integrated into 
-  daily life, people are beginning to outsource not only professional tasks but
-  also socio-relational ones. Large language models like ChatGPT can generate
-  wedding vows, speeches, and personal messages, raising questions about how
+  daily life, people are beginning to outsource not only professional tasks but 
+  also socio-relational ones. Large language models like ChatGPT can generate 
+  wedding vows, speeches, and personal messages, raising questions about how 
   individuals who use AI for such tasks are perceived by others. In this paper,
-  we conduct five pre-registered studies with British participants (*n* = 3649)
+  we conduct five pre-registered studies with British participants (N = 3,649)
   to understand how people view those who outsource tasks to AI, and how this
   depends on how socio-relational the task is, whether AI is used as a tool or
   fully delegated to, and the acknowledgment of the AI use. We find negative
-  perceptions of outsourcing, particularly for socio-relational tasks, and
-  demonstrate that this does not only make us think more negatively about the
-  outsourcer, but the outsourced work itself. We then turn to examine potential
-  mechanisms underlying negative perceptions of outsourcing, investigating the
-  roles of effort, perceived authenticity, and the reasons for using AI. Our
-  research highlights the way that AI use shapes our perceptions of people,
-  raising key philosophical questions about praise, blame, and authenticity in a
+  perceptions of outsourcing, particularly for socio-relational tasks. We show
+  that outsourcing makes us think more negatively about not only the person and
+  their motivations, but also the outsourced work itself. Moreover, we provide
+  insight into why this occurs: the reduced effort from outsourcing
+  socio-relational tasks to AI signals that the output is less authentically 
+  one's own and that the person cares less about the task. Our research 
+  highlights the way that AI use shapes our perceptions of people, raising key
+  philosophical questions about efficiency, authenticity, and social ties in a
   world filled with AI-mediated interactions.
-keywords: [artificial intelligence, character evaluation, outsourcing, trust]
+keywords: [artificial intelligence, person perception, outsourcing, trust]
 bibliography: bibliography.bib
 engine: knitr
 format:
@@ -116,77 +119,142 @@ library(targets)
 library(tidyverse)
 ```
 
-In recent years, artificial intelligence (AI) technologies have emerged as 
-useful tools to save time and effort across a wide variety of tasks. Large 
-language models, such as ChatGPT, Copilot, and DeepSeek, have been shown to 
-increase efficiency for professional tasks like writing [@Noy2023], project 
-planning [@Barcaui2023], and programming [@Peng2023]. In a 2022 Pew survey of
-the American public, time-saving and efficiency were listed among the top
-reasons for excitement about the increased presence of AI in daily life
-[@Rainie2022].
+The widespread release of generative AI language models has transformed daily 
+life, offering the potential to perform a variety of tasks more efficiently and,
+in some cases, with greater effectiveness than by doing them oneself. But as AI
+becomes more widely available, people are not only using it to assist them with
+things like preparing dinner recipes, writing data analysis code, and planning
+daily schedules. Increasingly, AI might be used beyond routine or technical
+domains to instead assist in tasks that are more socio-relational in nature,
+like writing wedding vows, apology notes, and love letters. Anecdotal evidence
+suggests that not only is AI-outsourcing of this kind already happening, but
+that it potentially has serious effects on how we judge others. In a recent
+Reddit post, a disgruntled newlywed tells the story of her husband using ChatGPT
+to write his wedding vows, expressing her discomfort with outsourcing something
+to AI that, to her, is deeply meaningful and a reflection of their love for one 
+another [@miramar0]. Outsourcing tasks -- especially socio-relational ones -- to
+AI tools may be efficient, but could have negative consequences for person 
+perception.
 
-As outsourcing routine tasks to AI becomes more commonplace, people may begin to
-use AI tools to efficiently complete more socio-relational tasks. Consider, for
-example, writing wedding vows. While wedding vows are widely understood to be an
-opportunity for couples to express their love in their own words, large language
-models like ChatGPT will dutifully produce wedding vows upon request, without
-necessarily requiring any information about the partner in question. In
-characteristic ChatGPT style, the resulting text will likely be generic enough
-to apply to anyone, yet well-written enough to read aloud at the altar. A recent
-Reddit post from a disgruntled newlywed suggests that AI-outsourcing of this
-kind is already happening [@miramar0].
+There is nothing new, in principle, about outsourcing tasks. For hundreds of 
+years, personal assistants have organised daily schedules, recipe-books have 
+provided meal plans, and guidebooks have created travel itineraries. In the 
+socio-relational domain, ghostwriters have long-existed, and the internet is 
+abound with professional paid services for writing wedding vows and personal 
+speeches. AI merely supercharges what is an ancient human impulse: the push to 
+reduce mental energy by outsourcing parts of our work onto people, books, tools,
+or systems. But even if outsourcing is an old phenomenon, the rapid shift in 
+availability and use of AI models has fundamentally changed the ease with which
+people can outsource work, what kinds of tasks they can outsource, and the way
+in which they can outsource. These new developments in society mean that even as
+an old phenomenon in new clothes, there is much we still need to know about
+outsourcing.
 
-Of course, there is nothing new about outsourcing socio-relational tasks.
-Ghostwriters have existed for years: in the 19th century, Victor Hugo, the
-writer of *Les Misérables*, used to write love letters for others to earn extra
-money [ref]. Today, the internet is abound with professional paid services for
-writing wedding vows and personal speeches. But it remains unclear how people
-who outsource tasks like these are perceived by others, particularly when the
-tasks are outsourced to impersonal AI tools like ChatGPT.
+First, we need to know how people who outsource tasks to AI are perceived. We 
+know that people are increasingly using large language models (LLMs) for a wide
+variety of tasks [@UKGov2024]. Due to their ubiquity, perhaps outsourcing to
+LLMs might not lead to negative perceptions? We are sceptical. We know that
+people dislike it when others "free ride" or reduce effort while benefiting from
+collective resources [e.g. @Cubitt2011; @Kerr1983] and that people's outputs are
+perceived as more valuable the more effort was ostensibly put into them
+[@Kruger2004]. Moreover, exertion of effort is deemed morally admirable and is 
+rewarded, even in situations where effort does not directly generate additional
+product, quality, or economic value, suggesting that effort itself is moralised
+[@Celniker2023]. Given this, even if AI tools are widely available and pitched
+as improving efficiency, the core social psychological processes are likely to 
+remain: someone is expending less effort to achieve a task, and people value 
+effort. Indeed, some work shows that describing someone as using AI for a 
+relational task led to the perception they expended less effort and were less 
+satisfied with their relationship [@Liu2024] and other unpublished work looking
+at perceptions of people using AI to complete academic assignments finds that 
+using AI leads to more negative perceptions of moral character and suitability 
+as a partner [@Roth2025].
 
-There are several reasons to expect that people will be perceived negatively for
-outsourcing tasks to AI. First, the effort put into a task is often used as a
-signal of one's moral character [@Celniker2023; @Tissot2025]. People who free
-ride on the efforts of others are perceived as less moral [@Cubitt2011], and
-people's outputs are perceived as more valuable the more effort was ostensibly
-put into them [@Kruger2004]. Second, people are given less credit when their
-work was generated jointly with or entirely by AI instead of by themselves
-[@Earp2024]. Third, from a virtue ethics perspective, people who outsource moral
-tasks to AI skip the opportunity to cultivate virtuous habits and develop their
-moral character [@Vallor2015]. These disparate lines of reasoning predict that
-people will be perceived more negatively if they outsource tasks to AI, though
-this has yet to be tested.
+Second, we need to know whether the *type* of task that people are outsourcing 
+matters. One might expect outsourcing to be perceived negatively regardless of 
+the type of task being outsourced -- if effort is generally moralised, then the 
+domain in which it is expended (or not) should have little impact. However, 
+there are reasons to expect differences between social tasks like writing vows 
+and non-social tasks like writing computer code. We know that different norms,
+standards, and expectations can be applied to social and non-social tasks and 
+exchanges [e.g. @Fiske1992; @Heider1958; @Malle2022]. Moreover, from a 
+philosophical perspective, it often matters not only *whether* something is 
+done, but *how* it is done [@Stohr2006]. An apology is not just about hearing 
+someone say "I am sorry", but seeing genuine regret; a love letter is not just 
+about hearing someone say "I love you", but seeing depth of emotion; and a 
+bereavement letter is not just about hearing someone say "I am sorry for your 
+loss", but seeing an understanding for the powerful human experience of loss.
+There is, perhaps especially for social tasks, value not only in the outcome of 
+doing something, but the *process* too [@Goodman2010]. To understand any 
+potential negative effects of outsourcing to AI, we must therefore look at a 
+broad range of non-social and social tasks, rather than draw broad conclusions
+based on a few use cases.
 
-If people are perceived more negatively for outsourcing tasks to AI, there is 
-also the question of how these negative perceptions might vary across different
-types of tasks and different kinds of AI use. Will outsourcing wedding vows to
-AI be perceived just as negatively as outsourcing a cover letter or a few lines
-of computer code? Given that effort is thought to be a particularly important
-cue for cooperative partner choice in social situations [@Celniker2023], we 
-predict that outsourcing socio-relational tasks to AI will be perceived more 
-negatively than routine or professional tasks.
+Third, we need to know how different ways of outsourcing to AI influence 
+negative perceptions. Someone who "fully" outsources a task to AI by simply 
+giving it a prompt and copying the output word-for-word might be perceived very
+differently to someone who gives the AI a prompt, revises the work accordingly,
+and finishes it themselves -- using AI as a *collaborative tool*, rather than as
+a replacement. Similarly, someone could deceive others about their use of AI or
+be perfectly honest about it. While it seems reasonable to assume that "fully"
+outsourcing would be perceived worse than using AI as a tool, and that not
+acknowledging AI use would be perceived worse than being honest about it, it
+remains unclear how much this reduces negative perceptions: if someone uses AI
+in the "best" way, by using it as a collaborative tool and being open about this
+use, would they still suffer negative social consequences from doing so?
 
-It is also possible for people to outsource to AI in different ways. One can 
-complete tasks by using AI as a collaborative tool, sculpting its answer over 
-successive prompts and editing the resulting output by hand. Alternatively, one
-can simply copy the AI's output verbatim. To the extent that the latter approach
-requires less effort, we predict that "fully" outsourcing to AI will be
-perceived more negatively. People can also differ in whether they are honest
-about their use of AI or, in the words of the disgruntled newlywed, deceptively
-"pass [the work] off as [their] own" [@miramar0]. Since people tend to dislike
-and distrust those who are deceptive [@Tyler2006], it follows that people will
-perceive deceptive AI-outsourcing more negatively.
+Fourth, we need to know how outsourcing to AI, in different kinds of tasks and 
+in different ways, may shape different *kinds* of social perceptions. People can
+judge others on separate dimensions of warmth and competence [e.g. @Abele2021;
+@Fiske2007] as well as on dimensions of morality and trustworthiness
+[@Goodwin2014]. It remains unclear how outsourcing to AI might lead to 
+differential character judgments across these different dimensions.
 
-Here, we test these predictions across five pre-registered experiments with 
-British participants. In our initial pilot studies, we found that people who 
-outsource a range of tasks to AI are perceived more negatively than people who
-complete the tasks by themselves (see Supplementary Materials). In Study 1, we
-expand on this by manipulating the type of outsourcing to AI (as a collaborative
-tool vs. fully outsourcing) and whether people are honest or deceptive in their
-usage of AI. In Study 2, we measure perceptions of both outsourcers and the
-outsourced work. In Studies 3-5, we test potential mechanisms underlying
-negative perceptions of outsourcing, including perceived effort, perceived
-authenticity, and the reasons for using AI.
+Fifth, we need to understand *why* outsourcing to AI, and therefore expending 
+less effort, might have these effects. Previous work has focused on how 
+expending less effort leads to negative perceptions of others [@Celniker2023].
+But this raises the question of *why* effort is seen as important and what
+exactly it is signalling to others, beyond one's general cooperative intent. It
+is possible that outsourcing leads to negative perceptions because the lack of
+effort spent on the task signals something more fundamental about how authentic
+one is and how much one cares about the task: when someone chooses to outsource
+a love letter to an AI, they might be seen as valuing that love letter and what
+it represents less. It could be this second-step order of perceptions that is
+the key driver of negative perceptions, especially for socio-relational tasks.
+
+## Present Research
+
+In this paper, we build on classic social psychological work on character 
+inferences from reduced effort to understand how people view others who
+outsource different kinds of tasks, in different ways, for different reasons, to
+AI. Across five pre-registered experiments with British participants, we seek
+not only to understand how reduced effort through AI-outsourcing might shape
+perceptions of others, but also to understand in more depth *why* it is that
+reduced effort has the effect that it does.
+
+In our initial pilot studies to motivate this work, we found that people who
+outsource a range of tasks to AI or another person are perceived more negatively
+than people who complete the tasks by themselves (see Supplementary Materials).
+In Study 1, we look at the effects of task type, AI use, and honesty. We explore
+how people perceive others who outsource different kinds of tasks with different
+levels of social relevance (e.g., from daily schedules, computer code and dinner
+recipes to wedding vows, apology letters, or bereavement cards), manipulating
+whether people use AI as a collaborative tool or "fully" outsource to AI and 
+whether they are honest or deceptive about their use of AI. After turning to
+look at perceptions of both outsourcers and the outsourced work in Study 2, in
+Studies 3-5 we probe why outsourcing may have negative effects on how we
+evaluate others. In Study 3, we test potential mechanisms of perceived effort
+and authenticity by looking at how people evaluate others who either spend a lot
+or little time crafting the AI prompts, and who either outsource to a generic or
+personalised AI. In Study 4, we test the potential mechanism of perceived
+importance in the task by manipulating people's reasons for using AI -- either 
+because they wanted to save time or because they cared about the task and
+thought that AI would improve their work. Finally, in Study 5, we bring these 
+different potential mechanisms together to explore the different pathways that 
+influence the relationship between outsourcing and negative perceptions, 
+focusing on perceived effort, authenticity, and care in the task.
+
+\newpage
 
 # Study 1
 
@@ -195,7 +263,7 @@ authenticity, and the reasons for using AI.
 ### Ethical Approval
 
 Ethical approval was granted for all studies in this paper by the University of
-Kent Psychology Research Ethics Panel. Participants in all studies provided
+Kent's Psychology Research Ethics Panel. Participants in all studies provided
 informed consent and were debriefed after the study.
 
 ### Participants
@@ -293,8 +361,7 @@ evaluation -- competence, warmth, morality, laziness, and trustworthiness -- as
 a separate response variable and included fixed effects for conditions, varying 
 intercepts for participants, and varying intercepts and slopes for tasks. We 
 used regularising priors for all parameters to impose conservatism on parameter 
-estimates (see Supplementary Materials for full model specifications). All 
-models converged normally ($\hat{R}$ ≤ 1.01).
+estimates. All models converged normally ($\hat{R}$ ≤ 1.01).
 
 ### Transparency and Openness
 
@@ -309,18 +376,18 @@ found here: <https://github.com/ScottClaessens/outsourcing>
 
 ## Results
 
-Across all five character evaluations, we found that fully outsourcing to AI 
-(i.e., copying the AI output verbatim) was perceived more negatively than using
-AI as a collaborative tool (@fig-treatments-study1; 
-@tbl-treatment-diffs-study1). By contrast, we found that deception about AI
-usage had specific negative effects on perceptions of morality and
-trustworthiness: people who did not acknowledge their use of AI were perceived
-as less moral and less trustworthy. We did not find any interaction effects
-between full outsourcing and deception.
+We first looked at the overall results averaging over tasks. Across all five 
+character evaluations, we found that fully outsourcing to AI (i.e., copying the 
+AI output verbatim) was perceived more negatively than using AI as a 
+collaborative tool (@fig-treatments-study1; @tbl-treatment-diffs-study1). By 
+contrast, we found that deception about AI usage had specific negative effects 
+on perceptions of morality and trustworthiness: people who did not acknowledge 
+their use of AI were perceived as less moral and less trustworthy. We did not 
+find any interaction effects between full outsourcing and deception.
 
 ```{r, fig.height=6, fig.width=6}
 #| label: fig-treatments-study1
-#| fig-cap: Character Evaluations in Study 1
+#| fig-cap: Overall Character Evaluations in Study 1
 #| fig-align: center
 #| apa-note: Participants in the control condition and four AI outsourcing conditions evaluated people in the scenarios on (a) competence, (b) warmth, (c) morality, (d) laziness, and (e) trustworthiness. Coloured points represent participant responses to the questions, jittered for easier viewing. Black points are estimated marginal means from the fitted model, pooling over participants and tasks. Black points and line ranges represent posterior medians and 95% credible intervals, respectively.
 
@@ -329,7 +396,7 @@ tar_read(plot_treatments_study2)
 
 ```{r}
 #| label: tbl-treatment-diffs-study1
-#| tbl-cap: Pairwise Contrasts in Study 1 \vspace{20pt}
+#| tbl-cap: Overall Pairwise Contrasts in Study 1 \vspace{20pt}
 #| apa-note: Numbers reflect differences in marginal means on a 7-point Likert scale, pooling over participants and tasks. The bottom row represents the interaction between full outsourcing and deception (i.e., the difference between the differences in the rows above). Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
 
 tar_read(table_treatment_diffs_effects_study2) %>%
@@ -358,13 +425,12 @@ tar_read(table_treatment_diffs_effects_study2) %>%
 
 The effects of outsourcing to AI varied across the different tasks, especially 
 for perceptions of warmth and morality (@fig-treatments-tasks-study1). For 
-example, people who used AI for social tasks, such as writing an apology letter
+example, people who used AI for social tasks, such as writing an apology letter 
 or a bereavement card, were perceived as less warm, less moral, and lazier 
-compared to people who completed the task themselves. This was true regardless
-of whether AI was used as a tool or fully delegated to and whether the person
-was honest or deceptive about their use of AI. By contrast, we observed weaker
-effects of outsourcing for non-social tasks like writing computer code or 
-planning a syllabus.
+compared to people who completed the task themselves. This was true even if the 
+person used AI as a tool and was honest about their usage of AI. By contrast, we 
+observed weaker effects of outsourcing for non-social tasks like writing 
+computer code or planning a syllabus.
 
 ::: {.landscape}
 
@@ -392,42 +458,26 @@ without these features.
 
 ## Discussion
 
-In this study, we manipulated whether people used AI as a collaborative tool or 
-copied the AI's output verbatim. In line with our predictions, we found that 
-"fully" outsourcing to AI was perceived more negatively than using AI as a 
-collaborative tool, particularly for socio-relational tasks. These negative 
-perceptions of people who fully outsource their work to AI may be driven in part
-by a general suspicion in unsupervised AI output due to what has been termed 
-"algorithmic aversion" -- the tendency for people to distrust AI relative to 
-humans [@Dietvorst2015]. This aversion is particularly strong in the moral 
-domain [@Bigman2018]. Our results suggest that people may not only harbour 
-negative perceptions of AIs themselves, but also of humans who unthinkingly copy
-the output from these AIs, especially for socio-relational tasks.
+In Study 1, we looked at how people who outsourced to AI in different ways were 
+perceived across a broad range of social and non-social tasks. In line with our 
+predictions, we found that "fully" outsourcing to AI was perceived more 
+negatively than using AI as a collaborative tool, particularly for 
+socio-relational tasks. We also found, predictably, that people were seen as 
+less moral and less trustworthy if they did not acknowledge their use of AI. 
+Importantly, though, we show that even using AI in the "best" way -- only as a 
+tool and being honest about one's usage -- still led to negative social 
+perceptions for the more socio-relational tasks like writing a love letter, an 
+apology, or wedding vows.
 
-We also manipulated whether people were honest or deceptive in their use of AI.
-We found that people were seen as less moral and less trustworthy if they did
-not acknowledge their use of AI when asked how they came up with their ideas.
-This builds on previous work showing that people dislike and distrust those who
-lie [@Tyler2006]. However, passing off AI-generated work as one's own is a 
-specific kind of lie -- it involves taking undeserved credit for the work of a 
-machine and misrepresenting one's own emotional capabilities and writing skills.
-Interestingly, we found that failing to acknowledge use of AI had negative 
-effects on perceptions of morality and trustworthiness across all the tasks we 
-studied, suggesting that this phenomenon generalises across a range of 
-socio-relational and professional tasks.
-
-We have shown outsourcing to AI leads to negative character evaluations, 
-especially when the AI output is copied verbatim and the work is passed off as 
-one's own. However, it remains unclear whether these negative perceptions also
-extend to the work itself. It could be, for example, that someone is perceived
-badly for using ChatGPT to write their bereavement card, but the actual quality
-of the writing is perceived to be just as good, if not better, than if the
-person had written the card themselves. Indeed, evidence suggests that text
-generated by ChatGPT is rated as higher quality than human-written text
-[@Noy2023]. However, because this previous study used treatment-blind raters, it
-was unable to assess whether knowing that a piece of text was AI-generated
-affects how people perceive the text, while holding the quality of the text
-constant. We explored this possibility in Study 2.
+In Study 2, we investigate whether these negative perceptions extend to the work 
+itself and remain after seeing the output. It could be, for example, that 
+someone is perceived badly for using ChatGPT to write their bereavement card, 
+but the writing itself is seen as equally well-written and authentic, if not 
+more so, than if the person had written the card themselves. Indeed, evidence 
+suggests that text generated by ChatGPT is rated as higher quality than 
+human-written text [@Noy2023]. Moreover, it is possible that seeing appropriate 
+output could mitigate negative perceptions by highlighting how the AI can in 
+fact perform the task well. We explored these possibilities in Study 2.
 
 # Study 2
 
@@ -470,14 +520,20 @@ these participants reported having used ChatGPT before (see
 We randomly allocated participants to one of six conditions in a 3x2 
 between-subjects design. We manipulated the type of outsourcing: (*i*) no 
 outsourcing control, (*ii*) using AI as a tool, and (*iii*) fully outsourcing to
-AI. We also manipulated whether the task prompt was social or non-social.
+AI. Here, in contrast to Study 1, we also explicitly manipulated whether the 
+task prompt was social or non-social.
 
 ### Procedure
 
-We told participants that they would read and evaluate a short piece of writing
-from "another participant" (in reality, we generated the writing using ChatGPT 
-version 4o and edited the text to appear more human-like). The prompt for the 
-piece of writing varied between conditions:
+We told participants that they would read and evaluate a short piece of writing 
+from "another participant". In reality, we generated the writing using ChatGPT 
+version 4o. We asked ChatGPT to generate a 300 word response to the prompt and 
+to write convincingly like a real human. We then edited the text to appear more 
+human-like by, for example, removing classic AI markers like dashes and 
+concluding sentences and ensuring that the information was not too generic, such 
+that the writing could reasonably be attributed to both a human and AI.
+
+The prompt for the piece of writing varied between conditions:
 
 - *Social conditions*: "Please write a description of a close family member or 
 friend, explaining why they are special to you."
@@ -501,9 +557,10 @@ themselves."
 complete the task. The participant told us that they copied ChatGPT's output
 word-for-word, rather than producing the response themselves."
 
-We then presented participants with a randomly-chosen pre-generated essay answer
-to the prompt (see Supplementary Tables [-@supptbl-essay-answers-social-study2] 
-and [-@supptbl-essay-answers-nonsocial-study2] for full essay answers). In the 
+Next, we presented participants with a randomly-chosen pre-generated essay 
+answer to the prompt (see Supplementary Tables 
+[-@supptbl-essay-answers-social-study2] and 
+[-@supptbl-essay-answers-nonsocial-study2] for full essay answers). In the 
 social conditions, the answer either referred to the participant's father, their
 sister, or their best friend. In the non-social conditions, the answer either
 referred to the book The Hobbit, the TV show Buffy the Vampire Slayer, or the
@@ -511,19 +568,20 @@ film Titanic. Reading times and responses to a follow-up comprehension question
 suggested that participants read the essay answers in sufficient detail (see 
 @supptbl-essay-comprehension-study2).
 
-We asked participants about their perceptions of the essay answer and the "other
-participant". We asked how well-written, meaningful, and authentic they thought
-the answer was (7-point Likert scales), what letter grade they would give the
-answer (A-E), and how much they would hypothetically reward the other
-participant for their work (from £0.00 to £1.00). We also asked how well each of
-the following words described the other participant: competent, warm, moral,
-lazy, and trustworthy (7-point Likert scales).
+Finally, we asked participants about their perceptions of the essay answer and 
+the "other participant". We asked how well-written, meaningful, and authentic 
+they thought the answer was (7-point Likert scales), what letter grade they 
+would give the answer (A-E), and how much they would hypothetically reward the 
+other participant for their work (from £0.00 to £1.00). We also asked how well 
+each of the following words described the other participant: competent, warm, 
+moral, lazy, and trustworthy (7-point Likert scales).
 
 At the end of the study, we gave participants a manipulation check and asked
-them whether they believed the manipulation. Responses to these questions
-suggested that the outsourcing manipulation was successful (see 
-@supptbl-manipulation-check-study2). We also asked participants several 
-questions about ChatGPT (see @suppfig-chatgpt-study2).
+them whether they believed the manipulation. Almost all participants correctly 
+reported the condition that they were in and most participants stated that they 
+believed the essay response was written in the way we described, suggesting that 
+the manipulation was successful (see @supptbl-manipulation-check-study2). We 
+also asked participants several questions about ChatGPT.
 
 ### Pre-registration
 
@@ -543,17 +601,36 @@ applied specifically to the reward question, which was a slider scale varying
 between 0 and 1. For both models, we included fixed effects for the interaction
 between outsourcing type and task type and varying intercepts and slopes for
 essay answers. We used regularising priors for all parameters to impose 
-conservatism on parameter estimates (see Supplementary Materials for full model 
-specifications). All models converged normally ($\hat{R}$ ≤ 1.01).
+conservatism on parameter estimates. All models converged normally 
+($\hat{R}$ ≤ 1.01).
 
 ## Results
 
-We found that essay responses that were ostensibly generated using AI were 
-perceived as less meaningful and less authentic, but just as well-written, 
-compared to essay responses ostensibly written by a human
-(@fig-treatments-work-study2; @tbl-treatment-diffs-work-study2). Participants 
-also marked AI-generated essays with a lower grade and rewarded AI-generated 
-essays with a lower hypothetical monetary bonus.
+We first looked at character evaluations. We found that even when provided with 
+concrete output, people were still perceived more negatively across all 
+character evaluations if they outsourced the writing task to AI, either by using 
+ChatGPT as a collaborative tool or by copying the text from ChatGPT verbatim 
+(@suppfig-treatments-person-study2; @supptbl-treatment-diffs-person-study2). 
+In contrast to Study 1, however, we did not find any differences in character 
+evaluations between the tool outsourcing and full outsourcing conditions. We did 
+not find differences in character evaluations between social and non-social 
+tasks and did not find any interaction effects.
+
+Turning to evaluations of the work itself, we found that the AI-outsourced work 
+(either outsourced by using AI as a collaborative tool or fully outsourced) was 
+judged as being equally well written to the work in the control condition 
+(@fig-treatments-work-study2; @tbl-treatment-diffs-work-study2). This is in line 
+with the writing indeed being identical in all conditions. Interestingly, 
+however, we found that essay responses that were ostensibly generated using AI 
+were perceived as less meaningful and less authentic compared to essay responses 
+ostensibly written by a human. Participants also marked AI-generated essays with 
+a lower grade and rewarded AI-generated essays with a lower hypothetical 
+monetary bonus. In contrast to Study 1, we did not find differences in 
+perceptions of the work between the tool outsourcing and full outsourcing 
+conditions, except for the reward question, where fully outsourced essays (i.e., 
+essays copied verbatim from ChatGPT) were rewarded £0.23 less than essays 
+generated using AI as a collaborative tool. We did not find any differences 
+between social and non-social tasks and did not find any interaction effects.
 
 ```{r, fig.height=5, fig.width=7}
 #| label: fig-treatments-work-study2
@@ -595,66 +672,43 @@ tar_read(table_treatment_diffs_effects_study3) %>%
   knitr::asis_output()
 ```
 
-We did not find differences in perceptions of the work between the tool 
-outsourcing and full outsourcing conditions, except for the reward question,
-where fully outsourced essays (i.e., essays copied verbatim from ChatGPT) were
-rewarded £0.23 less than essays generated using AI as a collaborative tool. We
-did not find any differences between social and non-social tasks and did not
-find any interaction effects.
-
-Turning to character evaluations, we found that people were perceived more
-negatively across all character evaluations if they outsourced the writing task
-to AI, either by using ChatGPT as a collaborative tool or by copying the text
-from ChatGPT verbatim (@suppfig-treatments-person-study2; 
-@supptbl-treatment-diffs-person-study2). However, we did not find any 
-differences in character evaluations between the tool outsourcing and full 
-outsourcing conditions. We did not find differences in character evaluations 
-between social and non-social tasks and did not find any interaction effects.
-
 ## Discussion
 
-Extending our previous results, we found that not only are people perceived 
-negatively for outsourcing their work to AI, but the work produced by AI is 
-itself also perceived negatively. In particular, text that has purportedly been
-generated using AI is perceived to be less meaningful, less authentic, worthy of
-a lower grade, and worthy of a lower monetary reward compared to human-generated
-text. This is despite the actual text itself being held constant, perhaps
-explaining why perceived writing quality did not consistently differ between
-conditions.
+In Study 2, we turned to look at how people perceived both the outsourcer and 
+the outsourced work when given specific output in a social or non-social task 
+that was described as being produced independently by a person, produced by a 
+person in collaboration with AI as a tool, or outsourced in full to AI. We find 
+that our results generalise from character judgments to perceptions of the work 
+itself: text purportedly generated using AI was perceived to be less meaningful, 
+less authentic, and less reward-worthy compared to the same text described as 
+human-generated.
 
-Unlike in Study 1, we found no differences in the effect of AI-outsourcing
-between social and non-social tasks. This may be due to the particular tasks we
-chose. Writing *about* someone close to you is not quite the same as writing 
-something *for* someone close to you, as is the case with wedding vows, love 
-letters, and bereavement cards. We also found no differences between the tool
-and full outsourcing conditions, aside from the lower rewards given to
-participants in the latter condition. It is possible that differences between
-conditions were smaller under this design and we were not sufficiently powered
-to detect them.
+Surprisingly, we found no differences in the effect of AI-outsourcing between 
+social and non-social tasks. This may be due to the particular tasks we chose. 
+Writing *about* someone close to you is not quite the same as writing something 
+*for* someone close to you, as is the case with wedding vows, love letters, and 
+bereavement cards. We also found no differences between the tool and full 
+outsourcing conditions, aside from the lower rewards given to participants in 
+the latter condition. It is possible that because the set-up described to 
+participants was of another participant who was asked to produce work on 
+Prolific and then admitted they used AI, participants saw any kind of AI use as 
+violating an implicit contract between the survey requester and respondent and 
+judged them negatively accordingly.
 
-Thus far, we have presented evidence that outsourcing tasks to AI causes
-negative character evaluations and negative perceptions of the work. But the
-mechanisms underlying these effects remain unclear. We have already suggested
-that effort may play a role, since perceived effort (or lack thereof) is often
-used as a signal of one's moral character [@Cubitt2011] and cooperative intent
-[@Celniker2023]. Study 2 also suggested a role of authenticity: people who 
-outsource to AI may be perceived as producing work that is less authentically
-their own, leading to negative evaluations [see also @Kirk2025]. Indeed,
-previous studies have shown that people react negatively to individuals and 
-brands that behave inauthentically by strategically presenting themselves in
-ways that are misaligned with their true nature [@Sedikides2024; @Silver2021].
-
-To explore the potential mechanisms of effort and authenticity, we return to our
-previous design and experimentally manipulate (1) how much effort people put
-into the task and (2) whether people outsource the task to a standard large
-language model like ChatGPT or a personalised model that has been trained
-specifically on one's own prior writings. The latter authenticity manipulation
-is inspired by recent psychological work on the credit-blame asymmetry in AI use
-showing that people receive more personal credit for their work when they use an
-AI model trained on their own prior writings [@Earp2024]. If effort and 
-authenticity are important mechanisms underlying negative perceptions of 
-outsourcing to AI, then these manipulations should influence character 
-evaluations.
+In Study 3, we turn to explore potential mechanisms driving our effects. We 
+assume that effort may play a role, since perceived effort is often used as a 
+signal of one's moral character [@Cubitt2011] and cooperative intent 
+[@Celniker2023]. Study 2 also suggested a role of authenticity: in line with 
+work on the psychological importance of authenticity [@Newman2019], people who 
+outsource to AI may be perceived as producing work that is less authentically 
+their own, leading to negative evaluations. To explore these potential 
+mechanisms, we experimentally manipulate (1) how much effort someone puts into 
+the task and (2) whether they outsource the task to a standard LLM like ChatGPT 
+or a personalised LLM trained specifically on their own prior writings (and so 
+therefore producing work that is more authentically "theirs"). We expected 
+negative perceptions of outsourcing to be mitigated when the person uses a 
+personalised LLM and expends significant effort on formulating prompts for the 
+AI.
 
 # Study 3
 
@@ -698,16 +752,20 @@ a standard or personalised AI model, and whether people put more or less effort
 into the task. This resulted in five conditions overall: (*i*) the control 
 condition, (*ii*) the standard-low-effort condition, (*iii*) the 
 standard-high-effort condition, (*iv*) the personalised-low-effort condition, 
-and (*v*) the personalised-high-effort condition.
+and (*v*) the personalised-high-effort condition. Our authenticity manipulation 
+was inspired by recent psychological work looking at the credit-blame asymmetry 
+in AI use [@Earp2024], showing that people receive more personal credit for 
+their work when they use an AI model trained on their own prior writings.
 
 ### Procedure
 
-The procedure was mostly identical to Study 1, but we updated the study preamble
-and the presentation of the scenarios. For participants in the personalised AI
-conditions, we expanded the study preamble to explain that personalised AI
-models were trained on people's own prior writings and "tailored to each 
-specific person and their own thoughts, feelings, and values". Then in the 
-scenarios, we told participants in the experimental conditions:
+The procedure was mostly identical to Study 1 to allow us to explore effects 
+across a range of tasks, but we updated the study preamble and the presentation 
+of the scenarios. For participants in the personalised AI conditions, we 
+expanded the study preamble to explain that personalised AI models were trained
+on people's own prior writings and "tailored to each specific person and their 
+own thoughts, feelings, and values". Then in the scenarios, we told participants
+in the experimental conditions:
 
 - *Standard AI conditions*: "In order to complete this task, [the person] uses 
 the AI tool ChatGPT."
@@ -728,7 +786,10 @@ authentic and effortful, respectively.
 of participants stated that the personalised AI was more authentic and 
 `r round(mean(str_detect(study4_sample$effort, fixed("Carefully"))) * 100)`% of 
 participants stated that giving the AI several detailed prompts was more 
-effortful.
+effortful. This suggests that even if participants might not have felt the 
+output was meaningfully authentic in the way that mattered (see Discussion), our 
+participants agreed that using a personalised AI was at least more authentic 
+than using a generic one.
 
 ### Pre-registration
 
@@ -742,17 +803,17 @@ models as in Studies 1 and 2. All models converged normally ($\hat{R}$ ≤ 1.01)
 
 ## Results
 
-We found that people who outsourced to AI in a low effort way were perceived as
-less competent, less moral, lazier, and less trustworthy than people who put
-more effort into their use of AI (@fig-treatments-study3;
-@tbl-treatment-diffs-study3). By contrast, we found that character evaluations
-did not differ between people who used a standard AI model rather than a 
-personalised AI model. We also found no interaction effects between effort and 
-the type of AI used.
+We first looked across all the tasks. On average, we found that people who 
+outsourced to AI in a low effort way were perceived as less competent, less 
+moral, lazier, and less trustworthy than people who put more effort into their 
+use of AI (@fig-treatments-study3; @tbl-treatment-diffs-study3). By contrast, we 
+found that character evaluations did not differ between people who used a 
+standard AI model rather than a personalised AI model. We also found no 
+interaction effects between effort and the type of AI used.
 
 ```{r, fig.height=6, fig.width=7}
 #| label: fig-treatments-study3
-#| fig-cap: Character Evaluations in Study 3
+#| fig-cap: Overall Character Evaluations in Study 3
 #| fig-align: center
 #| apa-note: Participants in the control condition and four AI outsourcing conditions evaluated people in the scenarios on (a) competence, (b) warmth, (c) morality, (d) laziness, and (e) trustworthiness. Coloured points represent participant responses to the questions, jittered for easier viewing. Black points are estimated marginal means from the fitted model, pooling over participants and tasks. Black points and line ranges represent posterior medians and 95% credible intervals, respectively.
 
@@ -761,7 +822,7 @@ tar_read(plot_treatments_study4)
 
 ```{r}
 #| label: tbl-treatment-diffs-study3
-#| tbl-cap: Pairwise Contrasts in Study 3 \vspace{20pt}
+#| tbl-cap: Overall Pairwise Contrasts in Study 3 \vspace{20pt}
 #| apa-note: Numbers reflect differences in marginal means on a 7-point Likert scale, pooling over participants and tasks. The bottom row represents the interaction between AI type and effort (i.e., the difference between the differences in the rows above). Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
 
 tar_read(table_treatment_diffs_effects_study4) %>%
@@ -789,42 +850,69 @@ tar_read(table_treatment_diffs_effects_study4) %>%
 ```
 
 As in Study 1, the effects of outsourcing to AI varied across the different 
-tasks, especially for perceptions of warmth and morality 
-(@suppfig-treatments-tasks-study3). We again found that the negative causal 
-effects of outsourcing to AI were particularly strong for tasks that are social,
-require social skills, impact others, have important consequences, and require
-effort (Supplementary Figures [-@suppfig-interactions-study3] and 
-[-@suppfig-interaction-pars-study3]).
+tasks, especially for perceptions of warmth and morality
+(@fig-treatments-tasks-study3). We again found that the negative causal effects 
+of outsourcing to AI were particularly strong for tasks that are social, require 
+social skills, impact others, have important consequences, and require effort 
+(Supplementary Figures [-@suppfig-interactions-study3] and 
+[-@suppfig-interaction-pars-study3]). Indeed, for tasks like writing wedding 
+vows or writing a love letter, outsourcing to a personalised AI in a high effort 
+way was still perceived more negatively than the control condition for all five 
+character dimensions.
+
+::: {.landscape}
+
+```{r, fig.height=5, fig.width=8.5}
+#| label: fig-treatments-tasks-study3
+#| fig-cap: Variation in the Effects of Outsourcing across Tasks in Study 3 \vspace{-30pt}
+#| fig-align: center
+#| apa-note: Tasks are ordered from most social (top) to least social (bottom) according to ratings from a pilot study. Point ranges are differences in marginal means on a 7-point Likert scale for the low effort conditions (red) and high effort conditions (blue) compared to the control condition. Upper panels refer to the standard LLM conditions, and lower panels refer to the personalised LLM conditions. Points and ranges represent posterior medians and 95% credible intervals, respectively.
+
+tar_read(plot_treatments_tasks_study4)
+```
+
+:::
 
 ## Discussion
 
-We found that effort is an important mechanism by which outsourcing to AI leads
-to negative character evaluations. People who engaged in effortless copying of
-the AI's first output were perceived more negatively, whereas people who put in 
-effort with multiple detailed prompts were perceived no differently from those 
-who completed the tasks themselves. This result is in line with previous work
-showing that effort is a signal of one's moral character [@Cubitt2011; 
-@Celniker2023].
+In Study 3, we found that effort is an important mechanism by which outsourcing 
+to AI leads to negative character evaluations. People who engaged in effortless 
+copying of the AI's first output were perceived more negatively than people who 
+spent time and effort crafting the AI's output with multiple prompts. 
+Nevertheless, for social tasks like writing wedding vows or love letters, 
+outsourcing to AI in a high effort way was still perceived more negatively than 
+completing the task oneself.
 
 Interestingly, we found no effect of authenticity as proxied by the use of a 
 personalised AI that is trained on one's own prior writings compared to a 
-standard AI like ChatGPT. This perhaps indicates that authenticity is not an 
+standard AI like ChatGPT. This could indicate that authenticity is not an 
 important mechanism underlying the effect of outsourcing on negative character 
 evaluations. However, our specific manipulation may not have moved the needle on 
 authenticity enough to impact character evaluations. While previous work has 
 found an effect of personalised AI models on perceived credit [@Earp2024], and 
 the majority of participants in our study stated that the personalised AI was 
 more authentic than a standard model like ChatGPT, it is possible that 
-perceptions of authenticity in our study remained low even with the personalised
-AI model.
+perceptions of *meaningful* authenticity in our study remained low even with the 
+personalised AI model. An AI could be perfectly trained on all apologies that a 
+person has ever written, but one might still think that a specific apology it 
+then generates in a new instance is not an *authentic* apology. Therefore, even 
+if people were described as outsourcing to an AI that was trained on their own 
+writing and therefore personalised, participants still may not have seen the 
+specific output as being meaningfully authentic in the way that matters for 
+character judgments.
 
-Beyond effort and authenticity, another mechanism that may be driving negative 
-perceptions of outsourcing to AI is people's reasons for outsourcing. People may
-use AI for bad reasons, such as saving time or strategically presenting oneself 
-differently. But there are also good reasons for using AI. For example, someone
-might use AI because they really care about the task and want to make sure they
-get it right. If communicated to participants, will these reasons influence 
-perceptions of outsourcers? We answer this question in Study 4.
+In Study 4, we turn to look at a third potential mechanism: a perceived lack of 
+importance attached to the task. When participants read about someone who 
+outsources to AI in our studies, they may be inferring that they simply did not 
+care enough about the task -- "If this was important to them, they would do it 
+themselves!". To the extent that we especially want people to care about their 
+relationships with others -- the kind of things demonstrated through love 
+letters, apology notes, and gift-giving -- this could explain the particular 
+negativity we see for social tasks compared to tasks like writing daily 
+schedules, recipes, or computer code. To test this, in Study 4, we attempted to 
+counteract inferences about care for the task by explicitly telling participants 
+that someone had a good reason for using AI: that they really cared about the 
+task and used AI because they wanted to get it right.
 
 # Study 4
 
@@ -872,9 +960,11 @@ full-good-reason condition.
 
 The procedure was mostly identical to Study 3, with two changes. First, we 
 reduced the number of tasks, focusing on eight tasks (four "social" tasks and 
-four "non-social" tasks) that made sense in our updated design and showed the 
-largest effects in our previous studies. Second, we updated the presentation of 
-the scenarios. We told participants in the experimental conditions:
+four "non-social" tasks) that fit with the manipulation of the updated design 
+(since, for example, participants might find it difficult to see how someone 
+could deeply value a shopping list and want to get it right). Second, we
+updated the presentation of the scenarios. We told participants in the
+experimental conditions:
 
 - *Bad reason conditions*: "Because they are really short on time and want to 
 complete the task quickly, [the person] uses the AI tool ChatGPT."
@@ -906,17 +996,21 @@ models as in Studies 1 and 3. All models converged normally ($\hat{R}$ ≤ 1.01)
 
 ## Results
 
-In line with our previous results, we found that people who fully outsourced to
-AI by copying the output verbatim were perceived as less competent, less moral,
-and less trustworthy than people who used AI as a collaborative tool
-(@fig-treatments-study4; @tbl-treatment-diffs-study4). By contrast, people's 
-reasons for outsourcing to AI did not appear to influence character evaluations
-when pooling across all the tasks. We also found no interaction effects between
-the type of outsourcing and the reasons for outsourcing.
+We first looked across all the tasks. In line with our previous results, we 
+found that people who fully outsourced to AI by copying the output verbatim were 
+perceived as less competent, less moral, and less trustworthy than people who 
+used AI as a collaborative tool (@fig-treatments-study4; 
+@tbl-treatment-diffs-study4). Perhaps surprisingly, though, people's reasons for 
+outsourcing to AI did not appear to influence character evaluations when pooling 
+across all the tasks. When looking at the tasks overall, character evaluations 
+did not differ between people who really cared about the task and wanted to get 
+it right and people who used AI because they were short on time and wanted to 
+complete the task quickly. This was true both when using the AI as a tool or 
+outsourcing in full.
 
 ```{r, fig.height=6, fig.width=7}
 #| label: fig-treatments-study4
-#| fig-cap: Character Evaluations in Study 4
+#| fig-cap: Overall Character Evaluations in Study 4
 #| fig-align: center
 #| apa-note: Participants in the control condition and four AI outsourcing conditions evaluated people in the scenarios on (a) competence, (b) warmth, (c) morality, (d) laziness, and (e) trustworthiness. Coloured points represent participant responses to the questions, jittered for easier viewing. Black points are estimated marginal means from the fitted model, pooling over participants and tasks. Black points and line ranges represent posterior medians and 95% credible intervals, respectively.
 
@@ -927,7 +1021,7 @@ tar_read(plot_treatments_study5)
 
 ```{r}
 #| label: tbl-treatment-diffs-study4
-#| tbl-cap: Pairwise Contrasts in Study 4 \vspace{20pt}
+#| tbl-cap: Overall Pairwise Contrasts in Study 4 \vspace{20pt}
 #| apa-note: Numbers reflect differences in marginal means on a 7-point Likert scale, pooling over participants and tasks. The bottom row represents the interaction between outsourcing type and the reasons for outsourcing (i.e., the difference between the differences in the rows above). Main numbers are posterior medians, numbers in the square brackets are 95% credible intervals.
 
 tar_read(table_treatment_diffs_effects_study5) %>%
@@ -956,67 +1050,66 @@ tar_read(table_treatment_diffs_effects_study5) %>%
 
 :::
 
-As in our previous studies, we found that the effects of outsourcing to AI 
-varied across the different tasks (@suppfig-treatments-tasks-study4) and were 
-particularly negative for tasks that are social, require social skills, impact 
-others, have important consequences, and require effort (Supplementary Figures 
+Importantly, though, as in our previous studies, the type of task mattered 
+(@fig-treatments-tasks-study4). Perceptions of outsourcing were particularly 
+negative for tasks that are social, require social skills, impact others, have 
+important consequences, and require effort (Supplementary Figures 
 [-@suppfig-interactions-study4] and [-@suppfig-interaction-pars-study4]).
-Moreover, the task-specific estimates revealed that the reasons manipulation had
-an effect on character evaluations for social tasks, rather than non-social 
-tasks (@fig-reasons-tasks-study4). When writing a bereavement card, for example, 
-people were perceived as less warm, less moral, lazier, and less trustworthy 
-when they used AI to save time compared to when they used it because they cared
-about doing the task well. The same was not true for non-social tasks like
-writing computer code or solving a mathematical equation.
+Indeed, for socio-relational tasks like writing an apology letter and writing 
+wedding vows, people using AI as a tool for good reasons were still perceived 
+more negatively than the control condition on the dimensions of warmth, 
+morality, laziness, and care, though not on the dimensions of competence or 
+trustworthiness.
 
 ::: {.landscape}
 
-```{r, fig.height=3.5, fig.width=8.5}
-#| label: fig-reasons-tasks-study4
-#| fig-cap: Variation in the Effect of Reasons Across Tasks in Study 4
+```{r, fig.height=4, fig.width=8.5}
+#| label: fig-treatments-tasks-study4
+#| fig-cap: Variation in the Effects of Outsourcing across Tasks in Study 4 \vspace{-30pt}
 #| fig-align: center
-#| apa-note: Tasks are ordered from most social (top) to least social (bottom) according to ratings from a pilot study. Point ranges are differences in marginal means on a 7-point Likert scale between the "bad reason" and "good reason" conditions, split by outsourcing type. Points and ranges represent posterior medians and 95% credible intervals, respectively.
+#| apa-note: Tasks are ordered from most social (top) to least social (bottom) according to ratings from a pilot study. Point ranges are differences in marginal means on a 7-point Likert scale for the bad reason conditions (red) and good reason conditions (blue) compared to the control condition. Upper panels refer to the tool outsourcing conditions, and lower panels refer to the full outsourcing conditions. Points and ranges represent posterior medians and 95% credible intervals, respectively.
 
-tar_read(plot_reasons_tasks_study5)
+tar_read(plot_treatments_tasks_study5)
 ```
 
 :::
 
+Moreover, when we delved further into the task-specific estimates, we found that 
+the reasons manipulation did indeed have an effect on character evaluations for 
+social tasks -- but not non-social tasks (@suppfig-reasons-tasks-study4). When 
+writing a bereavement card, for example, people were perceived as less warm, 
+less moral, lazier, and less trustworthy when they used AI to save time compared 
+to when they used it because they cared about doing the task well. The same was 
+not true for non-social tasks like writing computer code or solving a 
+mathematical equation.
+
 ## Discussion
 
-In Study 4, we replicated our previous result that fully outsourcing to AI is 
-generally perceived more negatively than using AI as a collaborative tool. We 
-also found that people's reasons for using AI influenced character evaluations, 
-but only for social tasks. For example, when writing a bereavement card or an 
-apology letter, people were perceived more negatively if they used an AI tool to 
-produce a quick output in a rush, rather than to ensure they got it right. When 
-writing a cover letter or solving a mathematical equation, we found no effects 
-of the reasons manipulation.
+In Study 4, we attempted to counteract the potential perception that outsourcing 
+to AI reflects caring less about the task by explicitly informing participants 
+about the person's reason for outsourcing: they outsourced to AI because they 
+really cared about the task and wanted to get it right. As well as replicating 
+our finding that fully outsourcing to AI is perceived more negatively than using 
+AI as a tool, we also found an important effect of the reasons for outsourcing, 
+but only for socio-relational tasks. When writing a bereavement card or an 
+apology letter, for example, people were perceived more negatively if they used 
+an AI tool to produce a quick output in a rush, rather than to ensure they got
+it right. Nonetheless, for socio-relational tasks, the "best" use of AI in this 
+study -- using AI as a tool because they cared about the task and wanted to get 
+it right –- *still* led to targets being perceived more negatively than if they 
+had completed the task themselves.
 
-Why do the reasons for using AI matter specifically for socio-relational tasks? 
-One possibility is again to do with effort as a signal of relationship 
-commitment. For writing computer code, it does not matter if someone uses AI to 
-find a quicker, more efficient way of working. But for socio-relational tasks, 
-using AI to cut corners signals a lack of commitment to and care about the 
-relationship. In our design, we explicitly told participants about the person's 
-motivations for using AI, so participants no longer needed to infer lack of care 
-from the signal of reduced effort.
-
-To sum up so far, we have suggested and found varying evidence for three 
-different mechanisms that might underlie the negative perceptions of outsourcing 
-to AI: effort, authenticity, and caring about the task. However, it is likely 
-that these mechanisms are related. For example, outsourcing to AI might 
-indicate a lack of effort, which then might signal a lack of authenticity and 
-reduced care in the task, leading to negative character evaluations. Our 
-previous studies have been unable to test causal models like these as we 
-manipulated the mechanisms separately and independently.
-
-In our final study, we bring all three mechanisms together and test their 
-combined associations with character evaluations. Although we previously found 
-no effect of authenticity as proxied by the type of AI used, it is possible 
-that this manipulation was not a good proxy, and so we reevaluate authenticity 
-here. We also focus on a single socio-relational task -- writing a love letter 
--- which we elaborate for participants with a more detailed vignette.
+While we have so far shown varying evidence for three different mechanisms that 
+might underlie the negative perceptions of outsourcing to AI -- effort, 
+authenticity, and caring about the task -- it is likely that these mechanisms 
+are related. For example, outsourcing to AI might indicate a lack of effort, 
+which then might signal a lack of authenticity and reduced care in the task, 
+leading to negative character evaluations. Our previous studies have been unable 
+to test causal models like these as we manipulated the mechanisms separately and 
+independently. In Study 5, therefore, we bring all three mechanisms together and 
+test their combined associations with character evaluations. To do this, we 
+focus on a single socio-relational task –- writing a love letter –- which we 
+elaborate for participants with a more detailed vignette.
 
 # Study 5
 
@@ -1093,8 +1186,7 @@ letter was, how much they thought Adam cared about the love letter, and the same
 five character evaluations as in our previous studies. In additional free
 response questions, we asked participants to explain how they felt towards Adam
 and how they would feel if they were Adam's partner. Finally, we asked
-participants several questions about AI tools like ChatGPT (see 
-@suppfig-chatgpt-study5).
+participants several questions about AI tools like ChatGPT.
 
 ### Pre-registration
 
@@ -1110,9 +1202,8 @@ effect of outsourcing on character evaluations, both directly and indirectly
 through perceptions of effort, authenticity, and care. In this second model, we
 included ordinal predictors as monotonic effects and modelled the five character
 evaluations as a single latent variable. We used regularising priors for all
-parameters to impose conservatism on parameter estimates (see Supplementary 
-Materials for full model specifications). All models converged normally 
-($\hat{R}$ ≤ 1.01).
+parameters to impose conservatism on parameter estimates. All models converged 
+normally ($\hat{R}$ ≤ 1.01).
 
 ## Results
 
@@ -1182,135 +1273,164 @@ authenticity and care.
 #| label: fig-path-model-study5
 #| fig-cap: Path Model in Study 5
 #| fig-align: center
-#| apa-note: All predictors were modelled as monotonic effects, such that parameters can be interpreted as the expected average difference between two adjacent categories of the ordinal predictor on the logit scale. The “evaluations” outcome variable was modelled as a single latent variable with loadings from all five character evaluations (competence, warmth, morality, laziness, and trustworthiness).
+#| apa-note: All predictors were modelled as monotonic effects, such that parameters can be interpreted as the expected average difference between two adjacent categories of the ordinal predictor on the logit scale. The "evaluations" outcome variable was modelled as a single latent variable with loadings from all five character evaluations (competence, warmth, morality, laziness, and trustworthiness).
 
 tar_read(plot_path_model_study6)
 ```
 
-## Discussion
-
-In our final study, we replicated our previous findings that outsourcing to AI 
-results in negative character evaluations. Expanding on our previous studies, we
-also found that people spontaneously rate outsourcing to AI as less effortful,
-less authentic, and indicative of less care in the task. Our path model
-suggested that outsourcing to AI influences character evaluations in part
-through these mechanisms. According to our model, outsourcing to AI is seen as
-less effortful, which in turn signals a lack of authenticity and care in the
-task, resulting in negative character evaluations. The fact that perceived
-effort did not have a direct effect on character evaluations indicates that
-effort is important only insofar as it signals a lack of authenticity and care.
-
 # General Discussion
 
-Across five pre-registered experiments, we have demonstrated negative 
-perceptions of outsourcing to AI. People who outsourced tasks to AI were 
-perceived more negatively than people who completed the tasks by themselves. 
-These negative impressions were particularly strong for people who used AI to 
-complete socio-relational tasks, such as writing a love letter or writing 
-wedding vows, and for people who copied the model's first output verbatim 
-without acknowledging their reliance on AI. Outsourced work was also perceived 
-as less meaningful, less authentic, and less reward-worthy than ostensibly 
-human-generated writing. Our experiments suggested that these negative 
-evaluations are driven in part by a perceived lack of effort, a perceived lack 
-of care in the task, and a perceived reduction in authenticity of the outsourced
-work.
+The release of openly available generative AI LLMs has changed lives, promising 
+to let people do more tasks, more efficiently, and perhaps to do so better than 
+they could alone. People can –- and *do* –- use AI tools like ChatGPT to, for 
+example, create dinner recipes, assist with coding, and even write job 
+applications [@UKGov2024]. But it is not only such routine, everyday, and 
+non-social tasks that AI now "assists" with. People can use AI for a seemingly 
+endless range of social tasks too, from crafting apology letters to writing 
+condolences to even writing wedding vows. In this paper, across five 
+pre-registered experiments, we show how –- and why –- AI-outsourcing shapes 
+perceptions of others in a world where outsourcing has never been easier and 
+cheaper.
 
-The findings in this paper build on prior research in a number of ways. Our 
-results corroborate and advance research on the moralisation of effort. Studies
-have shown that people inherently value effort [@Inzlicht2018; @Kruger2004] and 
-perceive displays of effort as costly signals of one's moral character and 
-cooperative intent [@Celniker2023; @Cubitt2011; @Tissot2025]. However, prior 
-research has not explored the mechanisms by which perceptions of effort 
-influence character evaluations -- what exactly is effort signalling? We have 
-suggested that the reduced effort from outsourcing socio-relational tasks to AI
-signals that the work is less authentically their own and that the person cares
-less about the task (and therefore, perhaps, the relationship). The lack of a
-direct effect of perceived effort in our path model showed that it is inferences
-of authenticity and care, rather than perceived effort per se, that are
-associated with negative character evaluations. As a participant in our final
-study put it: "If he really cared, he would have just done it by himself from
-scratch" (female, 25 years old).
+In Study 1, we showed that people who outsourced tasks to AI were perceived more 
+negatively than people who completed the tasks by themselves. These negative 
+impressions were particularly strong for people who used AI to complete 
+socio-relational tasks, such as writing a love letter or writing wedding vows, 
+and for people who copied the model's first output verbatim without 
+acknowledging their reliance on AI. Moreover, these negative perceptions were 
+found even for the "best case" of openly acknowledging the use of AI as a 
+collaborative tool. In Study 2, we showed that people perceive both the 
+outsourcer and the outsworked work more negatively, with outsourced work 
+perceived as less meaningful, less authentic, and less reward-worthy than 
+ostensibly human-generated writing. In Study 3, we showed that while it matters 
+whether people spent time crafting the AI prompts or simply gave a rushed 
+initial prompt, even expending effort into crafting the best prompts was still 
+not enough to counteract the negative effects from using AI. In Study 4, we 
+explored the potential role of inferred importance and found that while 
+explicitly telling participants that the person used AI because they cared about 
+the task reduced negative perceptions for social tasks, it was still not enough 
+to eliminate negative perceptions completely. In Study 5, we showed that a 
+perceived lack of effort is taken to signal both a lack of authenticity and lack 
+of importance attached to the task, and these independently influenced character 
+judgments above and beyond the effect of effort.
 
-Our results also contribute to the growing literature on algorithm aversion. 
-Research has shown that people tend to distrust AI models, even when they show
-identical or superior performance to humans [@Dietvorst2015]. This aversion is
-particularly strong in the moral domain [@Bigman2018]. Building on this work, we
-have shown that the aversion to algorithms can spill over into negative
-evaluations of people who unthinkingly copy the outputs of algorithms,
-especially for socio-relational tasks.
+Our findings extend work on the moralisation of effort. Studies have shown that 
+people inherently value effort and perceive displays of effort as costly signals 
+of one's moral character and cooperative intent [@Celniker2023]. And yet it has 
+remained unclear how we might view others who outsource to AI; how these effects 
+might vary based on how socio-relational the task is; how different ways of 
+outsourcing influence perceptions; how outsourcing has different effects on 
+different kinds of social perceptions; and why exactly effort has the effects 
+that it does. Across our studies, we provide new insight into all of these 
+questions. In line with previous work on the importance of effort, we show that 
+people negatively judge those who outsource to AI. We show that the type of task 
+does matter, whereby outsourcing to AI for socio-relational tasks leads to 
+particularly negative perceptions. We show that different ways of outsourcing 
+lead to differences in the degree of negative perceptions but that, critically, 
+even outsourcing to AI in the "best" way (e.g., using it as a tool and finishing 
+the work oneself while being honest about the AI use) is still not enough to 
+eliminate the negative consequences. We show that negative perceptions from 
+outsourcing tended to go together, even if outsourcing on social tasks led to 
+particularly negative effects on warmth and morality traits. And finally, we 
+provide further insight into why effort matters. The reduced effort from 
+outsourcing socio-relational tasks to AI signals that the work is less 
+authentically one's own and that the person cares less about the task (and 
+therefore, perhaps, the relationship). The lack of a direct effect of perceived 
+effort in our path model showed that it is inferences of authenticity and care, 
+rather than perceived effort per se, that are associated with negative character 
+evaluations. As a participant in our final study put it: "*If he really cared, 
+he would have just done it by himself from scratch*" (female, 25 years old).
 
-Regarding deception in AI use, our findings are relevant for the discussion 
-about acknowledging the use of AI in jobs that require writing, such as 
-journalism [@Cools2024] and academia [@Marescotti2023]. Many scientific 
-journals, for example, now require that authors declare their use of generative
-AI. However, thus far, there appears to be an AI attribution gap: many authors
-anonymously admit using AI to write scientific papers, but only few actually
-declare it in their published work [@Gignac2025]. Our findings make the case for
-honestly declaring use of AI. Such honesty could increase trust in the authors,
-and perhaps in the work itself.
+Our findings cohere with the philosophical idea that there is value in *how* a 
+task was done, and not merely *whether* it was done [@Goodman2010; @Stohr2006]. 
+For many socio-relational tasks, it might seem that part of the constitutive 
+action is the *process* by which it occurs: an apology that does not contain a 
+genuine reflection and commitment to do better, rather than just the words "I am 
+sorry", might not seem to be an apology at all. In contrast, for many of the 
+non-social tasks, it is easier to distinguish the importance of the process from 
+the outcome. In this way, our work suggests that people rarely adopt a purely 
+utilitarian perspective in which outcomes are the sole determinant 
+[@Everett2020; @Kahane2018]. Instead, their judgments cohere more with ideas 
+from virtue ethics about the importance of *doing* [@Stohr2006]. Outsourcing to 
+AI -- especially for social tasks –- may allow us to produce similar outputs, 
+but by severing the outcome from the practice of doing, it may risk the 
+development and maintenance of our human virtues [@Vallor2015].
 
-Beyond the studies presented here, our results raise further questions about 
-outsourcing to AI that should be addressed in future research. First, the fact
-that we found a direct effect of outsourcing on character evaluations in our
-final study, even after accounting for the indirect effects of effort,
-authenticity, and care, suggests that there are alternative mechanisms
-underlying the negative perceptions of outsourcing to AI that remain unexplored.
-Such mechanisms might plausibly include the perceived lack of creativity and
-originality of AI-generated work, the generic nature of the writing and lack of
-specificity to the intended recipient, questions around personal authorship and
-sincerity, and a potential lack of critical thinking when using AI [@Lee2025]. 
-Future research should test these alternative mechanisms and build on the path 
-model in @fig-path-model-study5.
+AI is often being marketed as being able to help us to do more and more tasks, 
+promising gains of efficiency that align with societal incentives for "hacks" 
+that encourage people to do more-and-more with less energy and effort. Our work, 
+however, highlights that when it comes to our psychology, efficiency is not the 
+only currency. Instead, *in*efficiency can sometimes pay off more, especially 
+for social tasks. By expending effort themselves instead of outsourcing to AI, 
+people are able to signal authenticity and care for the task, and this can lead 
+to better reputations [see also @Celniker2023]. Correspondingly, expending 
+effort, even "unnecessarily", is not as irrational, biased, or suboptimal as we 
+might think from a utilitarian perspective in which outcomes are the only things 
+that matter. Instead, it is precisely this inefficiency that helps people signal 
+things that they care about and connect with others, thereby arguably reflecting 
+a deeply rational reflection of virtues and the importance of social ties
+[@Everett2016].
 
-Second, we did not focus on individual differences in this paper, but it is 
-reasonable to expect that people might vary in their reactions to
-AI-outsourcing. For example, research has shown that people high in openness to 
-experience are more accepting of emerging technologies [@Devaraj2008; 
-@Watjatrakul2016]. People high in openness might therefore perceive outsourcing
-less negatively. Conversely, people with higher AI literacy and who are more 
-resistant to AI on moral grounds tend to have more negative attitudes towards AI 
-[@deMello2025; @Tully2025] and so may perceive AI-outsourcing more negatively. 
-Future work should explore whether these individual differences moderate
-perceptions of outsourcers.
+Most speculatively, our results on the negative effects of AI-outsourcing on 
+character judgments highlight potential risks in how increased use of AI could 
+lead to negative consequences for social ties, especially if people start to 
+assume, by default, that others are using AI for the kind of tasks that matter. 
+Sociologists have highlighted concerns about the negative effects that 
+outsourcing to AI can have on our "connective labour", arguing that while AI can 
+enhance certain tasks, it cannot replicate the depth of human relationships 
+essential for effective caregiving, education, and support [@Pugh2024]. Similar 
+arguments have been made about the risks of outsourcing empathy to AI 
+[@Landes2025]. In this way, the rapid move towards using AI for more and more 
+tasks could have serious and unintended consequences on the way we connect with 
+one another, serving to further weaken the social ties that bind us into a 
+community.
 
-Third, while we have demonstrated negative perceptions of outsourcing in this 
-paper, it remains unclear if and when people might deem outsourcing to AI as 
-acceptable or even preferable. Several of the participants in our final study 
-expressed in their free responses that they would have been okay with Adam using
-AI to write the love letter if he was not a confident writer or had a learning 
-difficulty that made writing challenging, such as dyslexia. In line with this, 
-research in biopsychology has found that people are more accepting of 
-cognitively-enhancing technologies and drugs when they are used to repair 
-cognitive functions, rather than to enhance cognitive functions beyond "normal" 
-levels [@Medaglia2019; @Rudski2014]. Future research should explore whether 
-negative perceptions of outsourcing persist when AI is used in a reparative way.
+## Limitations and Directions for Future Research
 
-The studies in this paper are not without their limitations. While we included a
-range of different socio-relational and professional tasks in an effort to
-improve the generalisability of our findings, we focused specifically on
-participants from the United Kingdom, a relative global outlier in its high
-levels of AI readiness and development [@OxfordInsights; @TortoiseMedia]. We 
-also collected data at a time when AI is still an emerging technology. It
-remains unclear whether our results will generalise to other countries with
-varying levels of AI infrastructure and whether negative perceptions of
-outsourcers will persist as AI use becomes more commonplace in the coming years.
-Another limitation is our reliance on hypothetical vignettes to assess people's
-perceptions of outsourcing to AI. It could be argued that these vignettes lack 
-the richness of information to make informed character evaluations and do not 
-realistically capture the way that AI is actually being used "in the wild". Our
-inclusion of a tool outsourcing condition somewhat mitigates these concerns, but
-it would be interesting to explore how people react to real-world examples of 
-outsourcing.
+The studies in this paper are not without their limitations. While we included a 
+range of different socio-relational and professional tasks in an effort to 
+improve the generalisability of our findings across domains, it would be 
+interesting for future work to additionally explore the generalisability and 
+variability of our findings across countries with different AI infrastructures 
+and readiness levels [@OxfordInsights; @TortoiseMedia] and over time as AI use 
+becomes more commonplace. By focusing on generalisability across various 
+real-world tasks in which people outsource, it could also be argued that our 
+design lacks the richness of information in extended vignettes that might 
+influence character evaluations. While we have advanced previous research in 
+highlighting the ways in which effort influences perceptions of authenticity and 
+care, it will be interesting for future research to delve deeper into these 
+mechanisms, both philosophically and psychologically: *why* is it that the 
+perceived care for the task matters, and what are the boundary conditions of 
+these effects? Finally, while we have demonstrated negative perceptions of 
+outsourcing in this paper, it will be important for future research to explore 
+when people might deem outsourcing to AI as acceptable or even preferable. 
+Several of the participants in our final study expressed in their free responses 
+that they would have been okay with Adam using AI to write the love letter if he 
+was not a confident writer or had a learning difficulty that made writing 
+challenging, such as dyslexia. In line with this, some research has found that 
+people are more accepting of cognition-enhancing technologies and drugs when 
+they are used to repair cognitive functions, rather than to enhance cognitive 
+functions beyond "normal" levels [@Medaglia2019; @Rudski2014]. Future research 
+should explore whether negative perceptions of outsourcing persist when AI is 
+used in a reparative way.
 
-In sum, we have demonstrated negative perceptions of outsourcing to AI. People 
-perceive individuals who outsource tasks to AI more negatively across a range of
-character dimensions and perceive outsourced work as less meaningful and
-authentic. These negative perceptions are particularly strong for
-socio-relational tasks, such as writing wedding vows, and are compounded when
-the outsourcer copies the AI’s output verbatim and does not honestly acknowledge
-their use of AI. Taken together, our findings suggest that, in a world of
-algorithm-mediated interactions, AI is no substitute for investing effort into
-our interpersonal relationships.
+## Conclusions
+
+To conclude, across five pre-registered studies, we have demonstrated negative 
+perceptions of outsourcing to AI. Our participants perceived individuals who 
+outsource tasks to AI more negatively across a range of character dimensions and 
+perceived outsourced work as less meaningful and authentic. Negative perceptions 
+were particularly strong for socio-relational tasks, such as writing wedding 
+vows, and were compounded when the outsourcer copied the AI’s output verbatim 
+and did not honestly acknowledge their use of AI. These findings connect with 
+broader debates about the importance of *doing* in social relationships, and 
+highlight that for many tasks -- especially those that are more socio-relational 
+-- it might be better to move away from a focus on making things more efficient 
+at all costs and instead bring back a recognition of the power of 
+*in*efficiency. Doing something oneself, even if AI could do it quicker and 
+easier, signals one that is authentic and cares about the task and therefore can 
+help bind us together. In a world of algorithm-mediated interactions, AI is no 
+substitute for investing effort into our interpersonal relationships.
 
 \newpage
 
