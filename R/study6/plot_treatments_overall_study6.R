@@ -13,7 +13,7 @@ plot_treatments_overall_study6 <- function(study6_data,
         width = 0.3,
         height = 0.45,
         colour = colour,
-        alpha = 0.1,
+        alpha = 0.2,
         size = 0.2
       ) +
       geom_pointrange(
@@ -60,8 +60,8 @@ plot_treatments_overall_study6 <- function(study6_data,
   ggsave(
     filename = "plots/study6_treatments.pdf",
     plot = out,
-    width = 6,
-    height = 4
+    width = 7,
+    height = 5
   )
   return(out)
 }

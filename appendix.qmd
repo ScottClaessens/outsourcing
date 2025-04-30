@@ -102,8 +102,7 @@ non-binary / third gender;
 `r sum(str_starts(study1_sample$gender, "Prefer") | is.na(study1_sample$gender))`
 undisclosed gender; mean age = `r round(mean(study1_sample$age), 2)` years).
 `r round(mean(study1_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
-these participants reported having used ChatGPT before (see 
-@suppfig-chatgpt-pilotstudy2).
+these participants reported having used ChatGPT before.
 
 ### Design
 
@@ -134,7 +133,7 @@ Participants answered these questions on 7-point Likert scales, ranging from
 After the six scenarios, we asked participants several questions about the AI 
 tool ChatGPT, including their familiarity with ChatGPT, whether they had used 
 ChatGPT before, how frequently they used ChatGPT, and how trustworthy they 
-thought ChatGPT was (see @suppfig-chatgpt-pilotstudy2).
+thought ChatGPT was.
 
 ### Pre-registration
 
@@ -278,18 +277,6 @@ following thresholds: LL ≥ 3.84 (*p* < .05), LL ≥ 6.63 (*p* < .01), LL ≥ 1
 
 \vspace*{15mm}
 
-::: {#suppfig-chatgpt-study1 suppfig-pos="H"}
-
-```{r, fig.height=5, fig.width=6}
-tar_read(plot_chatgpt_study2)
-```
-
-Responses to the questions about ChatGPT in Study 1.
-
-:::
-
-\newpage
-
 ::: {#suppfig-interactions-study1 suppfig-pos="H"}
 
 ```{r, fig.height=6, fig.width=7}
@@ -323,18 +310,6 @@ credible intervals, respectively.
 
 \newpage
 
-::: {#suppfig-chatgpt-study2 suppfig-pos="H"}
-
-```{r, fig.height=5, fig.width=6}
-tar_read(plot_chatgpt_study3)
-```
-
-Responses to the questions about ChatGPT in Study 2.
-
-:::
-
-\newpage
-
 ::: {#suppfig-treatments-person-study2 suppfig-pos="H"}
 
 ```{r, fig.height=4, fig.width=6}
@@ -349,18 +324,6 @@ questions, split by whether the writing task was a non-social task (red) or a
 social task (blue). Point ranges are estimated marginal means from the fitted 
 model, pooling over essay answers. Points and line ranges represent posterior 
 medians and 95% credible intervals, respectively.
-
-:::
-
-\newpage
-
-::: {#suppfig-chatgpt-study3 suppfig-pos="H"}
-
-```{r, fig.height=5, fig.width=6}
-tar_read(plot_chatgpt_study4)
-```
-
-Responses to the questions about ChatGPT in Study 3.
 
 :::
 
@@ -394,18 +357,6 @@ Interaction parameters from models including task-specific features as
 moderators of the causal effects of AI outsourcing compared to the control 
 condition in Study 3. Points and line ranges represent posterior medians and 95% 
 credible intervals, respectively.
-
-:::
-
-\newpage
-
-::: {#suppfig-chatgpt-study4 suppfig-pos="H"}
-
-```{r, fig.height=5, fig.width=6}
-tar_read(plot_chatgpt_study5)
-```
-
-Responses to the questions about ChatGPT in Study 4.
 
 :::
 
@@ -460,18 +411,6 @@ outsourcing type. Points and ranges represent posterior medians and 95% credible
 intervals, respectively.
 
 :::
-
-:::
-
-\newpage
-
-::: {#suppfig-chatgpt-study5 suppfig-pos="H"}
-
-```{r, fig.height=5, fig.width=6}
-tar_read(plot_chatgpt_study6)
-```
-
-Responses to the questions about ChatGPT in Study 5.
 
 :::
 
@@ -588,18 +527,6 @@ Grey points represent participant responses to the question, jittered for easier
 viewing. Black points are estimated means from the fitted model, pooling over 
 participants. Black points and line ranges represent posterior medians and 95% 
 credible intervals, respectively.
-
-:::
-
-\newpage
-
-::: {#suppfig-chatgpt-pilotstudy2 suppfig-pos="H"}
-
-```{r, fig.height=5, fig.width=6}
-tar_read(plot_chatgpt_study1)
-```
-
-Responses to the questions about ChatGPT in the second pilot study.
 
 :::
 

@@ -59,11 +59,11 @@ author-note:
     affiliation-change: ~
     deceased: ~
   disclosures:
-    study-registration: ~
-    data-sharing: All data and original code can be found on GitHub at <https://github.com/ScottClaessens/outsourcing>.
+    study-registration: This pre-print is currently not yet peer-reviewed, and may differ from the final version.
+    data-sharing: ~
     related-report: ~
-    conflict-of-interest: The authors have no conflicts of interest to disclose.
-    financial-support: This work was generously supported by funding from the Horizon Europe UK Guarantee via the UKRI (EP/Y00440X/1) and a Philip Leverhulme Prize (PLP-2021-095) awarded to JACE.
+    conflict-of-interest: ~
+    financial-support: ~
     gratitude: ~
     authorship-agreements: ~
 abstract: >
@@ -85,7 +85,7 @@ abstract: >
   highlights the way that AI use shapes our perceptions of people, raising key
   philosophical questions about efficiency, authenticity, and social ties in a
   world filled with AI-mediated interactions.
-keywords: [artificial intelligence, person perception, outsourcing, trust]
+keywords: [artificial intelligence, person perception, outsourcing, effort, trust]
 bibliography: bibliography.bib
 engine: knitr
 format:
@@ -112,7 +112,7 @@ crossref:
       caption-location: top
 floatsintext: true
 ---
-
+ 
 ```{r}
 library(kableExtra)
 library(targets)
@@ -179,16 +179,16 @@ and non-social tasks like writing computer code. We know that different norms,
 standards, and expectations can be applied to social and non-social tasks and 
 exchanges [e.g. @Fiske1992; @Heider1958; @Malle2022]. Moreover, from a 
 philosophical perspective, it often matters not only *whether* something is 
-done, but *how* it is done [@Stohr2006]. An apology is not just about hearing 
-someone say "I am sorry", but seeing genuine regret; a love letter is not just 
-about hearing someone say "I love you", but seeing depth of emotion; and a 
-bereavement letter is not just about hearing someone say "I am sorry for your 
-loss", but seeing an understanding for the powerful human experience of loss.
-There is, perhaps especially for social tasks, value not only in the outcome of 
-doing something, but the *process* too [@Goodman2010]. To understand any 
-potential negative effects of outsourcing to AI, we must therefore look at a 
-broad range of non-social and social tasks, rather than draw broad conclusions
-based on a few use cases.
+done, but *how* it is done [@Aristotle2009; @Hursthouse2023; @Stohr2006]. An 
+apology is not just about hearing someone say "I am sorry", but seeing genuine 
+regret; a love letter is not just about hearing someone say "I love you", but 
+seeing depth of emotion; and a bereavement letter is not just about hearing 
+someone say "I am sorry for your loss", but seeing an understanding for the 
+powerful human experience of loss. There is, perhaps especially for social 
+tasks, value not only in the outcome of doing something, but the *process* too 
+[@Goodman2010]. To understand any potential negative effects of outsourcing to 
+AI, we must therefore look at a broad range of non-social and social tasks, 
+rather than draw broad conclusions based on a few use cases.
 
 Third, we need to know how different ways of outsourcing to AI influence 
 negative perceptions. Someone who "fully" outsources a task to AI by simply 
@@ -295,8 +295,7 @@ non-binary / third gender;
 `r sum(str_starts(study2_sample$gender, "Prefer") | is.na(study2_sample$gender))`
 undisclosed gender; mean age = `r round(mean(study2_sample$age), 2)` years).
 `r round(mean(study2_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
-these participants reported having used ChatGPT before (see 
-@suppfig-chatgpt-study1).
+these participants reported having used ChatGPT before.
 
 ### Design
 
@@ -346,7 +345,7 @@ well".
 After the six scenarios, we asked participants several questions about the AI 
 tool ChatGPT, including their familiarity with ChatGPT, whether they had used 
 ChatGPT before, how frequently they used ChatGPT, and how trustworthy they 
-thought ChatGPT was (see @suppfig-chatgpt-study1).
+thought ChatGPT was.
 
 ### Pre-registration
 
@@ -512,8 +511,7 @@ non-binary / third gender;
 `r sum(str_starts(study3_sample$gender, "Prefer") | is.na(study3_sample$gender))`
 undisclosed gender; mean age = `r round(mean(study3_sample$age), 2)` years).
 `r round(mean(study3_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
-these participants reported having used ChatGPT before (see 
-@suppfig-chatgpt-study2).
+these participants reported having used ChatGPT before.
 
 ### Design
 
@@ -741,8 +739,7 @@ non-binary / third gender;
 `r sum(str_starts(study4_sample$gender, "Prefer") | is.na(study4_sample$gender))`
 undisclosed gender; mean age = `r round(mean(study4_sample$age), 2)` years).
 `r round(mean(study4_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
-these participants reported having used ChatGPT before (see 
-@suppfig-chatgpt-study3).
+these participants reported having used ChatGPT before.
 
 ### Design
 
@@ -943,8 +940,7 @@ non-binary / third gender;
 `r sum(str_starts(study5_sample$gender, "Prefer") | is.na(study5_sample$gender))`
 undisclosed gender; mean age = `r round(mean(study5_sample$age), 2)` years).
 `r round(mean(study5_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
-these participants reported having used ChatGPT before (see 
-@suppfig-chatgpt-study4).
+these participants reported having used ChatGPT before.
 
 ### Design
 
@@ -1146,8 +1142,7 @@ non-binary / third gender;
 `r sum(str_starts(study6_sample$gender, "Prefer") | is.na(study6_sample$gender))`
 undisclosed gender; mean age = `r round(mean(study6_sample$age), 2)` years).
 `r round(mean(study6_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
-these participants reported having used AI tools like ChatGPT before (see 
-@suppfig-chatgpt-study5).
+these participants reported having used AI tools like ChatGPT before.
 
 ### Design
 
@@ -1342,19 +1337,20 @@ evaluations. As a participant in our final study put it: "*If he really cared,
 he would have just done it by himself from scratch*" (female, 25 years old).
 
 Our findings cohere with the philosophical idea that there is value in *how* a 
-task was done, and not merely *whether* it was done [@Goodman2010; @Stohr2006]. 
-For many socio-relational tasks, it might seem that part of the constitutive 
-action is the *process* by which it occurs: an apology that does not contain a 
-genuine reflection and commitment to do better, rather than just the words "I am 
-sorry", might not seem to be an apology at all. In contrast, for many of the 
-non-social tasks, it is easier to distinguish the importance of the process from 
-the outcome. In this way, our work suggests that people rarely adopt a purely 
-utilitarian perspective in which outcomes are the sole determinant 
-[@Everett2020; @Kahane2018]. Instead, their judgments cohere more with ideas 
-from virtue ethics about the importance of *doing* [@Stohr2006]. Outsourcing to 
-AI -- especially for social tasks –- may allow us to produce similar outputs, 
-but by severing the outcome from the practice of doing, it may risk the 
-development and maintenance of our human virtues [@Vallor2015].
+task was done, and not merely *whether* it was done [@Aristotle2009; 
+@Goodman2010; @Hursthouse2023; @Stohr2006]. For many socio-relational tasks, it 
+might seem that part of the constitutive action is the *process* by which it 
+occurs: an apology that does not contain a genuine reflection and commitment to 
+do better, rather than just the words "I am sorry", might not seem to be an 
+apology at all. In contrast, for many of the non-social tasks, it is easier to 
+distinguish the importance of the process from the outcome. In this way, our 
+work suggests that people rarely adopt a purely utilitarian perspective in which 
+outcomes are the sole determinant [@Everett2020; @Kahane2018]. Instead, their 
+judgments cohere more with ideas from virtue ethics about the importance of 
+*doing* [@Hursthouse2023; @Stohr2006]. Outsourcing to AI -- especially for 
+social tasks –- may allow us to produce similar outputs, but by severing the 
+outcome from the practice of doing, it may risk the development and maintenance
+of our human virtues [@Vallor2015; @Vallor2024].
 
 AI is often being marketed as being able to help us to do more and more tasks, 
 promising gains of efficiency that align with societal incentives for "hacks" 
@@ -1431,6 +1427,23 @@ at all costs and instead bring back a recognition of the power of
 easier, signals one that is authentic and cares about the task and therefore can 
 help bind us together. In a world of algorithm-mediated interactions, AI is no 
 substitute for investing effort into our interpersonal relationships.
+
+\newpage
+
+# Acknowledgements
+
+This work was generously supported by funding from the Horizon Europe UK 
+Guarantee via the UKRI (EP/Y00440X/1) and a Philip Leverhulme Prize 
+(PLP-2021-095) awarded to JACE.
+
+# Data and Code Availability
+
+All data and original code can be found on GitHub at
+<https://github.com/ScottClaessens/outsourcing>.
+
+# Statement of Interests
+
+The authors have no conflicts of interest to disclose.
 
 \newpage
 
