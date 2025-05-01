@@ -89,7 +89,10 @@ keywords: [artificial intelligence, person perception, outsourcing, effort, trus
 bibliography: bibliography.bib
 engine: knitr
 format:
-  apaquarto-pdf: default
+  apaquarto-pdf:
+    numbered-lines: true
+    include-in-header:
+      text: \nolinenumbers
 execute:
   echo: false
   warning: false
@@ -112,12 +115,14 @@ crossref:
       caption-location: top
 floatsintext: true
 ---
- 
+
 ```{r}
 library(kableExtra)
 library(targets)
 library(tidyverse)
 ```
+
+\linenumbers
 
 The widespread release of generative AI language models has transformed daily 
 life, offering the potential to perform a variety of tasks more efficiently and,
@@ -222,7 +227,7 @@ a love letter to an AI, they might be seen as valuing that love letter and what
 it represents less. It could be this second-step order of perceptions that is
 the key driver of negative perceptions, especially for socio-relational tasks.
 
-## Present Research
+## Present Research {.unnumbered .unlisted}
 
 In this paper, we build on classic social psychological work on character 
 inferences from reduced effort to understand how people view others who
@@ -256,17 +261,17 @@ focusing on perceived effort, authenticity, and care in the task.
 
 \newpage
 
-# Study 1
+# Study 1 {.unnumbered .unlisted}
 
-## Methods
+## Methods {.unnumbered .unlisted}
 
-### Ethical Approval
+### Ethical Approval {.unnumbered .unlisted}
 
 Ethical approval was granted for all studies in this paper by the REDACTED 
 Psychology Research Ethics Panel. Participants in all studies provided
 informed consent and were debriefed after the study.
 
-### Participants
+### Participants {.unnumbered .unlisted}
 
 We conducted a power simulation to determine our target sample size. The 
 simulation suggested that a sample size of 150 participants per condition
@@ -297,7 +302,7 @@ undisclosed gender; mean age = `r round(mean(study2_sample$age), 2)` years).
 `r round(mean(study2_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
 these participants reported having used ChatGPT before.
 
-### Design
+### Design {.unnumbered .unlisted}
 
 We used a "control plus 2x2" between-subjects design. Participants were randomly 
 allocated to either the control condition, in which people in the scenarios 
@@ -310,7 +315,7 @@ or deceptive about their use of AI. This resulted in five conditions overall:
 tool-deception condition, (*iv*) the full-honest condition, and (*v*) the 
 full-deception condition.
 
-### Procedure
+### Procedure {.unnumbered .unlisted}
 
 We presented participants with six scenarios. Each scenario described a person 
 completing a task, such as writing computer code or writing a love letter. The 
@@ -347,12 +352,12 @@ tool ChatGPT, including their familiarity with ChatGPT, whether they had used
 ChatGPT before, how frequently they used ChatGPT, and how trustworthy they 
 thought ChatGPT was.
 
-### Pre-registration
+### Pre-registration {.unnumbered .unlisted}
 
 We pre-registered the study on the Open Science Framework
 (<https://osf.io/xhmzk/?view_only=a4da193574d7410ba4d2aa3945a28b05>).
 
-### Statistical Analysis
+### Statistical Analysis {.unnumbered .unlisted}
 
 We fitted Bayesian multivariate multilevel cumulative-link ordinal models to the
 data using the *brms* R package [@Burkner2017]. We modelled each character 
@@ -362,7 +367,7 @@ intercepts for participants, and varying intercepts and slopes for tasks. We
 used regularising priors for all parameters to impose conservatism on parameter 
 estimates. All models converged normally ($\hat{R}$ ≤ 1.01).
 
-### Transparency and Openness
+### Transparency and Openness {.unnumbered .unlisted}
 
 For all studies in this paper, we report how we determined our sample size, all
 data exclusions, all manipulations, and all measures in the studies. All studies
@@ -373,7 +378,7 @@ generated using the *targets* package [@Landau2021] and *quarto* [@Allaire2024].
 All data and code to reproduce the analyses and figures in this paper can be 
 found here: <https://osf.io/xhmzk/?view_only=a4da193574d7410ba4d2aa3945a28b05>
 
-## Results
+## Results {.unnumbered .unlisted}
 
 We first looked at the overall results averaging over tasks. Across all five 
 character evaluations, we found that fully outsourcing to AI (i.e., copying the 
@@ -455,7 +460,7 @@ Figures [-@suppfig-interactions-study1] and
 perceived more negatively for tasks that have these features, compared to tasks
 without these features.
 
-## Discussion
+## Discussion {.unnumbered .unlisted}
 
 In Study 1, we looked at how people who outsourced to AI in different ways were 
 perceived across a broad range of social and non-social tasks. In line with our 
@@ -478,11 +483,11 @@ human-written text [@Noy2023]. Moreover, it is possible that seeing appropriate
 output could mitigate negative perceptions by highlighting how the AI can in 
 fact perform the task well. We explored these possibilities in Study 2.
 
-# Study 2
+# Study 2 {.unnumbered .unlisted}
 
-## Methods
+## Methods {.unnumbered .unlisted}
 
-### Participants
+### Participants {.unnumbered .unlisted}
 
 We conducted a power simulation to determine our target sample size. The 
 simulation suggested that a sample size of 125 participants per condition 
@@ -513,7 +518,7 @@ undisclosed gender; mean age = `r round(mean(study3_sample$age), 2)` years).
 `r round(mean(study3_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
 these participants reported having used ChatGPT before.
 
-### Design
+### Design {.unnumbered .unlisted}
 
 We randomly allocated participants to one of six conditions in a 3x2 
 between-subjects design. We manipulated the type of outsourcing: (*i*) no 
@@ -521,7 +526,7 @@ outsourcing control, (*ii*) using AI as a tool, and (*iii*) fully outsourcing to
 AI. Here, in contrast to Study 1, we also explicitly manipulated whether the 
 task prompt was social or non-social.
 
-### Procedure
+### Procedure {.unnumbered .unlisted}
 
 We told participants that they would read and evaluate a short piece of writing 
 from "another participant". In reality, we generated the writing using ChatGPT 
@@ -581,7 +586,7 @@ believed the essay response was written in the way we described, suggesting that
 the manipulation was successful (see @supptbl-manipulation-check-study2). We 
 also asked participants several questions about ChatGPT.
 
-### Pre-registration
+### Pre-registration {.unnumbered .unlisted}
 
 We pre-registered the study on the Open Science Framework[^1].
 
@@ -590,7 +595,7 @@ Science Framework, the timestamp for the registration was lost. However, on our
 OSF project (<https://osf.io/xhmzk/?view_only=a4da193574d7410ba4d2aa3945a28b05>), it is possible to view our 
 pre-registration document file and its timestamped upload date.
 
-### Statistical Analysis
+### Statistical Analysis {.unnumbered .unlisted}
 
 We fitted two Bayesian multilevel models to the data. The first model was a 
 multivariate cumulative-link ordinal model including all Likert scales as 
@@ -602,7 +607,7 @@ essay answers. We used regularising priors for all parameters to impose
 conservatism on parameter estimates. All models converged normally 
 ($\hat{R}$ ≤ 1.01).
 
-## Results
+## Results {.unnumbered .unlisted}
 
 We first looked at character evaluations. We found that even when provided with 
 concrete output, people were still perceived more negatively across all 
@@ -670,7 +675,7 @@ tar_read(table_treatment_diffs_effects_study3) %>%
   knitr::asis_output()
 ```
 
-## Discussion
+## Discussion {.unnumbered .unlisted}
 
 In Study 2, we turned to look at how people perceived both the outsourcer and 
 the outsourced work when given specific output in a social or non-social task 
@@ -708,11 +713,11 @@ negative perceptions of outsourcing to be mitigated when the person uses a
 personalised LLM and expends significant effort on formulating prompts for the 
 AI.
 
-# Study 3
+# Study 3 {.unnumbered .unlisted}
 
-## Methods
+## Methods {.unnumbered .unlisted}
 
-### Participants
+### Participants {.unnumbered .unlisted}
 
 ```{r}
 study4_sample <-
@@ -741,7 +746,7 @@ undisclosed gender; mean age = `r round(mean(study4_sample$age), 2)` years).
 `r round(mean(study4_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
 these participants reported having used ChatGPT before.
 
-### Design
+### Design {.unnumbered .unlisted}
 
 We used the same "control plus 2x2" between-subjects design as in Study 1. In 
 the experimental conditions, we manipulated whether people in the scenarios used
@@ -754,7 +759,7 @@ was inspired by recent psychological work looking at the credit-blame asymmetry
 in AI use [@Earp2024], showing that people receive more personal credit for 
 their work when they use an AI model trained on their own prior writings.
 
-### Procedure
+### Procedure {.unnumbered .unlisted}
 
 The procedure was mostly identical to Study 1 to allow us to explore effects 
 across a range of tasks, but we updated the study preamble and the presentation 
@@ -788,17 +793,17 @@ output was meaningfully authentic in the way that mattered (see Discussion), our
 participants agreed that using a personalised AI was at least more authentic 
 than using a generic one.
 
-### Pre-registration
+### Pre-registration {.unnumbered .unlisted}
 
 We pre-registered the study on the Open Science Framework
 (<https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>).
 
-### Statistical Analysis
+### Statistical Analysis {.unnumbered .unlisted}
 
 We fitted the same Bayesian multivariate multilevel cumulative-link ordinal 
 models as in Studies 1 and 2. All models converged normally ($\hat{R}$ ≤ 1.01).
 
-## Results
+## Results {.unnumbered .unlisted}
 
 We first looked across all the tasks. On average, we found that people who 
 outsourced to AI in a low effort way were perceived as less competent, less 
@@ -870,7 +875,7 @@ tar_read(plot_treatments_tasks_study4)
 
 :::
 
-## Discussion
+## Discussion {.unnumbered .unlisted}
 
 In Study 3, we found that effort is an important mechanism by which outsourcing 
 to AI leads to negative character evaluations. People who engaged in effortless 
@@ -911,11 +916,11 @@ counteract inferences about care for the task by explicitly telling participants
 that someone had a good reason for using AI: that they really cared about the 
 task and used AI because they wanted to get it right.
 
-# Study 4
+# Study 4 {.unnumbered .unlisted}
 
-## Methods
+## Methods {.unnumbered .unlisted}
 
-### Participants
+### Participants {.unnumbered .unlisted}
 
 ```{r}
 study5_sample <-
@@ -942,7 +947,7 @@ undisclosed gender; mean age = `r round(mean(study5_sample$age), 2)` years).
 `r round(mean(study5_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
 these participants reported having used ChatGPT before.
 
-### Design
+### Design {.unnumbered .unlisted}
 
 We used the same "control plus 2x2" between-subjects design as in Studies 1 and 
 3. In the experimental conditions, we manipulated whether people in the 
@@ -952,7 +957,7 @@ bad or good reasons for using AI. This resulted in five conditions overall:
 tool-good-reason condition, (*iv*) the full-bad-reason condition, and (*v*) the 
 full-good-reason condition.
 
-### Procedure
+### Procedure {.unnumbered .unlisted}
 
 The procedure was mostly identical to Study 3, with two changes. First, we 
 reduced the number of tasks, focusing on eight tasks (four "social" tasks and 
@@ -980,17 +985,17 @@ In addition to the five character evaluations, on each page we also asked
 participants, on a 7-point Likert scale, how much they thought the person cared
 about the task.
 
-### Pre-registration
+### Pre-registration {.unnumbered .unlisted}
 
 We pre-registered the study on the Open Science Framework
 (<https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>).
 
-### Statistical Analysis
+### Statistical Analysis {.unnumbered .unlisted}
 
 We fitted the same Bayesian multivariate multilevel cumulative-link ordinal 
 models as in Studies 1 and 3. All models converged normally ($\hat{R}$ ≤ 1.01).
 
-## Results
+## Results {.unnumbered .unlisted}
 
 We first looked across all the tasks. In line with our previous results, we 
 found that people who fully outsourced to AI by copying the output verbatim were 
@@ -1079,7 +1084,7 @@ to when they used it because they cared about doing the task well. The same was
 not true for non-social tasks like writing computer code or solving a 
 mathematical equation.
 
-## Discussion
+## Discussion {.unnumbered .unlisted}
 
 In Study 4, we attempted to counteract the potential perception that outsourcing 
 to AI reflects caring less about the task by explicitly informing participants 
@@ -1107,11 +1112,11 @@ test their combined associations with character evaluations. To do this, we
 focus on a single socio-relational task –- writing a love letter –- which we 
 elaborate for participants with a more detailed vignette.
 
-# Study 5
+# Study 5 {.unnumbered .unlisted}
 
-## Methods
+## Methods {.unnumbered .unlisted}
 
-### Participants
+### Participants {.unnumbered .unlisted}
 
 We conducted a power simulation to determine our target sample size. The 
 simulation suggested that a sample size of 200 participants per condition 
@@ -1144,14 +1149,14 @@ undisclosed gender; mean age = `r round(mean(study6_sample$age), 2)` years).
 `r round(mean(study6_sample$chatgpt_used == "Yes", na.rm = TRUE) * 100, 0)`% of
 these participants reported having used AI tools like ChatGPT before.
 
-### Design
+### Design {.unnumbered .unlisted}
 
 We randomly allocated participants into one of three conditions in a 
 between-subjects design: (*i*) the control condition, (*ii*) the tool 
 outsourcing condition, or (*iii*) the full outsourcing condition. These 
 conditions determined how the scenario was presented to participants.
 
-### Procedure
+### Procedure {.unnumbered .unlisted}
 
 We presented participants with a vignette about a person, Adam, who is writing a
 love letter in a Valentine's Day card to his partner (see Supplementary 
@@ -1183,12 +1188,12 @@ response questions, we asked participants to explain how they felt towards Adam
 and how they would feel if they were Adam's partner. Finally, we asked
 participants several questions about AI tools like ChatGPT.
 
-### Pre-registration
+### Pre-registration {.unnumbered .unlisted}
 
 We pre-registered the study on the Open Science Framework
 (<https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>).
 
-### Statistical Analysis
+### Statistical Analysis {.unnumbered .unlisted}
 
 We fitted two Bayesian regression models to the data. The first model was a 
 multivariate cumulative-link ordinal model including all Likert scales as 
@@ -1200,7 +1205,7 @@ evaluations as a single latent variable. We used regularising priors for all
 parameters to impose conservatism on parameter estimates. All models converged 
 normally ($\hat{R}$ ≤ 1.01).
 
-## Results
+## Results {.unnumbered .unlisted}
 
 Across all measures, we found that outsourcing the love letter to AI was 
 perceived more negatively compared to the control condition and that fully 
@@ -1273,7 +1278,7 @@ authenticity and care.
 tar_read(plot_path_model_study6)
 ```
 
-# General Discussion
+# General Discussion {.unnumbered .unlisted}
 
 The release of openly available generative AI LLMs has changed lives, promising 
 to let people do more tasks, more efficiently, and perhaps to do so better than 
@@ -1381,7 +1386,7 @@ tasks could have serious and unintended consequences on the way we connect with
 one another, serving to further weaken the social ties that bind us into a 
 community.
 
-## Limitations and Directions for Future Research
+## Limitations and Directions for Future Research {.unnumbered .unlisted}
 
 The studies in this paper are not without their limitations. While we included a 
 range of different socio-relational and professional tasks in an effort to 
@@ -1410,7 +1415,7 @@ functions beyond "normal" levels [@Medaglia2019; @Rudski2014]. Future research
 should explore whether negative perceptions of outsourcing persist when AI is 
 used in a reparative way.
 
-## Conclusions
+## Conclusions {.unnumbered .unlisted}
 
 To conclude, across five pre-registered studies, we have demonstrated negative 
 perceptions of outsourcing to AI. Our participants perceived individuals who 
@@ -1429,23 +1434,24 @@ help bind us together. In a world of algorithm-mediated interactions, AI is no
 substitute for investing effort into our interpersonal relationships.
 
 \newpage
+\nolinenumbers
 
-# Acknowledgements
+# Acknowledgements {.unnumbered .unlisted}
 
 This work was generously supported by funding from REDACTED.
 
-# Data and Code Availability
+# Data and Code Availability {.unnumbered .unlisted}
 
 All data and original code can be found here:
 <https://osf.io/ac9g3/?view_only=912d9b57023d49baa87eea999574f0ce>.
 
-# Statement of Interests
+# Statement of Interests {.unnumbered .unlisted}
 
 The authors have no conflicts of interest to disclose.
 
 \newpage
 
-# References
+# References {.unnumbered .unlisted}
 
 <!-- References will auto-populate in the refs div below -->
 
