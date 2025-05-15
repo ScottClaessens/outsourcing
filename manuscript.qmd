@@ -60,7 +60,7 @@ author-note:
     deceased: ~
   disclosures:
     study-registration: This pre-print is currently not yet peer-reviewed, and may differ from the final version.
-    data-sharing: Word count (excl. Methods and Results) = 4619 words.
+    data-sharing: Word count = 9119 words.
     related-report: ~
     conflict-of-interest: ~
     financial-support: ~
@@ -114,6 +114,17 @@ crossref:
       latex-list-of-description: Supplementary Table
       caption-location: top
 floatsintext: true
+impact-statement: >
+  People form negative impressions of individuals who use artificial 
+  intelligence tools to complete tasks for them, especially interpersonal tasks
+  like writing love letters or apology notes. This occurs even when they use AI 
+  as a tool instead of a replacement, are honest about it, and use AI because 
+  they care about doing the task well. We show that doing something oneself, 
+  even if AI could do it quicker and easier, signals that one is authentic and 
+  cares about the task. Our results highlight that people do not only care about 
+  whether something is done, but how it is done too.
+language:
+  title-impact-statement: "Significance Statement"
 ---
 
 ```{r}
@@ -137,9 +148,11 @@ that it potentially has serious effects on how we judge others. In a recent
 Reddit post, a disgruntled newlywed tells the story of her husband using ChatGPT
 to write his wedding vows, expressing her discomfort with outsourcing something
 to AI that, to her, is deeply meaningful and a reflection of their love for one 
-another [@miramar0]. Outsourcing tasks -- especially socio-relational ones -- to
-AI tools may be efficient, but could have negative consequences for person 
-perception.
+another [@miramar0]. Other reports describe people's negative reactions when
+they learn that their romantic partner used ChatGPT to write them an apology 
+note [@Tait2024] or even to break up with them [@Anderson2025]. Outsourcing 
+tasks -- especially socio-relational ones -- to AI tools may be efficient, but 
+could have negative consequences for person perception.
 
 There is nothing new, in principle, about outsourcing tasks. For hundreds of 
 years, personal assistants have organised daily schedules, recipe-books have 
