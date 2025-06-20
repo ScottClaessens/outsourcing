@@ -1,10 +1,12 @@
+library(crew)
 library(targets)
 library(tarchetypes)
 library(tidyverse)
 
 # set options for targets and source R functions
-tar_option_set(packages = c("brms", "kableExtra", "ordinal", "patchwork",
-                            "tidyverse"))
+tar_option_set(
+  packages = c("brms", "kableExtra", "ordinal", "patchwork", "tidyverse")
+  )
 tar_source()
 
 # targets pipeline
@@ -46,7 +48,7 @@ list(
   #### Study 1 ####
   
   # calculate power
-  tar_target(study1_power, calculate_power_study1(n = 300, effect_size = -0.4)),
+  #tar_target(study1_power, calculate_power_study1(n = 300, effect_size = -0.4)),
   # study 1 data file
   tar_target(study1_data_file, "data/study1/study1_data_clean.csv", 
              format = "file"),
@@ -198,7 +200,7 @@ list(
   #### Study 3 ####
   
   # calculate power for study 3 
-  tar_target(study3_power, calculate_power_study3(n = 250, effect_size = -0.7)),
+  #tar_target(study3_power, calculate_power_study3(n = 250, effect_size = -0.7)),
   # study 3 data file
   tar_target(study3_data_file, "data/study3/study3_data_clean.csv",
              format = "file"),
@@ -402,7 +404,7 @@ list(
   #### Study 6 ####
   
   # calculate power for study 6
-  tar_target(study6_power, calculate_power_study6(n = 400, effect_size = -0.5)),
+  #tar_target(study6_power, calculate_power_study6(n = 400, effect_size = -0.5)),
   # study 6 data file
   tar_target(study6_data_file, "data/study6/study6_data_clean.csv", 
              format = "file"),
