@@ -23,14 +23,14 @@ create_table_tasks <- function() {
       "Generating a shopping list",
       "Writing a dinner recipe"
     ),
-    `Pilot Study 1` = rep("$\\checkmark$", 20),
-    `Pilot Study 2` = rep("$\\checkmark$", 20),
-    `Study 1` = rep("$\\checkmark$", 20),
-    `Study 2` = c(rep("$\\checkmark$", 3), rep("", 3), 
-                  rep("$\\checkmark$", 10), "",
-                  rep("$\\checkmark$", 3)),
-    `Study 4` = c(rep("$\\checkmark$", 2), rep("", 4), 
-                  rep("$\\checkmark$", 2), rep("", 2),
-                  rep("$\\checkmark$", 4), rep("", 6))
+    `Pilot Study` = rep("\U2713", 20),
+    `Study 1` = rep("\U2713", 20),
+    `Study 2` = rep("\U2713", 20),
+    `Study 4` = c(rep("\U2713", 3), rep("", 3), 
+                  rep("\U2713", 10), "",
+                  rep("\U2713", 3)),
+    `Study 5` = c(rep("\U2713", 2), rep("", 4), 
+                  rep("\U2713", 2), rep("", 2),
+                  rep("\U2713", 4), rep("", 6))
   )
 }

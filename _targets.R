@@ -5,7 +5,7 @@ library(tidyverse)
 
 # set options for targets and source R functions
 tar_option_set(
-  packages = c("brms", "kableExtra", "ordinal", "patchwork", "tidyverse")
+  packages = c("brms", "flextable", "ordinal", "patchwork", "tidyverse")
   )
 tar_source()
 
@@ -450,6 +450,6 @@ list(
   #### Manuscript ####
   
   # write manuscript file
-  tar_quarto(manuscript, "manuscript.qmd")
+  tar_quarto(manuscript, "manuscript.qmd", quiet = FALSE)
 
 )
