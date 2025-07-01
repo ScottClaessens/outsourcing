@@ -60,13 +60,13 @@ author-note:
     deceased: ~
   disclosures:
     study-registration: This pre-print is currently not yet peer-reviewed, and may differ from the final version.
-    data-sharing: Word count = 10,574 words.
+    data-sharing: Word count (excl. title page, figures, and tables) = 11,702 words.
     related-report: ~
     conflict-of-interest: ~
     financial-support: ~
     gratitude: ~
     authorship-agreements: ~
-abstract: As artificial intelligence (AI) tools become increasingly integrated into daily life, people are beginning to outsource not only professional tasks but also socio-relational ones. Large language models like ChatGPT can generate wedding vows, speeches, and personal messages, raising questions about how individuals who use AI for such tasks are perceived by others. In this paper, we conduct six pre-registered studies with British participants (N = 3,935) to understand how people view those who expend less effort by outsourcing tasks to AI in different ways. We show that outsourcing makes us think more negatively about not only the person and their motivations, but also the outsourced work itself. Advancing previous work on effort, we show that the specific kind of task that people outsource -- and therefore expend less effort on -- matters; that reduced effort does not lead to uniformly negative character perceptions across different tasks; and that effort is important because it signals second-order judgments that people are being less authentic and care less about the task. Our research highlights the way that AI use shapes our perceptions of people, raising key philosophical questions about efficiency, authenticity, and social ties in a world filled with AI-mediated interactions.
+abstract: People are increasingly outsourcing professional and socio-relational tasks to artificial intelligence (AI). In six pre-registered studies with British participants (N = 3,935), we explore how and why people form negative character judgments about those who outsource tasks to AI (and humans) in different ways. We show that outsourcing makes us think more negatively about not only the person and their motivations, but also the outsourced work itself. Advancing previous work on effort, we show that the specific kind of task that people outsource matters; that reduced effort does not lead to uniformly negative character perceptions across different tasks; and that effort is important because it signals second-order judgments that people are being less authentic and care less about the task. Our research highlights the way that AI use shapes our perceptions of people, raising key philosophical questions about efficiency and authenticity in a world filled with AI-mediated interactions.
 keywords: [artificial intelligence, person perception, outsourcing, effort, trust]
 bibliography: bibliography.bib
 engine: knitr
