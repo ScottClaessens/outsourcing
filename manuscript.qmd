@@ -60,13 +60,13 @@ author-note:
     deceased: ~
   disclosures:
     study-registration: This pre-print is currently not yet peer-reviewed, and may differ from the final version.
-    data-sharing: Word count = 10,574 words.
+    data-sharing: Word count (excluding abstract, figure/table legends, and references) = 10,408 words.
     related-report: ~
     conflict-of-interest: ~
     financial-support: ~
     gratitude: ~
     authorship-agreements: ~
-abstract: As artificial intelligence (AI) tools become increasingly integrated into daily life, people are beginning to outsource not only professional tasks but also socio-relational ones. Large language models like ChatGPT can generate wedding vows, speeches, and personal messages, raising questions about how individuals who use AI for such tasks are perceived by others. In this paper, we conduct six pre-registered studies with British participants (N = 3,935) to understand how people view those who expend less effort by outsourcing tasks to AI in different ways. We show that outsourcing makes us think more negatively about not only the person and their motivations, but also the outsourced work itself. Advancing previous work on effort, we show that the specific kind of task that people outsource -- and therefore expend less effort on -- matters; that reduced effort does not lead to uniformly negative character perceptions across different tasks; and that effort is important because it signals second-order judgments that people are being less authentic and care less about the task. Our research highlights the way that AI use shapes our perceptions of people, raising key philosophical questions about efficiency, authenticity, and social ties in a world filled with AI-mediated interactions.
+abstract: "As artificial intelligence (AI) tools become increasingly integrated into daily life, people are beginning to outsource not only professional tasks but also socio-relational ones. Large language models like ChatGPT can generate wedding vows, speeches, and personal messages, raising questions about how individuals who use AI for such tasks are perceived by others. In this paper, we conduct six pre-registered studies with British participants (N = 3,935) to understand how people view those who expend less effort by outsourcing tasks to AI in different ways. We highlight a tradeoff between efficiency and inferred moral character, authenticity, and value: outsourcing makes us think more negatively about not only the person and their motivations, but also the outsourced work itself. Moreover, we show that this effect is not uniform but especially pronounced for more socio-relational tasks; that reduced effort does not lead to uniformly negative character perceptions across different tasks; and the reason that effort is important is because it signals second-order judgments that people are being less authentic and care less about the task. Our research highlights the way that AI use shapes our perceptions of people, raising key philosophical questions about efficiency, authenticity, and social ties in a world filled with AI-mediated interactions."
 keywords: [artificial intelligence, person perception, outsourcing, effort, trust]
 bibliography: bibliography.bib
 engine: knitr
@@ -120,39 +120,30 @@ another [@miramar0]. Other reports describe people's negative reactions when
 they learn that their romantic partner used ChatGPT to write them an apology 
 note [@Tait2024] or even to break up with them [@Anderson2025]. Outsourcing 
 tasks -- especially socio-relational ones -- to AI tools may be efficient, but 
-could have negative consequences for person perception.
+this efficiency could trade off against inferred moral character, authenticity, 
+and value.
 
-There is nothing new, in principle, about outsourcing tasks. For hundreds of 
-years, personal assistants have organized daily schedules, recipe-books have 
-provided meal plans, and guidebooks have created travel itineraries. In the 
-socio-relational domain, ghostwriters have long-existed, and the internet is 
-abound with professional paid services for writing wedding vows and personal 
-speeches. AI merely supercharges what is an ancient human impulse: the push to 
-reduce mental energy by outsourcing parts of our work onto people, books, tools,
-or systems. But even if outsourcing is an old phenomenon, the rapid shift in 
-availability and use of AI models has fundamentally changed the ease with which
-people can outsource work, what kinds of tasks they can outsource, and the way
-in which they can outsource. These new developments in society mean that even as
-an old phenomenon in new clothes, there is much we still need to know about
-outsourcing.
-
-First, we need to know how people who outsource tasks to AI specifically are 
-perceived. We know that people are increasingly using large language models 
-(LLMs) for a wide variety of tasks [@UKGov2024]. Due to their ubiquity, perhaps 
-outsourcing to LLMs might not lead to negative perceptions? We are sceptical. We 
-know that people dislike it when others "free ride" or reduce effort while 
-benefiting from collective resources [e.g. @Cubitt2011; @Kerr1983] and that 
-people's outputs are perceived as more valuable the more effort was ostensibly 
-put into them [@Kruger2004]. Moreover, exertion of effort is deemed morally 
-admirable and is rewarded, even in situations where effort does not directly 
-generate additional product, quality, or economic value, suggesting that effort 
-itself is moralized [@Celniker2023]. While outsourcing and reduced effort are
-not synonymous, it seems the core social psychological processes are likely to
-be similar: when someone outsources a task instead of doing it themselves, they
-are expending less effort to achieve their goal, and people value effort. 
-Indeed, some work shows that describing someone as using AI for a relational 
-task led to the perception they expended less effort and were less satisfied 
-with their relationship [@Liu2024]. Other work finds that people receive more 
+In a world where the landscape of expending effort has changed through large
+language models (LLMs), we need to know how people who outsource tasks to AI 
+are perceived -- and why. We know that people are increasingly using LLMs for a 
+wide variety of tasks [@UKGov2024]. Due to their ubiquity and their labelled 
+intention as a tool for efficiency, perhaps outsourcing to LLMs might not not 
+have consequences for perceived character? We are sceptical. We know that people
+dislike it when others "free ride" or reduce effort while benefiting from 
+collective resources [e.g. @Cubitt2011; @Kerr1983] and that people's outputs are
+perceived as more valuable the more effort was ostensibly put into them 
+[@Kruger2004]. And while there is much less attention paid in social psychology
+to how expending effort shapes perceptions of character, the evidence there is 
+suggests that exertion of effort is deemed morally admirable and is rewarded, 
+even in situations where effort does not directly generate additional product, 
+quality, or economic value, suggesting that effort itself is moralized 
+[@Celniker2023]. While outsourcing and reduced effort are not synonymous, it 
+seems the core social psychological processes are likely to be similar: when 
+someone outsources a task instead of doing it themselves, they are expending 
+less effort to achieve their goal, and people value effort. Indeed, the scant 
+recent work that does exist suggests that describing someone as using AI for a 
+relational task led to the perception they expended less effort and were less 
+satisfied with their relationship [@Liu2024] and that people receive more 
 negative social evaluations if they use AI to complete assignments at school and
 at work [@Reif2025; @Roth2025]. We do not know, however, how outsourcing -- and 
 therefore, presumably, expending less effort -- might be different for a human 
@@ -166,89 +157,83 @@ domain in which it is expended (or not) should have little impact. However,
 there are reasons to expect differences between social tasks like writing vows 
 and non-social tasks like writing computer code. We know that different norms,
 standards, and expectations can be applied to social and non-social tasks and 
-exchanges [e.g. @Fiske1992; @Heider1958; @Malle2022]. Moreover, from a 
-philosophical perspective, it often matters not only *whether* something is 
-done, but *how* it is done [@Aristotle2009; @Hursthouse2023; @Stohr2006]. An 
-apology is not just about hearing someone say "I am sorry", but seeing genuine 
-regret; a love letter is not just about hearing someone say "I love you", but 
-seeing depth of emotion; and a bereavement letter is not just about hearing 
-someone say "I am sorry for your loss", but seeing an understanding for the 
-powerful human experience of loss. There is, perhaps especially for social 
-tasks, value not only in the outcome of doing something, but the *process* too 
-[@Goodman2010]. Previous work on the role of effort, however, has tended to 
-focus on a limited number of tasks, looking at how people judge the quality of 
-products like paintings, poems, or suits of armour based on how much effort is 
-perceived [@Kruger2004] or how people judge others who expend more or less 
-effort in employment and physical effort like marathon running [@Celniker2023]. 
-Yet the number of tasks that people can outsource –- and therefore, presumably, 
-expend less effort –- is vast, and these tasks can vary in different ways. 
-Different kinds of tasks that people can outsource can be more or less socially 
-relevant, more or less consequential, and more or less likely to impact others: 
-it is likely that whether someone puts effort into a socially-relevant task like 
-planning a friend's birthday party or writing an apology letter would have 
-stronger effects on perceived morality than whether they put effort into writing 
-computer code or planning a daily schedule – yet this reminds untested. To 
-understand any potential negative effects of outsourcing -- to AI or to humans 
--- we must therefore look at a broad range of non-social and social tasks, 
-rather than draw broad conclusions based on a few use cases.
+exchanges [e.g. @Fiske1992; @Heider1958; @Malle2022] and that what people want 
+and expect from different kinds of relationships (and, therefore, associated 
+tasks) varies [@Clark2012]. Indeed, from a philosophical perspective, it often 
+matters not only *whether* something is done, but *how* it is done 
+[@Aristotle2009; @Hursthouse2023; @Stohr2006]. An apology is not just about 
+hearing someone say "I am sorry", but seeing genuine regret; a love letter is 
+not just about hearing someone say "I love you", but seeing depth of emotion; 
+and a bereavement letter is not just about hearing someone say "I am sorry for 
+your loss", but seeing an understanding for the powerful human experience of 
+loss. There is, perhaps especially for social tasks, value not only in the 
+outcome of doing something, but the *process* too [@Goodman2010]. Previous work
+on the role of effort, however, has seemed to suggest that effort should be 
+uniformly important regardless of domain and has tended to focus on a limited 
+number of tasks, looking at how people judge the quality of products like 
+paintings, poems, or suits of armour based on how much effort is perceived 
+[@Kruger2004] or how people judge others who expend more or less effort in 
+employment and physical effort like marathon running [@Celniker2023]. Yet the 
+number of tasks that people can outsource – and therefore, presumably, expend 
+less effort on – is vast, and these tasks can vary in different ways that seem 
+likely to have very different consequences for person perception. Different 
+kinds of tasks that people can outsource can be more or less socially relevant, 
+more or less consequential, and more or less likely to impact others: whether 
+someone uses AI to spend less time planning a friend's birthday party or writing
+an apology letter seems intuitively to be a different kind of thing than using
+AI to spend less time writing a daily schedule or computer code to present a 
+figure in an academic paper. To understand any potential negative effects of 
+outsourcing -- to AI or to humans -- we must therefore look at a broad range of 
+non-social and social tasks to understand not only potential generalizability 
+but also *differences*.
 
-Third, we need to know how outsourcing may shape different kinds of social 
-perceptions. People can judge others on separate dimensions of warmth and 
-competence [e.g., @Abele2021; @Fiske2007] as well as on dimensions of morality 
-and trustworthiness [@Goodwin2014]. It remains unclear how outsourcing to AI 
-might lead to differential character judgments across these different 
-dimensions. For example, @Kruger2004 focus on judgments of the output, but not 
-the person, and while @Celniker2023 include the core social dimensions of 
-warmth, morality, and trustworthiness, we do not know how these character 
-ratings would be affected by outsourcing to an AI (as well as a human) and how 
-this might differ from laziness as a distinct trait. And, most importantly, we 
-do not know how outsourcing different kinds of tasks might influence different 
-perceptions: does outsourcing in the social domain lead to particularly negative 
-effects on warmth, morality, and trustworthiness?
+Third, we need to know how different *ways* of outsourcing to AI influence 
+negative perceptions. There are many different ways that people can use LLMs, 
+and someone who "fully" outsources a task to AI by simply giving it a prompt and
+copying the output word-for-word might be perceived very differently to someone
+who gives the AI a prompt, revises the work accordingly, and finishes it 
+themselves -- using AI as a *collaborative tool*, rather than as a replacement.
+Similarly, someone could deceive others about their use of AI or be perfectly 
+honest about it, and someone could use AI because they are in a rush or because
+the task is important to them and they want to get it right. In all cases people
+are expending less effort, but the way they do this is different and it remains
+unclear how much this influences perceptions, and whether using AI in this way
+is sufficient to eliminate negative perceptions: if someone does not do the task
+fully themselves but uses an AI tool in the "best" way (by using it as a 
+collaborative tool, being open about their use of AI, and having a good reason 
+for using AI), would they still suffer negative social consequences from doing 
+so?
 
-Fourth, we need to know how different *ways* of outsourcing to AI influence 
-negative perceptions. Someone who "fully" outsources a task to AI by simply 
-giving it a prompt and copying the output word-for-word might be perceived very
-differently to someone who gives the AI a prompt, revises the work accordingly,
-and finishes it themselves -- using AI as a *collaborative tool*, rather than as
-a replacement. Similarly, someone could deceive others about their use of AI or
-be perfectly honest about it, and someone could use AI because they are in a 
-rush or because the task is important to them and they want to get it right. 
-While it seems reasonable to assume that "fully" outsourcing would be perceived 
-worse than using AI as a collaborative tool, and that not acknowledging AI use 
-would be perceived worse than being honest about it, it remains unclear how much 
-this reduces negative perceptions: if someone uses AI in the "best" way (by 
-using it as a collaborative tool, being open about their use of AI, and having a 
-good reason for using AI), would they still suffer negative social consequences 
-from doing so?
-
-Fifth, we need to understand *why* outsourcing to AI, and therefore expending 
-less effort, might have these effects. Previous work has focused on how 
-expending less effort directly leads to negative perceptions of others 
-[@Celniker2023]. But this raises the question of *why* effort is seen as 
-important and what exactly it is signalling to others, beyond one's general 
-cooperative intent. It is possible that outsourcing leads to negative 
-perceptions because the lack of effort spent on the task signals something more 
-fundamental about how authentic one is and how much one cares about the task: 
-when someone chooses to outsource a love letter to an AI, they might be seen as 
-valuing that love letter and what it represents less. It could be this 
-second-step order of perceptions that is the key driver of negative perceptions, 
-and this, in turn, could especially be so for the kinds of tasks that are more 
-socially relevant.
+Fourth, we need to understand *why* outsourcing to AI, and therefore expending 
+less effort, might have these effects. Why is it that delegating to an AI might
+have negative consequences for person perception – especially if people are, in
+one sense, only using the AI tool in the precise way it has been designed and 
+marketed? Previous work has focused on how expending less effort directly leads
+to negative perceptions of others [@Celniker2023]. But this raises the question
+of *why* effort is seen as important and what exactly it is signalling to
+others, beyond one's general cooperative intent. It is possible that outsourcing
+leads to negative perceptions because the lack of effort spent on the task
+signals something more fundamental about how authentic one is and how much one
+cares about the task: when someone chooses to outsource a love letter to an AI,
+they might be seen as valuing that love letter and what it represents less. It
+could be this second-step order of perceptions that is the key driver of
+negative perceptions, and this, in turn, could especially be so for the kinds of
+tasks that are more socially relevant.
 
 ## Present Research
 
-In this paper, we build on classic social psychological work on character 
-inferences from reduced effort to understand how people view others who
-outsource different kinds of tasks, in different ways, for different reasons, to
-AI. Across six pre-registered experiments with British participants, we seek
-not only to understand how reduced effort through AI-outsourcing might shape
-perceptions of others, but also advance previous theoretical work on the
-moralization of effort [@Celniker2023]. Moving beyond a focus on how effort 
-itself shapes character judgments, we seek to provide deeper theoretical nuance 
-into why effort is important: not only because effort itself is intrinsically 
-moralized, but that expending effort gives rise to second-order inferences that 
-independently influence character judgments.
+In this paper, we explore how people perceive others who outsource different 
+kinds of tasks, in different ways, for different reasons, to AI. Across six 
+pre-registered experiments with British participants, we seek not only to 
+understand how reduced effort through AI-outsourcing might shape perceptions of 
+others, but also advance previous theoretical work on the moralization of effort
+[@Celniker2023]. Moving beyond a focus on how effort itself shapes character 
+judgments uniformly across different domains, we seek to provide deeper 
+theoretical nuance into why effort is important: that effort might be 
+particularly important for socio-relational tasks, not only because effort 
+itself is intrinsically moralized, but because expending effort gives rise to 
+second-order inferences that independently influence character judgments about
+authenticity and care.
 
 In Study 1, we explore the perceptions of people who outsource a range of tasks 
 to AI or another person, compared to when they complete the tasks by themselves.
@@ -1086,21 +1071,19 @@ Interestingly, we found no effect of authenticity as proxied by the use of a
 personalized AI that is trained on one's own prior writings compared to a 
 standard AI like ChatGPT. There are different explanations of this: it is 
 possible that authenticity is not an important mechanism underlying the effect 
-of outsourcing on negative character evaluations; it is possible that 
-authenticity is important but our specific manipulation did not move the needle 
-on authenticity enough to impact character evaluations; and it is possible that 
-outsourcing to a personalized AI simply is not enough to overcome negative 
-perceptions. While previous work has found an effect of personalized AI models 
-on perceived credit [@Earp2024], and the majority of participants in our study 
-stated that the personalized AI was more authentic than a standard model like 
-ChatGPT, perceptions of *meaningful* authenticity in our study may have remained
-low even with the personalized AI model. An AI could be perfectly trained on all
-apologies that a person has ever written, but one might still think that a 
-specific apology it then generates in a new instance is not an *authentic* 
-apology. Therefore, even if people were described as outsourcing to an AI that 
-was trained on their own writing and therefore personalized, participants still
-may not have seen the specific output as being meaningfully authentic in the way
-that matters for character judgments.
+of outsourcing on negative character evaluations, but it could also suggest that
+even using an personalized LLM still does not make someone truly authentic, in
+the same way that we found even people who are honest and used AI as a tool are
+still judged negatively for social tasks particularly. That is, while the 
+majority of participants in our study stated that the personalized AI was more 
+authentic than a standard model like ChatGPT, using a personalized LLM is still
+not meaningfully authentic because of its nature: that this is a feature of the
+phenomenon, not a bug. An AI could be perfectly trained on all apologies that a 
+person has ever written, but one might still think that a specific apology it 
+then generates in a new instance is not an *authentic* apology because it does 
+not come from the kind of processes deemed important in an apology: a personal 
+recollection of the wrong, a commitment to change. An apology written by an AI, 
+even in someone's own style, is still arguably not an actual apology.
 
 In Study 5, we turn to look at a third potential mechanism: a perceived lack of 
 importance attached to the task. When participants read about someone who 
@@ -1493,27 +1476,28 @@ if so, why? In this paper, across six pre-registered experiments, we show how
 and why AI-outsourcing shapes perceptions of others in a world where outsourcing 
 has never been easier and cheaper.
 
-Psychologists have long been interested in the apparent paradox of effort: it is 
-both costly and valued [see @Inzlicht2018]. In more recent years, scholars have 
-turned to consider not only why people might value effort itself, but how (not) 
-expending effort shapes how we are viewed by others. @Celniker2023 argue that 
-effort is moralized because people seem to infer positive moral character and 
-cooperative intent from effort. But yet it has been unclear how outsourcing 
-itself, and not reduced effort per se, may shape judgments, especially when
-people outsource to artificial agents. Moreover, previous work looking at effort 
-has tended to focus on a small number of examples that are not the most socially 
-impactful: looking at how people judge the quality of products like paintings, 
-poems, or suits of armor based on how much effort is perceived [@Kruger2004] or 
-looking at how people judge others who expend more or less effort in employment 
-and physical exercise [@Celniker2023] or, in the context of AI, those who use AI 
-for work [@Reif2025]. But it has remained unclear how we might view others who 
-outsource to AI; how these effects might vary based on how socio-relational the 
-task is; how different ways of outsourcing and expending less effort influence 
-perceptions; and how outsourcing has different effects on different kinds of 
-social perceptions. And perhaps most importantly, through asking these 
-questions, we gain insight into the most important question: why exactly does 
-effort have the effects that it does? Is it that expending less effort directly 
-leads to negative social perceptions, as some have argued in psychology 
+There is an apparent paradox of effort: it is both costly and valued [see 
+@Inzlicht2018]. While seemingly critical to our social lives, though, there has 
+been relatively little attention paid to how (not) expending effort shapes how 
+we are viewed by others. @Celniker2023 argue that effort is moralized because 
+people seem to infer positive moral character and cooperative intent from 
+effort. Yet this work has looked only at a few types of cases where effort is 
+expended or people seek outside help, where these are not necessarily the most 
+socially impactful: looking at how people judge the quality of products like 
+paintings, poems, or suits of armor based on how much effort is perceived 
+[@Kruger2004] or looking at how people judge others who expend more or less 
+effort in employment and physical exercise [@Celniker2023] or, in the context of
+AI, those who use AI for work [@Reif2025]. It has remained unclear how we might
+view others who outsource to AI specifically; how these effects might vary based
+on how socio-relational the task is; how different ways of outsourcing and 
+expending less effort influence perceptions; and how outsourcing has different
+effects on different kinds of social perceptions. And perhaps most importantly,
+through asking these questions, we gain insight into the most important
+question: why exactly does effort have the effects that it does? Why do people
+care not only about the outcome achieved but the process by which it is done,
+and why might outsourcing to AI (or humans) trade off efficiency for inferred
+authenticity, care, and moral character? Is it that expending less effort 
+directly leads to negative social perceptions, as some have argued in psychology 
 [@Celniker2023] or, more in line with philosophical perspectives 
 [e.g., @Aristotle2009] might expending effort also lead to second-order 
 judgments about how much someone values a task, which then independently drives 
